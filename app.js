@@ -154,6 +154,11 @@
     return text;
   }
 
+  // Clé lue dans l'URL ; '' si le hash est vide ou mal formé.
+  function hashKey() {
+    try { return decodeURIComponent(location.hash.slice(1)); } catch (e) { return ''; }
+  }
+
   function setHash(key, push) {
     try {
       if (push) location.hash = key;
@@ -238,7 +243,7 @@
     var aria = (hasRank ? 'Rang ' + leaf.rank + ', ' : '') + tierText(leaf.tier) + ', ' + tierDesc(leaf.tier) + ' : ' + label +
       (e.group ? ' (' + e.group + ')' : '') + (status ? ', ' + (status.text === 'prêt' ? 'messages prêts' : status.text) : '') +
       (copied ? ', copié' : '');
-    return '<button type="button" class="row ' + tierClass(leaf.tier) + '" data-key="' + esc(e.key) + '" aria-pressed="false" aria-label="' + esc(aria) + '">' +
+    return '<button type="button" class="row ' + tierClass(leaf.tier) + '" data-key="' + esc(e.key) + '" tabindex="-1" aria-pressed="false" aria-label="' + esc(aria) + '">' +
       '<span class="rank" aria-hidden="true"><span class="rank-n">' + (hasRank ? leaf.rank : '–') + '</span></span>' +
       '<span class="row-text"><span class="row-label">' + esc(label) + '</span>' +
       (e.group ? '<span class="row-tag">' + esc(e.group) + '</span>' : '') + '</span>' +
@@ -246,7 +251,15 @@
       '</button>';
   }
 
+  function rowByKey(key) {
+    return Array.prototype.filter.call(el.sections.querySelectorAll('.row'), function (b) {
+      return b.getAttribute('data-key') === key;
+    })[0] || null;
+  }
+
   function renderList() {
+    var a = document.activeElement;
+    var focusedKey = a && a.classList && a.classList.contains('row') && el.sections.contains(a) ? a.getAttribute('data-key') : null;
     var counts = { templates: 0, free: 0 };
     state.entries.forEach(function (e) {
       if (e.leaf.type === 'message') counts[modeOf(e.leaf)] += 1;
@@ -258,6 +271,8 @@
     }).join('');
     state.freshSticker = null;
     markSelectedRow();
+    var r = focusedKey && rowByKey(focusedKey);
+    if (r) { setRowTabStop(r); r.focus({ preventScroll: true }); }
   }
 
   function renderUnknown() {
@@ -271,11 +286,21 @@
     }).join('');
   }
 
+  // Tabulation « itinérante » : une seule ligne est atteignable par Tab, les flèches passent aux autres.
+  function setRowTabStop(row) {
+    Array.prototype.forEach.call(el.sections.querySelectorAll('.row'), function (b) { b.tabIndex = b === row ? 0 : -1; });
+  }
+
   function markSelectedRow() {
     var key = state.entry && state.entry.key;
-    Array.prototype.forEach.call(el.sections.querySelectorAll('.row'), function (b) {
-      b.setAttribute('aria-pressed', String(b.getAttribute('data-key') === key));
+    var rows = el.sections.querySelectorAll('.row');
+    var selected = null;
+    Array.prototype.forEach.call(rows, function (b) {
+      var on = b.getAttribute('data-key') === key;
+      b.setAttribute('aria-pressed', String(on));
+      if (on) selected = b;
     });
+    if (rows.length) setRowTabStop(selected || rows[0]);
   }
 
   function setContext(ctx, opts) {
@@ -283,6 +308,7 @@
     if (!CONTEXTS.some(function (c) { return c.id === ctx; })) ctx = CONTEXTS[0].id;
     var changed = ctx !== state.context;
     state.context = ctx;
+    if (changed) state.listScrollY = 0;
     store.set(KEYS.context, ctx);
     root.setAttribute('data-ctx', ctx);
     var all = entriesFor(ctx);
@@ -295,7 +321,7 @@
     updateThemeColor();
     if (changed && !opts.keepEntry && state.entry) {
       deselect();
-      setHash('', false);
+      if (location.hash) setHash('', false);
     }
   }
 
@@ -410,14 +436,18 @@
     if (isDesktop()) {
       setHash(key, false);
     } else {
-      if (el.app.getAttribute('data-view') !== 'msg') state.listScrollY = window.scrollY;
+      var wasMsg = el.app.getAttribute('data-view') === 'msg';
+      if (!wasMsg) state.listScrollY = window.scrollY;
       el.app.setAttribute('data-view', 'msg');
       window.scrollTo(0, 0);
       if (opts.push !== false && location.hash !== '#' + key) {
-        state.pushedHash = true;
-        setHash(key, true);
+        // Changer de feuille dans la vue Message ne crée pas d'entrée d'historique :
+        // un seul retour ramène toujours à la liste.
+        if (wasMsg) setHash(key, false);
+        else { state.pushedHash = true; setHash(key, true); }
       }
     }
+    autogrow(); // la vue est maintenant affichée : la hauteur se mesure correctement
 
     if (opts.focus !== false) {
       if (state.mode === 'templates' && !currentName()) el.name.focus();
@@ -549,11 +579,15 @@
     el.output.style.height = Math.max(el.output.scrollHeight + 2, 150) + 'px';
   }
 
+  function countText(v) {
+    return v + ' / ' + MAX + (v > MAX && isSpectre() ? ' · ' + (v - MAX) + ' de trop' : '');
+  }
+
   function stopCount() {
     if (state.countAnim === null) return;
     cancelAnimationFrame(state.countAnim);
     state.countAnim = null;
-    el.counter.textContent = state.shownLen + ' / ' + MAX;
+    el.counter.textContent = countText(state.shownLen);
   }
 
   // Le compteur « monte » jusqu'à la nouvelle valeur (thème Spectre, 260 ms, interrompu par un tap).
@@ -561,13 +595,13 @@
     stopCount();
     var from = state.shownLen;
     state.shownLen = len;
-    if (!animate || !fx() || from === len) { el.counter.textContent = len + ' / ' + MAX; return; }
+    if (!animate || !fx() || from === len) { el.counter.textContent = countText(len); return; }
     var start = null;
     var step = function (now) {
       if (start === null) start = now;
       var t = Math.min(1, (now - start) / COUNT_MS);
       var v = Math.round(from + (len - from) * (1 - Math.pow(1 - t, 3)));
-      el.counter.textContent = v + ' / ' + MAX;
+      el.counter.textContent = countText(v);
       if (t < 1) state.countAnim = requestAnimationFrame(step);
       else state.countAnim = null;
     };
@@ -667,7 +701,7 @@
     if (s === 'need-name') { el.name.focus(); return; }
     if (s === 'empty') { el.output.focus(); return; }
     if (s === 'over') {
-      (state.detailsOpen && el.details.value.trim() && !state.edited ? el.details : el.output).focus();
+      (state.mode === 'templates' && state.detailsOpen && el.details.value.trim() && !state.edited ? el.details : el.output).focus();
       return;
     }
     var text = el.output.value;
@@ -721,17 +755,21 @@
     renderPath();
     if (el.gravity.open) el.gravityBody.innerHTML = gravityHTML(state.context, null);
     if (!state.entry || state.mode !== 'templates') return;
+    var drew = false;
     if (!state.template && name) {
       state.template = pickTemplate();
+      state.redrawArmed = false; // un tirage neuf suffit pour la nouvelle personne
+      drew = true;
       restart(el.ticket, 'is-new');
     } else if (state.redrawArmed && name && name !== state.copiedName && !state.edited) {
       // Nouvelle personne après une copie : jamais deux fois le même texte par accident.
       state.template = pickTemplate();
       state.redrawArmed = false;
+      drew = true;
       announce('Nouveau message tiré');
       restart(el.ticket, 'is-new');
     }
-    render(true);
+    render(drew);
   }
 
   function setDate(on) {
@@ -760,13 +798,17 @@
   function applyTheme(id, fromToggle) {
     var current = THEMES.filter(function (t) { return t.id === id; })[0] || THEMES[0];
     var other = THEMES.filter(function (t) { return t.id !== current.id; })[0];
+    root.classList.add('theme-switching');
     root.setAttribute('data-theme', current.id);
+    void getComputedStyle(root).color; // styles recalculés sans transition
+    root.classList.remove('theme-switching');
     store.set(KEYS.theme, current.id);
     el.themeToggle.setAttribute('aria-label', 'Thème actuel : ' + current.name + '. Passer au thème ' + other.name + '.');
     el.themeToggle.title = 'Passer au thème ' + other.name;
     el.themeToggle.setAttribute('data-next', other.id);
     updateThemeColor();
     if (fromToggle && fx()) restart(el.topbar, 'is-sweep');
+    if (state.entry) { autogrow(); updateCounter(); }
   }
 
   // --- Événements ----------------------------------------------------------------
@@ -784,6 +826,7 @@
   function onGravityRow(e) {
     var b = e.target.closest('.g-row');
     if (!b) return;
+    state.gravityTrigger = null; // le focus va à la feuille ouverte, pas au bouton d'ouverture
     if (el.gravity.open) closeGravity();
     openEntry(b.getAttribute('data-key'));
   }
@@ -812,6 +855,8 @@
       state.template = pickTemplate();
       state.edited = false;
       restart(el.ticket, 'is-new');
+    } else {
+      state.template = null;
     }
     render(true);
   });
@@ -828,7 +873,7 @@
   el.restore.addEventListener('click', function () {
     state.edited = false;
     render();
-    el.output.focus();
+    (el.output.hidden ? el.name : el.output).focus();
   });
 
   el.output.addEventListener('input', function () {
@@ -873,9 +918,10 @@
   });
 
   window.addEventListener('hashchange', function () {
-    var key = decodeURIComponent(location.hash.slice(1));
+    var key = hashKey();
     if (!key) {
-      if (isDesktop()) { if (state.entry) deselect(); } else showList();
+      if (isDesktop()) { if (state.entry) deselect(); }
+      else if (el.app.getAttribute('data-view') === 'msg') showList();
       return;
     }
     if (state.entry && state.entry.key === key) {
@@ -889,7 +935,13 @@
   function interrupt(e) {
     el.ticket.classList.remove('is-new');
     stopCount();
-    if (!e || !el.copy.contains(e.target)) el.copy.classList.remove('is-copied');
+    if (!e || !el.copy.contains(e.target)) {
+      el.copy.classList.remove('is-copied');
+      el.ticket.classList.remove('is-filed');
+      el.status.classList.remove('is-ping');
+      var fresh = el.sections.querySelector('.chip-copied.is-fresh');
+      if (fresh) fresh.classList.remove('is-fresh');
+    }
   }
   document.addEventListener('pointerdown', interrupt, true);
   el.output.addEventListener('focus', interrupt);
@@ -906,15 +958,19 @@
       e.preventDefault();
       copy();
     } else if (e.key === 'Escape' && isDesktop() && state.entry && !el.gravity.open && (el.msg.contains(t) || t === document.body)) {
+      var row = rowByKey(state.entry.key);
       deselect();
       setHash('', false);
+      if (row) row.focus({ preventScroll: true });
     } else if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && t.classList && t.classList.contains('row')) {
       e.preventDefault();
       var rows = Array.prototype.slice.call(el.sections.querySelectorAll('.row'));
       var next = rows[rows.indexOf(t) + (e.key === 'ArrowDown' ? 1 : -1)];
-      if (next) next.focus();
+      if (next) { setRowTabStop(next); next.focus(); }
     }
   });
+
+  window.addEventListener('resize', function () { if (state.entry) autogrow(); });
 
   // :active sur iOS.
   document.addEventListener('touchstart', function () {}, { passive: true });
@@ -929,7 +985,7 @@
   setDate(store.get(KEYS.addDate) === '1');
   applyTheme(root.getAttribute('data-theme'));
 
-  var startKey = decodeURIComponent(location.hash.slice(1));
+  var startKey = hashKey();
   if (startKey && findEntry(startKey)) {
     setContext(startKey.split(':')[0]);
     openEntry(startKey, { push: false, focus: false });

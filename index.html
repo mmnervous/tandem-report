@@ -10,7 +10,7 @@
     // Applique le thème et le contexte mémorisés avant le premier rendu (évite un flash).
     try {
       var t = localStorage.getItem('tandem-report.theme');
-      if (t === 'terminal') t = 'spectre'; // ancien thème, remplacé
+      if (t === 'terminal' || t === 'ghost') t = 'spectre'; // anciens noms du thème
       if (t === 'tandem' || t === 'spectre') document.documentElement.setAttribute('data-theme', t);
       var c = localStorage.getItem('tandem-report.context');
       if (c === 'party' || c === 'profile' || c === 'chat') document.documentElement.setAttribute('data-ctx', c);
