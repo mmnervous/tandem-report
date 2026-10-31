@@ -5,16 +5,36 @@ Page web statique qui reprend l'arbre de signalement de Tandem et génère un me
 ## Ouvrir la page
 
 - **En local** : double-clique sur `index.html` (ça marche en `file://`).
-- **En ligne** : pousse le dossier sur GitHub et active GitHub Pages (branche principale, dossier racine).
+- **En ligne** : https://mmnervous.github.io/tandem-report/ (GitHub Pages, publié depuis la branche `main`, dossier racine).
 
 Si la page affiche « Données introuvables », lance le build (voir plus bas).
 
 ## Organisation
 
-- `data/report-tree.json` : l'arbre de signalement, source de vérité (menus, libellés, tiers, rangs, notes).
+- `data/report-tree.json` : l'arbre de signalement, source de vérité (menus, libellés, tiers, rangs, notes). Les libellés affichés sont en anglais ; la version française est gardée dans `label_fr` et `prompt_fr`.
 - `data/messages/<feuille>.json` : les messages types d'une feuille.
 - `data/bundle.js` : généré par `scripts/build.py`, ne pas l'éditer à la main.
 - `scripts/validate.py` : vérifie l'arbre et les messages.
+
+## Mettre à jour le site
+
+Il n'y a rien à lancer tant que tu ne modifies pas les données. Les deux commandes servent uniquement après une modification de `data/report-tree.json` ou d'un fichier de `data/messages/`.
+
+- **`python3 scripts/validate.py`** vérifie les messages et l'arbre : message trop long, `{name}` oublié, deux messages qui commencent par les mêmes mots, feuille absente de l'arbre… Il ne modifie rien. Il affiche les problèmes, et `0 erreur(s)` quand tout est bon.
+- **`python3 scripts/build.py`** regroupe l'arbre et tous les messages dans `data/bundle.js`, le fichier que la page lit réellement. Sans lui, la page ne voit pas tes modifications.
+
+Dans l'ordre, depuis le dossier du projet :
+
+```sh
+# 1. modifier un fichier JSON dans data/
+python3 scripts/validate.py   # 2. vérifier : corriger tant qu'il y a des erreurs
+python3 scripts/build.py      # 3. mettre à jour data/bundle.js
+git add -A                    # 4. publier : le site en ligne se met à jour en une minute environ
+git commit -m "Décris ta modification"
+git push
+```
+
+Pour vérifier en local avant de publier, ouvre `index.html` dans le navigateur après l'étape 3.
 
 ## Ajouter des messages pour une autre feuille
 
@@ -36,7 +56,7 @@ Si la page affiche « Données introuvables », lance le build (voir plus bas).
    - Les ids doivent être uniques dans tous les fichiers.
    - `variants` est facultatif. S'il y en a, la page affiche un sélecteur.
 
-3. Valide, puis régénère le bundle :
+3. Valide, puis régénère le bundle (voir « Mettre à jour le site » pour publier ensuite) :
 
    ```sh
    python3 scripts/validate.py --partial   # pendant l'écriture (comptes non bloquants)
