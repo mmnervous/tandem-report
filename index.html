@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="tandem">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>Signalement Tandem</title>
+  <script>
+    // Applique le thème mémorisé avant le premier rendu (évite un flash).
+    try {
+      var t = localStorage.getItem('tandem-report.theme');
+      if (t === 'tandem' || t === 'terminal') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="title">
+      <span class="t-tandem">Signalement Tandem</span>
+      <span class="t-term glitch" data-text="tandem_report">tandem_report</span>
+    </h1>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Changer de thème">
+      <span class="t-tandem">&gt;_ Terminal</span>
+      <span class="t-term">[ tandem ]</span>
+    </button>
+  </header>
+
+  <div id="app" class="layout">
+    <section class="card who">
+      <label class="field-label" for="name">Nom de la personne</label>
+      <input id="name" class="input" type="text" maxlength="60" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="ex. Alex" enterkeyhint="done">
+    </section>
+
+    <nav id="contexts" class="contexts" aria-label="Partie de Tandem concernée"></nav>
+
+    <aside id="gravity" class="card gravity" aria-labelledby="gravity-title">
+      <button id="gravity-toggle" class="gravity-toggle" type="button" aria-expanded="false" aria-controls="gravity-body">
+        <span id="gravity-title" class="gravity-title">
+          <span class="t-tandem">Rappel de gravité</span>
+          <span class="t-term">&gt; severity --list</span>
+        </span>
+        <span class="chevron" aria-hidden="true"></span>
+      </button>
+      <div id="gravity-body" class="gravity-body"></div>
+    </aside>
+
+    <section id="leaves" class="leaves" aria-label="Types de signalement"></section>
+
+    <section id="composer" class="card composer" hidden aria-live="polite">
+      <p class="path-label">
+        <span class="t-tandem">Dans l'app</span>
+        <span class="t-term">&gt; path</span>
+      </p>
+      <p id="path" class="path"></p>
+      <p id="leaf-info" class="leaf-info"></p>
+      <p id="unverified" class="unverified" hidden>Écran suivant pas encore vérifié dans l'app : Tandem devrait demander un message.</p>
+
+      <div id="mode-direct" class="notice" hidden>Pas de message : Tandem envoie le signalement directement.</div>
+      <div id="mode-free" class="notice" hidden>Pas encore de messages types : écris le tien.</div>
+
+      <div id="template-fields">
+        <div id="variant-row" class="field" hidden>
+          <span class="field-label" id="variant-label">Ce qui s'est passé</span>
+          <div id="variants" class="segmented" role="radiogroup" aria-labelledby="variant-label"></div>
+        </div>
+
+        <div class="field date-row">
+          <label class="check">
+            <input id="add-date" type="checkbox">
+            <span>Ajouter la date</span>
+          </label>
+          <input id="date" class="input date-input" type="date" aria-label="Date de l'incident">
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="details">Détails <span class="optional">(optionnel, ajoutés à la fin)</span></label>
+          <textarea id="details" class="input details" rows="2" placeholder="Ce qui s'est réellement passé, en anglais de préférence"></textarea>
+        </div>
+
+        <button id="generate" class="btn btn-primary" type="button"></button>
+        <p id="name-hint" class="hint">Saisis le nom de la personne pour générer.</p>
+      </div>
+
+      <div id="output-block" class="output-block">
+        <textarea id="output" class="input output" rows="7" spellcheck="true" aria-label="Message à copier"></textarea>
+        <div class="output-meta">
+          <span id="counter" class="counter">0 / 500</span>
+          <span id="limit-msg" class="limit-msg" role="status"></span>
+        </div>
+        <p id="edited-hint" class="hint" hidden>Modifié à la main : les champs ne mettent plus le message à jour.</p>
+        <button id="copy" class="btn btn-copy" type="button" disabled></button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>Cette page ne communique jamais avec Tandem : elle produit du texte que tu colles toi-même dans l'app.</p>
+    <p id="ignored-note"></p>
+  </footer>
+
+  <script src="data/bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

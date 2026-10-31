@@ -1,0 +1,509 @@
+{
+  "leaf": "party.photos_of_me",
+  "variants": {
+    "me": "Mes photos",
+    "someone": "Photos d'un proche"
+  },
+  "messages": [
+    {
+      "id": "me-001",
+      "variant": "me",
+      "text": "I am reporting {name} for impersonation. When this user joined a Tandem party{when}, I saw that their profile uses photos of me, taken without my consent. Using someone else's pictures misleads other learners about who they are talking to and is a common way fake profiles are built. Please review the account and remove my photos."
+    },
+    {
+      "id": "me-002",
+      "variant": "me",
+      "text": "{name} is using my photos on their profile without my permission. I noticed it when they spoke in a Tandem party{when}. This is impersonation: other learners believe they are talking to me, and fake profiles like this are often used for scams. Please remove the photos and review the account."
+    },
+    {
+      "id": "me-003",
+      "variant": "me",
+      "text": "During a Tandem party{when}, I recognised my own photos on the profile of {name}. I never gave consent for my pictures to be used. This is identity theft, and it misleads the people in the room about who they are actually speaking with. Please take down the photos and investigate this profile."
+    },
+    {
+      "id": "me-004",
+      "variant": "me",
+      "text": "Please review the profile of {name}. I saw it in a Tandem voice room{when}, and the profile pictures are photos of me, used without my consent. Impersonating a real person deceives other learners and is a typical first step in building a scam profile. I ask that the photos be removed and the account checked."
+    },
+    {
+      "id": "me-005",
+      "variant": "me",
+      "text": "This report concerns {name}, who joined a Tandem party{when} with a profile showing pictures of me. I did not authorise this. Using my photos is impersonation, it misleads learners about who is behind the account, and it is how many fake profiles start. Please remove the images and take action on this account."
+    },
+    {
+      "id": "me-006",
+      "variant": "me",
+      "text": "In a language party{when}, I came across {name}, whose profile uses my personal photos. These are pictures of me and I never agreed to their use. Presenting my face as their own is impersonation and leaves other learners unsure who they are really talking to. Please review the account and remove my photos."
+    },
+    {
+      "id": "me-007",
+      "variant": "me",
+      "text": "While I was practising in a Tandem party{when}, I noticed that {name} has my photos on their profile. I am the person in those pictures and I did not consent. This kind of identity theft misleads other members and is often used to set up scam accounts. Please investigate and remove the profile or the photos."
+    },
+    {
+      "id": "me-008",
+      "variant": "me",
+      "text": "Impersonation report: the account {name}, which I saw in a Tandem party{when}, uses photos of me without my consent. Other learners in the room may think they are speaking with me, and stolen photos are a common sign of a fake or scam profile. Please review this account and take the photos down."
+    },
+    {
+      "id": "me-009",
+      "variant": "me",
+      "text": "The person using the name {name} has put my photos on their profile. I saw this{when} when they spoke in a Tandem party. I never gave permission, and using another person's pictures is impersonation that misleads learners and supports fake profiles. Please remove my photos and take appropriate action."
+    },
+    {
+      "id": "me-010",
+      "variant": "me",
+      "text": "My photos are being used without my consent by {name}. I found out during a Tandem party{when}, when I opened their profile from the voice room. Pretending to be me misleads other learners about who they are talking to and is a known scam tactic. I am asking the moderation team to remove the photos and review the account."
+    },
+    {
+      "id": "me-011",
+      "variant": "me",
+      "text": "I would like to report a case of identity theft. In a Tandem audio room{when}, {name} appeared with a profile that uses photos of me. I did not consent to this. It misleads the other participants and is how fake profiles are often built. Please review the account and remove these images."
+    },
+    {
+      "id": "me-012",
+      "variant": "me",
+      "text": "{name} joined a Tandem party{when} using a profile with my pictures on it. Those photos are of me, and they are used without my consent. This is impersonation, and it gives other learners a false idea of who they are talking to. Please remove my photos and review whether this profile is genuine."
+    },
+    {
+      "id": "me-013",
+      "variant": "me",
+      "text": "Please remove my photos from the profile of {name}. I saw the account in a Tandem party{when}, and the pictures on it are of me, used without permission. Impersonating a real person misleads other learners and is a common feature of scam profiles. I would appreciate it if you reviewed this account."
+    },
+    {
+      "id": "me-014",
+      "variant": "me",
+      "text": "Someone is impersonating me on Tandem. The account {name}, which was active in a Tandem party{when}, uses my photos without my consent. Other learners in the room are being misled about who they are talking to, and this is a typical pattern for fake profiles. Please review the account and take down my pictures."
+    },
+    {
+      "id": "me-015",
+      "variant": "me",
+      "text": "In a live Tandem audio room{when}, I noticed that {name} is using pictures of me as their profile photos. I never agreed to this. This is impersonation: it gives the people in the room a false idea of who they are speaking with, and it is how many scam profiles begin. Please review this profile and remove the photos."
+    },
+    {
+      "id": "me-016",
+      "variant": "me",
+      "text": "These are my photos, and {name} is using them without my consent. I saw the profile in a Tandem party{when}. This is impersonation that misleads other learners about who they are talking to. Please take the photos down and review the profile."
+    },
+    {
+      "id": "me-017",
+      "variant": "me",
+      "text": "I am the person shown in the profile photos of {name}. I noticed this in a Tandem party{when} and I never gave my consent. Using someone else's face is impersonation, it deceives other learners, and it is often how fake or scam accounts are created. Please remove the photos and take action on this account."
+    },
+    {
+      "id": "me-018",
+      "variant": "me",
+      "text": "Short report from a Tandem party{when}: the profile of {name} shows photos of me that I never agreed to share. That is impersonation, and it hides from other learners who is really behind the account. Please remove my photos and review it."
+    },
+    {
+      "id": "me-019",
+      "variant": "me",
+      "text": "Reporting impersonation in a Tandem party{when}: {name} has a profile built with my photos, which I never agreed to share. This misleads the learners in the room about who they are talking to, and it is a common basis for scam profiles. Please review the account and remove the pictures."
+    },
+    {
+      "id": "me-020",
+      "variant": "me",
+      "text": "Could you please review the account {name}? During a Tandem party{when}, I saw that its profile photos are pictures of me, used without my consent. This is identity theft. It misleads other learners and is a known way to build fake profiles. I would like the photos removed and the account checked."
+    },
+    {
+      "id": "me-021",
+      "variant": "me",
+      "text": "When {name} spoke in a Tandem party{when}, I opened their profile and found my own photos there. I did not consent to this use. Impersonation like this misleads other learners about who they are dealing with and often supports scams. Please remove the photos and take action on the profile. I can provide more details if needed."
+    },
+    {
+      "id": "me-022",
+      "variant": "me",
+      "text": "A participant in a Tandem party{when}, {name}, has a profile that uses my photos without my consent. I am the person in those pictures. This is impersonation, and anyone speaking with this account is misled about who is really behind it. Please review it and remove my photos."
+    },
+    {
+      "id": "me-023",
+      "variant": "me",
+      "text": "My identity is being used by {name}. I saw their profile in a Tandem voice room{when}, and the photos on it are of me. I never gave consent. This misleads other learners and is a common way scam profiles are set up. Please remove the photos and take appropriate action against this account."
+    },
+    {
+      "id": "me-024",
+      "variant": "me",
+      "text": "I need to report the use of my photos without consent. {name} showed up in a Tandem party{when} with pictures of me on their profile. This impersonation misleads other learners and is typical of fake profiles. Please remove the photos."
+    },
+    {
+      "id": "me-025",
+      "variant": "me",
+      "text": "Hello, I am writing about {name}, whom I saw in a Tandem party{when}. Their profile uses photos of me without my permission, which is impersonation. It misleads other learners about who they are speaking to and is often how fake profiles are made. Please remove my pictures and review this account. Thank you."
+    },
+    {
+      "id": "someone-001",
+      "variant": "someone",
+      "text": "The profile photos of {name} show a person I know personally, and that person never agreed to have their pictures used. I saw the account in a Tandem party{when}. This is impersonation: learners in the room think they are talking to someone they are not, and stolen photos are a common sign of a scam profile. Please remove the photos."
+    },
+    {
+      "id": "someone-002",
+      "variant": "someone",
+      "text": "A Tandem party{when} brought me into contact with {name}, whose profile pictures belong to someone I know. Those photos are being used without that person's consent. Pretending to be a real person misleads other learners and is a typical way fake accounts are made. Please review this profile and take the photos down."
+    },
+    {
+      "id": "someone-003",
+      "variant": "someone",
+      "text": "I recognised someone I know personally in the profile photos of {name} while we were in a Tandem voice room{when}. That person has not given permission for their pictures to be used. This is identity theft, and it deceives other learners about who is behind the account. Please investigate and remove the photos or the profile."
+    },
+    {
+      "id": "someone-004",
+      "variant": "someone",
+      "text": "Please check the account {name}. It appeared in a Tandem party{when} using photos of a person I know personally, who did not consent to this. Using another person's identity misleads learners about who they are speaking with and is often the basis for scams. I ask that the photos be removed and the profile reviewed."
+    },
+    {
+      "id": "someone-005",
+      "variant": "someone",
+      "text": "{name} has built a profile using photos of someone I know, without their consent. I came across the account during a Tandem party{when}. This is impersonation. It misleads the other participants about who they are dealing with and is a common pattern behind fake profiles. Please take action and remove these pictures."
+    },
+    {
+      "id": "someone-006",
+      "variant": "someone",
+      "text": "This is a report of impersonation in a Tandem party{when}. The user {name} displays photos of a person I know personally, and that person has not agreed to it. Other learners are being misled about who they are talking to, which is how scam profiles often operate. Please review the account and remove the photos."
+    },
+    {
+      "id": "someone-007",
+      "variant": "someone",
+      "text": "Someone I know personally is pictured on the profile of {name}, without having given consent. I saw it when this user spoke in a Tandem party{when}. Using a real person's photos is impersonation, it misleads learners, and it is a common way fake accounts are created. Please remove the photos and review the profile."
+    },
+    {
+      "id": "someone-008",
+      "variant": "someone",
+      "text": "In a Tandem audio room{when}, I clicked on the profile of {name} and saw photos of a person I know. That person does not use this account and did not consent to the pictures being there. This is identity theft that misleads other learners and is typical of scam profiles. Please take the profile down or remove the photos."
+    },
+    {
+      "id": "someone-009",
+      "variant": "someone",
+      "text": "Identity theft report: {name}, who was in a Tandem party{when}, uses pictures of someone I know personally as profile photos. The person in the pictures never gave consent. This misleads other learners about who they are talking to and is often how fake profiles begin. Please review the account and take appropriate action."
+    },
+    {
+      "id": "someone-010",
+      "variant": "someone",
+      "text": "The account {name} is not the person shown in its photos. I know the person in those pictures personally, and they did not agree to this. I saw the profile in a Tandem party{when}. Impersonation like this misleads learners and is a frequent setup for scams. Please remove the photos and review the account."
+    },
+    {
+      "id": "someone-011",
+      "variant": "someone",
+      "text": "I know the person whose photos {name} uses on their profile, and that person has not consented to it. I noticed this during a Tandem language party{when}. Using someone else's pictures is impersonation and misleads other learners about who they are talking to. Please review this profile and remove the photos."
+    },
+    {
+      "id": "someone-012",
+      "variant": "someone",
+      "text": "As soon as I opened the profile of {name} in a Tandem party{when}, I recognised photos of someone I know personally. That person did not give consent for their pictures to be used. Impersonating a real person misleads the learners in the room and is commonly used to build fake or scam accounts. Please take the photos down and review the account."
+    },
+    {
+      "id": "someone-013",
+      "variant": "someone",
+      "text": "While practising in a Tandem party{when}, I saw that {name} is using photos of someone I know. The person in the pictures has not agreed to this. This is impersonation; people in the room cannot know who they are really speaking with, and this is often how scam profiles are created. Please review the account and remove the pictures."
+    },
+    {
+      "id": "someone-014",
+      "variant": "someone",
+      "text": "I am concerned about the account {name}, which I saw in a Tandem voice room{when}. Its profile photos are pictures of a person I know personally, used without that person's consent. This is identity theft. It misleads other learners and is a common feature of fake profiles. Please investigate and take action."
+    },
+    {
+      "id": "someone-015",
+      "variant": "someone",
+      "text": "A person I know appears in the profile photos of {name}, and that person was never asked for consent. I saw this in a Tandem party{when}. Impersonation like this is how fake accounts win the trust of learners. Please remove the photos and check the profile."
+    },
+    {
+      "id": "someone-016",
+      "variant": "someone",
+      "text": "When {name} took part in a Tandem party{when}, I recognised the person in their profile photos as someone I know. That person never agreed to share these pictures. Using them is impersonation and misleads learners about who they are really talking to. Please remove the photos and take action on this account."
+    },
+    {
+      "id": "someone-017",
+      "variant": "someone",
+      "text": "Could you review the profile of {name}? It uses photos of a person I know personally, without their consent. I saw it during a Tandem party{when}. Presenting another person's face as their own misleads other learners and is a common tactic behind scam profiles. Please remove the photos."
+    },
+    {
+      "id": "someone-018",
+      "variant": "someone",
+      "text": "Reporting a fake profile: {name}, active in a Tandem party{when}, uses photos of someone I know personally. That person did not consent and has nothing to do with this account. Impersonation misleads other learners about who they are speaking with and is often linked to scams. Please review and remove the profile."
+    },
+    {
+      "id": "someone-019",
+      "variant": "someone",
+      "text": "The pictures on {name}'s profile are of a person I know personally. I noticed them when this user joined a Tandem party{when}. That person never gave permission for these photos to be used. This is impersonation, and it misleads other learners about who they are talking to. Please take the photos down and review the account."
+    },
+    {
+      "id": "someone-020",
+      "variant": "someone",
+      "text": "Hello, I would like to flag the account {name}. During a Tandem voice room session{when}, I saw that its photos show someone I know, used without that person's consent. This is identity theft that misleads other learners and is commonly used for fake profiles. Please review it and remove the photos."
+    },
+    {
+      "id": "someone-021",
+      "variant": "someone",
+      "text": "Someone I know is being impersonated by {name}. The profile, which I saw in a Tandem party{when}, uses that person's photos without their consent. Anyone talking to this account is given a false idea of who is behind it, and fake profiles like this are often used for scams. Please remove the photos and take action."
+    },
+    {
+      "id": "someone-022",
+      "variant": "someone",
+      "text": "In a language party on Tandem{when}, {name} joined with profile photos of a person I know personally. Those photos are used without consent. Impersonation of this kind gives other learners a false idea of who is behind the account and is a known scam pattern. Please review the profile and remove the pictures."
+    },
+    {
+      "id": "someone-023",
+      "variant": "someone",
+      "text": "I am asking you to review {name}. Their profile, which I saw in a Tandem party{when}, shows photos of someone I know personally, and that person has not agreed to it. Using a real person's pictures misleads other learners and is a common way to set up fake accounts. Please remove the photos. I can provide more details if needed."
+    },
+    {
+      "id": "someone-024",
+      "variant": "someone",
+      "text": "This user, {name}, is presenting photos of a person I know as their own. I saw this{when} in a Tandem party. The person in the photos has not given consent. This is impersonation that misleads other learners about who they are talking to. Please review the account and take the photos down."
+    },
+    {
+      "id": "someone-025",
+      "variant": "someone",
+      "text": "Photos of a person I know personally appear on the profile of {name}, which I saw in a Tandem audio room{when}. That person did not consent. This is identity theft: it misleads other learners and is often how scam profiles are built. Please remove the photos and review whether the account should stay active."
+    },
+    {
+      "id": "me-026",
+      "variant": "me",
+      "text": "Hi, I found my own pictures on the profile of {name} during a Tandem party{when}. I never gave consent for them to be used. This impersonation misleads other learners about who they are talking to. Please remove my photos."
+    },
+    {
+      "id": "me-027",
+      "variant": "me",
+      "text": "As the person shown in these photos, I am asking you to review {name}. I saw the profile in a Tandem voice room{when}, and the pictures are of me, used without my consent. Impersonation like this lets a stranger borrow my identity to gain the trust of other learners, and it is commonly used to build scam accounts. Please take the photos down."
+    },
+    {
+      "id": "me-028",
+      "variant": "me",
+      "text": "{name} is pretending to be me. During a Tandem party{when}, I saw that their profile uses my photos, which I never agreed to share. This misleads the learners they talk to about who is behind the account, and it is a typical sign of a fake profile. Please review the account and remove my pictures."
+    },
+    {
+      "id": "me-029",
+      "variant": "me",
+      "text": "In the profile of {name}, seen in a Tandem party{when}, the pictures are of me, used without my permission. That is identity theft and leaves learners unsure who they are talking to. Please remove the photos."
+    },
+    {
+      "id": "me-030",
+      "variant": "me",
+      "text": "Report of impersonation: the account {name} uses my photos. I saw it{when} while they were speaking in a Tandem party. I did not consent to this, and it misleads other learners about who they are dealing with. Fake profiles are often built exactly this way. Please remove my photos and take action."
+    },
+    {
+      "id": "me-031",
+      "variant": "me",
+      "text": "Seeing {name} in a Tandem party{when}, I realised that the profile photos on this account are of me. I did not consent to this, and the account is not mine. This is impersonation; it gives other learners a false impression of who they are talking to and is a common basis for scam accounts. Please remove my pictures."
+    },
+    {
+      "id": "me-032",
+      "variant": "me",
+      "text": "Please act on the account {name}. It uses photos of me as its profile pictures, without my consent, and I saw it in a Tandem party{when}. Impersonation of a real person misleads learners and is a frequent first step for scams. I ask you to remove the photos and review the profile."
+    },
+    {
+      "id": "me-033",
+      "variant": "me",
+      "text": "The profile of {name} uses pictures of me, but I do not run this account and I never gave consent. I came across it in a Tandem party{when}. Impersonation of this kind deceives other learners about who they are dealing with, and it is often how fake profiles are created. Please remove my photos and review the account."
+    },
+    {
+      "id": "me-034",
+      "variant": "me",
+      "text": "Whoever runs the account {name} has taken my photos and is using them without my consent. I noticed it during a Tandem party{when}. This identity theft misleads other learners about who they are talking to. Please take down the photos."
+    },
+    {
+      "id": "me-035",
+      "variant": "me",
+      "text": "I did not give {name} permission to use my photos, yet they appear on this user's profile, which I saw in a Tandem party{when}. This is impersonation. It can lead other learners to trust someone who is not who they claim to be, and it is a common way scam accounts gain credibility. Please remove my pictures and review this account."
+    },
+    {
+      "id": "me-036",
+      "variant": "me",
+      "text": "Tandem moderators, please review {name}. During a Tandem voice room session{when}, I saw that this profile uses my photos without my consent. Impersonating me misleads other learners about who they are speaking with and is a typical pattern of fake profiles. Please remove the photos and take appropriate action."
+    },
+    {
+      "id": "me-037",
+      "variant": "me",
+      "text": "Photos of me are on the profile of {name}, and I did not agree to this. I saw the account in a Tandem party{when}. Using my face on someone else's account is identity theft: it leaves learners in the room unsure who they are really talking to, and it is how many fake profiles are built. Please remove the photos."
+    },
+    {
+      "id": "me-038",
+      "variant": "me",
+      "text": "There is an account, {name}, using my photos without consent. It joined a Tandem party{when}, which is where I saw it. This is impersonation and it misleads other learners about who they are really talking to. Please review it and remove my pictures. I can provide more details if needed."
+    },
+    {
+      "id": "me-039",
+      "variant": "me",
+      "text": "I spotted my own photos on {name}'s profile in a Tandem party{when}, used without my consent. This identity theft misleads other learners about who they are talking to. Please take the photos down."
+    },
+    {
+      "id": "me-040",
+      "variant": "me",
+      "text": "Using my photos without consent, {name} has created a profile that pretends to be me. I saw it in a Tandem party{when}. Learners who meet this account may believe they are dealing with me, and this is often how scam accounts are built. Please remove the photos and take action on this profile."
+    },
+    {
+      "id": "me-041",
+      "variant": "me",
+      "text": "I would appreciate a review of {name}. Their profile, which I saw in a Tandem audio room{when}, shows photos of me that I never agreed to share. This is impersonation, and it gives other learners a false idea of who they are talking to. Please remove my pictures and check the account."
+    },
+    {
+      "id": "me-042",
+      "variant": "me",
+      "text": "Unauthorised use of my photos: {name}, who joined a Tandem party{when}, has pictures of me on their profile. I never gave consent. This impersonation misleads other learners and is common in scam profiles. Please remove the photos."
+    },
+    {
+      "id": "me-043",
+      "variant": "me",
+      "text": "In a Tandem party{when}, {name} appeared with my photos as their profile pictures. I did not consent to this. Presenting a real person's photos as one's own is impersonation, it misleads other learners, and it is often how fake accounts are set up. Please remove the pictures and review the profile."
+    },
+    {
+      "id": "me-044",
+      "variant": "me",
+      "text": "The photos on the account {name} are of me, used without my consent. I saw the profile during a Tandem party{when}. Impersonation like this misleads other learners and helps fake profiles look genuine. Please remove my photos."
+    },
+    {
+      "id": "me-045",
+      "variant": "me",
+      "text": "I have to report {name} for using my photos without consent. When this user was in a Tandem party{when}, I opened their profile and recognised myself in the pictures. This is impersonation, which deceives anyone in the party who checks the profile and is often used to build scam profiles. Please take the photos down and review the account."
+    },
+    {
+      "id": "me-046",
+      "variant": "me",
+      "text": "Please be aware that {name} is using photos of me without my consent; I came across the profile in a Tandem party{when}. Because of this identity theft, other learners cannot know who they are really talking to, which is exactly how fake profiles work. Please remove my pictures."
+    },
+    {
+      "id": "me-047",
+      "variant": "me",
+      "text": "Without my consent, {name} is using pictures of me on their profile. I noticed it{when} in a Tandem voice room. Impersonating me misleads other learners and is a common way scam accounts are created. Please remove my photos."
+    },
+    {
+      "id": "me-048",
+      "variant": "me",
+      "text": "This profile is impersonating me: {name} uses my photos, and I saw the account in a Tandem party{when}. I did not consent to any of this. It misleads other learners about who they are speaking with and is how fake profiles are typically made. Please review the profile and remove the photos."
+    },
+    {
+      "id": "me-049",
+      "variant": "me",
+      "text": "After I joined a Tandem party{when}, I saw that {name} uses my photos on their profile. I am the person in those pictures, and I never agreed to this. It is impersonation, it misleads other learners, and it is a typical setup for a fake or scam profile. Please remove my photos and review the account."
+    },
+    {
+      "id": "me-050",
+      "variant": "me",
+      "text": "I am writing to report {name} for impersonation. During a Tandem party{when}, I opened this user's profile and saw that it uses photos of me, without my consent. Other learners believe they are talking to me, and stolen photos are a common way fake or scam profiles are built. Please review the account and remove my photos. I can share more details."
+    },
+    {
+      "id": "someone-026",
+      "variant": "someone",
+      "text": "Hi, I recognised a person I know personally in the profile photos of {name} during a Tandem party{when}. That person did not consent to their pictures being used. This misleads other learners about who they are talking to. Please remove the photos."
+    },
+    {
+      "id": "someone-027",
+      "variant": "someone",
+      "text": "{name} has taken the photos of a person I know personally and uses them as profile pictures, without consent. I saw this during a Tandem party{when}. Impersonating a real person gives learners false confidence in who they are speaking with and is a common way to build scam profiles. Please review the account and remove the photos."
+    },
+    {
+      "id": "someone-028",
+      "variant": "someone",
+      "text": "The person in {name}'s profile photos is someone I know personally, and they never agreed to this. I noticed the account in a Tandem voice room{when}. This impersonation misleads other learners about who is behind the profile. Please remove the photos."
+    },
+    {
+      "id": "someone-029",
+      "variant": "someone",
+      "text": "As someone who knows the person in these photos, I am asking you to review {name}. The profile, seen in a Tandem party{when}, uses their pictures without consent. This is impersonation; it misleads other learners and is often how fake accounts are created. Please remove the photos."
+    },
+    {
+      "id": "someone-030",
+      "variant": "someone",
+      "text": "Report of identity theft: {name} joined a Tandem party{when} with a profile that uses photos of someone I know personally. That person did not consent. Other learners are given a false picture of who they are talking to, which is a typical pattern of scam profiles. Please review the account and remove the pictures."
+    },
+    {
+      "id": "someone-031",
+      "variant": "someone",
+      "text": "I was in a Tandem party{when} when I noticed that {name} uses photos of a person I know. That person has not consented to this. It is impersonation, which misleads learners and is how many fake profiles start. Please take down the photos."
+    },
+    {
+      "id": "someone-032",
+      "variant": "someone",
+      "text": "Please look into {name}. A person I know personally is shown in the profile photos, and they have not agreed to this. I saw the account while it was in a Tandem party{when}. Using someone else's pictures misleads other learners and is a common feature of scam accounts. Please remove the photos."
+    },
+    {
+      "id": "someone-033",
+      "variant": "someone",
+      "text": "Whoever is behind {name} is using photos of someone I know, without that person's consent. I saw the profile during a Tandem party{when}. This is impersonation. It misleads other learners about who they are really talking to, and fake profiles often start this way. Please review the account and take the photos down."
+    },
+    {
+      "id": "someone-034",
+      "variant": "someone",
+      "text": "Nobody gave {name} permission to use these photos. They show a person I know personally, and I saw them on the profile in a Tandem party{when}. This identity theft misleads other learners about who they are talking to and is how scam profiles are often built. Please remove the pictures."
+    },
+    {
+      "id": "someone-035",
+      "variant": "someone",
+      "text": "Tandem team, please look at the profile of {name}. During a Tandem party{when}, I saw that it uses photos of someone I know, without their consent. Impersonating a real person misleads other learners about who they are dealing with. Please remove the photos and take appropriate action."
+    },
+    {
+      "id": "someone-036",
+      "variant": "someone",
+      "text": "There is a profile, {name}, using photos of a person I know personally. That person never consented. I came across it in a Tandem audio room{when}. This impersonation misleads other learners and is typical of fake profiles. Please review it and remove the photos. I can provide more details if needed."
+    },
+    {
+      "id": "someone-037",
+      "variant": "someone",
+      "text": "I spotted photos of someone I know on {name}'s profile while I was listening in a Tandem party{when}. That person has nothing to do with this account and did not agree to it. This is impersonation, and it is how scam profiles often gain the trust of other learners. Please remove the pictures."
+    },
+    {
+      "id": "someone-038",
+      "variant": "someone",
+      "text": "{name} uses photos of someone I know without that person's consent. I saw it{when} in a Tandem party. This is impersonation and misleads other learners. Please remove the photos."
+    },
+    {
+      "id": "someone-039",
+      "variant": "someone",
+      "text": "I would appreciate it if you checked {name}. The account took part in a Tandem party{when}, and its photos show someone I know personally, who has not agreed to this. Using these pictures is impersonation and can mislead learners into trusting a fake profile. Please remove the photos and review the account."
+    },
+    {
+      "id": "someone-040",
+      "variant": "someone",
+      "text": "Misuse of photos in a Tandem party{when}: {name} uses pictures of a person I know personally, who has not given consent. This impersonation misleads other learners about who they are talking to and is common in fake profiles. Please review the account and remove the pictures."
+    },
+    {
+      "id": "someone-041",
+      "variant": "someone",
+      "text": "In a Tandem party{when}, I recognised someone I know in the photos of {name}. That person does not run this account and did not consent. Presenting a real person's photos as one's own misleads other learners and is a typical first step for scams. Please remove the pictures and review the profile."
+    },
+    {
+      "id": "someone-042",
+      "variant": "someone",
+      "text": "The images used by {name} show a person I know personally, and they are used without that person's consent. I saw the profile during a Tandem party{when}. This kind of impersonation misleads learners about who they are speaking with and makes scam profiles look trustworthy. Please remove the images."
+    },
+    {
+      "id": "someone-043",
+      "variant": "someone",
+      "text": "I must report {name} for impersonation. The profile I opened in a Tandem party{when} uses pictures of a person I know, and that person never agreed to this. Fake profiles built on real people's photos mislead other learners about who they are talking to and are often used for scams. Please remove the photos and review the account."
+    },
+    {
+      "id": "someone-044",
+      "variant": "someone",
+      "text": "Please note that the photos used by {name} belong to someone I know personally, who did not consent. I saw the account in a Tandem voice room{when}. This is identity theft: it misleads other learners and is a common way to set up scam profiles. Please take the photos down."
+    },
+    {
+      "id": "someone-045",
+      "variant": "someone",
+      "text": "This account impersonates a person I know: {name} has that person's photos on the profile, and nobody asked them for consent. It showed up in a Tandem party{when}. Learners talking to this account are being misled, and stolen photos are a classic sign of a scam profile. Please remove the photos."
+    },
+    {
+      "id": "someone-046",
+      "variant": "someone",
+      "text": "After {name} joined a Tandem party with me{when}, I could see that their profile uses photos of someone I know personally. That person has not consented to this. Using a real person's pictures this way is impersonation and gives other participants a false picture of who they are dealing with. Please review the account and remove the photos."
+    },
+    {
+      "id": "someone-047",
+      "variant": "someone",
+      "text": "Someone I know personally has had their photos taken and used by {name}. I saw the profile in a Tandem party{when}, and the person pictured did not consent to this. This impersonation hides from the learners in the room who is really behind the account. Please remove the photos."
+    },
+    {
+      "id": "someone-048",
+      "variant": "someone",
+      "text": "My report is about {name}, a participant in a Tandem party{when} whose profile uses photos of someone I know personally. That person did not give consent. Impersonation like this deceives the people who talk to the account and is a common route to scams. Please remove the photos and review the profile."
+    },
+    {
+      "id": "someone-049",
+      "variant": "someone",
+      "text": "Learners in a Tandem party{when} were able to see the profile of {name}, which uses photos of a person I know personally. That person never consented, so this is impersonation, and the people in the room are being misled about who they are speaking with. Fake profiles are often built this way. Please review the account and remove the photos."
+    },
+    {
+      "id": "someone-050",
+      "variant": "someone",
+      "text": "I am writing to ask for a review of {name}. During a Tandem party{when}, I opened this user's profile and found photos of someone I know personally, used without that person's consent. This is impersonation. It misleads other learners about who they are talking to, and real people's photos are a common basis for scam profiles. Please remove the photos."
+    }
+  ]
+}

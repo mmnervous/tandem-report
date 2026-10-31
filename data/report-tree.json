@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "source": "Captures d'écran de l'app Tandem (Android), octobre 2026",
+    "message_max_chars": 500,
+    "legend": {
+      "menu": "Ouvre un sous-menu",
+      "message": "Fin du parcours : Tandem demande un message (500 caractères max)",
+      "direct": "Fin du parcours : le signalement part directement, sans message",
+      "unknown": "Pas encore exploré",
+      "ignored": "Hors périmètre pour l'instant",
+      "ref": "Renvoie vers un sous-menu partagé (voir 'shared')"
+    },
+    "tiers": {
+      "1": "Ban probable",
+      "2": "Warning, ban si grave ou répété",
+      "3": "Warning léger ou simple correction",
+      "variable": "Dépend entièrement du message"
+    },
+    "evidence_strength": {
+      "order": ["chat.messages", "photo", "profile.info", "party"],
+      "note": "Même catégorie, preuve plus ou moins forte selon le chemin : les messages sont conservés et relisibles par la modération, la photo et le profil sont visibles, la fête est de l'audio en direct (parole contre parole)."
+    },
+    "notes": [
+      "Les 'rank' sont propres à chaque contexte : 'party' d'un côté, 'profile' + 'chat' (avec le sous-menu photo) de l'autre.",
+      "Fête : chaque option (flèche '>') mène directement au champ message, sans sous-menu (vérifié dans l'app).",
+      "Bug de texte Tandem (version française seulement) : l'écran 'Informations de profil' affiche 'En quoi la photo de profil de {name} enfreint-elle les principes de notre communauté ?'. En anglais, la question est correcte.",
+      "Les libellés sont en anglais, tels qu'affichés dans l'app (captures d'octobre 2026). La version française est gardée dans 'label_fr' et 'prompt_fr'. Pas encore de capture en anglais pour l'écran d'accueil du signalement ni pour les écrans 'Why are you reporting' de Profil et Chat : ces libellés restent en français."
+    ]
+  },
+
+  "root": {
+    "id": "root",
+    "type": "menu",
+    "prompt": "Quelle partie de Tandem ce signalement concerne-t-il ?",
+    "children": [
+      {
+        "id": "profile",
+        "label": "Profil de {name}",
+        "type": "menu",
+        "prompt": "Pourquoi souhaites-tu signaler {name} ?",
+        "children": [
+          {
+            "id": "profile.info",
+            "label": "Informations de profil",
+            "type": "menu",
+            "prompt": "How did {name}'s profile go against our community principles?",
+            "prompt_fr": "En quoi la photo de profil de {name} enfreint-elle les principes de notre communauté ?",
+            "children": [
+              { "id": "profile.info.dating", "label": "Dating, flirting or sexual activity", "label_fr": "Drague, flirt ou activité sexuelle", "type": "message", "tier": 2, "rank": 9, "note": "Bio orientée drague : bio modifiée + warning, ban si explicite." },
+              { "id": "profile.info.rude", "label": "Rude or offensive content", "label_fr": "Contenu grossier ou offensant", "type": "message", "tier": 2, "rank": 10, "note": "Haine dans la bio = ban, grossièreté = warning." },
+              { "id": "profile.info.promotion", "label": "Promoted business or social media", "label_fr": "Promotion d'un business ou de réseaux sociaux", "type": "message", "tier": 3, "rank": 15, "note": "Spam dans la bio, correction demandée." },
+              { "id": "profile.info.false_info", "label": "Fake information (location or timezone)", "label_fr": "Fausse information (localisation ou fuseau horaire)", "type": "message", "tier": 3, "rank": 16, "note": "Correction ou simple avertissement." },
+              { "id": "profile.info.other", "label": "Other", "label_fr": "Autre", "type": "message", "tier": "variable", "note": "Dépend du texte." }
+            ]
+          },
+          { "id": "profile.photo", "label": "Photo de profil", "type": "ref", "ref": "photo" },
+          { "id": "profile.dont_want_to_talk", "label": "Je ne veux plus lui parler", "type": "unknown", "note": "Pas une infraction, mène probablement à un blocage." },
+          { "id": "profile.no_reply", "label": "Ne répond pas à mes messages", "type": "unknown", "note": "Pas une infraction." },
+          { "id": "profile.other", "label": "Autre", "type": "message", "tier": "variable", "note": "Dépend du texte." }
+        ]
+      },
+      {
+        "id": "chat",
+        "label": "Chat",
+        "type": "menu",
+        "prompt": "Pourquoi souhaites-tu signaler {name} ?",
+        "children": [
+          {
+            "id": "chat.messages",
+            "label": "Messages",
+            "type": "menu",
+            "prompt": "What did {name} do against our community principles in their messages?",
+            "prompt_fr": "En quoi ce qu'a partagé {name} dans ses messages enfreint-il les principes de notre communauté ?",
+            "children": [
+              { "id": "chat.messages.dating", "label": "Dating, flirting or sexual activity", "label_fr": "Drague, flirt ou activité sexuelle", "type": "message", "tier": 1, "rank": 3, "note": "Tier 1 si sexuel, tier 2 si flirt simple. Preuve conservée." },
+              { "id": "chat.messages.rude", "label": "Rude or offensive content", "label_fr": "Contenu grossier ou offensant", "type": "message", "tier": 2, "rank": 6, "note": "Menaces/haine = ban, insultes = warning." },
+              { "id": "chat.messages.other_platform", "label": "Wanted to chat on a different platform", "label_fr": "Veut parler sur une autre plateforme", "type": "message", "tier": 3, "rank": 12, "note": "Léger seul, mais signal d'arnaque n°1 : pèse en cumul." },
+              { "id": "chat.messages.money", "label": "Asked for money/investment", "label_fr": "Demande d'argent/investissement", "type": "message", "tier": 1, "rank": 1, "note": "Arnaque avec preuve écrite : le signalement le plus solide." },
+              { "id": "chat.messages.promotion", "label": "Promoted business or social media", "label_fr": "Promotion d'un business ou de réseaux sociaux", "type": "message", "tier": 3, "rank": 13, "note": "Spam, sanction surtout si répété." },
+              { "id": "chat.messages.selling", "label": "Selling products or services", "label_fr": "Vente de produits ou de services", "type": "message", "tier": 2, "rank": 7, "note": "Usage commercial, souvent lié à une arnaque." },
+              { "id": "chat.messages.suspicious_link", "label": "Sent me a suspicious link", "label_fr": "Envoi d'un lien suspect", "type": "message", "tier": 1, "rank": 2, "note": "Phishing/malware : ban direct si le lien est malveillant." },
+              { "id": "chat.messages.other", "label": "Other", "label_fr": "Autre", "type": "message", "tier": "variable", "note": "Dépend du texte." }
+            ]
+          },
+          { "id": "chat.photo", "label": "Photo de profil", "type": "ref", "ref": "photo" },
+          { "id": "chat.dont_want_to_talk", "label": "Je ne veux plus lui parler", "type": "unknown", "note": "Pas une infraction, mène probablement à un blocage." },
+          { "id": "chat.no_reply", "label": "Ne répond pas à mes messages", "type": "unknown", "note": "Pas une infraction." },
+          { "id": "chat.other", "label": "Autre", "type": "unknown", "note": "Chemin non tracé." }
+        ]
+      },
+      { "id": "club", "label": "Club Linguistique", "type": "ignored" },
+      {
+        "id": "party",
+        "label": "Fête Linguistique",
+        "type": "menu",
+        "prompt": "Why are you reporting {name}?",
+        "children": [
+          { "id": "party.disruptive", "label": "Disruptive behavior", "type": "message", "tier": 3, "rank": 10, "note": "Vague et difficile à prouver en vocal : au pire une expulsion de la fête." },
+          { "id": "party.hosted_dating", "label": "Hosted Party with a title or description related to dating, flirting or sexual activity", "type": "message", "tier": 2, "rank": 5, "note": "Preuve publique et permanente (le titre) : perte du droit d'organiser, ban si répété." },
+          { "id": "party.hosted_rude", "label": "Hosted a Party with a rude or offensive title or description", "type": "message", "tier": 3, "rank": 8, "note": "Facile à prouver, fête fermée + warning." },
+          { "id": "party.dating", "label": "Dating, flirting or sexual activity", "type": "message", "tier": 1, "rank": 2, "note": "Sexuel = ban quasi sûr, drague = warning d'abord. Principe n°1 de Tandem." },
+          { "id": "party.rude", "label": "Rude or offensive behavior", "type": "message", "tier": 2, "rank": 6, "note": "Haine/racisme = ban, insulte = warning." },
+          { "id": "party.promotion", "label": "Promoted business or social media", "type": "message", "tier": 3, "rank": 9, "note": "Spam : warning, ban si récidive." },
+          { "id": "party.money", "label": "Asked for money/investment", "type": "message", "tier": 1, "rank": 1, "note": "Arnaque : ban direct fréquent, souvent sans warning." },
+          { "id": "party.inappropriate_photo", "label": "Inappropriate profile photo", "type": "message", "tier": 2, "rank": 7, "note": "Photo retirée + warning, tier 1 si nudité." },
+          { "id": "party.photos_of_me", "label": "Used photos of me or someone I know", "type": "message", "tier": 1, "rank": 3, "note": "Usurpation d'identité : profil supprimé si c'est prouvable." },
+          { "id": "party.fake_profile", "label": "Fake or misleading profile", "type": "message", "tier": 2, "rank": 4, "note": "Vérification ou restriction plutôt que ban immédiat." },
+          { "id": "party.other", "label": "Other", "type": "message", "tier": "variable", "rank": 11, "note": "Dépend du texte." }
+        ]
+      },
+      { "id": "call", "label": "Appel", "type": "ignored" }
+    ]
+  },
+
+  "shared": {
+    "photo": {
+      "id": "photo",
+      "label": "Photo de profil",
+      "type": "menu",
+      "prompt": "How did {name}'s profile photo go against our community principles?",
+      "prompt_fr": "En quoi la photo de profil de {name} enfreint-elle les principes de notre communauté ?",
+      "reached_from": ["profile.photo", "chat.photo"],
+      "children": [
+        { "id": "photo.dating", "label": "Dating, flirting or sexual activity", "label_fr": "Drague, flirt ou activité sexuelle", "type": "message", "tier": 1, "rank": 4, "note": "Tier 1 si nudité/explicite, sinon tier 2." },
+        { "id": "photo.rude", "label": "Rude or offensive content", "label_fr": "Contenu grossier ou offensant", "type": "message", "tier": 2, "rank": 11, "note": "Photo retirée + warning, ban si haineux." },
+        { "id": "photo.promotion", "label": "Promoted business or social media", "label_fr": "Promotion d'un business ou de réseaux sociaux", "type": "message", "tier": 3, "rank": 14, "note": "Photo retirée." },
+        { "id": "photo.fake_photos", "label": "Used fake or misleading photos", "label_fr": "Utilisation de photos fausses ou trompeuses", "type": "message", "tier": 2, "rank": 8, "note": "Catfish, plus dur à prouver que photo.photos_of_me." },
+        { "id": "photo.photos_of_me", "label": "Used photos of me or someone I know", "label_fr": "Utilisation de photos m'appartenant ou de quelqu'un que je connais", "type": "message", "tier": 1, "rank": 5, "note": "Usurpation : profil supprimé si prouvable." },
+        { "id": "photo.no_face", "label": "Profile photo does not show their face", "label_fr": "La photo de profil ne montre pas son visage", "type": "direct", "tier": 3, "rank": 17, "note": "Seul chemin sans message : contrôle de conformité, au pire changement de photo." },
+        { "id": "photo.other", "label": "Other", "label_fr": "Autre", "type": "message", "tier": "variable", "note": "Dépend du texte." }
+      ]
+    }
+  }
+}

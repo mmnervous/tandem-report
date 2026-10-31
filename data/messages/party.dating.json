@@ -1,0 +1,509 @@
+{
+  "leaf": "party.dating",
+  "variants": {
+    "flirt": "Drague",
+    "sexual": "Propos sexuels"
+  },
+  "messages": [
+    {
+      "id": "flirt-001",
+      "variant": "flirt",
+      "text": "I am reporting {name} for flirting with participants during a Tandem party{when}. Tandem is a language exchange, not a dating app, and this behaviour breaks the community guidelines. It made the voice room uncomfortable for other learners and pulled the conversation away from language practice. Please review this account and take appropriate action."
+    },
+    {
+      "id": "flirt-002",
+      "variant": "flirt",
+      "text": "{name} used a Tandem party{when} to hit on other participants instead of practising languages. This goes against Tandem's community guidelines, which make clear the app is not for dating. It made the room uncomfortable and distracted from the exchange. Please review the account and prevent this from happening again."
+    },
+    {
+      "id": "flirt-003",
+      "variant": "flirt",
+      "text": "During a Tandem party{when}, {name} asked participants out on dates. Tandem is a language-learning community, not a dating platform, and this conduct breaks its guidelines. It left other learners uncomfortable and diverted the party from its purpose. I would ask you to review this user and take appropriate action."
+    },
+    {
+      "id": "flirt-004",
+      "variant": "flirt",
+      "text": "Please review {name}, who was flirting with people in a live audio room{when}. Tandem parties are meant for language practice, and the community guidelines do not allow using them for dating. This made the room feel uncomfortable for other learners. I would appreciate it if you could take appropriate action on the account."
+    },
+    {
+      "id": "flirt-005",
+      "variant": "flirt",
+      "text": "This report concerns {name}, who was looking for a romantic partner during a Tandem party{when}. Using a language exchange room for dating breaks Tandem's community guidelines. It makes participants uncomfortable and turns the session away from learning. Please look into this account and take the action you consider appropriate."
+    },
+    {
+      "id": "flirt-006",
+      "variant": "flirt",
+      "text": "In a language party{when}, {name} made flirtatious comments to other participants. Tandem is not a dating app, and flirting in parties goes against the community guidelines. Behaviour like this makes the voice room uncomfortable and discourages learners from taking part. Please review this user and stop it from happening again."
+    },
+    {
+      "id": "flirt-007",
+      "variant": "flirt",
+      "text": "While I was practising in a Tandem party{when}, {name} started flirting with participants and asking for dates. This is a breach of the community guidelines: Tandem is for language exchange, not dating. It made the room uncomfortable and derailed the conversation. Please review the account and take appropriate action."
+    },
+    {
+      "id": "flirt-008",
+      "variant": "flirt",
+      "text": "Reporting inappropriate behaviour in a Tandem party{when}: {name} was hitting on participants rather than practising languages. Tandem's community guidelines are clear that the app is not for dating. This made other learners uncomfortable in the voice room. Please review this account and take suitable measures."
+    },
+    {
+      "id": "flirt-009",
+      "variant": "flirt",
+      "text": "{name} treated a Tandem party{when} as a place to find dates, flirting with participants and steering the conversation towards romance. That is not what a language exchange is for, and dating is against Tandem's community guidelines. Learners in the room were left uncomfortable. I would ask the moderators to review this account and take action."
+    },
+    {
+      "id": "flirt-010",
+      "variant": "flirt",
+      "text": "Hello, I would like to report {name} for flirting during a Tandem party{when}. Tandem is a language-learning app, not a dating app, and this behaviour breaks the community guidelines. It made the session uncomfortable for others and took the focus away from language practice. Please review this account. I can provide more details if needed."
+    },
+    {
+      "id": "flirt-011",
+      "variant": "flirt",
+      "text": "I'd like to flag the behaviour of {name} in a Tandem voice room{when}. This user was asking participants out and making romantic advances. Tandem is not a dating platform, and this breaks the community guidelines. It created an uncomfortable atmosphere and distracted from the language exchange. Please take appropriate action."
+    },
+    {
+      "id": "flirt-012",
+      "variant": "flirt",
+      "text": "Please take a look at the conduct of {name} in a Tandem party{when}. They used the room to flirt with other learners. Tandem's community guidelines do not allow dating behaviour, as the app is meant for language exchange. This made people uncomfortable and disrupted the practice. I ask that you review the account and act accordingly."
+    },
+    {
+      "id": "flirt-013",
+      "variant": "flirt",
+      "text": "{name} flirted with participants in a Tandem party{when}. Tandem is a language exchange, not a dating app, so this breaks the community guidelines and makes the room uncomfortable for learners. Could you please review the account?"
+    },
+    {
+      "id": "flirt-014",
+      "variant": "flirt",
+      "text": "A participant named {name} was hitting on people during a Tandem party{when}. Parties are for practising languages, and the community guidelines do not permit dating or flirting. This behaviour made the voice room feel unwelcoming. Please review this user and make sure it does not happen again."
+    },
+    {
+      "id": "flirt-015",
+      "variant": "flirt",
+      "text": "This is a report about flirting in a Tandem party{when}. {name} made romantic advances towards other participants instead of joining the language exchange. Tandem is not a dating app, and this goes against its community guidelines. It made learners uncomfortable. I would ask you to review this account and decide on suitable action."
+    },
+    {
+      "id": "flirt-016",
+      "variant": "flirt",
+      "text": "In a Tandem live audio room{when}, {name} was looking for a date rather than practising, and invited participants out. Tandem's community guidelines do not allow dating, as the app exists for language exchange. This made the room uncomfortable for learners. Please check this account and take whatever measures are needed."
+    },
+    {
+      "id": "flirt-017",
+      "variant": "flirt",
+      "text": "I want to report {name}, who asked a participant out during a Tandem party{when}. Tandem is a language exchange community and the guidelines do not allow using it for dating. Advances like this make the voice room uncomfortable and distract from learning. Please review this account and take the necessary steps."
+    },
+    {
+      "id": "flirt-018",
+      "variant": "flirt",
+      "text": "Please investigate {name}. During a party{when}, this user flirted with participants and tried to arrange dates. Tandem is not a dating app, and this behaviour violates the community guidelines. It made other learners uncomfortable and pulled the room away from language practice. I would appreciate appropriate action to prevent this from happening again."
+    },
+    {
+      "id": "flirt-019",
+      "variant": "flirt",
+      "text": "{name} was using a Tandem party{when} to search for a partner. Instead of practising languages, they flirted with other participants. Dating is not what Tandem is for, and it breaks the community guidelines. Behaviour like this leaves the room uncomfortable for learners and pulls it away from practice. Please consider warning or restricting this account."
+    },
+    {
+      "id": "flirt-020",
+      "variant": "flirt",
+      "text": "I am writing to report flirting in a Tandem party{when}. The user {name} made romantic advances to participants and asked them out. Tandem is not a dating app, and this goes against the community guidelines. People join parties to practise languages, and this made the room uncomfortable for them. Please review the account and take appropriate action."
+    },
+    {
+      "id": "flirt-021",
+      "variant": "flirt",
+      "text": "Could you please review {name}? In a Tandem party{when}, this person was flirting with participants instead of practising languages. This breaks Tandem's community guidelines, because the app is not a dating service. It made the voice room uncomfortable for others. Please take appropriate action and prevent this from happening again."
+    },
+    {
+      "id": "flirt-022",
+      "variant": "flirt",
+      "text": "Tandem parties are meant for language practice, but {name} used one{when} to flirt with participants. This breaks the community guidelines, which state that Tandem is not a dating app. It made the room uncomfortable for other learners. A review of this account, and appropriate action, would be appreciated."
+    },
+    {
+      "id": "flirt-023",
+      "variant": "flirt",
+      "text": "Report: flirting and romantic advances in a Tandem party{when}. {name} hit on participants and tried to turn the conversation towards dating. Tandem is a language exchange, and this breaks the community guidelines. It made other learners uncomfortable and disrupted the practice. Please review the account and take action."
+    },
+    {
+      "id": "flirt-024",
+      "variant": "flirt",
+      "text": "I was in a Tandem party{when} when {name} began flirting with participants. Tandem is not a dating app, and using a voice room this way breaks the community guidelines. It made the atmosphere uncomfortable and distracted participants from practising. Please look into this account and prevent it from happening again."
+    },
+    {
+      "id": "flirt-025",
+      "variant": "flirt",
+      "text": "{name} asked other participants for dates in a Tandem party{when}, which goes against the community guidelines. Tandem is for language exchange, not dating. This made the room uncomfortable for learners who came to practise. Please review this user and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "flirt-026",
+      "variant": "flirt",
+      "text": "Tandem is not a dating app, but {name} flirted with participants in a party{when}. This breaks the community guidelines and makes the room uncomfortable for learners. Please review this account."
+    },
+    {
+      "id": "flirt-027",
+      "variant": "flirt",
+      "text": "Flirting in a Tandem party{when}: {name} made romantic advances towards participants. Tandem is a language exchange, not a dating app, and this goes against the community guidelines. It made the room uncomfortable for learners. Please take appropriate action."
+    },
+    {
+      "id": "flirt-028",
+      "variant": "flirt",
+      "text": "My report is about {name}, who used a Tandem voice room{when} to look for dates. Tandem is a language exchange, and dating breaks its community guidelines. It made participants uncomfortable. Please review the account."
+    },
+    {
+      "id": "flirt-029",
+      "variant": "flirt",
+      "text": "Moderators, please review {name}. In a Tandem party{when}, this user kept flirting with other learners and asking them out. That is against the community guidelines, as Tandem is not a dating platform. It made the room uncomfortable and took it away from language practice. Please take appropriate action."
+    },
+    {
+      "id": "flirt-030",
+      "variant": "flirt",
+      "text": "Instead of practising languages in a Tandem party{when}, {name} hit on participants. Tandem is not for dating, and this breaks the community guidelines. It made the room uncomfortable for learners and moved the conversation away from practice. Please give this account a review and act as you see fit."
+    },
+    {
+      "id": "flirt-031",
+      "variant": "flirt",
+      "text": "Could you look into what happened in a Tandem party{when}? {name} was flirting with participants and asking them out. Tandem is a language exchange, and this breaks the community guidelines on dating. It made the voice room uncomfortable for others. I would like the account reviewed and action taken."
+    },
+    {
+      "id": "flirt-032",
+      "variant": "flirt",
+      "text": "{name} kept hitting on people in a Tandem party{when}, which is not what language parties are for. Dating behaviour breaks Tandem's community guidelines and makes learners uncomfortable. Please review this account."
+    },
+    {
+      "id": "flirt-033",
+      "variant": "flirt",
+      "text": "I'm reporting {name} for treating a Tandem party{when} like a dating space. They flirted with participants and asked them out. This breaks the community guidelines of a language exchange app. It made other learners uncomfortable and disrupted the practice. Please review this account and prevent this from happening again."
+    },
+    {
+      "id": "flirt-034",
+      "variant": "flirt",
+      "text": "Romantic advances in a Tandem party{when} by {name} made the room uncomfortable for other learners. Tandem is a language exchange, not a dating service, so this breaks the community guidelines. Please review this account and apply the measures the guidelines call for."
+    },
+    {
+      "id": "flirt-035",
+      "variant": "flirt",
+      "text": "Please note that {name} was using a Tandem party{when} to find a partner. Tandem's community guidelines do not allow dating, because the app is for language exchange. This made other participants uncomfortable and distracted from practice. Please review the account and take suitable action."
+    },
+    {
+      "id": "flirt-036",
+      "variant": "flirt",
+      "text": "At a Tandem party{when}, {name} flirted with participants and pressed them for dates. Tandem is a language exchange, not a dating app, and this behaviour breaks the community guidelines. It made the room feel uncomfortable and unsafe. I would like this user's account to be reviewed and appropriate action taken."
+    },
+    {
+      "id": "flirt-037",
+      "variant": "flirt",
+      "text": "This user, {name}, asked participants out during a Tandem party{when}. Dating is against Tandem's community guidelines. It made learners uncomfortable and pulled the room away from language practice. Please review the account."
+    },
+    {
+      "id": "flirt-038",
+      "variant": "flirt",
+      "text": "Hi, I need to report {name} for flirting in a Tandem party{when}. The party was meant for language practice, but this user made romantic advances to participants. Tandem is not a dating app, and this goes against the community guidelines. It made the room uncomfortable. I hope you can review the account and make sure this does not happen in future parties."
+    },
+    {
+      "id": "flirt-039",
+      "variant": "flirt",
+      "text": "Tandem's community guidelines say the app is not for dating, yet {name} flirted with participants during a party{when}. It made the voice room uncomfortable for learners and distracted from the language exchange. Please review this account and stop it from happening again."
+    },
+    {
+      "id": "flirt-040",
+      "variant": "flirt",
+      "text": "As a participant in a Tandem party{when}, I heard {name} hitting on other learners and asking them for dates. Tandem is a language exchange, and this breaks the community guidelines. It made the room uncomfortable for people trying to practise. Please review the account and take appropriate action."
+    },
+    {
+      "id": "flirt-041",
+      "variant": "flirt",
+      "text": "The person using the name {name} flirted with participants in a Tandem voice room{when}. Using a language exchange for dating breaks Tandem's community guidelines. It made other learners uncomfortable. Please review this account and take action."
+    },
+    {
+      "id": "flirt-042",
+      "variant": "flirt",
+      "text": "Dating behaviour in a Tandem party{when}: {name} flirted with participants and tried to get them to meet up. Tandem is a language exchange, and the community guidelines do not allow this. It made the room uncomfortable for learners. Please look into this user and take the steps you consider appropriate."
+    },
+    {
+      "id": "flirt-043",
+      "variant": "flirt",
+      "text": "I would like the moderation team to review {name}. During a Tandem party{when}, they flirted with participants rather than practising languages. Tandem is not a dating app, and this breaks the community guidelines. It made other learners uncomfortable and diverted the room from its purpose. Please take appropriate action."
+    },
+    {
+      "id": "flirt-044",
+      "variant": "flirt",
+      "text": "{name} made romantic advances towards participants during a Tandem party{when}. This breaks the community guidelines, as Tandem is for language exchange, not dating, and it left the room uncomfortable for learners. Please review the account and take action where needed."
+    },
+    {
+      "id": "flirt-045",
+      "variant": "flirt",
+      "text": "Learners join Tandem parties to practise languages, but {name} used a party{when} to flirt and look for dates. This breaks the community guidelines and made the room uncomfortable for others. Please review this user and take appropriate action."
+    },
+    {
+      "id": "flirt-046",
+      "variant": "flirt",
+      "text": "Flagging {name} for flirting during a Tandem party{when}. Tandem is a language exchange, not a dating platform, so this is against the community guidelines. It made the voice room uncomfortable for other learners and took the focus off practice. Please review the account and make sure it does not happen again."
+    },
+    {
+      "id": "flirt-047",
+      "variant": "flirt",
+      "text": "Please be aware that {name} hit on participants in a Tandem party{when}. Tandem is not for dating, and this conduct goes against the community guidelines. It made the room uncomfortable. Please review the account and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "flirt-048",
+      "variant": "flirt",
+      "text": "Rather than taking part in the language exchange, {name} flirted with participants in a Tandem party{when}. Tandem's community guidelines do not allow using parties for dating. It made learners uncomfortable. Please review this account."
+    },
+    {
+      "id": "flirt-049",
+      "variant": "flirt",
+      "text": "I am concerned about {name}, who used a Tandem party{when} to ask people out. Tandem is a language exchange app, and dating breaks its community guidelines. This kind of behaviour makes the room uncomfortable for learners and distracts from practice. Please review the account and consider a warning or restriction."
+    },
+    {
+      "id": "flirt-050",
+      "variant": "flirt",
+      "text": "Asking participants out is not acceptable in a Tandem party, but {name} did so{when}. Tandem is a language exchange, not a dating app, and this breaks the community guidelines. It made the room uncomfortable for learners. I ask that you review this account and act on it."
+    },
+    {
+      "id": "sexual-001",
+      "variant": "sexual",
+      "text": "I am reporting sexual remarks made by {name} in a Tandem party{when}. Sexual content has no place in a language exchange and breaks Tandem's community guidelines. These comments made the voice room uncomfortable and unsafe for other learners. Please review this account and take appropriate action."
+    },
+    {
+      "id": "sexual-002",
+      "variant": "sexual",
+      "text": "During a Tandem voice room session{when}, {name} made sexual comments to other participants. This is a clear violation of the community guidelines, as Tandem is a language-learning app and not a place for sexual content. It made the room unsafe for learners. Please review the account and prevent this from happening again."
+    },
+    {
+      "id": "sexual-003",
+      "variant": "sexual",
+      "text": "{name} made sexual propositions to participants in a Tandem party{when}. This breaks the community guidelines: Tandem is for language exchange, not for sexual conversations. Behaviour like this makes the room unsafe, especially for learners who joined to practise. Please take appropriate action on this account."
+    },
+    {
+      "id": "sexual-004",
+      "variant": "sexual",
+      "text": "Please review {name} urgently. In a Tandem party{when}, this user made sexual remarks in front of other participants. Sexual content is not permitted under the community guidelines, and it turned a language practice room into an uncomfortable space. I ask that you take appropriate action against this account."
+    },
+    {
+      "id": "sexual-005",
+      "variant": "sexual",
+      "text": "This report concerns sexual comments made by {name} during a Tandem party{when}. Tandem is a language exchange community, and its guidelines do not allow sexual content. These remarks made the room unsafe and uncomfortable for other learners. Please review the account and take the necessary action."
+    },
+    {
+      "id": "sexual-006",
+      "variant": "sexual",
+      "text": "In a language exchange party{when}, {name} steered the conversation towards sexual topics and made sexual remarks to participants. This goes against Tandem's community guidelines, which do not allow sexual content. It made the voice room uncomfortable and unsafe for learners. Please review this user and take appropriate action."
+    },
+    {
+      "id": "sexual-007",
+      "variant": "sexual",
+      "text": "While practising in a Tandem party{when}, I heard {name} make sexual comments to other participants. Tandem is a language-learning app, and sexual content breaks its community guidelines. It made the room feel unsafe and diverted it from language practice. Please review the account and make sure this does not happen again."
+    },
+    {
+      "id": "sexual-008",
+      "variant": "sexual",
+      "text": "Reporting sexual remarks in a Tandem party{when}: {name} made sexual comments that had nothing to do with language practice. This violates the community guidelines and made the room uncomfortable and unsafe for other learners. Please review this account and take suitable action."
+    },
+    {
+      "id": "sexual-009",
+      "variant": "sexual",
+      "text": "{name} made sexual comments during a Tandem party{when}. Tandem is a language exchange, not a place for sexual content, and this breaks the community guidelines. It made the room uncomfortable for the learners present. Please review the account and take appropriate action."
+    },
+    {
+      "id": "sexual-010",
+      "variant": "sexual",
+      "text": "Hello, I am reporting {name} for sexual remarks made in a Tandem party{when}. Sexual content is not allowed on Tandem, which is a language exchange community. These comments made the voice room uncomfortable for other learners and pushed the session away from practice. Please review the account. I can provide more details if needed."
+    },
+    {
+      "id": "sexual-011",
+      "variant": "sexual",
+      "text": "I'd like to report sexual propositions made by {name} in a Tandem voice room{when}. Propositions of this kind break Tandem's community guidelines and have no place in a language exchange. Other participants were left feeling unsafe, and the practice stopped being the focus. Please review this user and restrict the account if appropriate."
+    },
+    {
+      "id": "sexual-012",
+      "variant": "sexual",
+      "text": "Please take action on {name}, who made sexual remarks during a Tandem party{when}. Tandem is meant for language exchange, and its community guidelines prohibit sexual content. Comments like these make the room unsafe for learners and drive people away from practising. I ask that you review this account and prevent this from happening again."
+    },
+    {
+      "id": "sexual-013",
+      "variant": "sexual",
+      "text": "A user called {name} made sexual comments in a Tandem party{when}. This breaks Tandem's community guidelines, which do not allow sexual content in a language exchange. It made the voice room uncomfortable for other learners. I would appreciate a review of this account and suitable action."
+    },
+    {
+      "id": "sexual-014",
+      "variant": "sexual",
+      "text": "This is to report sexual remarks in a Tandem party{when}. {name} made sexual comments to participants instead of taking part in the language exchange. Sexual content is against the community guidelines. It made the room unsafe and uncomfortable for learners. Please review this account and take appropriate action."
+    },
+    {
+      "id": "sexual-015",
+      "variant": "sexual",
+      "text": "Inside a Tandem audio room{when}, {name} made sexual propositions to other participants. Tandem is a language exchange, and the community guidelines do not allow sexual content of any kind. It made the room unsafe for learners who came to practise. Please review the account and take action."
+    },
+    {
+      "id": "sexual-016",
+      "variant": "sexual",
+      "text": "I want to flag sexual comments made by {name} during a Tandem party{when}. Tandem's community guidelines prohibit sexual content, and parties exist for language practice. These comments made other participants feel uncomfortable and unsafe. Please review this account and take the necessary steps."
+    },
+    {
+      "id": "sexual-017",
+      "variant": "sexual",
+      "text": "Please investigate sexual remarks made by {name} in a party{when}. Tandem is a language-learning app, and sexual content violates its community guidelines. These remarks made the room uncomfortable and diverted the party from language practice. I would appreciate appropriate action to prevent this from happening again."
+    },
+    {
+      "id": "sexual-018",
+      "variant": "sexual",
+      "text": "{name} brought sexual topics into a Tandem party{when} and made sexual remarks to participants. This is not acceptable in a language exchange and breaks the community guidelines. It made the room unsafe for other learners. Please investigate this account and act accordingly."
+    },
+    {
+      "id": "sexual-019",
+      "variant": "sexual",
+      "text": "I am writing about sexual comments made by {name} during a Tandem party{when}. Tandem is a language exchange app, and sexual content goes against its community guidelines. These comments made the voice room uncomfortable and unsafe for learners. Please review the account and take steps to prevent a repeat."
+    },
+    {
+      "id": "sexual-020",
+      "variant": "sexual",
+      "text": "Could you please look into {name}? In a Tandem party{when}, this person made sexual propositions to other participants. This breaks Tandem's community guidelines, which do not allow sexual content. It made the room unsafe for learners. Please take appropriate action and prevent this from happening again."
+    },
+    {
+      "id": "sexual-021",
+      "variant": "sexual",
+      "text": "Language parties on Tandem are for practice, yet {name} used one{when} to make sexual remarks. This breaks the community guidelines on sexual content. It made the room uncomfortable and unsafe for other participants. Please review this account and take appropriate action."
+    },
+    {
+      "id": "sexual-022",
+      "variant": "sexual",
+      "text": "Report: sexual comments in a Tandem party{when}. {name} made sexual remarks to participants that had no connection to language practice. This violates Tandem's community guidelines. Other learners were left feeling uncomfortable and unsafe. Please review the account and take action."
+    },
+    {
+      "id": "sexual-023",
+      "variant": "sexual",
+      "text": "I joined a Tandem party{when} and {name} made sexual comments to the participants. Sexual content is against the community guidelines, and a language exchange room is no place for it. It made the atmosphere uncomfortable and unsafe. Please look into this account and prevent it from happening again."
+    },
+    {
+      "id": "sexual-024",
+      "variant": "sexual",
+      "text": "Sexual remarks were made by {name} in a Tandem party{when}. Parties are spaces for language practice, and Tandem's community guidelines do not allow sexual content there. The comments left learners feeling unsafe in the voice room. I am asking the moderation team to review this user and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "sexual-025",
+      "variant": "sexual",
+      "text": "The account {name} made sexual propositions during a Tandem party{when}. Tandem is a language exchange community, and sexual content breaks its guidelines. Such behaviour makes the voice room unsafe and uncomfortable for other learners. Please review this account and take appropriate action so it does not happen again."
+    },
+    {
+      "id": "sexual-026",
+      "variant": "sexual",
+      "text": "Tandem is a language exchange, yet {name} made sexual remarks in a party{when}. Sexual content breaks the community guidelines and makes the room unsafe for learners. Please review this account."
+    },
+    {
+      "id": "sexual-027",
+      "variant": "sexual",
+      "text": "Sexual comments in a Tandem party{when}: {name} made remarks of a sexual nature to participants. Tandem is a language exchange, and this breaks the community guidelines. It made the room feel unsafe for learners. Please take appropriate action against the account."
+    },
+    {
+      "id": "sexual-028",
+      "variant": "sexual",
+      "text": "My report concerns {name}, who made sexual propositions in a Tandem voice room{when}. Sexual content is not allowed in a language exchange and breaks the community guidelines. It made participants uncomfortable. Please review the account and act to stop it."
+    },
+    {
+      "id": "sexual-029",
+      "variant": "sexual",
+      "text": "Moderators, I am reporting {name} for sexual remarks made during a Tandem party{when}. Tandem's community guidelines prohibit sexual content, and parties are meant for language practice. These remarks made the room unsafe and uncomfortable for other learners. Please review this account and apply the appropriate measures."
+    },
+    {
+      "id": "sexual-030",
+      "variant": "sexual",
+      "text": "Instead of joining the language practice in a Tandem party{when}, {name} made sexual comments to participants. This breaks the community guidelines on sexual content. It made the room unsafe for learners. Please review and act on this account."
+    },
+    {
+      "id": "sexual-031",
+      "variant": "sexual",
+      "text": "Could you review the conduct of {name} in a Tandem party{when}? This user made sexual remarks to participants. Sexual content is not allowed under Tandem's community guidelines, and it made the voice room uncomfortable for others. Please take appropriate action on this account."
+    },
+    {
+      "id": "sexual-032",
+      "variant": "sexual",
+      "text": "Sexual comments have no place in a language exchange, but {name} made them in a Tandem party{when}. This breaks Tandem's community guidelines and made learners feel unsafe in the room. Please review this account."
+    },
+    {
+      "id": "sexual-033",
+      "variant": "sexual",
+      "text": "I'm reporting sexual propositions that {name} made during a Tandem party{when}. Sexual content breaks the community guidelines of a language exchange app. Other learners were left feeling uncomfortable and unsafe, and the practice was disrupted. Please review this account and prevent this from happening again."
+    },
+    {
+      "id": "sexual-034",
+      "variant": "sexual",
+      "text": "Sexual propositions in a Tandem party{when} from {name} made the room unsafe for other learners. Tandem is a language exchange, and its community guidelines do not allow sexual content. Please review this account and take appropriate action."
+    },
+    {
+      "id": "sexual-035",
+      "variant": "sexual",
+      "text": "Please note that sexual remarks were made by {name} in a Tandem party{when}. Tandem's community guidelines prohibit sexual content in a language exchange. Other participants felt uncomfortable and unsafe as a result. Please review the account and take suitable action."
+    },
+    {
+      "id": "sexual-036",
+      "variant": "sexual",
+      "text": "At a Tandem language party{when}, {name} made sexual comments to participants. Tandem is a language exchange, and sexual content breaks the community guidelines. It made the room feel unsafe. I ask the moderation team to review this user and act accordingly."
+    },
+    {
+      "id": "sexual-037",
+      "variant": "sexual",
+      "text": "This person, {name}, made sexual remarks to other participants during a Tandem party{when}. Tandem's community guidelines do not allow sexual content, and the remarks made learners feel unsafe in the room. Please review the account and take action."
+    },
+    {
+      "id": "sexual-038",
+      "variant": "sexual",
+      "text": "Hi, I am reporting sexual comments made by {name} in a Tandem party{when}. The party was for language practice, but this user brought sexual content into the conversation. That goes against the community guidelines and made the room uncomfortable. Please review the account and take appropriate action."
+    },
+    {
+      "id": "sexual-039",
+      "variant": "sexual",
+      "text": "Sexual content is not allowed under Tandem's community guidelines, yet {name} made sexual remarks during a party{when}. It made the voice room unsafe for learners and distracted from the language exchange. Please review this account and stop it from happening again."
+    },
+    {
+      "id": "sexual-040",
+      "variant": "sexual",
+      "text": "Sexual comments from {name} disrupted a Tandem party{when}. Sexual content breaks the community guidelines of a language exchange and made the room unsafe for learners. Please review this account."
+    },
+    {
+      "id": "sexual-041",
+      "variant": "sexual",
+      "text": "The person called {name} made sexual propositions in a Tandem voice room{when}. Sexual content breaks Tandem's community guidelines. It made other learners uncomfortable. Please review this account and take action."
+    },
+    {
+      "id": "sexual-042",
+      "variant": "sexual",
+      "text": "Sexual comments and propositions were directed at participants by {name} in a Tandem party{when}. Tandem is a language exchange, and the community guidelines do not allow sexual content. It left learners feeling unsafe in what should be a practice space. Please review this account and take the necessary action."
+    },
+    {
+      "id": "sexual-043",
+      "variant": "sexual",
+      "text": "I would ask the moderation team to look at {name}. During a Tandem party{when}, they made sexual remarks rather than practising languages. Sexual content breaks Tandem's community guidelines and left other learners feeling uncomfortable and unsafe. Please take appropriate action."
+    },
+    {
+      "id": "sexual-044",
+      "variant": "sexual",
+      "text": "{name} directed sexual remarks at participants in a Tandem party{when}. Sexual content is against the community guidelines and makes the room unsafe for learners. Please review the account and take action."
+    },
+    {
+      "id": "sexual-045",
+      "variant": "sexual",
+      "text": "People come to Tandem parties to practise languages, not to hear sexual comments. {name} made such comments in a party{when}, which breaks the community guidelines and made the room unsafe. Please review this user and take appropriate action."
+    },
+    {
+      "id": "sexual-046",
+      "variant": "sexual",
+      "text": "Flagging sexual remarks by {name} in a Tandem party{when}. Sexual content is against the community guidelines of a language exchange. It made the voice room uncomfortable for other learners and took the focus off practice. Please review the account and make sure it does not happen again."
+    },
+    {
+      "id": "sexual-047",
+      "variant": "sexual",
+      "text": "Please be aware of sexual comments made by {name} during a Tandem party{when}. Tandem is a language exchange, and this conduct goes against the community guidelines. It made the room unsafe for learners. Please review the account and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "sexual-048",
+      "variant": "sexual",
+      "text": "Rather than practising, {name} made sexual propositions to participants in a Tandem party{when}. Sexual content is not allowed under the community guidelines. It made learners feel unsafe. Please review this account."
+    },
+    {
+      "id": "sexual-049",
+      "variant": "sexual",
+      "text": "I am concerned by the sexual remarks {name} made in a Tandem party{when}. Tandem is a language exchange app, and sexual content breaks its community guidelines. Remarks like these make the room unsafe for learners and distract from practice. Please review the account and consider restricting it."
+    },
+    {
+      "id": "sexual-050",
+      "variant": "sexual",
+      "text": "Making sexual comments in a Tandem party is not acceptable, but {name} did so{when}. This breaks the community guidelines of a language exchange and made the room unsafe for learners. Please review this account and take appropriate action so it does not happen again."
+    }
+  ]
+}
