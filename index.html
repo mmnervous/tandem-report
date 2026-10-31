@@ -38,7 +38,11 @@
     <section id="pick" class="view view-pick" aria-label="Catégories">
       <nav id="contexts" class="contexts" aria-label="Partie de Tandem concernée"></nav>
       <div class="list-head">
-        <span>Du plus grave au moins grave</span>
+        <p id="list-title" class="list-title">Du plus grave au moins grave</p>
+        <div id="list-mode" class="list-mode" role="group" aria-label="Classement des catégories" hidden>
+          <button type="button" class="mode-btn" data-mode="tier" aria-pressed="true">Par gravité</button>
+          <button type="button" class="mode-btn" data-mode="topic" aria-pressed="false">Par sujet</button>
+        </div>
         <button id="gravity-open" class="btn-text" type="button" aria-label="Ouvrir le rappel de gravité">ⓘ Rappel</button>
       </div>
       <div id="sections" class="sections"></div>

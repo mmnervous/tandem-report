@@ -238,10 +238,34 @@ button { cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 40px;
+  gap: 8px;
+  min-height: 48px;
   font-size: 13px;
   color: var(--text-dim);
 }
+.list-title { margin: 0; }
+
+/* Bascule « Par gravité / Par sujet » */
+.list-mode {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  border: var(--bw) solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+}
+.mode-btn {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 120ms ease-out, color 120ms ease-out;
+}
+.mode-btn[aria-pressed="true"] { background: var(--accent-tint); color: var(--text); box-shadow: inset 0 0 0 1px var(--accent); }
 
 .tier-sec { margin-bottom: 14px; }
 
@@ -268,6 +292,9 @@ button { cursor: pointer; }
   background: var(--tier);
 }
 .tier-desc { color: var(--text-dim); }
+.tier-tag.group-tag { color: var(--text-dim); font-weight: 700; }
+.tier-tag.group-tag::before { display: none; }
+.row-dest { color: var(--text-dim); }
 
 .rows {
   border: var(--bw) solid var(--border);
@@ -421,8 +448,7 @@ button { cursor: pointer; }
 
 .segmented {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
   gap: 4px;
   padding: 4px;
   border-radius: var(--radius-sm);
@@ -899,6 +925,11 @@ html[data-theme="spectre"] .tier-head {
 }
 html[data-theme="spectre"] .tier-desc { letter-spacing: 0.06em; color: var(--text-off); }
 html[data-theme="spectre"] .tier-tag { gap: 8px; font-family: var(--font-data); color: var(--tier); }
+html[data-theme="spectre"] .tier-tag.group-tag { color: var(--text-dim); }
+html[data-theme="spectre"] .tier-tag.group-tag::before { display: none; }
+html[data-theme="spectre"] .list-mode { border-radius: var(--radius); background: transparent; }
+html[data-theme="spectre"] .mode-btn { border-radius: var(--radius); font-size: 14px; }
+html[data-theme="spectre"] .row-dest { font-family: var(--font-data); }
 
 html[data-theme="spectre"] .rank::before,
 html[data-theme="spectre"] .tier-tag::before,

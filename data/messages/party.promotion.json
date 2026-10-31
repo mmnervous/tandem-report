@@ -1,0 +1,509 @@
+{
+  "leaf": "party.promotion",
+  "variants": {
+    "business": "Promotion d'un business",
+    "social": "Liens de réseaux sociaux"
+  },
+  "messages": [
+    {
+      "id": "business-001",
+      "variant": "business",
+      "text": "During a Tandem party{when}, {name} advertised a business to the people in the voice room. Tandem's Language Parties Guidelines do not allow promoting or selling anything unless you are an official Tandem partner. This turns a space for learners into advertising. Please review this account and take appropriate action."
+    },
+    {
+      "id": "business-002",
+      "variant": "business",
+      "text": "{name} tried to sell a service in a live audio room{when}. Unless this user is an official Tandem partner, that is not allowed in Language Parties. Learners join to practise a language, not to be advertised to. Please remove this promotion and remind the account of the rules."
+    },
+    {
+      "id": "business-003",
+      "variant": "business",
+      "text": "I am reporting {name} for promoting their business in a language party{when}. Promoting or selling anything is not permitted for non-partners under Tandem's Language Parties Guidelines, and it misuses the community for commercial purposes. I would be grateful if you could review the account."
+    },
+    {
+      "id": "business-004",
+      "variant": "business",
+      "text": "Please review {name}, who advertised a product during a Tandem party{when}. Tandem's Language Parties Guidelines reserve promotion and sales for official Tandem partners. A language room should not become a shop window for the learners in it. I would appreciate a check on whether this account is a partner, and a reminder of the rules if not."
+    },
+    {
+      "id": "business-005",
+      "variant": "business",
+      "text": "This report concerns commercial promotion in a Tandem voice room{when}. {name} presented their own business to the other learners, which is not allowed in Language Parties unless the user is an official Tandem partner. It turns a practice session into advertising. A reminder of the rules for this account would be welcome."
+    },
+    {
+      "id": "business-006",
+      "variant": "business",
+      "text": "A participant named {name} promoted a paid service while in a Tandem party{when}. Selling or advertising anything is against the Language Parties Guidelines for anyone who is not an official partner of Tandem, and it uses the community for commercial gain. Please warn this user and remove the promotion if appropriate."
+    },
+    {
+      "id": "business-007",
+      "variant": "business",
+      "text": "In a language party{when}, {name} promoted their own business. Tandem's Language Parties Guidelines state that nobody may promote or sell anything unless they are an official Tandem partner, and doing so turns the room into advertising for the other learners. Please check the account and, if appropriate, issue a warning."
+    },
+    {
+      "id": "business-008",
+      "variant": "business",
+      "text": "Tandem's guidelines are clear: unless you are an official partner, you may not promote or sell anything in Language Parties. {name} did exactly that in a live audio room{when}, pitching a product to the learners present. This is commercial use of a language community. Please review the account."
+    },
+    {
+      "id": "business-009",
+      "variant": "business",
+      "text": "{name} used a Tandem party{when} to promote a company's services rather than to practise a language. Promoting or selling is not allowed in Language Parties unless the user is an official Tandem partner, and it distracts the room from learning. Please remove the promotion and warn the account if appropriate."
+    },
+    {
+      "id": "business-010",
+      "variant": "business",
+      "text": "Could you please look into {name}? During a voice room on Tandem{when}, this user tried to sell products to the learners. Selling is not allowed in Language Parties for non-partners, and it makes the room feel like a marketplace rather than a place to learn. A reminder of the guidelines to this user would be welcome."
+    },
+    {
+      "id": "business-011",
+      "variant": "business",
+      "text": "Commercial promotion took place in a Tandem party{when}: {name} advertised their own business to the room. Tandem's Language Parties Guidelines prohibit promoting or selling anything unless the person is an official Tandem partner. It misuses a learning space for marketing. I ask you to review this account."
+    },
+    {
+      "id": "business-012",
+      "variant": "business",
+      "text": "While I was in a Tandem party{when}, {name} offered a service for sale to the other speakers and listeners. That is not permitted in Language Parties unless this user is an official Tandem partner, and it turns the conversation into a sales pitch. Please remove this promotion and take suitable action."
+    },
+    {
+      "id": "business-013",
+      "variant": "business",
+      "text": "{name} treated a live audio room{when} as an advertising opportunity and promoted a business there. Under Tandem's Language Parties Guidelines, only official partners may promote or sell anything. Other learners came to practise languages, not to hear a sales pitch. Please review the account and act as appropriate."
+    },
+    {
+      "id": "business-014",
+      "variant": "business",
+      "text": "Reporting {name} for business promotion in a Tandem party{when}. This user advertised a product to the voice room, which Tandem's Language Parties Guidelines forbid unless the person is an official partner. It spoils the room for those who want to learn. Please remind this account of the rules and take action if needed."
+    },
+    {
+      "id": "business-015",
+      "variant": "business",
+      "text": "Language Parties should be focused on language learning, according to Tandem's guidelines. {name} instead used a party{when} to promote their own business, which is not allowed for non-partners. This takes the room away from its purpose. Please review this account and remove the promotion."
+    },
+    {
+      "id": "business-016",
+      "variant": "business",
+      "text": "Please remove the promotion made by {name} in a Tandem voice room{when}. This user advertised a service to the people listening, and unless they are an official Tandem partner, the Language Parties Guidelines do not permit that. Using a learning space to find customers is unfair to other members. Thank you for your help."
+    },
+    {
+      "id": "business-017",
+      "variant": "business",
+      "text": "At a Tandem party{when}, {name} began promoting their products to the room. Promoting or selling anything is not allowed in Language Parties for anyone other than official Tandem partners. This is advertising, not language practice. Please look at this account and consider a warning."
+    },
+    {
+      "id": "business-018",
+      "variant": "business",
+      "text": "{name} pitched a business to the room in a live Tandem party{when}. Tandem's Language Parties Guidelines bar promotion and sales unless the person is an official partner. This makes the party a commercial space instead of a place to learn, which is unfair to the other learners. Please review the account and act accordingly."
+    },
+    {
+      "id": "business-019",
+      "variant": "business",
+      "text": "{name} used a voice room on Tandem{when} to advertise their services to other learners. Unless they are an official Tandem partner, this breaks the Language Parties Guidelines on promoting or selling. It also takes the focus away from language learning. Please warn the account or take other appropriate measures."
+    },
+    {
+      "id": "business-020",
+      "variant": "business",
+      "text": "Is advertising allowed in Tandem parties? Only for official partners, according to the Language Parties Guidelines. In a party{when}, {name} promoted a business to the room, which turns a learning space into advertising. Please review this account and remove the promotion if the user is not a partner."
+    },
+    {
+      "id": "business-021",
+      "variant": "business",
+      "text": "I would like to flag {name} for promoting a commercial offer in a Tandem party{when}. Selling or advertising is not permitted in Language Parties unless the user is an official partner of Tandem. A voice room for learners should not be used to find customers. Please review the account and consider a warning or other measures."
+    },
+    {
+      "id": "business-022",
+      "variant": "business",
+      "text": "A note about {name}: in a live audio room{when}, this person promoted their own business. Tandem's Language Parties Guidelines reserve promotion and sales for official partners. It is unfair to learners who joined for conversation. Please look into the account and remove the promotion."
+    },
+    {
+      "id": "business-023",
+      "variant": "business",
+      "text": "Unwanted advertising occurred in a Tandem party{when}. {name} promoted a product to those in the room, something Tandem's Language Parties Guidelines do not allow for non-partners. It reduces the party to a marketing channel. Please consider warning this account."
+    },
+    {
+      "id": "business-024",
+      "variant": "business",
+      "text": "Participant {name} tried to sell their services in a Tandem language party{when}. This goes against the rule that nobody may promote or sell anything in Language Parties unless they are an official Tandem partner. Learners deserve a room focused on languages. Please review the account and apply the guidelines."
+    },
+    {
+      "id": "business-025",
+      "variant": "business",
+      "text": "For the record, {name} promoted a business in a Tandem party{when}. If this user is not an official Tandem partner, this goes against the Language Parties Guidelines and misuses the community for commercial purposes. Please look at the account and take appropriate action."
+    },
+    {
+      "id": "business-026",
+      "variant": "business",
+      "text": "Selling is not part of language learning, and Tandem's rules for Language Parties say so: only official partners may promote or sell anything. In a voice room{when}, {name} promoted a business to the learners present. Please review the account and restrict it if appropriate."
+    },
+    {
+      "id": "business-027",
+      "variant": "business",
+      "text": "I joined a Tandem party{when} to practise, but {name} started advertising a service. Unless this user is an official Tandem partner, promotion is not allowed in Language Parties. It disrupts a room meant for learning. Please review the account and remove the promotion."
+    },
+    {
+      "id": "business-028",
+      "variant": "business",
+      "text": "Please warn {name} about advertising. In a live Tandem party{when}, this user promoted their own products, which the Language Parties Guidelines prohibit for anyone who is not an official partner. Parties exist for language practice, not for sales. Please take further action if appropriate."
+    },
+    {
+      "id": "business-029",
+      "variant": "business",
+      "text": "Business promotion in a language party{when} by {name}. The person presented a commercial service to the room, which is against Tandem's Language Parties Guidelines unless they are an official Tandem partner. This misuses the community and distracts from learning. I request a review of this account."
+    },
+    {
+      "id": "business-030",
+      "variant": "business",
+      "text": "A voice room on Tandem{when} became a sales pitch when {name} began promoting a product. Non-partners may not promote or sell anything in Language Parties, so I am asking you to review this account. Other learners should be able to practise without being advertised to."
+    },
+    {
+      "id": "business-031",
+      "variant": "business",
+      "text": "Regarding {name}: this user advertised a commercial service in a Tandem party{when}. Tandem only allows promotion and sales from official partners in Language Parties, and I am not aware that this user is one. Advertising takes attention away from learning. Please check the account and act as appropriate."
+    },
+    {
+      "id": "business-032",
+      "variant": "business",
+      "text": "My report is about advertising. In a live audio room{when}, {name} promoted a business, which breaks the Language Parties Guidelines unless the user is an official Tandem partner. It turns a room for language exchange into a commercial opportunity. Please review the account and remove the promotion."
+    },
+    {
+      "id": "business-033",
+      "variant": "business",
+      "text": "Please check whether {name} is an official Tandem partner. In a Tandem party{when}, this user promoted a business to the learners, which the Language Parties Guidelines allow only for partners. If not, this is advertising in a learning space, and I ask that you take appropriate action."
+    },
+    {
+      "id": "business-034",
+      "variant": "business",
+      "text": "Learners come to Tandem parties to talk, not to be marketed to. {name} promoted a product in a voice room{when}, which is not allowed in Language Parties unless the user is an official Tandem partner. Please check the account and remind this user of the rules."
+    },
+    {
+      "id": "business-035",
+      "variant": "business",
+      "text": "{name} announced a product for sale during a live Tandem party{when}. Selling is prohibited in Language Parties unless the seller is an official partner of Tandem, and it changes the purpose of the room from learning to commerce. Please remove the promotion and review the standing of this account."
+    },
+    {
+      "id": "business-036",
+      "variant": "business",
+      "text": "I want to report a sales pitch. {name} promoted a service in a Tandem language party{when}. This is not allowed for non-partners under Tandem's Language Parties Guidelines, and it harms the learning atmosphere for other members. Please review the account."
+    },
+    {
+      "id": "business-037",
+      "variant": "business",
+      "text": "Please take a look at the account of {name}. In a Tandem party{when}, this user promoted a company to the people in the voice room. Unless they are an official partner, the guidelines for Language Parties do not allow that, as the space is meant for language learning. Please act as appropriate."
+    },
+    {
+      "id": "business-038",
+      "variant": "business",
+      "text": "Without being an official Tandem partner, nobody should promote or sell in Language Parties. Whether {name} is a partner is for Tandem to check, but in a voice room{when} this user advertised a business to the learners. Please verify the account and act accordingly."
+    },
+    {
+      "id": "business-039",
+      "variant": "business",
+      "text": "Advertising in a language party{when}: {name} spoke to the room about their products and services. Tandem's rules say that only official partners may promote or sell anything in Language Parties. This keeps the party from being about language learning. Please review and take action if appropriate."
+    },
+    {
+      "id": "business-040",
+      "variant": "business",
+      "text": "{name} brought commercial promotion into a Tandem voice room{when}. Promoting or selling is not allowed in Language Parties for non-partners, and it makes other learners feel they are being treated as customers. I would appreciate it if you could review the account."
+    },
+    {
+      "id": "business-041",
+      "variant": "business",
+      "text": "Promotion in Language Parties is limited to official Tandem partners. If {name} is not one, this user broke that rule in a party{when} by advertising a business to the room. It shifts the focus from learning to selling. Please check the account and issue a reminder if needed."
+    },
+    {
+      "id": "business-042",
+      "variant": "business",
+      "text": "Hello, I am reporting {name}. In a Tandem party{when}, this participant tried to promote a product to the room. Selling or advertising is not permitted in Language Parties unless the person is an official partner, and it undermines the purpose of the community. Please remove the promotion and review the account."
+    },
+    {
+      "id": "business-043",
+      "variant": "business",
+      "text": "A live audio room on Tandem{when} was used by {name} to advertise a service. Such promotion is limited to official Tandem partners by the Language Parties Guidelines, and it is unfair to learners who came to practise. Please warn this user or take other appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "business-044",
+      "variant": "business",
+      "text": "Selling and promoting are not allowed in Tandem Language Parties unless you are an official partner. This user, {name}, promoted a business in a voice room{when}, which turns a learning space into an advert. Please review the account and take appropriate action."
+    },
+    {
+      "id": "business-045",
+      "variant": "business",
+      "text": "{name}'s contribution to a Tandem party{when} was a sales pitch for a business, not language practice. Tandem's Language Parties Guidelines do not allow non-partners to promote or sell anything, and this spoils the learning space for the others. Please review this account and take suitable action."
+    },
+    {
+      "id": "business-046",
+      "variant": "business",
+      "text": "To the Tandem moderation team: {name} promoted a business during a language party{when}. Promotion and sales are only allowed for official Tandem partners, according to the Language Parties Guidelines. This takes over a learning space for commercial ends. Please investigate the account and act as you see fit."
+    },
+    {
+      "id": "business-047",
+      "variant": "business",
+      "text": "Please investigate {name} for promoting a business in a Tandem party{when}. The user advertised a product to the room, which is against Tandem's Language Parties Guidelines unless they are an official partner. Advertising crowds out the language practice others came for. Please remove it and take suitable action."
+    },
+    {
+      "id": "business-048",
+      "variant": "business",
+      "text": "I noticed {name} advertising a service in a Tandem voice room{when}. If this user is not an official Tandem partner, the Language Parties Guidelines do not permit promoting or selling. It turns a practice room into a marketplace. Please review the account and take whichever action is appropriate."
+    },
+    {
+      "id": "business-049",
+      "variant": "business",
+      "text": "Marketing has no place in a language exchange. In a Tandem party{when}, {name} promoted a business to the room, something only official partners may do under the Language Parties Guidelines. It is unfair to learners who wanted to practise. I ask that you review the account and remove the promotion."
+    },
+    {
+      "id": "business-050",
+      "variant": "business",
+      "text": "On Tandem, only official partners may promote or sell anything in Language Parties. {name} presented a commercial offer to the room in a live party{when}, which is why I am reporting this account. It distracts learners from the purpose of the party. Please look into it and remove the promotion."
+    },
+    {
+      "id": "social-001",
+      "variant": "social",
+      "text": "A Tandem party{when} became a promotion space when {name} invited the room to follow their social media accounts. Tandem's Language Parties Guidelines do not allow advertising social links unless the person is an official Tandem partner. This pulls learners away from the platform. Please review this account and take appropriate action."
+    },
+    {
+      "id": "social-002",
+      "variant": "social",
+      "text": "{name} promoted their social media pages in a live audio room{when}. Unless someone is an official Tandem partner, the Language Parties Guidelines forbid advertising social links. Parties are meant for language learning, not for gathering followers elsewhere. I would be grateful if you could review the account and act as appropriate."
+    },
+    {
+      "id": "social-003",
+      "variant": "social",
+      "text": "This is a report about {name} advertising social media accounts in a Tandem party{when}. It is not allowed in Language Parties unless the person is an official Tandem partner, and it leads learners off Tandem. Please review the account and act as appropriate."
+    },
+    {
+      "id": "social-004",
+      "variant": "social",
+      "text": "Please review {name}, who asked the participants of a Tandem voice room{when} to find them on social media. Tandem's Language Parties Guidelines say that advertising social links is not allowed unless you are an official partner. Using a party to send learners elsewhere misuses the community. Thank you for taking appropriate action."
+    },
+    {
+      "id": "social-005",
+      "variant": "social",
+      "text": "Within a language party{when}, {name} invited the room to follow them on their social accounts. That is the kind of promotion that Tandem's Language Parties Guidelines rule out for anyone who is not an official partner. It diverts learners away from the app. Could you please look into this account and act accordingly?"
+    },
+    {
+      "id": "social-006",
+      "variant": "social",
+      "text": "Tandem's guidelines are clear: social links may not be advertised in Language Parties unless the person is an official Tandem partner. During a party{when}, {name} did exactly that, inviting others to follow them elsewhere. This turns a learning space into a promotion channel. Please review the account and take the appropriate action."
+    },
+    {
+      "id": "social-007",
+      "variant": "social",
+      "text": "A participant named {name} used a Tandem party{when} to advertise their social media profiles. The Language Parties Guidelines do not permit this for anyone other than official Tandem partners. It draws learners away from the platform and misuses a space meant for practising languages. Please review and act as you see fit."
+    },
+    {
+      "id": "social-008",
+      "variant": "social",
+      "text": "This report concerns {name}, who told the voice room{when} to follow and contact them on social media. Promoting social links is not allowed in Language Parties unless you are an official Tandem partner. Learners joined to practise a language, not to be redirected to personal accounts. Please take appropriate action on this account."
+    },
+    {
+      "id": "social-009",
+      "variant": "social",
+      "text": "Social media advertising in a live audio room{when}: {name} asked the other learners to follow their accounts elsewhere. Tandem's Language Parties Guidelines restrict this to official partners. Allowing it would turn parties into a way to collect followers off the platform. I would appreciate a review of this account and suitable action."
+    },
+    {
+      "id": "social-010",
+      "variant": "social",
+      "text": "Flagging {name} for promoting their social media accounts in a Tandem party{when}. Unless they are an official Tandem partner, this goes against the Language Parties Guidelines on promotion. It pulls learners out of the community. Please look at the account and take whatever action is appropriate."
+    },
+    {
+      "id": "social-011",
+      "variant": "social",
+      "text": "{name} gave out their social media details to the people in a voice room{when} and invited them to connect there. Tandem does not allow advertising social links in Language Parties unless the person is an official partner. This steers learners away from Tandem. Could you check the account and remind them of the rules if appropriate?"
+    },
+    {
+      "id": "social-012",
+      "variant": "social",
+      "text": "While in a Tandem party{when}, {name} encouraged the room to follow them on social media. Under Tandem's Language Parties Guidelines, only official Tandem partners may advertise social links. Otherwise the parties stop being about language learning. I am asking for a review of this account and suitable action."
+    },
+    {
+      "id": "social-013",
+      "variant": "social",
+      "text": "Please look into {name}, who advertised social media accounts in a language party{when}. The Language Parties Guidelines prohibit this unless the person is an official Tandem partner, and it leads learners away from the app. Thank you for taking appropriate action."
+    },
+    {
+      "id": "social-014",
+      "variant": "social",
+      "text": "Social media promotion is what {name} brought to a Tandem party{when}. Advertising social links is not permitted in Language Parties for anyone but official Tandem partners. Learners should be able to practise without being sent to outside accounts. Please review the account and apply the right measures."
+    },
+    {
+      "id": "social-015",
+      "variant": "social",
+      "text": "Reporting a breach of the Language Parties Guidelines: {name} advertised their social media in a live audio room{when}. Unless they are an official Tandem partner, such promotion is not allowed. It uses other learners as an audience and draws them off the platform. Please review this account and act as you think appropriate."
+    },
+    {
+      "id": "social-016",
+      "variant": "social",
+      "text": "In a Tandem voice room{when}, {name} urged participants to look them up on social media. This is promotion of social links, which Language Parties do not allow unless the person is an official Tandem partner. It misuses the community and distracts from learning. Could you please review the account and take suitable action?"
+    },
+    {
+      "id": "social-017",
+      "variant": "social",
+      "text": "Hello, I want to report {name}, who advertised social media accounts to the party{when}. Tandem's guidelines allow this only for official partners, and it takes learners off the platform. Please review the account and take appropriate action."
+    },
+    {
+      "id": "social-018",
+      "variant": "social",
+      "text": "{name} invited other learners to follow their social media accounts in a Tandem party{when}. This is not allowed unless the person is an official Tandem partner, and it diverts the community to outside pages. Please remind them of the Language Parties Guidelines, or take stronger action if appropriate."
+    },
+    {
+      "id": "social-019",
+      "variant": "social",
+      "text": "If {name} is not an official Tandem partner, what they did in a Tandem party{when} breaks the Language Parties Guidelines: they advertised their social media accounts to the room. This pulls learners away from the platform. I ask that the account be reviewed and, where appropriate, warned or restricted."
+    },
+    {
+      "id": "social-020",
+      "variant": "social",
+      "text": "{name} advertised their own social media accounts in a Tandem party{when}. Language Parties may not be used to promote social links unless the person is an official partner, and this takes the focus off learning and sends learners elsewhere. Kindly look into the account and take the steps you think appropriate."
+    },
+    {
+      "id": "social-021",
+      "variant": "social",
+      "text": "I noticed {name} inviting the room to follow them on social media in a live Tandem party{when}. Advertising social links is against Tandem's Language Parties Guidelines unless the person is an official partner, and it leads learners away from the app. Please review the account and take appropriate action."
+    },
+    {
+      "id": "social-022",
+      "variant": "social",
+      "text": "Language Parties are for learning, yet {name} promoted their social media accounts in a party{when}. Tandem's Language Parties Guidelines only allow official partners to advertise social links. Sending learners to outside accounts misuses the platform. Could you look into this user's account and take suitable measures?"
+    },
+    {
+      "id": "social-023",
+      "variant": "social",
+      "text": "Please check the account of {name}, who invited the participants of a Tandem party{when} to follow and message them on social media. This is advertising of social links, which the Language Parties Guidelines do not allow unless the person is an official partner. It pulls learners away from Tandem. Thank you for acting on it."
+    },
+    {
+      "id": "social-024",
+      "variant": "social",
+      "text": "Social links were advertised in a Tandem party{when} by {name}, who invited others to follow their accounts. Official Tandem partners aside, the Language Parties Guidelines do not allow this, and it pulls learners elsewhere. Please review the account and act as appropriate."
+    },
+    {
+      "id": "social-025",
+      "variant": "social",
+      "text": "Under Tandem's Language Parties Guidelines, promoting social links is off limits unless you are an official Tandem partner. {name} did it in a live audio room{when}, inviting the room to follow their accounts. It draws learners away from the platform. I ask that the account be reviewed and, if appropriate, restricted."
+    },
+    {
+      "id": "social-026",
+      "variant": "social",
+      "text": "My report is about {name}, who advertised social media accounts in a Tandem party{when}. Language Parties do not allow advertising social links unless the person is an official Tandem partner. It draws learners off the platform. I would ask you to review the account and take any action you consider appropriate."
+    },
+    {
+      "id": "social-027",
+      "variant": "social",
+      "text": "People in a live audio room{when} were invited by {name} to follow them on social media. Tandem's Language Parties Guidelines reserve that kind of advertising for official partners. It turns a language party into a promotion tool. Please look at this account and act as appropriate."
+    },
+    {
+      "id": "social-028",
+      "variant": "social",
+      "text": "In a Tandem party{when}, {name} promoted their social media pages and asked people to follow them there. Advertising social links is not allowed in Language Parties unless you are an official partner, and it moves learners away from Tandem. Could you please review the account and take suitable action?"
+    },
+    {
+      "id": "social-029",
+      "variant": "social",
+      "text": "{name} asked the people in a voice room{when} to contact them through social media. Tandem's Language Parties Guidelines do not allow advertising social links unless the person is an official Tandem partner, and it moves learners away from the platform. Please review the account and take appropriate action."
+    },
+    {
+      "id": "social-030",
+      "variant": "social",
+      "text": "I was in a Tandem party{when} when {name} began advertising their social media accounts to the room. Promoting social links is outside what Language Parties allow, except for official Tandem partners. It sends learners away from the community. Please review the account and, if appropriate, restrict it."
+    },
+    {
+      "id": "social-031",
+      "variant": "social",
+      "text": "Advertising social links is not allowed in Language Parties unless you are an official Tandem partner. In a live audio room{when}, {name} nevertheless invited others to follow their accounts. This uses the party to draw learners off Tandem. Please review the account and take the action you see fit."
+    },
+    {
+      "id": "social-032",
+      "variant": "social",
+      "text": "For the attention of the moderation team: {name} promoted their social media accounts in a language party{when}. Tandem's Language Parties Guidelines allow this only for official partners. It undermines the purpose of the party and pulls learners elsewhere. Please review the account and act accordingly."
+    },
+    {
+      "id": "social-033",
+      "variant": "social",
+      "text": "A participant called {name}, in a Tandem voice room{when}, invited the other learners to find them on social media. This is advertising of social links, which Language Parties do not allow unless the person is an official Tandem partner, and it steers learners away from the platform. I would appreciate a review and appropriate action."
+    },
+    {
+      "id": "social-034",
+      "variant": "social",
+      "text": "Kindly look at {name}, who used a language party{when} to point learners to their social media. Unless they are an official Tandem partner, this is against the Language Parties Guidelines, and it draws learners away from the app. Please remind this user of the rules or take further action if appropriate."
+    },
+    {
+      "id": "social-035",
+      "variant": "social",
+      "text": "Here is what happened: {name} advertised their social media accounts to the participants of a Tandem party{when}. The rule: advertising social links is not allowed in Language Parties unless the person is an official Tandem partner. The problem: it draws learners away from the platform. Please review the account and take action."
+    },
+    {
+      "id": "social-036",
+      "variant": "social",
+      "text": "This user, {name}, invited the room to follow their social media during a Tandem party{when}. The Language Parties Guidelines only allow official Tandem partners to advertise social links. It uses the party for outside promotion instead of language learning. Please check the account and decide on suitable measures."
+    },
+    {
+      "id": "social-037",
+      "variant": "social",
+      "text": "To report a guideline violation: {name} invited the participants of a live audio room{when} to follow them on social media. Tandem's Language Parties Guidelines prohibit advertising social links unless the person is an official partner. It diverts learners from the platform. Please review and act as appropriate."
+    },
+    {
+      "id": "social-038",
+      "variant": "social",
+      "text": "Promoting social links is not what Language Parties are for. In a Tandem party{when}, {name} invited the room to follow them on social media, which the guidelines do not permit unless the person is an official partner. It pulls learners off the platform. Please review the account and act appropriately."
+    },
+    {
+      "id": "social-039",
+      "variant": "social",
+      "text": "The Language Parties Guidelines do not allow advertising social links, except for official Tandem partners. In a voice room{when}, {name} invited other participants to follow their accounts. That undermines a space meant for language practice. I ask the team to check the account and act as appropriate."
+    },
+    {
+      "id": "social-040",
+      "variant": "social",
+      "text": "After joining a Tandem party{when}, I heard {name} promote their social media accounts and ask others to follow. Unless they are an official partner, Tandem's Language Parties Guidelines do not allow it. Learners come to practise, not to be advertised to. Please look into the account and take the action you consider fitting."
+    },
+    {
+      "id": "social-041",
+      "variant": "social",
+      "text": "I am writing to report {name} for social media promotion in a language party{when}. They invited the room to follow their accounts elsewhere, which Tandem's Language Parties Guidelines do not allow for anyone but official partners. It draws attention away from learning. Please review the account and act as appropriate."
+    },
+    {
+      "id": "social-042",
+      "variant": "social",
+      "text": "Promotion of personal social accounts: {name} did this in a Tandem party{when}, asking participants to follow them. It is not allowed in Language Parties unless the person is an official Tandem partner, and it pulls learners out of the platform. Please look into the account and take suitable action."
+    },
+    {
+      "id": "social-043",
+      "variant": "social",
+      "text": "Kindly review the account of {name}, who advertised their social media in a live Tandem party{when}. Tandem's guidelines for Language Parties do not allow social links to be advertised by anyone who is not an official partner. It misuses the party to reach learners outside the app. Thank you for taking suitable action."
+    },
+    {
+      "id": "social-044",
+      "variant": "social",
+      "text": "{name} used a voice room{when} to invite people to their social media accounts. Advertising social links goes against Tandem's Language Parties Guidelines unless the person is an official Tandem partner, and it misuses a party meant for language learning. I would be glad if the account could be reviewed."
+    },
+    {
+      "id": "social-045",
+      "variant": "social",
+      "text": "A user called {name} advertised their social media accounts in a Tandem party{when}. Tandem's Language Parties Guidelines do not allow this unless the person is an official partner. It draws learners away from Tandem for outside promotion. I would be thankful if you could take appropriate action."
+    },
+    {
+      "id": "social-046",
+      "variant": "social",
+      "text": "Regarding {name}: in a language party{when}, this person invited participants to follow their social media. This is not allowed unless you are an official Tandem partner, and it turns a learning room into a promotion space. Please respond appropriately."
+    },
+    {
+      "id": "social-047",
+      "variant": "social",
+      "text": "One participant, {name}, promoted social media accounts during a Tandem party{when}. Only official Tandem partners may advertise social links in Language Parties. This is a misuse of the community and it leads learners away from the app. Please review and take the appropriate action."
+    },
+    {
+      "id": "social-048",
+      "variant": "social",
+      "text": "I am submitting this report: {name} invited the other learners of a live audio room{when} to follow and contact them on social media. Unless they are an official Tandem partner, this is advertising that the Language Parties Guidelines do not allow, and it pulls learners off Tandem. Please review the account; I can provide more details if needed."
+    },
+    {
+      "id": "social-049",
+      "variant": "social",
+      "text": "{name} advertised social media in a voice room{when}, asking the room to follow their accounts. Tandem's Language Parties Guidelines do not allow this unless the person is an official partner. It draws learners off the platform. Please review the account and decide on suitable action."
+    },
+    {
+      "id": "social-050",
+      "variant": "social",
+      "text": "Social media self-promotion does not belong in a language party{when}, yet {name} invited the room to follow their accounts. Tandem's Language Parties Guidelines limit such advertising to official partners. It takes learners away from the community. Please review this account and apply suitable measures."
+    }
+  ]
+}

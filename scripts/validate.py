@@ -6,6 +6,11 @@ Usage :
   python3 scripts/validate.py --partial            # comptes non bloquants (écriture par lots)
   python3 scripts/validate.py data/messages/party.money.json [--partial]
 
+Comptes attendus : 100 messages par feuille, répartis à parts égales entre les
+variantes. Un fichier peut les ajuster :
+  "per_variant": 100                  # même nombre pour chaque variante
+  "targets": { "explicit": 100 }      # nombre propre à certaines variantes
+
 Code de sortie non nul s'il y a au moins une erreur. Les avertissements
 (« warn ») sont affichés sans bloquer.
 """
@@ -20,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 TREE = DATA / "report-tree.json"
 MESSAGES = DATA / "messages"
+TOPICS = DATA / "topics.json"
 
 PER_LEAF = 100
 MIN_LEN, MAX_LEN = 180, 400
@@ -175,14 +181,20 @@ def check_file(path, leaves, rep, partial, seen_ids):
         return []
 
     count = rep.warn if partial else rep.error
-    if len(messages) != PER_LEAF:
-        count(str(name), f"{len(messages)} messages (attendu : {PER_LEAF})")
     if variants:
-        per_variant = PER_LEAF // len(variants)
-        for key in variants:
-            n = sum(1 for m in messages if m.get("variant") == key)
-            if n != per_variant:
-                count(str(name), f"variante '{key}' : {n} messages (attendu : {per_variant})")
+        per_variant = data.get("per_variant") or PER_LEAF // len(variants)
+        targets = data.get("targets") or {}
+        expected = {k: targets.get(k, per_variant) for k in variants}
+        total = sum(expected.values())
+    else:
+        expected = {}
+        total = data.get("per_variant") or PER_LEAF
+    if len(messages) != total:
+        count(str(name), f"{len(messages)} messages (attendu : {total})")
+    for key, want in expected.items():
+        n = sum(1 for m in messages if m.get("variant") == key)
+        if n != want:
+            count(str(name), f"variante '{key}' : {n} messages (attendu : {want})")
 
     texts = []
     openings = {}
@@ -214,14 +226,19 @@ def check_file(path, leaves, rep, partial, seen_ids):
     return texts
 
 
-def check_duplicates(texts, rep):
-    norm = [(w, mid, " ".join(t.lower().split())) for w, mid, t in texts]
+def check_exact_duplicates(texts, rep):
     exact = {}
-    for where, mid, t in norm:
+    for where, mid, t in texts:
+        t = " ".join(t.lower().split())
         if t in exact:
             rep.error(where, f"doublon exact de {exact[t]}")
         else:
             exact[t] = mid
+
+
+def check_near_duplicates(texts, rep):
+    """Quasi-doublons à l'intérieur d'une même feuille."""
+    norm = [(w, mid, " ".join(t.lower().split())) for w, mid, t in texts]
     for i in range(len(norm)):
         sm = difflib.SequenceMatcher(None, autojunk=False)
         sm.set_seq2(norm[i][2])
@@ -231,6 +248,42 @@ def check_duplicates(texts, rep):
                 r = sm.ratio()
                 if r > NEAR_DUP_RATIO:
                     rep.warn(norm[j][0], f"quasi-doublon de {norm[i][1]} (ratio {r:.2f})")
+
+
+def check_topics(leaves, rep):
+    """data/topics.json : chaque sujet pointe vers une feuille et une variante qui existent."""
+    if not TOPICS.exists():
+        return 0
+    try:
+        data = json.loads(TOPICS.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        rep.error("data/topics.json", f"JSON illisible : {e}")
+        return 0
+    groups = {g.get("id") for g in data.get("groups", [])}
+    seen = set()
+    for t in data.get("topics", []):
+        where = f"data/topics.json [{t.get('id')}]"
+        if t.get("id") in seen:
+            rep.error(where, "id en double")
+        seen.add(t.get("id"))
+        if t.get("group") not in groups:
+            rep.error(where, f"groupe inconnu {t.get('group')!r}")
+        if t.get("context") not in ("party", "profile", "chat"):
+            rep.error(where, f"contexte inconnu {t.get('context')!r}")
+        if t.get("leaf") not in leaves:
+            rep.error(where, f"feuille '{t.get('leaf')}' absente de l'arbre ou pas de type 'message'")
+            continue
+        path = MESSAGES / f"{t['leaf']}.json"
+        if not path.exists():
+            rep.error(where, f"pas de fichier de messages pour '{t['leaf']}'")
+            continue
+        variants = json.loads(path.read_text(encoding="utf-8")).get("variants") or {}
+        if t.get("variant") and t["variant"] not in variants:
+            rep.error(where, f"variante '{t['variant']}' absente de {path.name}")
+        for key in ("label", "hint"):
+            if not t.get(key):
+                rep.error(where, f"champ '{key}' manquant")
+    return len(seen)
 
 
 def main():
@@ -247,12 +300,16 @@ def main():
     seen_ids = {}
     all_texts = []
     for path in files:
-        all_texts += check_file(path, leaves, rep, args.partial, seen_ids)
-    check_duplicates(all_texts, rep)
+        texts = check_file(path, leaves, rep, args.partial, seen_ids)
+        check_near_duplicates(texts, rep)
+        all_texts += texts
+    check_exact_duplicates(all_texts, rep)
+    n_topics = 0 if args.files else check_topics(leaves, rep)
 
     for line in rep.errors + rep.warnings:
         print(line)
-    print(f"validate: {len(files)} fichier(s), {len(all_texts)} message(s), "
+    extra = f", {n_topics} sujet(s)" if n_topics else ""
+    print(f"validate: {len(files)} fichier(s), {len(all_texts)} message(s){extra}, "
           f"{len(rep.errors)} erreur(s), {len(rep.warnings)} avertissement(s)")
     sys.exit(1 if rep.errors else 0)
 

@@ -1,0 +1,1010 @@
+{
+  "leaf": "party.rude",
+  "variants": {
+    "hate": "Haine ou extrémisme",
+    "harassment": "Harcèlement, trolling, exclusion"
+  },
+  "per_variant": 100,
+  "messages": [
+    {
+      "id": "hate-001",
+      "variant": "hate",
+      "text": "During a Tandem party{when}, {name} voiced hateful views and encouraged discrimination in the voice room. Tandem's Language Parties Guidelines say hateful topics are never, ever OK, and incitation of hateful or extremist behavior is a Red topic. It makes the room unsafe for other learners. Please check this account and act if the report is confirmed."
+    },
+    {
+      "id": "hate-002",
+      "variant": "hate",
+      "text": "I am reporting {name} for promoting hateful and extremist ideas in a language party{when}. Incitation of hateful or extremist behavior is a Red topic under Tandem's guidelines, and it puts other community members at risk. I would ask you to look at this account as a priority and take strong action."
+    },
+    {
+      "id": "hate-003",
+      "variant": "hate",
+      "text": "{name} spoke in a Tandem voice room{when} in a way that encouraged hatred and discrimination against other people. This goes against Tandem's Community Principles and the Language Parties Guidelines, which do not allow hateful topics. Such talk endangers members of the community. Please check this account promptly and apply the appropriate sanction."
+    },
+    {
+      "id": "hate-004",
+      "variant": "hate",
+      "text": "Please review {name}, who expressed extremist and hateful views during a live audio party{when}. Hateful and extremist content is a Red topic, never OK on Tandem, and it can make the learners targeted by it feel unsafe. I am asking for firm action on this account, including a ban if you consider it warranted."
+    },
+    {
+      "id": "hate-005",
+      "variant": "hate",
+      "text": "This report concerns a participant, {name}, who incited hateful behavior in a Tandem language party{when}. Discrimination and hateful topics are prohibited by the Language Parties Guidelines, and people can be banned for them. These views target other members and make the room unsafe. Please act on this account without delay."
+    },
+    {
+      "id": "hate-006",
+      "variant": "hate",
+      "text": "In a language party{when}, {name} pushed hateful and discriminatory ideas on the other people in the voice room. Tandem's guidelines are clear that incitation of hateful or extremist behavior is a Red topic. It is harmful to the members it targets. Could you please investigate promptly and ban the account if warranted?"
+    },
+    {
+      "id": "hate-007",
+      "variant": "hate",
+      "text": "Tandem's Language Parties Guidelines prohibit discrimination and hateful topics, and {name} broke that rule in a party{when} by promoting hateful, extremist views. Language learners should not be exposed to this, and those targeted are put in danger. I ask you to review the account urgently and take strong action."
+    },
+    {
+      "id": "hate-008",
+      "variant": "hate",
+      "text": "A participant named {name} encouraged hatred towards other people in a Tandem voice room{when}. This is a Red topic, listed as never, ever OK in Tandem's guidelines. It endangers community members and makes the space unsafe for learners. Please take this seriously, review the account and ban it if warranted."
+    },
+    {
+      "id": "hate-009",
+      "variant": "hate",
+      "text": "Hateful and extremist talk has no place in a language exchange, and {name} brought it into a Tandem party{when}. Incitation of hateful or extremist behavior is a Red topic, and it puts others in the room at risk. Please look into this account as a priority and apply a strong sanction, such as a ban."
+    },
+    {
+      "id": "hate-010",
+      "variant": "hate",
+      "text": "While I was in a Tandem party{when}, {name} expressed discriminatory and extremist opinions out loud. Under the Language Parties Guidelines, discrimination is not allowed, and speakers can be banned over it. It is hurtful to the people targeted and unsafe for the community. Please review this user urgently."
+    },
+    {
+      "id": "hate-011",
+      "variant": "hate",
+      "text": "Please take urgent action on {name}. In a live audio party{when}, this user incited hateful behavior and promoted extremist views, which is a Red topic according to Tandem's web guidelines. Content like this targets other members and makes the room unsafe. A ban seems appropriate if you can confirm it."
+    },
+    {
+      "id": "hate-012",
+      "variant": "hate",
+      "text": "I want to report hate speech in a Tandem party{when}. {name} encouraged hostility toward a group of people, which Tandem's Community Principles and Language Parties Guidelines do not allow. This puts the targeted members in danger and spoils the room for learners. Please check this account and restrict or ban it if the report holds up."
+    },
+    {
+      "id": "hate-013",
+      "variant": "hate",
+      "text": "{name} used a Tandem language party{when} to spread hateful and extremist ideas. Such incitation is a Red topic, never OK in Tandem's community, and it can endanger members who are targeted. Thank you for reviewing this account carefully and taking strong action, including a ban where warranted."
+    },
+    {
+      "id": "hate-014",
+      "variant": "hate",
+      "text": "Discrimination is not allowed in Tandem's Language Parties, yet {name} promoted it in a voice room{when} along with hateful, extremist opinions. This makes the room unsafe and targets other members of the community. I would be grateful if you could review this account urgently and ban it if appropriate."
+    },
+    {
+      "id": "hate-015",
+      "variant": "hate",
+      "text": "During a live audio party{when}, I heard {name} encourage hateful behavior and share extremist views. These are Red topics under Tandem's guidelines, and they threaten the safety of other learners. I ask that you review this user right away and take strong action if the report is confirmed."
+    },
+    {
+      "id": "hate-016",
+      "variant": "hate",
+      "text": "Reporting {name} for hateful and extremist conduct in a language party{when}. Tandem's guidelines classify incitation of hateful or extremist behavior as a Red topic, and speakers can be banned for it. It endangers others and is harmful to learners. Please investigate and ban the account if warranted."
+    },
+    {
+      "id": "hate-017",
+      "variant": "hate",
+      "text": "Language Parties are meant for learning, not for hatred. In a party{when}, {name} expressed hateful views and encouraged discrimination, which breaks Tandem's Community Principles. This is a safety issue for the members being targeted. Please review the account urgently and consider a ban."
+    },
+    {
+      "id": "hate-018",
+      "variant": "hate",
+      "text": "Can you please look into {name}? In a Tandem voice room{when}, this person spoke in support of hateful and extremist behavior, a Red topic that is never OK on the platform. Others in the room can be hurt or put at risk by such talk. I am asking for strong action, up to a ban if warranted."
+    },
+    {
+      "id": "hate-019",
+      "variant": "hate",
+      "text": "Extremist, hateful remarks were made by {name} in a Tandem party{when}. The Language Parties Guidelines rule out discrimination and hateful topics, and the Red category covers incitation of hateful or extremist behavior. This makes the room unsafe for learners. A swift review of the account, and a ban if you find it justified, would be appreciated."
+    },
+    {
+      "id": "hate-020",
+      "variant": "hate",
+      "text": "For the safety of the community, I am reporting {name}. In a language party{when}, this user promoted hatred and discriminatory ideas to the people listening. That is a Red topic, never OK according to Tandem, and it endangers those targeted. Please act quickly and apply a ban if you find it justified."
+    },
+    {
+      "id": "hate-021",
+      "variant": "hate",
+      "text": "Tandem's guidelines treat incitation of hateful or extremist behavior as a Red topic, and {name} did exactly that in a live audio room{when}. It is harmful to the members who are targeted and makes the room unsafe. I ask the team to examine this account and apply the measures the guidelines provide."
+    },
+    {
+      "id": "hate-022",
+      "variant": "hate",
+      "text": "I would like to flag {name} for promoting extremist and hateful ideas in a Tandem party{when}. Discrimination and hateful topics are against the Language Parties Guidelines, and they put other community members at risk. Kindly review this account as a priority and impose a ban if it is warranted."
+    },
+    {
+      "id": "hate-023",
+      "variant": "hate",
+      "text": "In a Tandem voice room{when}, {name} gave support to hateful and extremist behavior and to discriminating against others. This is a Red topic and contradicts the Community Principles. Learners come here to learn, not to be targeted. Please check this account without delay and take strong action, including a ban if needed."
+    },
+    {
+      "id": "hate-024",
+      "variant": "hate",
+      "text": "Please treat this report as urgent: {name} promoted hateful and extremist views during a language party{when}. Incitation of hateful or extremist behavior is a Red topic on Tandem, and it exposes targeted members to harm. I ask you to review the account and ban it if warranted. I can provide more details if needed."
+    },
+    {
+      "id": "hate-025",
+      "variant": "hate",
+      "text": "Hate and discrimination are not tolerated in Tandem's Language Parties, but {name} voiced both during a party{when}. Speaking in favor of hateful or extremist behavior is a Red topic and makes the room unsafe for the members targeted. Please review this user urgently and take appropriate, strong action."
+    },
+    {
+      "id": "hate-026",
+      "variant": "hate",
+      "text": "Hateful rhetoric came from {name} in a Tandem party{when}, with open encouragement of discrimination against other people. Tandem's Language Parties Guidelines do not allow this, and speakers can be banned. Such talk puts targeted members at risk. Please review the account and apply strong measures."
+    },
+    {
+      "id": "hate-027",
+      "variant": "hate",
+      "text": "I need to report a serious guideline violation. {name} promoted extremist ideas in a language party{when}, which falls under incitation of hateful or extremist behavior, a Red topic. This makes other learners unsafe and targets other members. Please examine the account and sanction it, up to a ban, if you can confirm this."
+    },
+    {
+      "id": "hate-028",
+      "variant": "hate",
+      "text": "Is it acceptable to promote hatred in a Tandem voice room? According to the Language Parties Guidelines it is not, yet {name} did so{when}. Discrimination and hateful topics endanger the members they target. I hope this account can be checked quickly and dealt with accordingly."
+    },
+    {
+      "id": "hate-029",
+      "variant": "hate",
+      "text": "Tandem says plainly that hateful topics are never, ever OK in Language Parties. In a party{when}, {name} defied that by encouraging hateful and extremist behavior. This endangers other members and makes the room unsafe. Please investigate and ban this account if you find it warranted."
+    },
+    {
+      "id": "hate-030",
+      "variant": "hate",
+      "text": "My report is about {name}, who supported extremist and hateful ideas in a Tandem live audio room{when}. This is a Red topic and a breach of the Community Principles. Targeted members are put in danger and the room becomes unsafe. I ask for an urgent review and a ban if warranted."
+    },
+    {
+      "id": "hate-031",
+      "variant": "hate",
+      "text": "One participant in a Tandem party{when} was spreading hatred: {name}. Their remarks encouraged discrimination, which the Language Parties Guidelines prohibit. This is dangerous for the people targeted and harms the learning environment. Please review the account urgently and act strongly."
+    },
+    {
+      "id": "hate-032",
+      "variant": "hate",
+      "text": "Please step in regarding {name}, who made hateful and extremist statements in a Tandem party{when} and supported discriminating against others. Tandem lists incitation of hateful or extremist behavior as a Red topic. The room became unsafe for the members concerned. Please look into it and remove this user from Language Parties if the facts are confirmed."
+    },
+    {
+      "id": "hate-033",
+      "variant": "hate",
+      "text": "Extremism has no place on Tandem, and {name} promoted it in a voice room{when}. The Language Parties Guidelines prohibit hateful topics and discrimination, and a ban can follow. Learners targeted by such views deserve protection. Please review the account urgently and take firm action."
+    },
+    {
+      "id": "hate-034",
+      "variant": "hate",
+      "text": "At a Tandem language party{when}, {name} openly encouraged hate and division between groups of people. Tandem's guidelines place incitation of hateful or extremist behavior among the Red topics that are never OK. It threatens the safety of other members. Please look into the account promptly and consider a ban."
+    },
+    {
+      "id": "hate-035",
+      "variant": "hate",
+      "text": "Here is my report: {name} defended hateful and extremist behavior in a Tandem party{when}. Under Tandem's Community Principles and Language Parties Guidelines, discrimination and hateful topics are not acceptable. Other members can be harmed by this and the room feels unsafe. I request that the account be reviewed and sanctioned as the rules provide."
+    },
+    {
+      "id": "hate-036",
+      "variant": "hate",
+      "text": "{name} made discriminatory and hateful comments in a language party{when}, which is a clear breach of Tandem's guidelines on hateful topics. Language learners should be able to join a voice room without being targeted. Please review the account right away and take strong action, up to a ban."
+    },
+    {
+      "id": "hate-037",
+      "variant": "hate",
+      "text": "Safety is at stake here. In a Tandem voice room{when}, {name} expressed extremist views and called for hostile treatment of other people. That is incitation of hateful or extremist behavior, a Red topic. Please investigate the account as a priority and ban it if warranted."
+    },
+    {
+      "id": "hate-038",
+      "variant": "hate",
+      "text": "I am writing to report {name} for hateful conduct in a Tandem party{when}. This user encouraged discrimination and extremist ideas, which Tandem classes as a Red topic. Such behavior targets other members and makes the room unsafe. Please take firm action on the account and ban it if appropriate."
+    },
+    {
+      "id": "hate-039",
+      "variant": "hate",
+      "text": "Red topics are never OK on Tandem, and incitation of hateful or extremist behavior is one of them. {name} engaged in exactly that during a live audio party{when}. Other members are endangered and the room is unsafe when this happens. Please have this account examined as soon as possible and act on it."
+    },
+    {
+      "id": "hate-040",
+      "variant": "hate",
+      "text": "Discriminatory and hateful views were promoted by {name} in a Tandem party{when}. This is against the Language Parties Guidelines and puts members of the community in danger. I kindly ask the moderation team to review this account urgently and to ban it if warranted."
+    },
+    {
+      "id": "hate-041",
+      "variant": "hate",
+      "text": "Please warn or remove {name}, who encouraged hatred and extremist behavior in a Tandem party{when}. Tandem's guidelines class this as a Red topic, and speakers can be banned for it. It makes other learners feel unsafe and endangers those targeted. Thank you for acting quickly."
+    },
+    {
+      "id": "hate-042",
+      "variant": "hate",
+      "text": "Incident in a Tandem party{when}: {name} promoted hateful ideas and discrimination. Tandem's Language Parties Guidelines say hateful topics are never OK, and this endangers the members targeted. Please check the account and take the action you consider fitting, up to a ban."
+    },
+    {
+      "id": "hate-043",
+      "variant": "hate",
+      "text": "Would you please check the account of {name}? In a Tandem voice room{when}, this person encouraged extremist and hateful behavior, which the Community Principles and the Red topic list both rule out. It is a danger to targeted members and to the atmosphere of the room. Strong action, including a ban where warranted, would be appropriate."
+    },
+    {
+      "id": "hate-044",
+      "variant": "hate",
+      "text": "I heard {name} support hateful and extremist behavior in a language party{when}. Tandem prohibits discrimination and hateful topics in its Language Parties Guidelines, and speakers can be banned. This is unsafe for the people targeted. Please review the account urgently and take firm action."
+    },
+    {
+      "id": "hate-045",
+      "variant": "hate",
+      "text": "Under Tandem's rules, incitation of hateful or extremist behavior is a Red topic. {name} promoted exactly that in a voice room{when}, endangering other members and making the party unsafe. Please review the account urgently and ban it if warranted. I can provide more details if needed."
+    },
+    {
+      "id": "hate-046",
+      "variant": "hate",
+      "text": "Report: hateful and extremist behavior encouraged by {name} in a Tandem party{when}. This breaks the Language Parties Guidelines, which prohibit discrimination and hateful topics, and it is a Red topic. People targeted by such views are put at risk and learners may not feel safe. Please investigate promptly and sanction the account accordingly."
+    },
+    {
+      "id": "hate-047",
+      "variant": "hate",
+      "text": "For the protection of other learners, I would like the account of {name} to be reviewed. In a Tandem party{when}, this user spoke in favor of discrimination and extremist ideas, a Red topic under the guidelines. It makes the room unsafe and targets other members. Please take strong action, including a ban if warranted."
+    },
+    {
+      "id": "hate-048",
+      "variant": "hate",
+      "text": "Nobody should hear calls for hatred in a language exchange. In a Tandem party{when}, {name} encouraged hateful and extremist behavior, which the Language Parties Guidelines prohibit. This endangers targeted members and the safety of the room. I ask for an urgent review and, if warranted, a ban."
+    },
+    {
+      "id": "hate-049",
+      "variant": "hate",
+      "text": "{name} was promoting hateful and extremist ideas in a live audio room{when} and encouraging discrimination against others. These are Red topics on Tandem and they put other community members in danger. Please review the account at once and take whatever strong action is warranted, including a ban."
+    },
+    {
+      "id": "hate-050",
+      "variant": "hate",
+      "text": "May I ask for an urgent review of {name}? In a Tandem language party{when}, this user shared hateful, extremist views and encouraged discrimination. The Community Principles and Language Parties Guidelines do not allow this, and it endangers other members. Please consider a ban if warranted."
+    },
+    {
+      "id": "hate-051",
+      "variant": "hate",
+      "text": "{name} encouraged hatred and discrimination in a Tandem party{when}. Hateful topics are never OK under Tandem's Language Parties Guidelines, and this endangers targeted members. Please act on this account promptly, with a ban if the report is confirmed."
+    },
+    {
+      "id": "hate-052",
+      "variant": "hate",
+      "text": "Incitation of hateful or extremist behavior is a Red topic on Tandem, and {name} promoted exactly that in a voice room{when}. This endangers other members of the community and makes the party unsafe for learners. Please review the account urgently and take strong action."
+    },
+    {
+      "id": "hate-053",
+      "variant": "hate",
+      "text": "In a live audio party{when}, {name} supported extremist behavior and encouraged hatred, which Tandem's Language Parties Guidelines prohibit. It makes the room unsafe for the people targeted. Please look into this account and ban it if the report is confirmed."
+    },
+    {
+      "id": "hate-054",
+      "variant": "hate",
+      "text": "Please look at {name}: hateful, discriminatory remarks in a Tandem party{when}, against the Language Parties Guidelines. Other members are put at risk by this. A strong sanction, including a ban, would be appropriate."
+    },
+    {
+      "id": "hate-055",
+      "variant": "hate",
+      "text": "Extremist ideas were promoted by {name} during a Tandem party{when}. Incitation of hateful or extremist behavior is a Red topic and puts other members in danger. Please take firm action and ban the account if warranted."
+    },
+    {
+      "id": "hate-056",
+      "variant": "hate",
+      "text": "Hate and discrimination in a language party{when}: that is why I am reporting {name}. These are not allowed by Tandem's Community Principles and they make the room unsafe. Please act urgently, with a ban if warranted."
+    },
+    {
+      "id": "hate-057",
+      "variant": "hate",
+      "text": "This user, {name}, called for hostility towards other people in a Tandem voice room{when}. Hateful topics are never OK on Tandem, and the targeted members are endangered. Please review the account urgently and apply strong measures."
+    },
+    {
+      "id": "hate-058",
+      "variant": "hate",
+      "text": "Tandem prohibits discrimination in Language Parties, but {name} encouraged it in a voice room{when}, together with extremist views. This is unsafe for other members. Please review the account and remove this user if the facts are confirmed."
+    },
+    {
+      "id": "hate-059",
+      "variant": "hate",
+      "text": "A Red topic came up in a Tandem party{when}: incitation of hateful behavior by {name}. It endangers the members targeted and spoils the room for learners. Please review urgently and act firmly, including a ban if warranted."
+    },
+    {
+      "id": "hate-060",
+      "variant": "hate",
+      "text": "For the record, {name} expressed hateful and extremist views in a language party{when}. This breaks Tandem's guidelines and endangers other members. Please review the account as a priority and consider banning it."
+    },
+    {
+      "id": "hate-061",
+      "variant": "hate",
+      "text": "Hate has no place in a language exchange. {name} promoted it in a Tandem party{when}, which the Language Parties Guidelines forbid. Targeted members are put at risk. Please review this account and take strong action."
+    },
+    {
+      "id": "hate-062",
+      "variant": "hate",
+      "text": "Could a moderator review {name}? In a Tandem voice room{when}, this person encouraged extremist and hateful behavior, a Red topic. It makes the room unsafe for learners. A ban seems warranted if confirmed."
+    },
+    {
+      "id": "hate-063",
+      "variant": "hate",
+      "text": "Discrimination, hateful views, extremist ideas: {name} voiced all of these in a Tandem party{when}. Tandem's guidelines do not allow them, and they endanger other members. I ask that the account be reviewed promptly and sanctioned if the report is confirmed."
+    },
+    {
+      "id": "hate-064",
+      "variant": "hate",
+      "text": "During a language party{when}, {name} spoke in support of hateful behavior. This is a Red topic, never OK on Tandem, and it harms the members it targets. Please review the account without delay and take firm action."
+    },
+    {
+      "id": "hate-065",
+      "variant": "hate",
+      "text": "I would like to report extremist and hateful talk by {name} in a Tandem party{when}. It goes against the Community Principles and endangers other learners. Please investigate and apply the sanction you judge necessary."
+    },
+    {
+      "id": "hate-066",
+      "variant": "hate",
+      "text": "Language Parties Guidelines: no discrimination, no hateful topics. {name} broke both in a Tandem party{when}, which makes the room unsafe for those targeted. Could you please review the account and act on it right away?"
+    },
+    {
+      "id": "hate-067",
+      "variant": "hate",
+      "text": "{name} pushed hateful and extremist ideas in a Tandem voice room{when}. That is incitation of hateful or extremist behavior, a Red topic, and it endangers other members. Please review the account urgently and take strong action."
+    },
+    {
+      "id": "hate-068",
+      "variant": "hate",
+      "text": "Strong action is needed against {name}, who encouraged discrimination and hatred in a live audio party{when}. Tandem's guidelines do not allow it, and it puts targeted members at risk. Please examine the account and sanction it as appropriate."
+    },
+    {
+      "id": "hate-069",
+      "variant": "hate",
+      "text": "Targeting people with hateful ideas is a Red topic on Tandem. {name} did this in a language party{when}, making the room unsafe. I would be grateful if the team could look at this account promptly."
+    },
+    {
+      "id": "hate-070",
+      "variant": "hate",
+      "text": "This is a safety report about {name}. In a Tandem party{when}, this user promoted extremist views and discrimination, which the guidelines prohibit. Other members are endangered by it. Please give this account your prompt attention and take appropriate measures."
+    },
+    {
+      "id": "hate-071",
+      "variant": "hate",
+      "text": "Hateful and discriminatory statements by {name} in a Tandem party{when} are my reason for reporting. Tandem's guidelines call such topics never OK, and they endanger other community members. Please review urgently and take strong action."
+    },
+    {
+      "id": "hate-072",
+      "variant": "hate",
+      "text": "Why I am reporting {name}: hateful, extremist remarks in a language party{when}. Incitation of hateful or extremist behavior is a Red topic, and it endangers other members. Please act urgently and ban the account if warranted."
+    },
+    {
+      "id": "hate-073",
+      "variant": "hate",
+      "text": "{name} supported hateful ideas in a Tandem voice room{when}. Tandem does not allow discrimination or hateful topics in Language Parties, and the members targeted are put at risk. Please review this account and apply a sanction if the report is confirmed."
+    },
+    {
+      "id": "hate-074",
+      "variant": "hate",
+      "text": "Please sanction {name} if the facts are confirmed. In a Tandem party{when}, this user promoted hatred and extremist behavior, which the Language Parties Guidelines prohibit and which endangers other members. A prompt, urgent review would be appreciated."
+    },
+    {
+      "id": "hate-075",
+      "variant": "hate",
+      "text": "Quick report: {name} encouraged hateful and extremist behavior in a Tandem party{when}. It is a Red topic and it makes the room unsafe for the people targeted. Please review the account urgently and take firm action."
+    },
+    {
+      "id": "hate-076",
+      "variant": "hate",
+      "text": "I was in a Tandem party{when} where {name} openly promoted hateful and extremist ideas and encouraged discrimination. Tandem's Language Parties Guidelines rule out hateful topics, and incitation of hateful or extremist behavior is a Red topic. This endangers the members targeted. Please examine this account promptly and take action."
+    },
+    {
+      "id": "hate-077",
+      "variant": "hate",
+      "text": "Respect is a basic rule in Tandem's community, and hatred breaks it. In a Tandem party{when}, {name} expressed hateful views and supported extremist behavior, a Red topic that is never, ever OK. Members targeted by such talk are put in danger and the room becomes unsafe. Please look at this account promptly and act as the guidelines provide."
+    },
+    {
+      "id": "hate-078",
+      "variant": "hate",
+      "text": "Following Tandem's Community Principles, I am flagging {name} for hateful conduct in a voice room{when}. This user encouraged discrimination and shared extremist ideas, which the Language Parties Guidelines prohibit. It endangers other members and discourages learners from taking part. I would appreciate an urgent review and a ban if warranted."
+    },
+    {
+      "id": "hate-079",
+      "variant": "hate",
+      "text": "{name} treated a Tandem party{when} as a stage for hateful and extremist ideas, encouraging discrimination against other people. Incitation of hateful or extremist behavior is a Red topic, and speakers can be banned for it. Other members are put at risk and the room is unsafe. Please investigate the account promptly and take strong action."
+    },
+    {
+      "id": "hate-080",
+      "variant": "hate",
+      "text": "Tandem's web guidelines list incitation of hateful or extremist behavior among the topics that are never, ever OK. In a language party{when}, {name} went against this by promoting hatred and discrimination. Targeted members are endangered. Please investigate the account and ban it if the facts are confirmed. I can give more details if needed."
+    },
+    {
+      "id": "hate-081",
+      "variant": "hate",
+      "text": "At some point in a Tandem party{when}, {name} turned to hateful and extremist talk and encouraged discrimination. This falls under the Red topics and the Language Parties Guidelines, which forbid hateful topics. It endangers those targeted. Please check this account and decide on the appropriate sanction."
+    },
+    {
+      "id": "hate-082",
+      "variant": "hate",
+      "text": "To the Tandem moderation team: {name} promoted extremist and hateful behavior in a live audio party{when}. This is a Red topic and a clear breach of the Language Parties Guidelines. Members who are targeted by such views are put in danger. Please review the account as a matter of priority and ban it if you find it warranted."
+    },
+    {
+      "id": "hate-083",
+      "variant": "hate",
+      "text": "What I heard from {name} in a Tandem party{when} was hateful, extremist talk and encouragement of discrimination. Tandem's guidelines forbid all of it, and it endangers other members. Please review the account urgently and take strong action."
+    },
+    {
+      "id": "hate-084",
+      "variant": "hate",
+      "text": "I believe {name} should be reviewed for hate and extremism. In a language party{when}, this user encouraged hostility toward other people, which breaks the Community Principles and counts as a Red topic. This puts targeted members at risk. Please take strong action, including a ban if warranted."
+    },
+    {
+      "id": "hate-085",
+      "variant": "hate",
+      "text": "No learner should be targeted by hatred in a Tandem party. Unfortunately, during a party{when}, {name} promoted hateful and discriminatory ideas, which Tandem's Language Parties Guidelines do not allow. It endangers other members. Please look into this account promptly and apply the sanction you find fitting."
+    },
+    {
+      "id": "hate-086",
+      "variant": "hate",
+      "text": "{name} called for hateful and extremist behavior in a Tandem voice room{when}. According to Tandem's guidelines, that is a Red topic: never OK in the community. The talk is unsafe for members who could be targeted. Thank you for reviewing the account urgently and taking firm action, up to a ban."
+    },
+    {
+      "id": "hate-087",
+      "variant": "hate",
+      "text": "Regarding {name}: this participant expressed discriminatory, hateful and extremist opinions during a language party{when}. Such content violates the Language Parties Guidelines and endangers community members. I request an urgent review and strong action, including a ban where warranted."
+    },
+    {
+      "id": "hate-088",
+      "variant": "hate",
+      "text": "A language party{when} should be a safe place to practice. Instead, {name} promoted hatred and extremist behavior, which is a Red topic under Tandem's guidelines. Learners and the people targeted are put at risk. Please review the account promptly and act on it."
+    },
+    {
+      "id": "hate-089",
+      "variant": "hate",
+      "text": "Hate speech and extremist talk from {name} made a Tandem party{when} unsafe. Incitation of hateful or extremist behavior is a Red topic, and discrimination is not allowed in Language Parties. Please review the account without delay and take strong action, including a ban if warranted."
+    },
+    {
+      "id": "hate-090",
+      "variant": "hate",
+      "text": "Please note a violation of the Language Parties Guidelines by {name}. In a Tandem party{when}, this user encouraged discrimination and shared hateful, extremist ideas. Targeted members are endangered by this kind of talk. I ask for an urgent review and, where warranted, a ban."
+    },
+    {
+      "id": "hate-091",
+      "variant": "hate",
+      "text": "I have to report {name} for supporting hateful and extremist behavior in a Tandem live audio room{when}. Tandem's Community Principles and its Red topic list both prohibit this, and it makes the party unsafe for the people concerned. Please review the account urgently and take firm action."
+    },
+    {
+      "id": "hate-092",
+      "variant": "hate",
+      "text": "What {name} said in a Tandem party{when} encouraged hatred and discrimination, and supported extremist behavior. It is a Red topic, never OK on Tandem, and it endangers the people targeted. Please check this account and take firm action if the report is confirmed."
+    },
+    {
+      "id": "hate-093",
+      "variant": "hate",
+      "text": "Several of Tandem's rules were broken by {name} in a language party{when}: no discrimination, no hateful topics, no incitation of extremist behavior. This puts other members in danger. Please investigate and sanction the account as the rules provide."
+    },
+    {
+      "id": "hate-094",
+      "variant": "hate",
+      "text": "Learners join Tandem parties to practice languages, not to listen to hatred. In a party{when}, {name} promoted hateful and extremist ideas, a Red topic under the guidelines. It endangers targeted members. Please review the account urgently and take strong action, including a ban if warranted."
+    },
+    {
+      "id": "hate-095",
+      "variant": "hate",
+      "text": "Please consider banning {name}. In a Tandem party{when}, this user encouraged hateful and extremist behavior, which the Language Parties Guidelines prohibit. It endangers other members and makes the room unsafe. A prompt review would be appreciated."
+    },
+    {
+      "id": "hate-096",
+      "variant": "hate",
+      "text": "Using a Tandem party{when} to spread hateful ideas is not acceptable, and {name} did exactly that. It is incitation of hateful or extremist behavior, a Red topic, and it puts targeted members in danger. I ask for an urgent review and strong action, including a ban if warranted."
+    },
+    {
+      "id": "hate-097",
+      "variant": "hate",
+      "text": "I would be grateful if you could look at {name}. In a language party{when}, this person made hateful remarks and encouraged discrimination, which is a Red topic and goes against the Community Principles. Other members can be harmed by this. A firm response, including a ban if warranted, would be appropriate."
+    },
+    {
+      "id": "hate-098",
+      "variant": "hate",
+      "text": "This message is about {name}, a participant who supported hateful and extremist ideas in a Tandem party{when}. Discrimination and hateful topics are not allowed in Language Parties, and speakers can be banned. The targeted members are endangered. Please review urgently. I can give more details if needed."
+    },
+    {
+      "id": "hate-099",
+      "variant": "hate",
+      "text": "On the topic of safety: {name} encouraged hatred towards other people in a live audio party{when}. Tandem's guidelines call this a Red topic, never OK. It endangers the members targeted and harms the learning space. Please review the account urgently and take strong action."
+    },
+    {
+      "id": "hate-100",
+      "variant": "hate",
+      "text": "Please investigate {name}, who shared hateful, extremist views in a Tandem voice room{when} and encouraged discrimination. Tandem's Language Parties Guidelines prohibit it, and it makes the room unsafe for the learners concerned. Strong action, including a ban, seems warranted."
+    },
+    {
+      "id": "harassment-001",
+      "variant": "harassment",
+      "text": "{name} mocked and belittled other participants in a Tandem voice room{when}. Tandem's Language Parties Guidelines prohibit bullying, mobbing and trolling. This behaviour makes learners feel unwelcome and less willing to speak. Please review this account and warn or restrict it as appropriate."
+    },
+    {
+      "id": "harassment-002",
+      "variant": "harassment",
+      "text": "This report is about bullying: {name} targeted other participants in a language party{when}. The Language Parties Guidelines state that there must be no discrimination, bullying, mobbing, trolling or excluding others. Behaviour like this discourages learners from speaking up. I would ask you to look into this account and take appropriate action."
+    },
+    {
+      "id": "harassment-003",
+      "variant": "harassment",
+      "text": "{name} trolled other speakers in a live audio room{when}. Trolling and bullying are ruled out by Tandem's Language Parties Guidelines, and mockery makes learners stop speaking. Please remind this user of the rules."
+    },
+    {
+      "id": "harassment-004",
+      "variant": "harassment",
+      "text": "Please review the behaviour of {name} in a Tandem party{when}. This participant bullied others in the voice room, which the Language Parties Guidelines do not allow: no bullying, mobbing, trolling or excluding others. Being targeted makes learners feel unwelcome. A warning, or a stronger measure if you judge it appropriate, would be welcome."
+    },
+    {
+      "id": "harassment-005",
+      "variant": "harassment",
+      "text": "Excluding others is not allowed in Tandem's Language Parties Guidelines, yet {name} shut other participants out of the conversation during a language party{when}. It discourages learners from joining in and speaking. Please look at this account and warn or restrict it as you see fit."
+    },
+    {
+      "id": "harassment-006",
+      "variant": "harassment",
+      "text": "This report concerns {name}, who mocked and mobbed other participants in a Tandem voice room{when}. The Language Parties Guidelines prohibit mobbing and bullying. Targeted learners lose confidence and may hold back from speaking. Please address this with the account."
+    },
+    {
+      "id": "harassment-007",
+      "variant": "harassment",
+      "text": "Tandem's guidelines are clear that language parties must have no bullying, mobbing, trolling or exclusion of others. During a party{when}, {name} broke that rule by mocking and picking on other participants. This leaves learners feeling unwelcome and reluctant to talk. Please check the account and consider a warning or a restriction."
+    },
+    {
+      "id": "harassment-008",
+      "variant": "harassment",
+      "text": "A participant named {name} was trolling in a Tandem party{when}, disrupting the voice room and ridiculing others instead of practising a language. Trolling is not allowed under the Language Parties Guidelines, and it makes other learners feel unwelcome. Could you please review this account and take appropriate action? I can provide more details if needed."
+    },
+    {
+      "id": "harassment-009",
+      "variant": "harassment",
+      "text": "{name} bullied other participants in a Tandem party{when}, which breaks the Language Parties Guidelines. It makes learners feel unwelcome. Please issue a warning to this user, and restrict the account if the team sees fit."
+    },
+    {
+      "id": "harassment-010",
+      "variant": "harassment",
+      "text": "Harassment of other people is the reason for this report: {name} targeted participants in a language party{when}. Tandem's Language Parties Guidelines rule out bullying and mobbing in a party. Being targeted discourages learners from speaking at all. Please investigate this account and act accordingly."
+    },
+    {
+      "id": "harassment-011",
+      "variant": "harassment",
+      "text": "Mocking other learners is not what a Tandem party is for. In a live audio room{when}, {name} made fun of other participants, contrary to the Language Parties Guidelines against bullying, trolling and mobbing. This makes people feel unwelcome and less keen to speak. Please remind this user of the rules, or restrict the account if the team sees fit."
+    },
+    {
+      "id": "harassment-012",
+      "variant": "harassment",
+      "text": "{name} joined in mobbing other participants during a Tandem party{when}, targeting them in the voice room rather than helping them practise. Mobbing and bullying are prohibited by the Language Parties Guidelines, and they leave learners feeling unwelcome. I ask that you review this account and take suitable action."
+    },
+    {
+      "id": "harassment-013",
+      "variant": "harassment",
+      "text": "Under Tandem's Language Parties Guidelines, excluding others is not allowed. In a party{when}, {name} shut other participants out of the conversation. Learners who are ignored may stop speaking. Please warn or restrict this account."
+    },
+    {
+      "id": "harassment-014",
+      "variant": "harassment",
+      "text": "Please look into {name}, a participant in a Tandem party{when}. They bullied and mocked other people in the voice room, which goes against the rule of no bullying, mobbing or trolling in Language Parties. It makes learners feel unwelcome and discourages them from speaking. Thank you for looking into this."
+    },
+    {
+      "id": "harassment-015",
+      "variant": "harassment",
+      "text": "During a language party{when}, I heard {name} trolling other participants. Trolling and bullying are listed as not allowed in Tandem's Language Parties Guidelines, and they pull a party away from language learning. Such behaviour puts learners off speaking. Please review the account and take action as you see fit."
+    },
+    {
+      "id": "harassment-016",
+      "variant": "harassment",
+      "text": "The Language Parties Guidelines say no bullying, mobbing or trolling, but {name} bullied other participants in a Tandem voice room{when}. This is not permitted, and it makes learners feel unwelcome. Please warn this user and consider restricting the account if appropriate."
+    },
+    {
+      "id": "harassment-017",
+      "variant": "harassment",
+      "text": "Report: bullying in a Tandem party{when}. {name} mocked other participants in the live audio room, which goes against the Language Parties Guidelines on bullying and trolling. Learners who are put down become less willing to speak. Please review this account."
+    },
+    {
+      "id": "harassment-018",
+      "variant": "harassment",
+      "text": "Is a Tandem party{when} the place for what {name} did? This participant trolled and mocked other learners in the voice room, which the Language Parties Guidelines do not allow. It discourages people from speaking and makes them feel unwelcome. Could the moderation team take a look at this account and respond as it sees fit?"
+    },
+    {
+      "id": "harassment-019",
+      "variant": "harassment",
+      "text": "{name} singled out other participants for ridicule in a Tandem voice room{when}. This is bullying, which is prohibited in Tandem's Language Parties Guidelines along with mobbing, trolling and excluding others. Learners who are ridiculed feel unwelcome and hesitate to speak. Please deal with this account in line with your policies."
+    },
+    {
+      "id": "harassment-020",
+      "variant": "harassment",
+      "text": "{name} made fun of other participants in a language party{when}. The Language Parties Guidelines forbid bullying, trolling and mobbing. It makes learners feel unwelcome and discourages them from taking the mic. A warning or restriction would be justified."
+    },
+    {
+      "id": "harassment-021",
+      "variant": "harassment",
+      "text": "Please remind {name} of Tandem's rules. In a language party{when}, this user trolled other participants, which the Language Parties Guidelines list as not allowed. It puts people off speaking. A warning would be appropriate."
+    },
+    {
+      "id": "harassment-022",
+      "variant": "harassment",
+      "text": "Mobbing is not allowed in Language Parties, yet {name} took part in it during a Tandem party{when}, picking on other participants in the voice room. Learners who are targeted this way feel unwelcome and may stop speaking. Please look at this account and decide on a reminder or a restriction."
+    },
+    {
+      "id": "harassment-023",
+      "variant": "harassment",
+      "text": "Within a Tandem voice room{when}, {name} excluded other participants from the discussion and belittled them. Tandem's Community Principles, as applied in the Language Parties Guidelines, rule out bullying and excluding others. This leaves learners feeling unwelcome and unwilling to speak. Please review this account and respond as you think right."
+    },
+    {
+      "id": "harassment-024",
+      "variant": "harassment",
+      "text": "I am writing about {name}, who bullied others during a Tandem party{when}. According to the Language Parties Guidelines, there should be no bullying, mobbing, trolling or excluding others. Bullying discourages learners from speaking. Please look into this account and take appropriate measures."
+    },
+    {
+      "id": "harassment-025",
+      "variant": "harassment",
+      "text": "Trolling and mockery have no place in a language party. During one{when}, {name} trolled and mocked other participants, going against Tandem's Language Parties Guidelines. Learners who are mocked feel unwelcome and are less likely to speak. Please review the account and consider a warning or restriction."
+    },
+    {
+      "id": "harassment-026",
+      "variant": "harassment",
+      "text": "{name} bullied other learners in a Tandem party{when}. Bullying and trolling are not allowed in Language Parties, and being targeted makes learners hesitate to speak. Please warn this user or restrict the account."
+    },
+    {
+      "id": "harassment-027",
+      "variant": "harassment",
+      "text": "Heads up about {name}: in a live audio room{when}, this user mocked other participants and made the party an unpleasant place. The Language Parties Guidelines forbid bullying and mobbing. Learners who feel ridiculed stop practising. Please check the account and decide what measure fits."
+    },
+    {
+      "id": "harassment-028",
+      "variant": "harassment",
+      "text": "Please take a look at {name}. In a language party{when}, they ridiculed other participants, which breaches the rule against bullying, trolling and mobbing in the Language Parties Guidelines. Such behaviour discourages people from speaking. A reminder or restriction would be appropriate."
+    },
+    {
+      "id": "harassment-029",
+      "variant": "harassment",
+      "text": "I need to flag a trolling problem. During a Tandem party{when}, {name} wound up other participants and mocked them in the voice room. Trolling is not allowed in Language Parties, and it makes learners feel unwelcome and less willing to talk. Please look into this account and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "harassment-030",
+      "variant": "harassment",
+      "text": "Excluding people is against the rules of Tandem parties. In a voice room{when}, {name} left other participants out of the conversation and dismissed them. The Language Parties Guidelines say no excluding others. Please remind this user of that rule, and restrict the account if you see fit."
+    },
+    {
+      "id": "harassment-031",
+      "variant": "harassment",
+      "text": "Other participants were picked on by {name} in a Tandem voice room{when}. The Language Parties Guidelines prohibit bullying, mobbing and trolling. Learners should feel welcome to speak. I would like a moderator to look at this account."
+    },
+    {
+      "id": "harassment-032",
+      "variant": "harassment",
+      "text": "Regarding {name}: during a language party{when}, this participant joined in bullying others over the microphone. Bullying and mobbing contradict Tandem's Language Parties Guidelines, and they discourage learners from speaking. Please review the account and act in whatever way the team considers right."
+    },
+    {
+      "id": "harassment-033",
+      "variant": "harassment",
+      "text": "Ridiculing other learners goes against the Language Parties Guidelines, and {name} did it in a language party{when}. This kind of treatment leaves people reluctant to speak up. I would appreciate a reminder to this user about the rules."
+    },
+    {
+      "id": "harassment-034",
+      "variant": "harassment",
+      "text": "The Language Parties Guidelines apply Tandem's Community Principles to voice rooms: no bullying, mobbing, trolling or excluding others. In a party{when}, {name} went against this by bullying and mocking other participants. It leaves learners feeling unwelcome and reluctant to speak. Please remind this user of these rules, or restrict the account."
+    },
+    {
+      "id": "harassment-035",
+      "variant": "harassment",
+      "text": "Why am I reporting {name}? Because in a Tandem voice room{when}, this user mocked and trolled other participants, which is not allowed in Language Parties. It makes learners feel unwelcome and hesitant to speak. Please review the account and decide on a suitable action."
+    },
+    {
+      "id": "harassment-036",
+      "variant": "harassment",
+      "text": "There was mockery in a Tandem party{when}, and {name} was part of it. The Language Parties Guidelines forbid bullying and mobbing, and learners who feel ridiculed stop practising. Please review this account."
+    },
+    {
+      "id": "harassment-037",
+      "variant": "harassment",
+      "text": "Could you please check the account of {name}? In a Tandem party{when}, this user took part in mobbing other participants in the voice room, something the Language Parties Guidelines prohibit. It undermines learners' confidence and their willingness to speak. Appropriate action would be appreciated."
+    },
+    {
+      "id": "harassment-038",
+      "variant": "harassment",
+      "text": "Learners join a language party to practise, not to be mocked. In a party{when}, {name} made fun of other participants, which breaks the guidelines against bullying and trolling in Language Parties. It discourages people from speaking. Please step in with a warning or restriction."
+    },
+    {
+      "id": "harassment-039",
+      "variant": "harassment",
+      "text": "Rude and exclusionary behaviour came from {name} in a Tandem party{when}. This user shut other participants out of the discussion and mocked them, which Tandem's Language Parties Guidelines do not allow. Learners treated this way feel unwelcome and stop speaking. A warning or restriction of the account would be justified."
+    },
+    {
+      "id": "harassment-040",
+      "variant": "harassment",
+      "text": "Looking for help with a bullying case. In a live audio room{when}, {name} targeted other participants with mockery, contrary to the Language Parties Guidelines, which rule out bullying, trolling and mobbing. It makes learners reluctant to join the conversation. Please look into this account."
+    },
+    {
+      "id": "harassment-041",
+      "variant": "harassment",
+      "text": "Mocking others does not belong in a Tandem party. {name} mocked and trolled other participants{when}, which the Language Parties Guidelines rule out under bullying and trolling. It makes learners reluctant to speak. Please remind this user of the rules."
+    },
+    {
+      "id": "harassment-042",
+      "variant": "harassment",
+      "text": "One of the rules for Language Parties is no bullying, and {name} broke it{when}. In the voice room, this participant belittled and mocked other learners. People who are belittled become reluctant to speak, which defeats the purpose of a language party. Please review the account and respond as the team sees fit."
+    },
+    {
+      "id": "harassment-043",
+      "variant": "harassment",
+      "text": "Please act on a report of mobbing. {name} took part in picking on other participants in a Tandem party{when}. Mobbing is prohibited by the Language Parties Guidelines, as it makes learners feel unwelcome and unwilling to speak. I ask you to review this account and decide on a suitable measure."
+    },
+    {
+      "id": "harassment-044",
+      "variant": "harassment",
+      "text": "It concerns me that {name} bullied other participants in a language party{when}. The Language Parties Guidelines are explicit: no discrimination, bullying, mobbing, trolling or excluding others. Learners deserve a respectful place to practise, and this behaviour discourages them from speaking. Kindly review the account."
+    },
+    {
+      "id": "harassment-045",
+      "variant": "harassment",
+      "text": "Mockery drives learners away from voice rooms. During a Tandem party{when}, {name} mocked other participants, against the Language Parties Guidelines on bullying. Please warn this user."
+    },
+    {
+      "id": "harassment-046",
+      "variant": "harassment",
+      "text": "Excluding and ridiculing others is what {name} did in a live audio room{when}. Tandem's Language Parties Guidelines list excluding others and bullying as not allowed. It makes learners feel they do not belong and discourages them from speaking. Please review this account and take the action you see fit."
+    },
+    {
+      "id": "harassment-047",
+      "variant": "harassment",
+      "text": "On the matter of {name}: a participant in a Tandem party{when} who bullied other people in the voice room. According to the Language Parties Guidelines, bullying, mobbing and trolling are not allowed. Please look into this account and consider a warning or restriction."
+    },
+    {
+      "id": "harassment-048",
+      "variant": "harassment",
+      "text": "Tandem's Language Parties Guidelines rule out trolling and bullying. {name} went against this{when} by trolling and mocking other participants in the voice room. Trolling is on the list of things that are not allowed, and it puts learners off speaking. Please review the account and respond according to your policies."
+    },
+    {
+      "id": "harassment-049",
+      "variant": "harassment",
+      "text": "My report concerns {name} in a language party{when}. This user bullied others, which the Language Parties Guidelines rule out. Learners who are bullied feel unwelcome. Please look at what can be done about this account."
+    },
+    {
+      "id": "harassment-050",
+      "variant": "harassment",
+      "text": "Participants in a Tandem party{when} were mocked and picked on by {name}. This is bullying, which is not allowed under the Language Parties Guidelines. Learners who are mocked feel unwelcome and are discouraged from speaking, so I would appreciate it if you could review the account and take appropriate action."
+    },
+    {
+      "id": "harassment-051",
+      "variant": "harassment",
+      "text": "Hello, I want to report a participant called {name}. In a Tandem party{when}, they bullied other people in the voice room, which is clearly against the Language Parties Guidelines. Learners who are bullied feel unwelcome and may stop taking part. I would be grateful if the account could be reviewed."
+    },
+    {
+      "id": "harassment-052",
+      "variant": "harassment",
+      "text": "Tandem parties exist for learners to talk, not to be ridiculed. {name} ridiculed participants{when}, and Language Parties do not allow bullying. Please speak to this user or restrict the account."
+    },
+    {
+      "id": "harassment-053",
+      "variant": "harassment",
+      "text": "At a language party{when}, {name} acted as a troll toward other participants, provoking and mocking them in the voice room. Trolling is expressly not allowed under Tandem's Language Parties Guidelines. It spoils the room for learners and makes them wary of speaking. I ask for a review of this account."
+    },
+    {
+      "id": "harassment-054",
+      "variant": "harassment",
+      "text": "Bullying other members is a breach of Tandem's Community Principles, and the Language Parties Guidelines apply them to live audio rooms. {name} bullied other participants in one{when}. This makes learners feel unwelcome. Please warn this user, or take stronger action if appropriate."
+    },
+    {
+      "id": "harassment-055",
+      "variant": "harassment",
+      "text": "What I observed in a Tandem party{when} was {name} treating other participants with contempt, mocking and excluding them. The Language Parties Guidelines prohibit bullying and excluding others. It leaves learners feeling unwelcome and discourages them from speaking. Please follow up with this account."
+    },
+    {
+      "id": "harassment-056",
+      "variant": "harassment",
+      "text": "Bullying other members breaches Tandem's Community Principles. In a live audio room{when}, {name} bullied other participants, which makes learners feel unwelcome. Please warn this user."
+    },
+    {
+      "id": "harassment-057",
+      "variant": "harassment",
+      "text": "Request: please review the account of {name}. During a Tandem party{when}, this participant mocked others in the voice room and made them feel unwelcome, which breaks the no-bullying, no-trolling rule of the Language Parties Guidelines. Learners should feel safe to speak, so a warning would be welcome."
+    },
+    {
+      "id": "harassment-058",
+      "variant": "harassment",
+      "text": "Moderators, please note: {name} mocked others during a Tandem party{when}, breaking the no-bullying, no-trolling rule of the Language Parties Guidelines. Learners need to feel safe to speak. A reminder to this account would be welcome."
+    },
+    {
+      "id": "harassment-059",
+      "variant": "harassment",
+      "text": "Dear moderators, {name} trolled other participants in a Tandem party{when}. The Language Parties Guidelines prohibit trolling, bullying and mobbing, and such behaviour discourages learners from using the microphone. Please check the account and remind this user of the rules, or restrict it if appropriate."
+    },
+    {
+      "id": "harassment-060",
+      "variant": "harassment",
+      "text": "I am concerned about {name}, who belittled other learners in a live audio room{when}. Bullying is not allowed in Language Parties, and it makes people feel unwelcome. Please speak to this user about the rules."
+    },
+    {
+      "id": "harassment-061",
+      "variant": "harassment",
+      "text": "Two things are not acceptable in a Tandem party: bullying and excluding others. {name} did both in a voice room{when}. The Language Parties Guidelines say so explicitly, and the behaviour makes learners feel unwelcome. Please warn this user, and restrict the account if the team judges it necessary."
+    },
+    {
+      "id": "harassment-062",
+      "variant": "harassment",
+      "text": "Can you please warn {name}? In a language party{when}, this user made fun of other participants, which goes against the Language Parties Guidelines on bullying, trolling and mobbing. Learners who are laughed at lose the confidence to speak. If it is appropriate, please also restrict the account."
+    },
+    {
+      "id": "harassment-063",
+      "variant": "harassment",
+      "text": "{name} was disrespectful toward other learners in a Tandem party{when}, bullying them in the voice room. The Language Parties Guidelines prohibit this, and it leaves learners feeling unwelcome and unwilling to talk. Please review the account and respond as needed."
+    },
+    {
+      "id": "harassment-064",
+      "variant": "harassment",
+      "text": "Harassment of participants happened in a Tandem party{when}, and the account involved is {name}. This user mocked and trolled other speakers, violating the Language Parties Guidelines. Such behaviour makes learners unwilling to speak. Please investigate and take appropriate action."
+    },
+    {
+      "id": "harassment-065",
+      "variant": "harassment",
+      "text": "In line with Tandem's guidelines for Language Parties, bullying, mobbing and excluding others are not allowed. I am reporting {name} for exactly this in a voice room{when}. Being targeted makes learners feel unwelcome and discourages them from speaking. Please review this account."
+    },
+    {
+      "id": "harassment-066",
+      "variant": "harassment",
+      "text": "Having joined a Tandem party{when}, I found {name} mocking and talking down to other participants. That counts as bullying under the Language Parties Guidelines, which also rule out trolling and mobbing. It makes learners feel unwelcome. Please warn this user or restrict the account if appropriate."
+    },
+    {
+      "id": "harassment-067",
+      "variant": "harassment",
+      "text": "A learner who is mocked will not want to speak again, so I am reporting {name}. In a language party{when}, this participant mocked others, which Tandem does not allow: the Language Parties Guidelines prohibit bullying and trolling. Please review the account and decide on a fitting response."
+    },
+    {
+      "id": "harassment-068",
+      "variant": "harassment",
+      "text": "Short report about {name}: in a Tandem voice room{when}, this user bullied other participants. The Language Parties Guidelines do not allow this, and it makes learners feel unwelcome. Please look into the account and warn or restrict it if needed."
+    },
+    {
+      "id": "harassment-069",
+      "variant": "harassment",
+      "text": "The behaviour of {name} in a language party{when} amounted to trolling and bullying. This participant mocked others in the live audio room, which the Language Parties Guidelines do not permit. It makes learners feel unwelcome and discourages them from taking part. Please review the account and consider a warning."
+    },
+    {
+      "id": "harassment-070",
+      "variant": "harassment",
+      "text": "Please do something about trolling in Tandem parties. In one{when}, {name} trolled other participants and ridiculed them, which Tandem's Language Parties Guidelines rule out. It puts learners off speaking and makes them feel unwelcome. A warning or a restriction on this account would be appropriate."
+    },
+    {
+      "id": "harassment-071",
+      "variant": "harassment",
+      "text": "Being excluded from a conversation is discouraging in a language party, and {name} excluded other participants from the conversation{when}. Tandem's Language Parties Guidelines state that excluding others is not allowed. It makes learners feel unwelcome. Please review this account and decide how to respond."
+    },
+    {
+      "id": "harassment-072",
+      "variant": "harassment",
+      "text": "Mockery from {name} spoiled a Tandem party{when}. This participant bullied and mocked others in the voice room, which is against the Language Parties Guidelines. Such behaviour makes learners feel unwelcome and reluctant to speak. Please review the account and respond as you see fit."
+    },
+    {
+      "id": "harassment-073",
+      "variant": "harassment",
+      "text": "From what I heard in a live audio room{when}, {name} was mobbing other participants. Mobbing and bullying are not allowed in Tandem's Language Parties Guidelines. Learners who are mobbed feel unwelcome and may stop speaking. Please look into this account and take suitable action."
+    },
+    {
+      "id": "harassment-074",
+      "variant": "harassment",
+      "text": "Following a Tandem party{when}, I am reporting {name} for bullying. This participant put down and mocked other learners in the voice room, which is prohibited by the Language Parties Guidelines. Bullying makes a party unwelcoming and discourages speaking. Please review the account and decide whether a warning or restriction is warranted."
+    },
+    {
+      "id": "harassment-075",
+      "variant": "harassment",
+      "text": "Mobbing is a form of bullying, and {name} took part in it in a Tandem voice room{when}. The Language Parties Guidelines prohibit both. Please review this account and enforce the rule."
+    },
+    {
+      "id": "harassment-076",
+      "variant": "harassment",
+      "text": "Is bullying acceptable in a Tandem party? According to the Language Parties Guidelines it is not, yet {name} bullied other participants in the voice room{when}. This makes learners feel unwelcome and less willing to speak. I would like the account to be reviewed and appropriate action taken."
+    },
+    {
+      "id": "harassment-077",
+      "variant": "harassment",
+      "text": "{name} picked on other participants during a Tandem party{when}. This is mobbing and bullying, both ruled out by the Language Parties Guidelines. Learners feel unwelcome when treated this way and are discouraged from speaking. Please review the account."
+    },
+    {
+      "id": "harassment-078",
+      "variant": "harassment",
+      "text": "Bullying and trolling were part of a Tandem party{when} because of {name}. This user ridiculed other participants in the voice room, against the Language Parties Guidelines, which rule out both. Please warn this account, or restrict it if you think it necessary."
+    },
+    {
+      "id": "harassment-079",
+      "variant": "harassment",
+      "text": "Participants who speak a new language are vulnerable to mockery, which is why the rule against bullying in Language Parties matters. In a live audio room{when}, {name} mocked other learners. It makes them feel unwelcome and quiet. Please review this account and remind this user of the rules."
+    },
+    {
+      "id": "harassment-080",
+      "variant": "harassment",
+      "text": "Bullying is not allowed in Language Parties, and {name} bullied participants in a Tandem voice room{when}. Please remind this user of the rules and review the account."
+    },
+    {
+      "id": "harassment-081",
+      "variant": "harassment",
+      "text": "This is a report of bullying in a Tandem voice room{when}. The participant, {name}, belittled other learners, even though the Language Parties Guidelines prohibit bullying, mobbing, trolling and excluding others. Please review this account. I can provide more details if needed."
+    },
+    {
+      "id": "harassment-082",
+      "variant": "harassment",
+      "text": "Trolls do not belong in language parties. {name} trolled other participants in a Tandem voice room{when}, ignoring the Language Parties Guidelines that rule out trolling and bullying. Learners targeted by trolls feel unwelcome and stop talking. Please deal with this account under your policies."
+    },
+    {
+      "id": "harassment-083",
+      "variant": "harassment",
+      "text": "Some participants in a Tandem party{when} were treated badly by {name}, who mocked them and left them out of the discussion. Bullying and excluding others are not allowed under the Language Parties Guidelines. It discourages learners from speaking. Please review this account and decide on suitable action."
+    },
+    {
+      "id": "harassment-084",
+      "variant": "harassment",
+      "text": "{name} trolled a Tandem party{when}, mocking others in the voice room instead of practising a language. Trolling is not allowed under the Language Parties Guidelines, and it makes other learners hesitant to speak. Please warn this user or restrict the account."
+    },
+    {
+      "id": "harassment-085",
+      "variant": "harassment",
+      "text": "When I was in a language party{when}, {name} started mocking other participants in the voice room. Tandem's Language Parties Guidelines forbid bullying, trolling and mobbing, and this made the room feel unwelcome to learners. Please review the account and take the measures you think right."
+    },
+    {
+      "id": "harassment-086",
+      "variant": "harassment",
+      "text": "Respectful conversation is the point of Tandem parties, but {name} bullied other participants{when}. Bullying is not allowed in Language Parties, and being bullied makes learners reluctant to speak at all. Please review this account and warn this user."
+    },
+    {
+      "id": "harassment-087",
+      "variant": "harassment",
+      "text": "My complaint is about {name}, who trolled and mocked others in a Tandem party{when}. The Language Parties Guidelines say no trolling, no bullying and no mobbing. Learners who are mocked feel unwelcome and discouraged. Could you please investigate and take appropriate action?"
+    },
+    {
+      "id": "harassment-088",
+      "variant": "harassment",
+      "text": "Left out and ridiculed: that is how {name} treated other participants in a live audio room{when}. Both are prohibited by Tandem's Language Parties Guidelines, and being treated this way makes learners feel unwelcome. Please review the account and take the action you see fit."
+    },
+    {
+      "id": "harassment-089",
+      "variant": "harassment",
+      "text": "Giving other participants a hard time is not allowed in Tandem parties. {name} did this{when} by mocking and ridiculing them in the voice room, in breach of the rules on bullying and trolling in the Language Parties Guidelines. This discourages learners from speaking. Please warn this user."
+    },
+    {
+      "id": "harassment-090",
+      "variant": "harassment",
+      "text": "Bullying is listed as not allowed in the Language Parties Guidelines, and it happened in a party{when} involving {name}. This user mocked other speakers in the live audio room, making learners feel unwelcome and unwilling to speak. Please review the account and apply a restriction if appropriate."
+    },
+    {
+      "id": "harassment-091",
+      "variant": "harassment",
+      "text": "Taking part in a mobbing is also bullying, and {name} did that to other participants in a Tandem voice room{when}. The Language Parties Guidelines prohibit both. It makes learners feel unwelcome and puts them off speaking. Please act on this account in line with the guidelines."
+    },
+    {
+      "id": "harassment-092",
+      "variant": "harassment",
+      "text": "Language parties are for practising together, but {name} was mocking other participants{when}. Bullying is against the Language Parties Guidelines. It can leave learners reluctant to speak. I ask that a moderator check this account."
+    },
+    {
+      "id": "harassment-093",
+      "variant": "harassment",
+      "text": "The rule is simple: no discrimination, bullying, mobbing, trolling or excluding others in Language Parties. {name} ignored it in a voice room{when} by bullying other participants. That makes learners feel unwelcome. Please warn this user, and restrict the account if you deem it appropriate."
+    },
+    {
+      "id": "harassment-094",
+      "variant": "harassment",
+      "text": "Please check the account of {name}. In a Tandem party{when}, this user took part in mobbing, which the Language Parties Guidelines prohibit. It undermines learners' willingness to speak. Thank you."
+    },
+    {
+      "id": "harassment-095",
+      "variant": "harassment",
+      "text": "Learners come to practise a language, and {name} undermined that{when} by trolling and ridiculing other participants in a language party. This is not allowed under the Language Parties Guidelines. It puts people off speaking. Please review the account."
+    },
+    {
+      "id": "harassment-096",
+      "variant": "harassment",
+      "text": "{name} turned on other participants in a live audio room{when}, mocking and belittling them. That falls under bullying, which Tandem's Language Parties Guidelines rule out. Learners subjected to it feel unwelcome and stop speaking. Please look into the account and decide whether to warn or restrict it."
+    },
+    {
+      "id": "harassment-097",
+      "variant": "harassment",
+      "text": "Please step in regarding bullying in a Tandem party{when}. {name} targeted other participants with mockery in the voice room, which the Language Parties Guidelines do not allow. Those targeted may be too uneasy to speak. I trust that you will review this account and act appropriately."
+    },
+    {
+      "id": "harassment-098",
+      "variant": "harassment",
+      "text": "Trolling in a language party{when} is the concern here, and it involves {name}. This participant provoked and mocked others in the voice room, which is prohibited under Tandem's Language Parties Guidelines. It makes learners feel unwelcome and discourages them from speaking. Please look into this account and respond as the guidelines allow."
+    },
+    {
+      "id": "harassment-099",
+      "variant": "harassment",
+      "text": "Because bullying discourages learners, please review {name}. In a Tandem party{when}, this participant bullied others, which the Language Parties Guidelines forbid. A warning or restriction as appropriate would be welcome."
+    },
+    {
+      "id": "harassment-100",
+      "variant": "harassment",
+      "text": "My concern is {name}, who mocked other participants in a Tandem voice room{when}. Tandem's Language Parties Guidelines prohibit bullying and trolling. It makes learners feel unwelcome and less keen to speak. Please raise this with the account holder."
+    }
+  ]
+}

@@ -2,7 +2,8 @@
   "leaf": "party.dating",
   "variants": {
     "flirt": "Drague",
-    "sexual": "Propos sexuels"
+    "sexual": "Propos sexuels",
+    "explicit": "Contenu sexuel explicite"
   },
   "messages": [
     {
@@ -504,6 +505,510 @@
       "id": "sexual-050",
       "variant": "sexual",
       "text": "Making sexual comments in a Tandem party is not acceptable, but {name} did so{when}. This breaks the community guidelines of a language exchange and made the room unsafe for learners. Please review this account and take appropriate action so it does not happen again."
+    },
+    {
+      "id": "explicit-001",
+      "variant": "explicit",
+      "text": "Pornographic material was played in a Tandem voice room{when} by {name}. This is a Red topic under Tandem's guidelines and is never OK in a language party. It exposes learners to explicit content they did not choose. Please review this account urgently and, if justified, restrict it."
+    },
+    {
+      "id": "explicit-002",
+      "variant": "explicit",
+      "text": "{name} shared sexually explicit audio in a Tandem party{when}, and I am reporting it. Tandem's Language Parties Guidelines say that sexual topics are never OK, and other learners should not have to hear this while trying to practise a language. Please look into the account and restrict or ban it if warranted."
+    },
+    {
+      "id": "explicit-003",
+      "variant": "explicit",
+      "text": "{name} played sexually explicit material in a live audio room{when}. Pornographic content is listed as a Red topic by Tandem and has no place in a language party. It made the room unsafe for the learners who had joined to practise. I would be grateful if you could review this account urgently."
+    },
+    {
+      "id": "explicit-004",
+      "variant": "explicit",
+      "text": "Please review {name}, who broadcast pornographic audio during a language party{when}. Under Tandem's Community Principles and Language Parties Guidelines, sexually explicit material is never allowed. Other learners were exposed to content they had not chosen to hear. Appropriate action, including a ban if warranted, would be appreciated."
+    },
+    {
+      "id": "explicit-005",
+      "variant": "explicit",
+      "text": "This report concerns {name}, a participant who shared sexually explicit audio in a Tandem voice room{when}. Explicit material is a Red topic, never OK in our community according to Tandem's guidelines. It makes the party unwelcome for learners. I ask the moderators to look at this account and act as they see fit."
+    },
+    {
+      "id": "explicit-006",
+      "variant": "explicit",
+      "text": "Tandem's Language Parties Guidelines are clear that sexual content is never acceptable, yet {name} played pornographic material for the room to hear in a language party{when}. Learners should not be exposed to it unexpectedly. Please check this account and restrict it if appropriate."
+    },
+    {
+      "id": "explicit-007",
+      "variant": "explicit",
+      "text": "Tandem's guidelines are clear that pornographic material is a Red topic, yet {name} played sexually explicit audio in a party{when}. This exposes other learners to content they did not choose and makes the room unsafe. I ask that you review the account and act as you see fit."
+    },
+    {
+      "id": "explicit-008",
+      "variant": "explicit",
+      "text": "A participant named {name} shared sexually explicit material in a Tandem live audio room{when}. This is not allowed in Language Parties and is never OK on a language learning platform. Learners there did not agree to hear it. Please investigate and ban the account if warranted."
+    },
+    {
+      "id": "explicit-009",
+      "variant": "explicit",
+      "text": "While I was in a Tandem party{when}, {name} played pornographic audio. Sexually explicit content is a Red topic and goes against Tandem's Community Principles. It is unsafe for the learners who joined to practise. Please review the account and take whatever action you consider suitable."
+    },
+    {
+      "id": "explicit-010",
+      "variant": "explicit",
+      "text": "Sexually explicit audio was played by {name} in a language party{when}. Tandem classes pornographic material as a Red topic, never OK in the community, and a party is meant for language practice only. The other learners had no say in hearing it. Swift and appropriate action would be welcome."
+    },
+    {
+      "id": "explicit-011",
+      "variant": "explicit",
+      "text": "Report: {name} played pornographic material in a Tandem voice room{when}. This breaches Tandem's Language Parties Guidelines, which state that sexual topics are never OK. It leaves other learners exposed to explicit content in a space meant for practising languages. Kindly review and restrict this account if appropriate."
+    },
+    {
+      "id": "explicit-012",
+      "variant": "explicit",
+      "text": "I want to flag {name} for playing sexually explicit audio during a party{when}. Explicit sexual material is a Red topic at Tandem and is banned from Language Parties. Learners joined to practise a language, not to be exposed to this. Please review the account urgently."
+    },
+    {
+      "id": "explicit-013",
+      "variant": "explicit",
+      "text": "Could you take a look at {name}'s behaviour in a Tandem party{when}? This participant shared pornographic audio with the room. That is a Red topic under Tandem's guidelines, and it makes the party unwelcome for the learners present. A warning or ban, as you judge appropriate, would be justified."
+    },
+    {
+      "id": "explicit-014",
+      "variant": "explicit",
+      "text": "Pornographic material has no place in a language party, yet {name} played it in a voice room{when}. Tandem lists it as a Red topic, never OK. Other learners were exposed to it without choosing to be. I request a review of this account and appropriate action."
+    },
+    {
+      "id": "explicit-015",
+      "variant": "explicit",
+      "text": "Sexual topics are off limits in Tandem's Language Parties, but {name} played sexually explicit audio in a party{when}. It exposes other members to material they did not ask for and spoils the learning space. Please review the account without delay and take appropriate action."
+    },
+    {
+      "id": "explicit-016",
+      "variant": "explicit",
+      "text": "Good day, I wish to flag {name} for sharing pornographic audio in a live Tandem party{when}. Tandem's web guidelines treat pornographic material as a Red topic, never OK, and the Language Parties Guidelines rule out sexual topics. It is unsafe for learners to be exposed to it. Please act on this account. I can provide more details if needed."
+    },
+    {
+      "id": "explicit-017",
+      "variant": "explicit",
+      "text": "{name} used a Tandem voice room{when} to play sexually explicit material. According to Tandem's web guidelines, this is a Red topic and never OK. Learners come to a party to practise, and this made it uncomfortable and unsafe for them. Please review the account and ban it if warranted."
+    },
+    {
+      "id": "explicit-018",
+      "variant": "explicit",
+      "text": "Within a language party{when}, {name} broadcast sexually explicit audio to the room. This is prohibited by Tandem's guidelines, which place pornographic material among the Red topics. Learners should not be subjected to it. I kindly ask you to review this account and take the action you deem appropriate."
+    },
+    {
+      "id": "explicit-019",
+      "variant": "explicit",
+      "text": "For the safety of learners, please review {name}. In a Tandem party{when}, this user played pornographic material, which Tandem's Language Parties Guidelines rule out entirely. Hearing it was not a choice the other participants made. Restricting or banning the account may be warranted."
+    },
+    {
+      "id": "explicit-020",
+      "variant": "explicit",
+      "text": "I am writing about {name}, who played sexually explicit audio in a Tandem party{when}. Sexual and explicit content is never OK in Language Parties, and Tandem is a place to learn languages. The room became unsafe for those who had come to practise. A prompt review of this account would be appreciated."
+    },
+    {
+      "id": "explicit-021",
+      "variant": "explicit",
+      "text": "Tandem is for learning languages, not for pornography, yet {name} played explicit sexual audio in a party{when}. That is a Red topic under Tandem's guidelines, and it exposes learners to content they never agreed to hear. Please look into this account and act accordingly."
+    },
+    {
+      "id": "explicit-022",
+      "variant": "explicit",
+      "text": "A voice room on Tandem{when} was disrupted when {name} shared pornographic material. The Language Parties Guidelines state that sexual topics are never OK, and the other learners were exposed to content they did not choose. Please review the account urgently and consider a restriction or ban."
+    },
+    {
+      "id": "explicit-023",
+      "variant": "explicit",
+      "text": "Reporting {name} for playing pornographic audio in a language party{when}. Pornographic or sexually explicit material is a Red topic, never OK in the Tandem community. It put other learners in an uncomfortable position and made the party unsafe. Urgent review and appropriate action requested."
+    },
+    {
+      "id": "explicit-024",
+      "variant": "explicit",
+      "text": "What I heard in a Tandem party{when} was sexually explicit audio played by {name}. Tandem's Community Principles and Language Parties Guidelines do not allow this, as it exposes learners to explicit material without their consent. Could you please review the account and apply appropriate sanctions?"
+    },
+    {
+      "id": "explicit-025",
+      "variant": "explicit",
+      "text": "Please act on {name}'s account: this participant shared pornographic material in a Tandem live audio room{when}. It is a Red topic, never allowed in Language Parties, and it makes the room unwelcome for learners who are there to practise. I would appreciate an urgent review and, if warranted, a ban."
+    },
+    {
+      "id": "explicit-026",
+      "variant": "explicit",
+      "text": "I am flagging {name}, who played sexually explicit audio in a Tandem party{when}. Pornographic material is a Red topic and never OK in Language Parties. Learners did not sign up to hear it. Please check this account and act as warranted."
+    },
+    {
+      "id": "explicit-027",
+      "variant": "explicit",
+      "text": "Regarding {name}: in a Tandem voice room{when}, this user shared pornographic material, which Tandem's guidelines place among the Red topics. It exposes the learners present to explicit content and makes the party feel unsafe. Please apply appropriate measures to the account."
+    },
+    {
+      "id": "explicit-028",
+      "variant": "explicit",
+      "text": "I joined a language party{when} to practise, and {name} played sexually explicit audio. Tandem's Language Parties Guidelines state that sexual topics are never OK, and this kind of audio makes the party unwelcome and unsafe for learners. Please review this account and take appropriate action, including a ban if warranted."
+    },
+    {
+      "id": "explicit-029",
+      "variant": "explicit",
+      "text": "Pornographic audio was shared in a Tandem live audio room{when} by a participant called {name}. The guidelines list pornographic or sexually explicit material as a Red topic, never OK in the community. Learners should be able to join a party without being exposed to this. Please look into it promptly."
+    },
+    {
+      "id": "explicit-030",
+      "variant": "explicit",
+      "text": "Dear Tandem team, {name} played sexually explicit material during a language party{when}. This goes against the Language Parties Guidelines and the Community Principles, since a party must stay focused on language learning. Other learners were put in an uncomfortable position. Please review the account and take whatever action you consider appropriate."
+    },
+    {
+      "id": "explicit-031",
+      "variant": "explicit",
+      "text": "It is not acceptable for a participant to play pornographic audio in a language party, and {name} did exactly that{when}. Tandem treats this as a Red topic, never OK. It makes the space unsafe for learners. Please restrict or ban the account if appropriate."
+    },
+    {
+      "id": "explicit-032",
+      "variant": "explicit",
+      "text": "Concerning {name}: this participant played sexually explicit audio in a Tandem party{when}. Under Tandem's web guidelines, pornographic material is a Red topic and is never allowed. The other learners did not choose to be exposed to it. Please review the account and act as appropriate."
+    },
+    {
+      "id": "explicit-033",
+      "variant": "explicit",
+      "text": "Tandem says sexual topics are never OK in Language Parties, but {name} shared pornographic material in a voice room{when}. This exposes learners to content they did not choose and undermines the purpose of a language exchange. I would ask the moderation team to investigate this account."
+    },
+    {
+      "id": "explicit-034",
+      "variant": "explicit",
+      "text": "Pornographic material played in a party is a clear breach of Tandem's guidelines, and {name} did this in a live audio room{when}. It is a Red topic, never OK, and it leaves other learners feeling unsafe. I ask for an urgent review of the account and appropriate action."
+    },
+    {
+      "id": "explicit-035",
+      "variant": "explicit",
+      "text": "Could you please look at {name}? In a Tandem party{when}, this person played sexually explicit audio to the room. That is a Red topic according to Tandem's guidelines, and learners should not be exposed to it. Appropriate action, such as a restriction or ban, would be welcome."
+    },
+    {
+      "id": "explicit-036",
+      "variant": "explicit",
+      "text": "A language party{when} turned inappropriate when {name} played pornographic audio. Tandem's Community Principles and its Red topic list rule out sexually explicit material entirely. The learners present had come to practise a language. Please review the account and act as you judge fit."
+    },
+    {
+      "id": "explicit-037",
+      "variant": "explicit",
+      "text": "Please treat this as urgent: {name} played sexually explicit material in a Tandem voice room{when}. Pornographic content is never OK under the Language Parties Guidelines and counts as a Red topic. Other learners were exposed to it without choosing to be. A ban may be warranted."
+    },
+    {
+      "id": "explicit-038",
+      "variant": "explicit",
+      "text": "I need to report {name} for sharing explicit sexual audio during a party{when}. Pornographic material is a Red topic and Tandem does not allow it in Language Parties. It creates an unwelcome and unsafe setting for people who only want to learn. I hope the moderation team can check the account and act accordingly."
+    },
+    {
+      "id": "explicit-039",
+      "variant": "explicit",
+      "text": "Playing pornographic audio to a room of language learners is exactly what Tandem's guidelines forbid, and {name} did so in a party{when}. It is a Red topic, never OK. Please review this account and take firm, appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "explicit-040",
+      "variant": "explicit",
+      "text": "The audio in a Tandem party{when} included sexually explicit material, played by {name}. Pornographic material is a Red topic, and Language Parties are meant for language learning only. Other learners were exposed to it without having asked. Please review this account and apply the appropriate sanction."
+    },
+    {
+      "id": "explicit-041",
+      "variant": "explicit",
+      "text": "{name} turned a language party{when} into an unsafe space by sharing pornographic audio. Tandem's Language Parties Guidelines say clearly that sexual topics are never OK. Learners should not have to hear explicit content. Please review the account urgently and restrict it if warranted."
+    },
+    {
+      "id": "explicit-042",
+      "variant": "explicit",
+      "text": "The Red topics in Tandem's guidelines include pornographic or sexually explicit material, which {name} played in a voice room{when}. This is never OK in the community and it exposes other learners to content they did not choose. Please review the account and take appropriate action."
+    },
+    {
+      "id": "explicit-043",
+      "variant": "explicit",
+      "text": "Kindly investigate {name}. A Tandem party{when} included sexually explicit audio played by this participant, which the Language Parties Guidelines do not allow in any form. The other learners were left exposed to it, and the room was no longer a safe place to practise. Thank you for acting on this urgently."
+    },
+    {
+      "id": "explicit-044",
+      "variant": "explicit",
+      "text": "Heard in a Tandem party{when}: pornographic audio, played by {name}. This is a Red topic under Tandem's guidelines and is never acceptable in a language exchange. It exposes learners to explicit content without their consent. I request a review and, where justified, a restriction."
+    },
+    {
+      "id": "explicit-045",
+      "variant": "explicit",
+      "text": "Sexually explicit material was shared by {name} in a live Tandem party{when}, which concerns me. Tandem states that parties on sexual topics are never OK, and pornographic content is a Red topic. Learners deserve a safe space to practise. Please review and, if warranted, ban the account."
+    },
+    {
+      "id": "explicit-046",
+      "variant": "explicit",
+      "text": "Sexual topics are never OK in Tandem Language Parties, yet {name} played pornographic audio in one{when}. As a Red topic, it is not allowed, and it exposed other learners to explicit material they had not chosen to hear. Please look into this account and take appropriate action."
+    },
+    {
+      "id": "explicit-047",
+      "variant": "explicit",
+      "text": "This user, {name}, played pornographic material in a Tandem voice room{when}. I believe this violates the Language Parties Guidelines, where sexually explicit content is listed as never OK. It exposed other learners to explicit audio they had not asked for. Please review the account and remind this participant of the rules."
+    },
+    {
+      "id": "explicit-048",
+      "variant": "explicit",
+      "text": "Tandem's guidelines for parties rule out explicit material, but {name} played sexually explicit audio in a language party{when}. Pornographic content is a Red topic and harms the learning environment for the learners present. Please step in, review the account, and take the action you consider fitting."
+    },
+    {
+      "id": "explicit-049",
+      "variant": "explicit",
+      "text": "In a live audio room on Tandem{when}, {name} shared pornographic audio. Tandem's Language Parties Guidelines and its Red topic list rule out this kind of sexually explicit material. It is unsafe for learners and unrelated to language practice. Please review the account and consider a warning or ban."
+    },
+    {
+      "id": "explicit-050",
+      "variant": "explicit",
+      "text": "Please look into {name} for playing sexually explicit audio in a Tandem party{when}. It is a Red topic, never OK, and Tandem is not a place for it. Other learners should not be exposed to this. Thank you for taking appropriate action."
+    },
+    {
+      "id": "explicit-051",
+      "variant": "explicit",
+      "text": "{name} played pornographic audio in a Tandem party{when}. That is a Red topic and never OK. Learners cannot practise in a room like that. Please review the account urgently."
+    },
+    {
+      "id": "explicit-052",
+      "variant": "explicit",
+      "text": "Reporting a rule breach: {name} shared sexually explicit audio in a language party{when}. Language Parties must stay focused on learning, and sexual content is banned. Please check this account and sanction it if justified."
+    },
+    {
+      "id": "explicit-053",
+      "variant": "explicit",
+      "text": "Sexual material has no place in a Tandem voice room, and {name} played some{when}. It is a Red topic in Tandem's guidelines, and it leaves other learners listening to content they never chose. Please review the account and restrict it if warranted."
+    },
+    {
+      "id": "explicit-054",
+      "variant": "explicit",
+      "text": "Over the voice channel of a Tandem party{when}, {name} played pornographic material. Tandem's Community Principles do not allow it, and it makes the room unwelcome for learners. A swift review of this account, and a warning if justified, would be appreciated."
+    },
+    {
+      "id": "explicit-055",
+      "variant": "explicit",
+      "text": "Pornographic content, a Red topic at Tandem, was played by {name} in a live audio room{when}. Learners join a language party to practise, not to hear this, and it makes the room unsafe. Please investigate and take appropriate action."
+    },
+    {
+      "id": "explicit-056",
+      "variant": "explicit",
+      "text": "I would like to report an account called {name}. During a Tandem party{when}, it was used to play sexually explicit audio, which the Language Parties Guidelines say is never OK. Such audio makes the room unsafe and unwelcome for other learners. Please review the account and act as warranted."
+    },
+    {
+      "id": "explicit-057",
+      "variant": "explicit",
+      "text": "Explicit sexual audio from {name} interrupted a language party{when}. Tandem lists pornographic material as a Red topic, never OK in the community, and learners deserve a safe place to practise. Please check the account and act where justified."
+    },
+    {
+      "id": "explicit-058",
+      "variant": "explicit",
+      "text": "There was sexually explicit audio in a Tandem party{when}, and it came from {name}. This is against the Language Parties Guidelines and counts as a Red topic. Other learners did not ask to hear it. Please look into this account and act as needed."
+    },
+    {
+      "id": "explicit-059",
+      "variant": "explicit",
+      "text": "Hi, {name} played pornographic audio to a Tandem voice room{when}. It breaks Tandem's rules on Red topics and makes the party unsafe for those learning. Could you please review the account and take suitable action?"
+    },
+    {
+      "id": "explicit-060",
+      "variant": "explicit",
+      "text": "Learners joined a Tandem party{when} to speak, and {name} played sexually explicit material instead. Pornographic content is never OK under Tandem's guidelines, and it makes the party unwelcome for those who came to learn. Please review this account and sanction it as appropriate."
+    },
+    {
+      "id": "explicit-061",
+      "variant": "explicit",
+      "text": "Flagging {name} for pornographic audio in a language party{when}. It is a Red topic and goes against the Community Principles. It also puts the learners present in an awkward and unsafe position. Please act on this account."
+    },
+    {
+      "id": "explicit-062",
+      "variant": "explicit",
+      "text": "{name}, a participant in a Tandem party{when}, shared sexually explicit audio with the room. Tandem does not allow sexual content in Language Parties. This is unsafe for the learners listening. Please review and apply the appropriate sanction."
+    },
+    {
+      "id": "explicit-063",
+      "variant": "explicit",
+      "text": "A request for urgent review: {name} played pornographic material in a Tandem voice room{when}. Sexually explicit content is among the Red topics that Tandem says are never OK. Please take action on the account, including a ban if you find it warranted."
+    },
+    {
+      "id": "explicit-064",
+      "variant": "explicit",
+      "text": "This participant played sexually explicit audio in a language party{when}, and Tandem's guidelines are unambiguous that pornographic material is a Red topic. Learners should not be made to listen to it. Please restrict {name} if appropriate."
+    },
+    {
+      "id": "explicit-065",
+      "variant": "explicit",
+      "text": "Nothing about a language party justifies pornographic audio, but {name} played some in a Tandem live audio room{when}. This is a Red topic, never OK, and it left the learners present exposed to explicit material. Please review the account and take action."
+    },
+    {
+      "id": "explicit-066",
+      "variant": "explicit",
+      "text": "A user named {name} used a Tandem party{when} to share sexually explicit audio. The Language Parties Guidelines are clear: sexual topics are never OK. This spoils the party for the learners present. Please investigate promptly and take appropriate action."
+    },
+    {
+      "id": "explicit-067",
+      "variant": "explicit",
+      "text": "My report: {name}, pornographic audio, Tandem language party{when}. Sexually explicit material is a Red topic, never allowed, and it makes the party unsafe for learners. Please review the account and apply the appropriate measures."
+    },
+    {
+      "id": "explicit-068",
+      "variant": "explicit",
+      "text": "Following Tandem's Language Parties Guidelines, I am reporting {name} for sharing pornographic material in a party{when}. Such content is a Red topic and does not belong in a language exchange. Other members did not choose to hear it. Please act urgently."
+    },
+    {
+      "id": "explicit-069",
+      "variant": "explicit",
+      "text": "Sexually explicit audio does not belong anywhere near a language party. In one{when}, {name} played it anyway. Tandem treats this as a Red topic, never OK. Please review the account and apply the action you consider appropriate."
+    },
+    {
+      "id": "explicit-070",
+      "variant": "explicit",
+      "text": "For the record, {name} played pornographic audio during a Tandem party{when}. This conflicts with the Community Principles and with the Red topic rules on sexually explicit material. Please review this account and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "explicit-071",
+      "variant": "explicit",
+      "text": "As a Tandem member, I expect parties to be safe for learning, but {name} played sexually explicit audio in a voice room{when}. This is a Red topic and never OK. Please review the account and, if warranted, ban it."
+    },
+    {
+      "id": "explicit-072",
+      "variant": "explicit",
+      "text": "Unwanted pornographic audio interrupted a language party{when}, and {name} was the one who played it. Tandem's guidelines name pornographic or sexually explicit material as a Red topic, and it makes the room unsafe for learners. Please take appropriate action on this account."
+    },
+    {
+      "id": "explicit-073",
+      "variant": "explicit",
+      "text": "Pornographic material was broadcast by {name} in a live Tandem party{when}. This is a clear violation of the Language Parties Guidelines. Learners are entitled to a safe space for language practice. Please review this account as a priority and take appropriate action."
+    },
+    {
+      "id": "explicit-074",
+      "variant": "explicit",
+      "text": "{name} brought sexually explicit audio into a Tandem voice room{when}. The guidelines call this a Red topic and say it is never OK, since Tandem exists for language learning only. Please review the account and consider restricting it."
+    },
+    {
+      "id": "explicit-075",
+      "variant": "explicit",
+      "text": "Please step in regarding {name}, who shared pornographic audio in a language party{when}. Tandem prohibits sexually explicit material in Language Parties, and its presence made the room uncomfortable for learners. Thank you for a prompt review and appropriate action."
+    },
+    {
+      "id": "explicit-076",
+      "variant": "explicit",
+      "text": "Could Tandem please review the account of {name}? In a language party{when}, this participant played pornographic audio, which the Language Parties Guidelines class as never OK. It exposes learners to explicit content without warning. A ban may be warranted."
+    },
+    {
+      "id": "explicit-077",
+      "variant": "explicit",
+      "text": "Tandem asks members to keep parties focused on language learning, so {name} playing sexually explicit audio in a voice room{when} is a clear breach. Pornographic material is a Red topic. It also makes the room unsafe for learners. Please remind this user of the rules and take further action if warranted."
+    },
+    {
+      "id": "explicit-078",
+      "variant": "explicit",
+      "text": "This report is about what {name} did in a Tandem party{when}: playing pornographic material for the room. It falls under the Red topics in Tandem's guidelines and is never OK, and it can make learners uncomfortable. Please review the account and take action."
+    },
+    {
+      "id": "explicit-079",
+      "variant": "explicit",
+      "text": "I am asking Tandem to look at {name} urgently. A live audio room{when} was used by this user to play sexually explicit audio, something the Language Parties Guidelines forbid. Learners have the right to practise without hearing it. Please restrict or ban the account if appropriate."
+    },
+    {
+      "id": "explicit-080",
+      "variant": "explicit",
+      "text": "No one should have to listen to pornographic audio in a language learning space. {name} played some in a Tandem party{when}, which is a Red topic and never OK. Please look into this account and take appropriate action."
+    },
+    {
+      "id": "explicit-081",
+      "variant": "explicit",
+      "text": "When {name} played sexually explicit material in a Tandem voice room{when}, the party stopped being a safe place to practise. Pornographic content is a Red topic under Tandem's guidelines. Please treat this as urgent and take the action you find appropriate."
+    },
+    {
+      "id": "explicit-082",
+      "variant": "explicit",
+      "text": "This participant played pornographic audio in a Tandem party{when}, a Red topic that Tandem says is never OK. Learners were exposed to explicit content they had not chosen. Please warn or ban {name} as you see fit."
+    },
+    {
+      "id": "explicit-083",
+      "variant": "explicit",
+      "text": "My concern is {name}, who shared sexually explicit audio in a language party{when}. Tandem's Language Parties Guidelines say sexual topics are never OK, and this audio makes the party unsafe for the learners present. Please review the account and take appropriate action."
+    },
+    {
+      "id": "explicit-084",
+      "variant": "explicit",
+      "text": "Urgent: pornographic audio in a Tandem live audio room{when}. The participant responsible is {name}. Sexually explicit material is a Red topic and goes against the Language Parties Guidelines. It exposes learners to something they did not choose. Please restrict the account if you find it justified."
+    },
+    {
+      "id": "explicit-085",
+      "variant": "explicit",
+      "text": "Sharing pornographic or sexually explicit material is one of the Red topics Tandem rules out, and {name} did it in a party{when}. Learners joined to practise languages and were exposed to explicit audio instead. Please review the account and apply appropriate sanctions."
+    },
+    {
+      "id": "explicit-086",
+      "variant": "explicit",
+      "text": "When {name} began playing sexually explicit audio in a Tandem voice room{when}, I knew it had to be reported. Language Parties Guidelines do not allow sexual content, and learners should not have to put up with it. Please review the account and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "explicit-087",
+      "variant": "explicit",
+      "text": "Sexually explicit audio from {name} made a language party{when} uncomfortable. This is a Red topic according to Tandem, never OK in a space for language learning. I ask you to review the account and take whatever action is appropriate."
+    },
+    {
+      "id": "explicit-088",
+      "variant": "explicit",
+      "text": "Tandem's guidelines say that pornographic material in a party is a Red topic and never OK. {name} did exactly that in a language party{when}. Please review this account and take appropriate action."
+    },
+    {
+      "id": "explicit-089",
+      "variant": "explicit",
+      "text": "Learners in a Tandem party{when} were exposed to sexually explicit audio played by {name}. Pornographic material is a Red topic and is not allowed in Language Parties. It is unsafe and unwelcome for those who came to learn. Please review the account and take suitable action."
+    },
+    {
+      "id": "explicit-090",
+      "variant": "explicit",
+      "text": "A concern for the platform: {name} shared pornographic audio in a language party{when}. Tandem's guidelines name this a Red topic, never OK, and it makes parties feel unsafe for learners. Please review the account and take appropriate action."
+    },
+    {
+      "id": "explicit-091",
+      "variant": "explicit",
+      "text": "Respectfully, I ask that you review {name}. A Tandem party{when} was interrupted by pornographic audio from this account, which Tandem's web guidelines list as a Red topic. Listeners had not chosen to hear it. Appropriate action, up to a ban, would be justified."
+    },
+    {
+      "id": "explicit-092",
+      "variant": "explicit",
+      "text": "Tandem's Language Parties Guidelines make it clear that sexual content has no place in a party, and {name} played sexually explicit audio in a voice room{when}. It is a Red topic and it makes learners feel unsafe. Please take appropriate action."
+    },
+    {
+      "id": "explicit-093",
+      "variant": "explicit",
+      "text": "From the voice room of a Tandem party{when}, I want to report {name} for playing pornographic material. Tandem does not allow sexual content in Language Parties, and the other learners had no choice in hearing it. Please review the account and act accordingly."
+    },
+    {
+      "id": "explicit-094",
+      "variant": "explicit",
+      "text": "{name} violated Tandem's Language Parties Guidelines by playing sexually explicit audio in a live party{when}. Pornographic material is a Red topic, never OK, and Tandem is not a place for it. I request an urgent review of the account and a ban if warranted."
+    },
+    {
+      "id": "explicit-095",
+      "variant": "explicit",
+      "text": "Pornographic audio is among Tandem's Red topics, and it was played by {name} in a language party{when}. This takes away from the learning purpose of the party and exposes other learners to explicit content. Please investigate this account and act as warranted."
+    },
+    {
+      "id": "explicit-096",
+      "variant": "explicit",
+      "text": "Please check {name}'s account. Sexually explicit audio was played by this participant in a Tandem voice room{when}, contrary to the Community Principles and the Language Parties Guidelines. Learners should feel safe in a party. Thank you for taking appropriate action."
+    },
+    {
+      "id": "explicit-097",
+      "variant": "explicit",
+      "text": "Learner safety is at stake here: {name} played pornographic material in a Tandem party{when}. Sexually explicit content is never OK under the Language Parties Guidelines and is a Red topic. Please take swift action on the account, including a restriction or ban if warranted."
+    },
+    {
+      "id": "explicit-098",
+      "variant": "explicit",
+      "text": "One participant, {name}, played sexually explicit audio in a language party{when}. Tandem's guidelines forbid pornographic material in parties, as it exposes other learners to content they never agreed to hear. Please review the account and take appropriate action."
+    },
+    {
+      "id": "explicit-099",
+      "variant": "explicit",
+      "text": "This is a request to review {name} after sexually explicit audio was shared in a Tandem live audio room{when}. Red topics such as pornographic material are never OK under Tandem's guidelines. The room became unwelcome for learners. Thank you for acting on it urgently."
+    },
+    {
+      "id": "explicit-100",
+      "variant": "explicit",
+      "text": "Pornographic audio in a language party is not a grey area for Tandem, and {name} played it in one{when}. It is a Red topic, never OK, and it harms the experience of the learners present. Please look into the account and take appropriate action."
     }
-  ]
+  ],
+  "per_variant": 50,
+  "targets": {
+    "explicit": 100
+  }
 }

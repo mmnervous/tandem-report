@@ -13,6 +13,7 @@ Si la page affiche « Données introuvables », lance le build (voir plus bas).
 
 - `data/report-tree.json` : l'arbre de signalement, source de vérité (menus, libellés, tiers, rangs, notes). Les libellés affichés sont en anglais ; la version française est gardée dans `label_fr` et `prompt_fr`.
 - `data/messages/<feuille>.json` : les messages types d'une feuille.
+- `data/topics.json` : le raccourci « Par sujet » (voir plus bas).
 - `data/bundle.js` : généré par `scripts/build.py`, ne pas l'éditer à la main.
 - `scripts/validate.py` : vérifie l'arbre et les messages.
 
@@ -55,6 +56,8 @@ Pour vérifier en local avant de publier, ouvre `index.html` dans le navigateur 
    - Longueur 180 à 400 caractères dans le pire cas (nom de 30 caractères, date remplie).
    - Les ids doivent être uniques dans tous les fichiers.
    - `variants` est facultatif. S'il y en a, la page affiche un sélecteur.
+   - Comptes attendus : 100 messages par feuille, répartis à parts égales entre les variantes. Pour changer, ajoute dans le fichier `"per_variant": 100` (même nombre pour chaque variante) ou `"targets": { "explicit": 100 }` (nombre propre à certaines variantes).
+   - Écris les messages du point de vue d'un participant, cite la règle de Tandem (Language Parties Guidelines, Community Principles) et n'invente aucun fait : montants, noms de plateformes, citations, durées. Les précisions viennent du champ Détails.
 
 3. Valide, puis régénère le bundle (voir « Mettre à jour le site » pour publier ensuite) :
 
@@ -65,5 +68,21 @@ Pour vérifier en local avant de publier, ouvre `index.html` dans le navigateur 
    ```
 
    On peut aussi valider un seul fichier : `python3 scripts/validate.py data/messages/chat.messages.money.json`.
+
+## Le raccourci « Par sujet »
+
+En Fête, le bouton **Par sujet** classe les catégories par règle enfreinte (« Politique », « Religion », « Contenu sexuel explicite », « Faux compte »…) au lieu de la gravité. Choisir un sujet ouvre directement la bonne catégorie Tandem avec la bonne variante de messages, et affiche le chemin à suivre dans l'app.
+
+Tout est dans `data/topics.json` :
+
+```json
+{ "id": "politics", "group": "banned", "context": "party",
+  "leaf": "party.disruptive", "variant": "politics",
+  "label": "Politique", "hint": "Sujet interdit dans les fêtes" }
+```
+
+- `leaf` et `variant` doivent exister : `validate.py` et `build.py` le vérifient.
+- `group` renvoie à un élément de `groups` (l'ordre du fichier est l'ordre à l'écran).
+- Un contexte sans sujet (Profil, Chat pour l'instant) n'affiche pas la bascule.
 
 Python 3 suffit, sans dépendance.

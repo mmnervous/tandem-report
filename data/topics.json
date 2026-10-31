@@ -1,0 +1,50 @@
+{
+  "_comment": "Raccourci « Par sujet » : chaque sujet envoie vers une feuille de l'arbre et une variante de messages. Libellés en français (interface), la feuille garde son libellé Tandem.",
+  "groups": [
+    { "id": "money", "label": "Argent et arnaques" },
+    { "id": "sexual", "label": "Sexe et rencontres" },
+    { "id": "identity", "label": "Identité et faux profils" },
+    { "id": "hate", "label": "Haine et harcèlement" },
+    { "id": "promo", "label": "Promotion" },
+    { "id": "banned", "label": "Sujets interdits" }
+  ],
+  "topics": [
+    { "id": "money", "group": "money", "context": "party", "leaf": "party.money", "variant": "money",
+      "label": "Demande d'argent", "hint": "Mendicité ou don réclamé : sujet « Red »" },
+    { "id": "investment", "group": "money", "context": "party", "leaf": "party.money", "variant": "investment",
+      "label": "Investissement, trading, crypto", "hint": "Arnaque : usage commercial interdit" },
+
+    { "id": "explicit", "group": "sexual", "context": "party", "leaf": "party.dating", "variant": "explicit",
+      "label": "Contenu sexuel explicite", "hint": "Pornographie : sujet « Red », jamais OK" },
+    { "id": "sexual", "group": "sexual", "context": "party", "leaf": "party.dating", "variant": "sexual",
+      "label": "Propos sexuels", "hint": "Sujets sexuels : jamais OK en fête" },
+    { "id": "flirt", "group": "sexual", "context": "party", "leaf": "party.dating", "variant": "flirt",
+      "label": "Drague, rencontres", "hint": "Dating : sujet « Red »" },
+
+    { "id": "photos_me", "group": "identity", "context": "party", "leaf": "party.photos_of_me", "variant": "me",
+      "label": "Utilise mes photos", "hint": "Usurpation d'identité" },
+    { "id": "photos_someone", "group": "identity", "context": "party", "leaf": "party.photos_of_me", "variant": "someone",
+      "label": "Utilise les photos d'un proche", "hint": "Usurpation d'identité" },
+    { "id": "fake", "group": "identity", "context": "party", "leaf": "party.fake_profile", "variant": "fake",
+      "label": "Faux compte", "hint": "« Fake accounts will be banned »" },
+    { "id": "misleading", "group": "identity", "context": "party", "leaf": "party.fake_profile", "variant": "misleading",
+      "label": "Profil trompeur", "hint": "Il faut être soi-même" },
+
+    { "id": "hate", "group": "hate", "context": "party", "leaf": "party.rude", "variant": "hate",
+      "label": "Haine ou extrémisme", "hint": "Incitation à la haine : sujet « Red »" },
+    { "id": "harassment", "group": "hate", "context": "party", "leaf": "party.rude", "variant": "harassment",
+      "label": "Harcèlement, trolling, exclusion", "hint": "Ni bullying, ni mobbing, ni trolling" },
+
+    { "id": "business", "group": "promo", "context": "party", "leaf": "party.promotion", "variant": "business",
+      "label": "Promotion d'un business", "hint": "Interdit sauf partenaire officiel Tandem" },
+    { "id": "social", "group": "promo", "context": "party", "leaf": "party.promotion", "variant": "social",
+      "label": "Liens de réseaux sociaux", "hint": "Interdit sauf partenaire officiel Tandem" },
+
+    { "id": "politics", "group": "banned", "context": "party", "leaf": "party.disruptive", "variant": "politics",
+      "label": "Politique", "hint": "Sujet interdit dans les fêtes" },
+    { "id": "religion", "group": "banned", "context": "party", "leaf": "party.disruptive", "variant": "religion",
+      "label": "Religion", "hint": "Sujet interdit dans les fêtes" },
+    { "id": "copyright", "group": "banned", "context": "party", "leaf": "party.disruptive", "variant": "copyright",
+      "label": "Musique ou livre audio protégés", "hint": "Propriété intellectuelle : sujet « Red »" }
+  ]
+}

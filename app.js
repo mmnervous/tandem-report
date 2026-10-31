@@ -10,6 +10,8 @@
 
   var TREE = DATA.tree;
   var MESSAGES = DATA.messages || {};
+  var TOPICS = (DATA.topics && DATA.topics.topics) || [];
+  var TOPIC_GROUPS = (DATA.topics && DATA.topics.groups) || [];
   var MAX = (TREE.meta && TREE.meta.message_max_chars) || 500;
   var NEAR = MAX - 50;
   var HISTORY_SIZE = 10;
@@ -30,6 +32,7 @@
     context: 'tandem-report.context',
     addDate: 'tandem-report.addDate',
     theme: 'tandem-report.theme',
+    listMode: 'tandem-report.listMode', // 'tier' | 'topic'
     tally: 'tandem-report.tally'   // { d: date du jour, n: copies } : jamais le nom ni le message
   };
   var COUNT_MS = 260;
@@ -45,7 +48,7 @@
   function $(id) { return document.getElementById(id); }
   var el = {
     app: $('app'), name: $('name'), nameClear: $('name-clear'), themeToggle: $('theme-toggle'),
-    contexts: $('contexts'), sections: $('sections'), unknown: $('unknown'), ignoredNote: $('ignored-note'),
+    contexts: $('contexts'), sections: $('sections'), listMode: $('list-mode'), listTitle: $('list-title'), unknown: $('unknown'), ignoredNote: $('ignored-note'),
     gravityOpen: $('gravity-open'), gravityOpenTop: $('gravity-open-top'),
     msg: $('msg'), msgEmpty: $('msg-empty'), msgBody: $('msg-body'),
     back: $('back'), backLabel: $('back-label'), tierChip: $('tier-chip'),
@@ -66,6 +69,7 @@
 
   var state = {
     context: null,
+    listMode: store.get(KEYS.listMode) === 'topic' ? 'topic' : 'tier',
     entries: [],          // feuilles connues (message/direct) du contexte actif
     unknown: [],          // feuilles « pas encore explorées » du contexte actif
     entry: null,          // feuille ouverte { key, leaf, path, group }
@@ -251,27 +255,74 @@
       '</button>';
   }
 
-  function rowByKey(key) {
-    return Array.prototype.filter.call(el.sections.querySelectorAll('.row'), function (b) {
-      return b.getAttribute('data-key') === key;
-    })[0] || null;
+  // Une ligne = une feuille, ou un sujet (plusieurs sujets peuvent mener à la même feuille).
+  function rowId(b) { return b.getAttribute('data-key') + '|' + (b.getAttribute('data-topic') || ''); }
+
+  function rowById(id) {
+    return Array.prototype.filter.call(el.sections.querySelectorAll('.row'), function (b) { return rowId(b) === id; })[0] || null;
+  }
+
+  // Sujets du contexte actif (raccourci « Par sujet ») : seulement ceux dont la feuille et la variante existent.
+  function topicsFor() {
+    var byLeaf = {};
+    state.entries.forEach(function (e) { byLeaf[e.leaf.id] = e; });
+    return TOPICS.filter(function (t) {
+      var file = MESSAGES[t.leaf];
+      return t.context === state.context && byLeaf[t.leaf] && file && (!t.variant || (file.variants && file.variants[t.variant]));
+    }).map(function (t) { return { topic: t, entry: byLeaf[t.leaf] }; });
+  }
+
+  function topicRowHTML(item) {
+    var t = item.topic, e = item.entry, leaf = e.leaf;
+    var hasRank = typeof leaf.rank === 'number';
+    var aria = t.label + ' : ' + t.hint + ' (catégorie ' + withName(leaf.label) + ')';
+    return '<button type="button" class="row ' + tierClass(leaf.tier) + '" data-key="' + esc(e.key) + '" data-topic="' + esc(t.id) + '"' +
+      (t.variant ? ' data-variant="' + esc(t.variant) + '"' : '') + ' tabindex="-1" aria-pressed="false" aria-label="' + esc(aria) + '">' +
+      '<span class="rank" aria-hidden="true"><span class="rank-n">' + (hasRank ? leaf.rank : '–') + '</span></span>' +
+      '<span class="row-text"><span class="row-label">' + esc(t.label) + '</span>' +
+      '<span class="row-tag">' + esc(t.hint) + '</span>' +
+      '<span class="row-tag row-dest">→ ' + esc(withName(leaf.label)) + '</span></span></button>';
+  }
+
+  function topicsHTML() {
+    var items = topicsFor();
+    return TOPIC_GROUPS.map(function (g) {
+      var list = items.filter(function (i) { return i.topic.group === g.id; });
+      if (!list.length) return '';
+      return '<section class="tier-sec group-sec">' +
+        '<h2 class="tier-head"><span class="tier-tag group-tag">' + esc(g.label) + '</span></h2>' +
+        '<div class="rows">' + list.map(topicRowHTML).join('') + '</div></section>';
+    }).join('');
+  }
+
+  function renderListHead() {
+    var has = topicsFor().length > 0;
+    el.listMode.hidden = !has;
+    el.listTitle.hidden = has;
+    Array.prototype.forEach.call(el.listMode.querySelectorAll('.mode-btn'), function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-mode') === (has ? state.listMode : 'tier')));
+    });
   }
 
   function renderList() {
     var a = document.activeElement;
-    var focusedKey = a && a.classList && a.classList.contains('row') && el.sections.contains(a) ? a.getAttribute('data-key') : null;
+    var focusedId = a && a.classList && a.classList.contains('row') && el.sections.contains(a) ? rowId(a) : null;
     var counts = { templates: 0, free: 0 };
     state.entries.forEach(function (e) {
       if (e.leaf.type === 'message') counts[modeOf(e.leaf)] += 1;
     });
-    el.sections.innerHTML = sectionsOf(state.entries).map(function (s) {
-      return '<section class="tier-sec ' + tierClass(s.tier) + '">' +
-        '<h2 class="tier-head"><span class="tier-tag">' + tierText(s.tier) + '</span><span class="tier-desc"> · ' + esc(tierDesc(s.tier)) + '</span></h2>' +
-        '<div class="rows">' + s.entries.map(function (e) { return rowHTML(e, counts); }).join('') + '</div></section>';
-    }).join('');
+    if (state.listMode === 'topic' && topicsFor().length) {
+      el.sections.innerHTML = topicsHTML();
+    } else {
+      el.sections.innerHTML = sectionsOf(state.entries).map(function (s) {
+        return '<section class="tier-sec ' + tierClass(s.tier) + '">' +
+          '<h2 class="tier-head"><span class="tier-tag">' + tierText(s.tier) + '</span><span class="tier-desc"> · ' + esc(tierDesc(s.tier)) + '</span></h2>' +
+          '<div class="rows">' + s.entries.map(function (e) { return rowHTML(e, counts); }).join('') + '</div></section>';
+      }).join('');
+    }
     state.freshSticker = null;
     markSelectedRow();
-    var r = focusedKey && rowByKey(focusedKey);
+    var r = focusedId && rowById(focusedId);
     if (r) { setRowTabStop(r); r.focus({ preventScroll: true }); }
   }
 
@@ -293,10 +344,12 @@
 
   function markSelectedRow() {
     var key = state.entry && state.entry.key;
+    var variant = state.entry && state.variant[state.entry.leaf.id];
     var rows = el.sections.querySelectorAll('.row');
     var selected = null;
     Array.prototype.forEach.call(rows, function (b) {
-      var on = b.getAttribute('data-key') === key;
+      // Une ligne « sujet » n'est choisie que si sa variante est celle affichée.
+      var on = b.getAttribute('data-key') === key && (!b.hasAttribute('data-variant') || b.getAttribute('data-variant') === variant);
       b.setAttribute('aria-pressed', String(on));
       if (on) selected = b;
     });
@@ -315,6 +368,7 @@
     state.entries = all.filter(function (e) { return e.leaf.type !== 'unknown'; });
     state.unknown = all.filter(function (e) { return e.leaf.type === 'unknown'; });
     renderContexts();
+    renderListHead();
     renderList();
     renderUnknown();
     renderEmptyPane();
@@ -420,6 +474,8 @@
     saveDraft();
     state.entry = entry;
     state.mode = modeOf(entry.leaf);
+    var file = MESSAGES[entry.leaf.id];
+    if (opts.variant && file && file.variants && file.variants[opts.variant]) state.variant[entry.leaf.id] = opts.variant;
     state.template = null;
     state.edited = false;
     state.wasOver = false;
@@ -820,7 +876,17 @@
 
   el.sections.addEventListener('click', function (e) {
     var b = e.target.closest('.row');
-    if (b) openEntry(b.getAttribute('data-key'));
+    if (!b) return;
+    openEntry(b.getAttribute('data-key'), b.hasAttribute('data-variant') ? { variant: b.getAttribute('data-variant') } : {});
+  });
+
+  el.listMode.addEventListener('click', function (e) {
+    var b = e.target.closest('.mode-btn');
+    if (!b || b.getAttribute('data-mode') === state.listMode) return;
+    state.listMode = b.getAttribute('data-mode');
+    store.set(KEYS.listMode, state.listMode);
+    renderListHead();
+    renderList();
   });
 
   function onGravityRow(e) {
@@ -851,6 +917,7 @@
     if (state.variant[leafId] === b.getAttribute('data-variant')) return;
     state.variant[leafId] = b.getAttribute('data-variant');
     renderVariants();
+    markSelectedRow();
     if (currentName()) {
       state.template = pickTemplate();
       state.edited = false;
@@ -958,7 +1025,7 @@
       e.preventDefault();
       copy();
     } else if (e.key === 'Escape' && isDesktop() && state.entry && !el.gravity.open && (el.msg.contains(t) || t === document.body)) {
-      var row = rowByKey(state.entry.key);
+      var row = el.sections.querySelector('.row[aria-pressed="true"]');
       deselect();
       setHash('', false);
       if (row) row.focus({ preventScroll: true });

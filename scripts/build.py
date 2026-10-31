@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regroupe report-tree.json et data/messages/*.json dans data/bundle.js.
+"""Regroupe report-tree.json, topics.json et data/messages/*.json dans data/bundle.js.
 
 La page charge ce fichier avec une balise <script> : ça marche en file://
 (où fetch() est bloqué) comme sur un hébergement statique.
@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 TREE = DATA / "report-tree.json"
 MESSAGES = DATA / "messages"
+TOPICS = DATA / "topics.json"
 OUT = DATA / "bundle.js"
 
 
@@ -54,7 +55,13 @@ def main():
             sys.exit(f"build: feuille '{leaf}' définie dans deux fichiers")
         messages[leaf] = data
 
-    bundle = {"tree": tree, "messages": messages}
+    topics = load(TOPICS) if TOPICS.exists() else {"groups": [], "topics": []}
+    for t in topics.get("topics", []):
+        file = messages.get(t.get("leaf"))
+        if file is None or (t.get("variant") and t["variant"] not in (file.get("variants") or {})):
+            sys.exit(f"build: sujet '{t.get('id')}' : feuille ou variante introuvable ({t.get('leaf')}/{t.get('variant')})")
+
+    bundle = {"tree": tree, "messages": messages, "topics": topics}
     payload = json.dumps(bundle, ensure_ascii=False, separators=(",", ":"))
     OUT.write_text(
         "// Généré par scripts/build.py : ne pas éditer à la main.\n"
@@ -63,7 +70,8 @@ def main():
     )
 
     total = sum(len(m.get("messages", [])) for m in messages.values())
-    print(f"build: {OUT.relative_to(ROOT)} ({len(messages)} feuilles, {total} messages, {OUT.stat().st_size // 1024} Ko)")
+    print(f"build: {OUT.relative_to(ROOT)} ({len(messages)} feuilles, {total} messages, "
+          f"{len(topics.get('topics', []))} sujets, {OUT.stat().st_size // 1024} Ko)")
 
 
 if __name__ == "__main__":

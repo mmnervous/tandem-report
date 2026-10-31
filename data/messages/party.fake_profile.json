@@ -1,0 +1,509 @@
+{
+  "leaf": "party.fake_profile",
+  "variants": {
+    "fake": "Faux compte",
+    "misleading": "Profil trompeur"
+  },
+  "messages": [
+    {
+      "id": "fake-001",
+      "variant": "fake",
+      "text": "During a Tandem party{when}, the account of {name} appeared to be fake rather than a real person being themselves. Tandem's Language Parties Guidelines say: \"Be yourself. Fake accounts will be banned.\" A fake profile misleads learners about who they are talking to. Please verify the account and ban it if it is confirmed as fake."
+    },
+    {
+      "id": "fake-002",
+      "variant": "fake",
+      "text": "I am reporting {name} for what looks like a fake account in a Tandem language party{when}. Fake accounts are not allowed under Tandem's Language Parties Guidelines. Learners come to speak with real people, and fake profiles are often used for scams or harassment. Please review the account and take appropriate action."
+    },
+    {
+      "id": "fake-003",
+      "variant": "fake",
+      "text": "In a Tandem voice room{when}, the profile of {name} struck me as fake. Tandem's guidelines ask members to be themselves and state that fake accounts will be banned. Other learners deserve to know who they are really talking to. I kindly ask the team to check this account and act if needed."
+    },
+    {
+      "id": "fake-004",
+      "variant": "fake",
+      "text": "This report concerns {name}, a participant in a Tandem party{when}. The account seems to be fake, which goes against the guideline \"Be yourself. Fake accounts will be banned.\" Pretending to be someone else puts other members at risk of scams. Could you please look into the profile and remove it if it is not genuine?"
+    },
+    {
+      "id": "fake-005",
+      "variant": "fake",
+      "text": "Tandem's guidelines are clear: be yourself, because fake accounts will be banned. {name} was in a live audio party{when}, and this account looks fake to me. Learners should be able to trust who they speak with. I would appreciate a verification and, if the account is fake, a ban."
+    },
+    {
+      "id": "fake-006",
+      "variant": "fake",
+      "text": "A participant named {name} joined a Tandem party{when} with what appears to be a fake account. Fake accounts go against Tandem's Language Parties Guidelines and mislead learners about who they are talking to. Please investigate the account and remove it from the platform if it turns out not to be genuine."
+    },
+    {
+      "id": "fake-007",
+      "variant": "fake",
+      "text": "Please review the account of {name}, a participant in a Tandem language party{when}. It looks like a fake profile, not a real person being themselves, which Tandem's guidelines say will be banned. Such accounts are often used for scams or harassment, so a prompt check would be appreciated."
+    },
+    {
+      "id": "fake-008",
+      "variant": "fake",
+      "text": "While in a Tandem voice room{when}, I came across {name}, and I believe this is a fake account. Tandem's rules state that fake accounts will be banned. Learners are misled when they cannot tell who is really behind a profile. Please verify the account and apply the appropriate measures."
+    },
+    {
+      "id": "fake-009",
+      "variant": "fake",
+      "text": "My report is about {name}, a participant in a live audio room on Tandem{when}. The account appears to be fake, and the Language Parties Guidelines ask members to be themselves. Fake profiles can be used to deceive or harass other learners. Please check the account and restrict it if the suspicion is confirmed."
+    },
+    {
+      "id": "fake-010",
+      "variant": "fake",
+      "text": "I would like to flag {name} as a probable fake account. This user was in a Tandem party{when}. According to the Language Parties Guidelines, fake accounts will be banned. Other learners are misled about who they are speaking with. Please verify the profile and act accordingly. I can provide more details if needed."
+    },
+    {
+      "id": "fake-011",
+      "variant": "fake",
+      "text": "{name} was in a Tandem language party{when}, and the account seems fake to me. The rule is simple: \"Be yourself. Fake accounts will be banned.\" A false identity is unfair to learners, who think they are talking to a real person. Please check it and take action if it is confirmed."
+    },
+    {
+      "id": "fake-012",
+      "variant": "fake",
+      "text": "Fake accounts have no place in Tandem parties, and {name} looks like one. I noticed this account in a live audio room{when}. Tandem's guidelines say fake accounts will be banned, as they mislead members and can be used for scams. Could the moderation team please verify the profile and act as needed?"
+    },
+    {
+      "id": "fake-013",
+      "variant": "fake",
+      "text": "Could you please verify the account of {name}? In a Tandem party{when}, this user seemed to be using a fake profile instead of being themselves. That is not permitted by Tandem's Language Parties Guidelines, and it misleads the other learners in the room. If it is confirmed as fake, please ban it."
+    },
+    {
+      "id": "fake-014",
+      "variant": "fake",
+      "text": "Reporting a suspected fake account: {name}, a participant in a voice party on Tandem{when}. The guidelines say members should be themselves and that fake accounts will be banned. These accounts mislead learners about who they are speaking with and are frequently linked to scams. Please check this profile and take suitable action."
+    },
+    {
+      "id": "fake-015",
+      "variant": "fake",
+      "text": "I believe {name} is not a genuine member. During a Tandem party{when}, this account came across as fake, which goes against the rule that fake accounts will be banned. Learners rely on honest profiles to build trust in a language exchange. Please look into it and ban the account if my suspicion is correct."
+    },
+    {
+      "id": "fake-016",
+      "variant": "fake",
+      "text": "In a live audio party{when}, the profile of {name} appeared to be fake. Being yourself is part of Tandem's guidelines for Language Parties, and fake accounts will be banned. Learners can be misled, or even scammed, by someone using a false identity. Please review the account and sanction it if appropriate."
+    },
+    {
+      "id": "fake-017",
+      "variant": "fake",
+      "text": "This looks like a fake account: {name}, in a Tandem language party{when}. Tandem states that fake accounts will be banned, for good reason, since they deceive learners about who they are talking to. I would be grateful if the team could verify the account and apply the appropriate sanction."
+    },
+    {
+      "id": "fake-018",
+      "variant": "fake",
+      "text": "One of the participants in a Tandem voice room{when}, {name}, seems to be using a fake account. Tandem's guidelines require members to be themselves, and fake accounts will be banned. A false identity undermines the trust of other learners and is often a tool for scams. Please check the profile and take action if it is confirmed."
+    },
+    {
+      "id": "fake-019",
+      "variant": "fake",
+      "text": "Regarding {name}: I think this is a fake account, spotted in a Tandem party{when}. The Language Parties Guidelines are clear that fake accounts will be banned. Other learners may share personal information with someone who is not who they claim to be. Please investigate and sanction the account if it is not genuine."
+    },
+    {
+      "id": "fake-020",
+      "variant": "fake",
+      "text": "I am writing about {name}, who joined a Tandem party{when}. The account appears to be fake, so this user is not being themselves as Tandem's guidelines expect. Fake accounts will be banned, because they mislead learners and can be used to harass them. I ask the team to verify it and act accordingly."
+    },
+    {
+      "id": "fake-021",
+      "variant": "fake",
+      "text": "A fake profile seems to be active in Tandem parties: the account of {name}, which I came across in a language party{when}. Fake accounts will be banned according to Tandem's Language Parties Guidelines. Learners should not be misled about who they are speaking to. Please look at the account and take appropriate action. I can give more information if useful."
+    },
+    {
+      "id": "fake-022",
+      "variant": "fake",
+      "text": "Please take a look at {name}. In a live audio room on Tandem{when}, this account struck me as fake and not a real person being themselves. Fake accounts will be banned according to Tandem's guidelines, and they put learners at risk of deception or harassment. A verification of the profile would be much appreciated."
+    },
+    {
+      "id": "fake-023",
+      "variant": "fake",
+      "text": "Tandem is meant for real people learning languages together, yet {name}, in a language party{when}, appears to have a fake account. This breaks the rule \"Be yourself. Fake accounts will be banned.\" Members are misled and could be targeted by scams. I would like the team to review this profile and decide on a suitable sanction."
+    },
+    {
+      "id": "fake-024",
+      "variant": "fake",
+      "text": "Participant {name} was present in a Tandem voice room{when}, and I suspect the account is fake. Tandem's Language Parties Guidelines say fake accounts will be banned. When an identity is not genuine, the other learners cannot know who they are talking to. Please verify the account and take the necessary steps."
+    },
+    {
+      "id": "fake-025",
+      "variant": "fake",
+      "text": "Concerning a Tandem party{when}: the account of {name} looks fake to me. In Language Parties, members are expected to be themselves, and fake accounts will be banned. Such accounts mislead learners and are often used for scams or harassment. I kindly request a check of this profile and appropriate action if it is confirmed."
+    },
+    {
+      "id": "fake-026",
+      "variant": "fake",
+      "text": "{name} appears to be a fake account. I came across it in a Tandem party{when}. Fake accounts will be banned under Tandem's guidelines, and they mislead the learners who speak with them. I would be thankful if you could verify the profile and remove it if it is not genuine."
+    },
+    {
+      "id": "fake-027",
+      "variant": "fake",
+      "text": "Please verify {name}: in a Tandem voice room{when}, this account looked fake to me. Tandem's rules say \"Be yourself\", and a fake identity misleads learners about who they are talking to. If the account is confirmed as fake, a ban would be in line with the guidelines."
+    },
+    {
+      "id": "fake-028",
+      "variant": "fake",
+      "text": "Suspected fake profile in a Tandem party{when}: {name}. The Language Parties Guidelines say fake accounts will be banned, and this account does not look like a real person being themselves. Other learners deserve honest profiles. Please review the account and act as appropriate."
+    },
+    {
+      "id": "fake-029",
+      "variant": "fake",
+      "text": "Is {name} a real person? During a Tandem language party{when}, this account seemed fake to me. Tandem bans fake accounts because they deceive learners who believe they are talking to someone genuine. I would be grateful if you could check it and take appropriate action."
+    },
+    {
+      "id": "fake-030",
+      "variant": "fake",
+      "text": "This user, {name}, seems to be using a fake identity in Tandem parties. I noticed the account during a live audio room{when}. Fake accounts are not allowed in Tandem's guidelines and can be used for scams. Kindly verify the account and take action if it is not genuine."
+    },
+    {
+      "id": "fake-031",
+      "variant": "fake",
+      "text": "Fake account alert: {name}, seen in a Tandem voice party{when}. The rule is that members must be themselves, and fake accounts will be banned. Other learners are misled by such profiles. Could the team look into it and decide on the right measure?"
+    },
+    {
+      "id": "fake-032",
+      "variant": "fake",
+      "text": "I do not think {name} is a genuine user. In a Tandem language party{when}, the account came across as fake, which goes against the Language Parties Guidelines. Please verify the profile and ban it if my concern is confirmed. I can add details if needed."
+    },
+    {
+      "id": "fake-033",
+      "variant": "fake",
+      "text": "Learners deserve to talk to real people. The account of {name}, present in a Tandem party{when}, appears fake, and fake accounts will be banned according to the guidelines. Please check this profile and apply a sanction if the account turns out to be fake."
+    },
+    {
+      "id": "fake-034",
+      "variant": "fake",
+      "text": "On Tandem, members are asked to be themselves, so I am flagging {name}. This participant in a live audio room{when} seems to use a fake account. Such accounts can mislead or harass other learners, which is why the guidelines ban them. Please review the account and act."
+    },
+    {
+      "id": "fake-035",
+      "variant": "fake",
+      "text": "After a Tandem party{when}, I want to report {name}. The account looks fake and goes against the rule that fake accounts will be banned. It misleads the learners who speak with it. Could you please verify the profile and restrict it if it is confirmed?"
+    },
+    {
+      "id": "fake-036",
+      "variant": "fake",
+      "text": "Hello, I would like to report a probable fake account, {name}, in a Tandem voice room{when}. Fake accounts are banned by Tandem's guidelines, as they mislead learners and are often used for scams. I would appreciate it if the team could check this profile. Thank you."
+    },
+    {
+      "id": "fake-037",
+      "variant": "fake",
+      "text": "Not a real profile, I suspect: {name}, in a Tandem party{when}. Tandem's Language Parties Guidelines state that fake accounts will be banned. People cannot trust who they are talking to when the identity is false. Please verify the account and enforce the rules if needed."
+    },
+    {
+      "id": "fake-038",
+      "variant": "fake",
+      "text": "Joining a language party{when}, {name} appeared to me to be using a fake account. That contradicts Tandem's rule \"Be yourself\", and it can expose learners to scams. I ask the moderation team to verify this account and take appropriate action."
+    },
+    {
+      "id": "fake-039",
+      "variant": "fake",
+      "text": "Tandem's guidelines say fake accounts will be banned, and {name} seems to be one. I saw this participant in a Tandem party{when}. A fake profile misleads other learners about who they are really speaking with. Please investigate and ban the account if it is confirmed."
+    },
+    {
+      "id": "fake-040",
+      "variant": "fake",
+      "text": "Keeping Tandem parties trustworthy matters, so please look at {name}. In a voice room{when}, the profile appeared fake to me. Fake accounts will be banned, as they deceive members and may be used to harass them. I would welcome a verification of this account."
+    },
+    {
+      "id": "fake-041",
+      "variant": "fake",
+      "text": "I am concerned that {name} is a fake account. We were in the same Tandem party{when}, and the profile did not look like a real person being themselves. Fake accounts will be banned under Tandem's rules. Please verify it and take appropriate action."
+    },
+    {
+      "id": "fake-042",
+      "variant": "fake",
+      "text": "The account named {name} looks fake to me, and it was active in a Tandem live audio party{when}. This is not allowed: Tandem says fake accounts will be banned. Learners are misled about who they speak with. Please review the profile and act if it is confirmed."
+    },
+    {
+      "id": "fake-043",
+      "variant": "fake",
+      "text": "Request to verify a profile: {name}, who took part in a Tandem language party{when}. My impression is that it is a fake account, contrary to the guidelines saying members must be themselves. Such profiles mislead other learners. Please check and ban the account if it is not genuine."
+    },
+    {
+      "id": "fake-044",
+      "variant": "fake",
+      "text": "Tandem says fake accounts will be banned, so I am reporting {name}. During a voice party{when}, this account seemed to be fake. Pretending to be someone else misleads learners and can lead to scams or harassment. Please take appropriate action once you have verified it."
+    },
+    {
+      "id": "fake-045",
+      "variant": "fake",
+      "text": "There is a profile in Tandem parties that looks fake: {name}. I encountered this account in a language party{when}. Being yourself is a basic rule in Language Parties, and fake accounts will be banned. Please verify it and apply a sanction if confirmed."
+    },
+    {
+      "id": "fake-046",
+      "variant": "fake",
+      "text": "My report concerns the identity behind {name}, a participant in a Tandem voice room{when}. The account appears to be fake, and Tandem's guidelines ban fake accounts because they mislead other learners. I would appreciate a verification and, if it is confirmed, a ban."
+    },
+    {
+      "id": "fake-047",
+      "variant": "fake",
+      "text": "{name} joined a Tandem party{when}, and I suspect the profile is fake. Under the Language Parties Guidelines, fake accounts will be banned. Learners could be misled or targeted by someone who is not who they claim to be. Could you please check this account and act as needed?"
+    },
+    {
+      "id": "fake-048",
+      "variant": "fake",
+      "text": "Please investigate the account of {name}, which seems to be fake. I noticed it during a Tandem live audio room{when}, and the profile does not look like a real person being themselves. This goes against Tandem's rules and can put learners at risk. A ban would be appropriate if it is confirmed."
+    },
+    {
+      "id": "fake-049",
+      "variant": "fake",
+      "text": "Seen in a Tandem party{when}: {name}, an account that looks fake. Tandem's guidelines are clear that fake accounts will be banned, since they mislead learners about who they are talking to. I kindly ask the team to verify it and take the appropriate measures."
+    },
+    {
+      "id": "fake-050",
+      "variant": "fake",
+      "text": "Who is behind {name}? In a Tandem language party{when}, this account appeared fake to me, which the Language Parties Guidelines do not allow. Fake profiles deceive learners and are often linked to scams or harassment. Please review the account and take the steps you see fit."
+    },
+    {
+      "id": "misleading-001",
+      "variant": "misleading",
+      "text": "The profile of {name}, who took part in a Tandem party{when}, appeared to present misleading information about who this person really is. Tandem's Language Parties Guidelines ask members to be themselves. This misleads the learners in the voice room about who they are talking to. Please review the profile and ask for a correction."
+    },
+    {
+      "id": "misleading-002",
+      "variant": "misleading",
+      "text": "I am flagging a misleading profile. {name} was in a Tandem party{when}, and the profile looks like it misrepresents who this person is. Tandem's guidelines ask members to be themselves, and other learners deserve to know who they are speaking with. Please check the account and request verification if needed."
+    },
+    {
+      "id": "misleading-003",
+      "variant": "misleading",
+      "text": "Please look at the account of {name}. In a language party{when}, this participant's profile seemed to give false information about who they are, which goes against Tandem's rule to be yourself. Learners in the live audio room are misled about the person they are talking to. A verification or a correction would be appreciated."
+    },
+    {
+      "id": "misleading-004",
+      "variant": "misleading",
+      "text": "This report concerns a misleading profile. {name} took part in a Tandem party{when}, and the profile seems to misrepresent who they are. Fake accounts will be banned under the Language Parties Guidelines, and learners need to know who they are talking to. Could you review the profile and ask for a correction if needed?"
+    },
+    {
+      "id": "misleading-005",
+      "variant": "misleading",
+      "text": "Participant {name} joined a Tandem voice room{when} with a profile that does not seem truthful. Tandem's Language Parties Guidelines say to be yourself and warn that fake accounts will be banned. Misleading profiles undermine trust between learners. Please ask this user to correct the profile or verify it."
+    },
+    {
+      "id": "misleading-006",
+      "variant": "misleading",
+      "text": "In a language party{when}, I came across the profile of {name}, which seems to present false information about the person behind it. This conflicts with Tandem's \"be yourself\" principle and the ban on fake accounts. Learners in the room are misled about who they are practising with. Please look into it and act as appropriate."
+    },
+    {
+      "id": "misleading-007",
+      "variant": "misleading",
+      "text": "Be yourself, and fake accounts will be banned: that is what Tandem's guidelines say. The profile of {name}, seen in a Tandem party{when}, looks misleading and can deceive other learners about who they are talking to. Please have the profile corrected."
+    },
+    {
+      "id": "misleading-008",
+      "variant": "misleading",
+      "text": "Misleading profile: {name}, a participant in a Tandem party{when}, seems to present false details about themselves. Tandem's Language Parties Guidelines ask members to be themselves, and fake accounts will be banned. Learners deserve honest information about who is in the live audio room. Could you please verify this account and take appropriate action?"
+    },
+    {
+      "id": "misleading-009",
+      "variant": "misleading",
+      "text": "While listening to a Tandem party{when}, I noticed that {name} has a profile that appears to misrepresent who they are. Being yourself is a core expectation in Tandem's Language Parties Guidelines. Misleading profiles make it hard for learners to know who they are talking to. Please check this account and warn the user if necessary."
+    },
+    {
+      "id": "misleading-010",
+      "variant": "misleading",
+      "text": "I would like to report {name}, a participant in a language party{when}, for a misleading profile. Tandem's Language Parties Guidelines say fake accounts will be banned, and a profile like this misleads other learners about who they are speaking with. I would be grateful if you could look into the account and take the appropriate steps."
+    },
+    {
+      "id": "misleading-011",
+      "variant": "misleading",
+      "text": "Report about the profile of {name}. In a Tandem party{when}, it seemed to me that this profile gives a false picture of who the person is. That goes against the Language Parties Guidelines on being yourself and on fake accounts, and it leaves other learners with the wrong idea of who they are talking to. Please ask for verification or a correction."
+    },
+    {
+      "id": "misleading-012",
+      "variant": "misleading",
+      "text": "Something is off with the profile of {name}, a participant in a Tandem voice room{when}. It appears to present misleading information about who this person is, which the rule to be yourself and the ban on fake accounts are meant to prevent. It leaves the learners in the room unsure who they are talking to. Please investigate and take appropriate action."
+    },
+    {
+      "id": "misleading-013",
+      "variant": "misleading",
+      "text": "Please verify the profile of {name}. In a Tandem party{when}, it seemed to misrepresent who this participant is, which goes against the Language Parties Guidelines on being yourself. Learners who join these rooms to practise a language should be able to trust what they read. Please check this account and take appropriate action."
+    },
+    {
+      "id": "misleading-014",
+      "variant": "misleading",
+      "text": "Language parties depend on trust, and the profile of {name} seemed misleading in a Tandem party{when}. It appears to misrepresent the person behind it, contrary to Tandem's request to be yourself. Learners cannot tell who they are really speaking with. I ask Tandem to review the profile and act as appropriate."
+    },
+    {
+      "id": "misleading-015",
+      "variant": "misleading",
+      "text": "Under Tandem's Language Parties Guidelines, members must be themselves and fake accounts are banned. {name}, who took part in a Tandem party{when}, seems to have a profile that is misleading. This misleads learners in the voice room about who they are talking to. Please ask this user to correct the profile."
+    },
+    {
+      "id": "misleading-016",
+      "variant": "misleading",
+      "text": "{name} appeared in a Tandem party{when} with a profile that, in my view, does not honestly represent who they are. This is a misleading profile and runs against the Language Parties Guidelines, which rely on the Language Parties Guidelines, including the rule against fake accounts. Please check the account and restrict it if appropriate."
+    },
+    {
+      "id": "misleading-017",
+      "variant": "misleading",
+      "text": "I am flagging a possibly misleading profile. {name} took part in a Tandem party{when}, and the profile seems to misstate who this person is. Tandem asks members to be themselves, and learners in the room deserve accurate information. Please look into it."
+    },
+    {
+      "id": "misleading-018",
+      "variant": "misleading",
+      "text": "Could you please review the profile of {name}? This participant in a Tandem party{when} seems to present false information about who they are. That conflicts with the Language Parties Guidelines, which ask for authenticity and ban fake accounts. It is unfair to learners who rely on what they read. I can add details if useful."
+    },
+    {
+      "id": "misleading-019",
+      "variant": "misleading",
+      "text": "As a learner in a language party{when}, I found the profile of {name} misleading: it appears to misrepresent who this person is. Tandem says fake accounts will be banned and asks members to be themselves. Profiles must be reliable for the whole community. Please ask for verification and take appropriate action."
+    },
+    {
+      "id": "misleading-020",
+      "variant": "misleading",
+      "text": "Profile concern: the account of {name} looks misleading. I noticed it during a Tandem party{when}. Presenting a false identity goes against Tandem's Language Parties Guidelines, which ask members to be themselves. Other learners in the voice room cannot tell who they are really talking to. Please review and take the necessary steps."
+    },
+    {
+      "id": "misleading-021",
+      "variant": "misleading",
+      "text": "Good day, I would like to flag a misleading profile belonging to {name}, seen in a Tandem party{when}. Fake accounts are not allowed on Tandem, and learners rely on profiles to know who they are talking to. Could you have the account checked and, if needed, corrected?"
+    },
+    {
+      "id": "misleading-022",
+      "variant": "misleading",
+      "text": "The profile of {name}, a participant in a Tandem voice room{when}, looks misleading to me. Presenting yourself inaccurately goes against the Language Parties Guidelines' request to be yourself. Learners could be misled about who they are practising with. Please review the account and ask for a correction."
+    },
+    {
+      "id": "misleading-023",
+      "variant": "misleading",
+      "text": "To the Tandem team: {name} took part in a language party{when}, and the profile seems to present misleading information about who this person is. Under the Language Parties Guidelines, fake accounts are banned and members should be themselves. This misleads other learners. Kindly review the profile and act as appropriate."
+    },
+    {
+      "id": "misleading-024",
+      "variant": "misleading",
+      "text": "Being honest about who you are is part of Tandem's Language Parties Guidelines. The profile of {name}, seen in a Tandem party{when}, seemed misleading, and that makes it harder for learners to trust each other. Please request a correction or verification."
+    },
+    {
+      "id": "misleading-025",
+      "variant": "misleading",
+      "text": "One participant in a Tandem party{when}, {name}, has a profile that I believe is misleading. Tandem prohibits fake accounts and asks members to be themselves. A misleading profile deceives learners in the live audio room about who they are talking to. Please investigate this account and take appropriate action."
+    },
+    {
+      "id": "misleading-026",
+      "variant": "misleading",
+      "text": "Hi, {name} was a participant in a Tandem party{when}, and the profile looks misleading to me. It seems to give a false impression of who this person is, which does not fit Tandem's \"be yourself\" rule or the ban on fake accounts. Learners should not be misled about who they are talking to. Could a moderator please check this profile and act?"
+    },
+    {
+      "id": "misleading-027",
+      "variant": "misleading",
+      "text": "While I was in a Tandem voice room{when}, the profile of {name} struck me as untruthful about who the person is. The Language Parties Guidelines say fake accounts will be banned. A misleading profile gives other learners the wrong idea of who they are speaking with. Please take appropriate action."
+    },
+    {
+      "id": "misleading-028",
+      "variant": "misleading",
+      "text": "Tandem asks members to be themselves, but the profile of {name} does not seem to show who this person really is. I noticed this in a language party{when}. It gives other learners the wrong idea of who they are talking to. Please ask for a correction."
+    },
+    {
+      "id": "misleading-029",
+      "variant": "misleading",
+      "text": "My report is about the profile of {name}, a participant in a Tandem party{when}. It appears to present misleading information about who they are, which I believe goes against Tandem's Language Parties Guidelines on authenticity and fake accounts. Other learners may be misled. Please ask for verification."
+    },
+    {
+      "id": "misleading-030",
+      "variant": "misleading",
+      "text": "It seems that {name} is presenting a misleading profile. I came across this account in a Tandem party{when}. Fake accounts will be banned, and members are asked to be themselves. Learners in live audio rooms need to be able to trust who they are talking to. Please look into it and act accordingly."
+    },
+    {
+      "id": "misleading-031",
+      "variant": "misleading",
+      "text": "I believe the profile of {name} misrepresents who this person is. This was in a Tandem party{when}. It goes against the Language Parties Guidelines on being yourself, and it misleads learners about who they are talking to. Could you please look at the account and take the steps you see fit?"
+    },
+    {
+      "id": "misleading-032",
+      "variant": "misleading",
+      "text": "Kindly check the profile of {name}, who took part in a language party{when}. The information shown there appears to be misleading about the person behind the account. This is contrary to Tandem's rule against fake accounts and its call to be yourself. Other learners cannot rely on it. A correction or verification would help."
+    },
+    {
+      "id": "misleading-033",
+      "variant": "misleading",
+      "text": "For the sake of honest exchanges between learners, please review the profile of {name}. In a Tandem party{when}, it seemed to present misleading information about who this participant is. Tandem's Language Parties Guidelines ban fake accounts. Please take appropriate action."
+    },
+    {
+      "id": "misleading-034",
+      "variant": "misleading",
+      "text": "In a Tandem party{when}, the profile of {name} appeared misleading. Tandem's Language Parties Guidelines say fake accounts will be banned, and members are asked to be themselves. Learners are misled about who they talk to. I would be grateful if you could verify the account."
+    },
+    {
+      "id": "misleading-035",
+      "variant": "misleading",
+      "text": "Learners in a Tandem party{when} should be able to trust the profiles they see. The profile of {name} appeared misleading about who this participant is, which conflicts with the Language Parties Guidelines and the ban on fake accounts. Please review it, ask for a correction, and take further action if appropriate."
+    },
+    {
+      "id": "misleading-036",
+      "variant": "misleading",
+      "text": "Regarding {name}: the profile of this participant in a Tandem party{when} seems to give false information about who they are. Tandem's Language Parties Guidelines expect members to follow the Language Parties Guidelines, including being themselves. A misleading profile deceives other learners. Please check the account and restrict it if appropriate."
+    },
+    {
+      "id": "misleading-037",
+      "variant": "misleading",
+      "text": "Dear Tandem team, I would like to report a misleading profile. The account {name} took part in a language party{when}, and the profile seems to misrepresent the person behind it. Fake accounts are banned under your Language Parties Guidelines. It misleads other learners. Please investigate and take the necessary action."
+    },
+    {
+      "id": "misleading-038",
+      "variant": "misleading",
+      "text": "Trust matters in a language exchange, and the profile of {name} seemed to undermine it. During a Tandem party{when}, it appeared to present misleading information about who this person is. That goes against Tandem's principle of being yourself and its ban on fake accounts. Please request a verification of this account."
+    },
+    {
+      "id": "misleading-039",
+      "variant": "misleading",
+      "text": "{name}'s profile appears to be misleading. I saw it in a Tandem party{when}. It goes against Tandem's Language Parties Guidelines on being yourself, and it misleads learners. Please act as appropriate."
+    },
+    {
+      "id": "misleading-040",
+      "variant": "misleading",
+      "text": "Having been in a Tandem party{when}, I want to flag the profile of {name} as misleading. It seems to misrepresent who this participant is, against the Language Parties Guidelines' call to be yourself and their ban on fake accounts. Learners deserve accurate information. Please verify the account and take appropriate action."
+    },
+    {
+      "id": "misleading-041",
+      "variant": "misleading",
+      "text": "My concern is about the honesty of a profile. In a language party{when}, {name} appeared with a profile that seems to misrepresent who they are. Tandem expects members to be themselves and does not allow fake accounts. Other learners are left with a wrong picture of who they are talking to. Please check this user and take action if appropriate."
+    },
+    {
+      "id": "misleading-042",
+      "variant": "misleading",
+      "text": "Could someone from Tandem verify the profile of {name}? In a Tandem party{when}, it looked to me like a misleading profile, presenting this participant in a way that seems untrue. Tandem's guidelines say fake accounts will be banned, and other learners may be misled about who they are practising with. A check of the account would be appreciated."
+    },
+    {
+      "id": "misleading-043",
+      "variant": "misleading",
+      "text": "The person behind the account {name} may not be who the profile says. I noticed it in a Tandem party{when}. A misleading profile is against Tandem's Language Parties Guidelines on being yourself, and it misleads the learners in the voice room. Please review the account and request verification."
+    },
+    {
+      "id": "misleading-044",
+      "variant": "misleading",
+      "text": "Identity concern: the profile of {name} seems to misrepresent the real person, as I saw in a language party{when}. Tandem's guidelines say fake accounts will be banned and ask members to be themselves. This misleads other learners in the live audio room. Please look into it and apply the rules as appropriate."
+    },
+    {
+      "id": "misleading-045",
+      "variant": "misleading",
+      "text": "I joined a Tandem party{when} and found the profile of {name} misleading. Tandem's Language Parties Guidelines ask members to be themselves and prohibit fake accounts, and this misleads other learners. Please ask for a correction."
+    },
+    {
+      "id": "misleading-046",
+      "variant": "misleading",
+      "text": "Honest profiles are what make a language party worth joining, and the profile of {name} seemed misleading in the party I attended{when}. It appears to misrepresent who this person is, which goes against Tandem's Language Parties Guidelines. Other learners are misled. I would ask Tandem to verify the account."
+    },
+    {
+      "id": "misleading-047",
+      "variant": "misleading",
+      "text": "Reporting the account {name} for a misleading profile. During a Tandem party{when}, this participant's profile seemed to present false information about the person behind it. That conflicts with the rule against fake accounts in Tandem's Language Parties Guidelines. It misleads other learners. I can provide more details if needed."
+    },
+    {
+      "id": "misleading-048",
+      "variant": "misleading",
+      "text": "What I noticed in a Tandem party{when}: the profile of {name} seems to misrepresent who this person is. Tandem's Language Parties Guidelines and Community Principles ask for authenticity, and fake accounts will be banned. Learners in the room are misled. Please review the profile and take appropriate action."
+    },
+    {
+      "id": "misleading-049",
+      "variant": "misleading",
+      "text": "This user, {name}, took part in a language party{when} with a profile that appears misleading. It seems to show something other than the real person, contrary to the \"be yourself\" principle at Tandem. Other learners cannot trust what they see. Please check the account, ask for a correction, and act as appropriate."
+    },
+    {
+      "id": "misleading-050",
+      "variant": "misleading",
+      "text": "Thank you for looking into the profile of {name}. In a Tandem party{when}, it seemed to me to be a misleading profile, giving a false picture of this participant. Tandem's Language Parties Guidelines ban fake accounts and expect members to be themselves. Learners should know who they are talking to. Please take appropriate action."
+    }
+  ]
+}

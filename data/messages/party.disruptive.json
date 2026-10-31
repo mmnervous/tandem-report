@@ -1,0 +1,1511 @@
+{
+  "leaf": "party.disruptive",
+  "variants": {
+    "politics": "Politique",
+    "religion": "Religion",
+    "copyright": "Musique ou livre audio protégés"
+  },
+  "per_variant": 100,
+  "messages": [
+    {
+      "id": "politics-001",
+      "variant": "politics",
+      "text": "During a Tandem party{when}, {name} steered the voice room toward political discussion. Politics is listed among the topics Tandem does not allow, and parties are meant to focus on language learning. Such debates can unsettle other learners and pull the room away from practice. Please review this account and remind the user of the guidelines."
+    },
+    {
+      "id": "politics-002",
+      "variant": "politics",
+      "text": "{name} brought up political views in a live audio room{when} instead of practising languages. Tandem's Language Parties Guidelines say that parties should focus on language learning, and the web guidelines list politics among the topics that are not allowed. This can make other learners uncomfortable. Please warn this user and take appropriate action."
+    },
+    {
+      "id": "politics-003",
+      "variant": "politics",
+      "text": "I am reporting {name} for turning a Tandem language party{when} into a political discussion. Tandem's web guidelines state that politics is not allowed, and political debate can divide learners who joined to practise a language. Please look at this account and consider a reminder about the rules."
+    },
+    {
+      "id": "politics-004",
+      "variant": "politics",
+      "text": "Please review {name}, who raised political topics in a voice room{when}. Tandem does not allow politics, and Language Parties are supposed to be about language learning. Political talk can leave other learners feeling unsettled and takes time away from practice. A reminder or warning to this user would be appreciated."
+    },
+    {
+      "id": "politics-005",
+      "variant": "politics",
+      "text": "This report concerns {name}, a participant in a Tandem party{when} who steered the conversation to politics. According to Tandem's guidelines, politics is not allowed, and the party should stay focused on learning languages. It divides the learners present. Please take appropriate action on this account."
+    },
+    {
+      "id": "politics-006",
+      "variant": "politics",
+      "text": "In a language party{when}, {name} started talking about politics and moved the room into a political discussion. Tandem's web guidelines do not allow politics, and parties are meant for language learning. Learners came to practise, not to be drawn into political arguments. Please warn this user if appropriate."
+    },
+    {
+      "id": "politics-007",
+      "variant": "politics",
+      "text": "Tandem's guidelines are clear that politics has no place in Language Parties, yet {name} introduced political topics in a live audio room{when}. Such conversations divide learners and pull attention away from language practice. I would ask you to review this behaviour and remind the user of the rules."
+    },
+    {
+      "id": "politics-008",
+      "variant": "politics",
+      "text": "A participant named {name} shared political views during a Tandem voice party{when}. Politics appears among the topics Tandem does not allow, and parties must remain focused on language learning. Political opinions can make other learners uneasy. Please look into this account and take suitable action."
+    },
+    {
+      "id": "politics-009",
+      "variant": "politics",
+      "text": "{name} led a political conversation in a Tandem party{when}. Tandem's web guidelines state that politics is not allowed in the community. It can unsettle learners who simply want to practise and moves the party away from its purpose. Please remind this user of the rules or take further action if needed."
+    },
+    {
+      "id": "politics-010",
+      "variant": "politics",
+      "text": "Reporting a violation in a Tandem language party{when}. {name} directed the conversation toward political subjects, which Tandem lists among topics that are not allowed. This pulls the party away from language learning and may upset other learners. Please review this account and issue a warning."
+    },
+    {
+      "id": "politics-011",
+      "variant": "politics",
+      "text": "Politics came up in a voice room{when} because {name} chose to raise it. Tandem's guidelines state that politics is not allowed and that Language Parties should centre on language learning. Political discussion tends to divide learners. Could you please review this user's behaviour and remind them of the rules?"
+    },
+    {
+      "id": "politics-012",
+      "variant": "politics",
+      "text": "Please remind {name} that politics is not allowed on Tandem. In a party{when}, this participant steered the voice room toward political topics, away from language practice. That is unfair to learners who joined to improve their skills and may unsettle them. I ask that you review the account and act as you see fit."
+    },
+    {
+      "id": "politics-013",
+      "variant": "politics",
+      "text": "While I was in a Tandem party{when}, {name} started a debate on political topics. Politics is explicitly excluded by Tandem's guidelines, which also ask that parties stay focused on language learning. Such debates can alienate other learners. Please review this behaviour and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "politics-014",
+      "variant": "politics",
+      "text": "Language Parties are for practising languages, but {name} used one{when} to talk about politics. Tandem's guidelines list politics among the topics that are not allowed. Political discussion can divide the room and make learners feel uncomfortable. I would be grateful if you reviewed this account and issued a reminder."
+    },
+    {
+      "id": "politics-015",
+      "variant": "politics",
+      "text": "I would like to flag {name} for bringing political views into a Tandem voice room{when}. Tandem's web guidelines list politics among the topics that are not allowed in its community. Learners should be able to practise without being pulled into political arguments. Please warn this user or take other suitable action."
+    },
+    {
+      "id": "politics-016",
+      "variant": "politics",
+      "text": "The conversation in a Tandem party{when} turned political after {name} spoke about politics. This conflicts with Tandem's guidelines: politics is not allowed, and Language Parties should focus on language learning. Other learners can feel unsettled by such topics. Please review the account and remind the user of the rules."
+    },
+    {
+      "id": "politics-017",
+      "variant": "politics",
+      "text": "Political discussion has no place in a language exchange, and {name} nonetheless started one in a live Tandem party{when}. Tandem's guidelines do not allow politics. It divides learners and distracts from practice. Please look into this account and take whatever action you consider appropriate."
+    },
+    {
+      "id": "politics-018",
+      "variant": "politics",
+      "text": "Hello, I want to report {name}. During a voice party{when}, this user pushed political topics into the discussion, although Tandem's web guidelines say politics is not allowed. This takes the focus off language learning and can make other learners uncomfortable. Please review the account and give a warning if appropriate."
+    },
+    {
+      "id": "politics-019",
+      "variant": "politics",
+      "text": "Not a language topic: {name} began a political discussion in a Tandem party{when}. Tandem's web guidelines do not allow politics, so it should not be raised in Language Parties. It can divide learners and detracts from practice. Please remind this user of the guidelines and act as needed."
+    },
+    {
+      "id": "politics-020",
+      "variant": "politics",
+      "text": "Is politics allowed in Tandem parties? No, according to the guidelines, and yet {name} raised political topics in a voice room{when}. This disrupts language practice and may unsettle other learners. Please review this behaviour and take appropriate action."
+    },
+    {
+      "id": "politics-021",
+      "variant": "politics",
+      "text": "My report is about {name}, who made a Tandem party{when} revolve around political views. Tandem's Language Parties Guidelines require parties to focus on language learning, and politics is among the topics not allowed. Political talk can divide learners. Please warn this user or take other suitable action."
+    },
+    {
+      "id": "politics-022",
+      "variant": "politics",
+      "text": "Within a live audio room{when}, {name} initiated a political discussion in place of language practice. Tandem does not allow politics, as stated in its web guidelines. Learners who came to practise can end up feeling unsettled. Please review the account and remind the user of the rules."
+    },
+    {
+      "id": "politics-023",
+      "variant": "politics",
+      "text": "Tandem asks that Language Parties stay about language learning, but {name} spoke about politics in a party{when}. Politics is among the topics the web guidelines do not allow, and such talk can divide learners. Please check this account and send the user a reminder or take appropriate action."
+    },
+    {
+      "id": "politics-024",
+      "variant": "politics",
+      "text": "Please take a look at the behaviour of {name} in a Tandem voice party{when}. They introduced political discussion, which Tandem's guidelines list as not allowed. This pulls the room away from language practice and may leave other learners uncomfortable. A warning from the moderation team would be appropriate."
+    },
+    {
+      "id": "politics-025",
+      "variant": "politics",
+      "text": "Regarding a Tandem party{when}: {name} chose to talk politics with the room. Tandem's web guidelines do not allow politics, and parties must stay focused on language learning. This can divide learners and disrupt practice. Please review the account and take appropriate action."
+    },
+    {
+      "id": "politics-026",
+      "variant": "politics",
+      "text": "Politics is not allowed in Tandem Language Parties, but {name} made it the subject of a voice room{when}. Learners who join to practise should not be pulled into political arguments, which divide people and derail the practice. Please remind this user of the guidelines."
+    },
+    {
+      "id": "politics-027",
+      "variant": "politics",
+      "text": "Participant {name} turned a language party{when} toward political opinions. Tandem's Language Parties Guidelines expect parties to stay on language learning, and politics is on the list of topics that are not allowed. This may unsettle learners who just want to practise. Please review the account and issue a warning."
+    },
+    {
+      "id": "politics-028",
+      "variant": "politics",
+      "text": "Something I would like moderators to see: {name} talked about political issues in a Tandem audio room{when}. Politics is not allowed under Tandem's web guidelines, and it distracts from learning a language. Other learners should not have to sit through political debate. Please act as appropriate."
+    },
+    {
+      "id": "politics-029",
+      "variant": "politics",
+      "text": "Please consider a reminder for {name}. In a Tandem party{when}, this person opened up a political discussion, even though the guidelines list politics among the topics that are not allowed. Political talk can split a room of learners and leaves less space for language practice. I would appreciate a review of the account."
+    },
+    {
+      "id": "politics-030",
+      "variant": "politics",
+      "text": "Speaking in a Tandem voice party{when}, {name} moved the topic from language practice to politics. Tandem's web guidelines state that politics is not allowed, and the Language Parties Guidelines ask for a focus on language learning. Political topics can divide the learners present. Kindly review this account and take the action you see fit."
+    },
+    {
+      "id": "politics-031",
+      "variant": "politics",
+      "text": "Tandem's Language Parties Guidelines call for a focus on language learning, and its web guidelines exclude politics. {name} nevertheless brought political discussion into a live audio room{when}. This pulls learners away from practice and can cause tension between them. Please review the account and issue a warning if appropriate."
+    },
+    {
+      "id": "politics-032",
+      "variant": "politics",
+      "text": "Listeners and speakers join a Tandem party to practise a language, not to hear political arguments. In a party{when}, {name} pushed the discussion into politics, which Tandem's guidelines do not allow. Please review this behaviour and remind the user of the rules."
+    },
+    {
+      "id": "politics-033",
+      "variant": "politics",
+      "text": "I noticed {name} introducing political subjects into a language party{when}. Tandem's web guidelines do not allow politics, and Language Parties are meant for language learning. Political subjects divide opinion and can make learners uncomfortable. Please contact this user and take suitable action."
+    },
+    {
+      "id": "politics-034",
+      "variant": "politics",
+      "text": "Request for a review of {name}, who started a political discussion in a live Tandem party{when}. Politics is not allowed under Tandem's web guidelines, and the topic takes attention away from the language practice others came for. Please remind this user of the rules."
+    },
+    {
+      "id": "politics-035",
+      "variant": "politics",
+      "text": "As a learner in a Tandem party{when}, I found it out of place that {name} discussed politics with the room. Politics is not among the topics Tandem allows, and it can unsettle people who joined only to practise. I ask that the account be reviewed and the user warned if appropriate."
+    },
+    {
+      "id": "politics-036",
+      "variant": "politics",
+      "text": "Politics is excluded from Tandem's topic guidelines, yet {name} raised it in a voice room{when}. Political discussion can divide learners and replaces the language practice the party exists for. Please review the account and take appropriate action. I can give more details if needed."
+    },
+    {
+      "id": "politics-037",
+      "variant": "politics",
+      "text": "Let me report {name} for a breach of Tandem's Language Parties Guidelines. In a party{when}, this participant steered the talk toward politics, a topic that is not allowed. Learners can feel unsettled by it, and the party loses its language focus. Please issue a reminder or warning."
+    },
+    {
+      "id": "politics-038",
+      "variant": "politics",
+      "text": "Tandem parties should be a comfortable space to practise, but {name} brought politics into one{when}. Tandem's web guidelines list politics among the topics that are not allowed. Such discussions can divide the room and push language learning aside. Please review this account and take action as you think appropriate."
+    },
+    {
+      "id": "politics-039",
+      "variant": "politics",
+      "text": "The account of {name} deserves a review. In an audio party{when}, this participant spoke about political topics in front of the room. Tandem does not allow politics, and the party should focus on languages. Political talk can unsettle other learners. A warning would be appropriate."
+    },
+    {
+      "id": "politics-040",
+      "variant": "politics",
+      "text": "Political views were pushed into a Tandem party{when} by {name}. According to Tandem's web guidelines, politics falls under topics that are not allowed, and parties are meant for language learning. Such views divide learners. Please remind the user of the rules and take action if needed."
+    },
+    {
+      "id": "politics-041",
+      "variant": "politics",
+      "text": "Without any link to language learning, {name} began discussing politics in a Tandem voice room{when}. Tandem's web guidelines rule politics out. It can divide the learners in the room and takes time from their practice. Please look into the account and warn the user."
+    },
+    {
+      "id": "politics-042",
+      "variant": "politics",
+      "text": "I want to bring {name} to your attention for a political discussion in a language party{when}. Tandem's web guidelines do not allow politics, and the Language Parties Guidelines ask for a language-learning focus. Other learners may feel uneasy and the practice suffers. Please review the account and respond appropriately."
+    },
+    {
+      "id": "politics-043",
+      "variant": "politics",
+      "text": "One participant, {name}, treated a Tandem party{when} as a place for political debate. Tandem does not allow politics, and its guidelines ask that parties stay centred on language learning. Debate on such topics can drive learners apart. Please review this behaviour and send a reminder."
+    },
+    {
+      "id": "politics-044",
+      "variant": "politics",
+      "text": "Tandem's web guidelines name politics as a topic that is not allowed. In a live party{when}, {name} still raised political matters, which distracted from language practice and may have unsettled other learners. Please review the account and take the steps you consider suitable."
+    },
+    {
+      "id": "politics-045",
+      "variant": "politics",
+      "text": "Could you check on {name}? In a Tandem party{when} this user started a conversation about political topics, which the guidelines list as not allowed. Parties are for language learning, and political talk can divide the learners who came to practise. Please remind them of the rules."
+    },
+    {
+      "id": "politics-046",
+      "variant": "politics",
+      "text": "The discussion in a Tandem language party{when} shifted from language practice to politics after {name} spoke up on political matters. Politics is a topic Tandem does not permit, according to its guidelines, and it can make learners feel unwelcome. I ask for a review of the account and an appropriate warning."
+    },
+    {
+      "id": "politics-047",
+      "variant": "politics",
+      "text": "A reminder about Tandem's rules seems necessary for {name}. In a live audio room{when}, they led the party into political discussion, which the web guidelines do not allow. This takes the focus off language learning and may unsettle others. Please review the account and act accordingly."
+    },
+    {
+      "id": "politics-048",
+      "variant": "politics",
+      "text": "This is a report about political content in a Tandem party{when}. {name} talked about politics, which Tandem's web guidelines do not allow. It can divide learners and distracts from the language exchange the party is for. Please review this user and take appropriate action."
+    },
+    {
+      "id": "politics-049",
+      "variant": "politics",
+      "text": "Learners deserve a party that stays on language learning. In a voice room{when}, {name} brought in political topics instead, which Tandem's guidelines do not allow. Please review the account, and warn the user or take other action as you see fit."
+    },
+    {
+      "id": "politics-050",
+      "variant": "politics",
+      "text": "{name} used a Tandem party{when} to air political opinions. This is not permitted: Tandem's guidelines exclude politics and ask Language Parties to focus on learning languages. Political opinions can alienate other learners. Please warn this user and review the account."
+    },
+    {
+      "id": "politics-051",
+      "variant": "politics",
+      "text": "{name} started a political discussion in a Tandem party{when}. Tandem's web guidelines do not allow politics, and it pulls learners away from language practice. Please remind this user of Tandem's guidelines."
+    },
+    {
+      "id": "politics-052",
+      "variant": "politics",
+      "text": "In a voice room{when}, {name} talked politics. Tandem's guidelines do not allow it, and it divides learners who came to practise. Please warn this user or take appropriate action."
+    },
+    {
+      "id": "politics-053",
+      "variant": "politics",
+      "text": "Please warn {name} about political talk in a Tandem party{when}. Politics is not allowed under Tandem's web guidelines, and it distracts other learners from practising. Thank you for reviewing the account."
+    },
+    {
+      "id": "politics-054",
+      "variant": "politics",
+      "text": "Here is a rule breach to review: political discussion led by {name} in a language party{when}. Tandem's guidelines exclude politics, and it can unsettle learners in the room. Please take appropriate action."
+    },
+    {
+      "id": "politics-055",
+      "variant": "politics",
+      "text": "Learners in a live audio room{when} were drawn into politics by {name}. Tandem does not allow politics, and parties should stay on language learning. Please review this account and send a reminder."
+    },
+    {
+      "id": "politics-056",
+      "variant": "politics",
+      "text": "I am writing about {name}, who spoke about political topics in a Tandem party{when}. This goes against Tandem's web guidelines, which do not allow politics, and it can divide the room. Please review and act as appropriate."
+    },
+    {
+      "id": "politics-057",
+      "variant": "politics",
+      "text": "Off-topic and not allowed: {name} discussed politics in a Tandem voice room{when}. Politics is on Tandem's list of topics it does not permit, and it takes the focus away from language learning. Please remind this user of the rules."
+    },
+    {
+      "id": "politics-058",
+      "variant": "politics",
+      "text": "A Tandem party{when} included political talk started by {name}. Tandem's guidelines do not allow politics, and it can make learners uncomfortable. Please review this account and issue a warning."
+    },
+    {
+      "id": "politics-059",
+      "variant": "politics",
+      "text": "Politics has no place in a language party, as Tandem's guidelines say, but {name} brought it up{when}. This divides learners and distracts from practice. Please review the account."
+    },
+    {
+      "id": "politics-060",
+      "variant": "politics",
+      "text": "My report concerns political discussion in a Tandem party{when}. {name} raised politics, which Tandem's guidelines do not allow because parties must focus on language learning. Other learners may feel unsettled. Please remind this user and take further action if needed."
+    },
+    {
+      "id": "politics-061",
+      "variant": "politics",
+      "text": "After {name} spoke about politics in a Tandem voice party{when}, the focus left language learning. Politics is not allowed by Tandem's web guidelines, and it can divide learners. Please review the account and warn the user."
+    },
+    {
+      "id": "politics-062",
+      "variant": "politics",
+      "text": "To the Tandem moderation team: {name} introduced politics into a language party{when}. This is a topic Tandem does not allow, and it takes learners away from practice. I would ask for a review of the account and a warning."
+    },
+    {
+      "id": "politics-063",
+      "variant": "politics",
+      "text": "Tandem states that Language Parties are about language learning, and that politics is not allowed. Still, {name} steered a live audio room{when} toward political discussion, which can divide learners who came for friendly practice. Please review the behaviour of this account and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "politics-064",
+      "variant": "politics",
+      "text": "I joined a Tandem party{when} to practise, but {name} turned the conversation to political topics. Tandem's web guidelines list politics among the topics not allowed in its community, and such talk can make learners uneasy. Please review this user and remind them of the rules."
+    },
+    {
+      "id": "politics-065",
+      "variant": "politics",
+      "text": "What happened: {name} brought up politics in a Tandem voice party{when}. Which rule: Tandem's guidelines do not allow politics, and parties must focus on language learning. Why it matters: political talk divides and unsettles learners. What I ask: please review the account and warn the user."
+    },
+    {
+      "id": "politics-066",
+      "variant": "politics",
+      "text": "This user, {name}, spoke about politics in a live Tandem audio room{when}, which Tandem's web guidelines do not allow. Political topics can be divisive for learners from different backgrounds and move the focus away from practice. Please review the account and take suitable action."
+    },
+    {
+      "id": "politics-067",
+      "variant": "politics",
+      "text": "When a Tandem party{when} should have been about language practice, {name} discussed political views. Tandem's web guidelines place politics among the topics that are not allowed, and such views can divide the room. Please remind this participant of the rules and take action if appropriate."
+    },
+    {
+      "id": "politics-068",
+      "variant": "politics",
+      "text": "Participants in Tandem parties are expected to follow the Language Parties Guidelines. {name} did not: politics, a topic that is not allowed, was raised by this user in a voice room{when}. This distracts learners from practice. Please review the account and issue a warning."
+    },
+    {
+      "id": "politics-069",
+      "variant": "politics",
+      "text": "Please act on a political discussion that {name} began in a Tandem party{when}. Tandem's web guidelines do not allow politics, and it sidetracks a party meant for language learning. It can also upset learners. Please remind the user of the rules."
+    },
+    {
+      "id": "politics-070",
+      "variant": "politics",
+      "text": "Seeking a moderator review of {name}. This participant moved a Tandem party{when} into political territory, which Tandem's guidelines do not allow. Learners who came to improve their language skills can feel unsettled, and practice time is lost. Please warn the user or take other appropriate action."
+    },
+    {
+      "id": "politics-071",
+      "variant": "politics",
+      "text": "Tandem excludes politics from its community, as stated in the web guidelines, but {name} raised political subjects in a language party{when}. That leaves other learners with less room to practise and may cause friction between them. Please review the account and remind the user of the guidelines."
+    },
+    {
+      "id": "politics-072",
+      "variant": "politics",
+      "text": "For the record, {name} began a discussion about politics in a Tandem voice room{when}. Language Parties are supposed to focus on language learning, and politics is among the topics that are not allowed. It divides learners. Please review this behaviour and take appropriate action."
+    },
+    {
+      "id": "politics-073",
+      "variant": "politics",
+      "text": "A political conversation took place in a Tandem party{when} because {name} initiated it. Tandem does not allow politics, and a party should centre on language practice. Please review the account, remind the user, and take further action if you find it appropriate."
+    },
+    {
+      "id": "politics-074",
+      "variant": "politics",
+      "text": "In a language party{when}, this participant, {name}, raised political topics, which Tandem's web guidelines do not allow. Politics can divide learners and distract them from their practice. I would like to ask for a warning to be sent to this user, and for the account to be reviewed."
+    },
+    {
+      "id": "politics-075",
+      "variant": "politics",
+      "text": "Concerning {name}: this participant shared political views in a live Tandem party{when}. Tandem's web guidelines rule out politics, and the Language Parties Guidelines ask for a focus on language learning. Other learners may feel pressured or uneasy. Please review the account and take appropriate action."
+    },
+    {
+      "id": "politics-076",
+      "variant": "politics",
+      "text": "{name} raised politics in a Tandem party{when}. It is not allowed by Tandem's guidelines and takes the party away from language practice. Please remind this user of the rules."
+    },
+    {
+      "id": "politics-077",
+      "variant": "politics",
+      "text": "Political talk in a language party{when}, started by {name}. Tandem's guidelines do not allow politics, and it unsettles learners. Please warn this user and review the account."
+    },
+    {
+      "id": "politics-078",
+      "variant": "politics",
+      "text": "Please check {name}: political topics came up in a voice room{when} because of this user. Tandem's guidelines rule out politics, and it divides learners who came to practise. Thank you for taking action."
+    },
+    {
+      "id": "politics-079",
+      "variant": "politics",
+      "text": "I noticed that {name} started a political discussion{when} in a Tandem party. Politics is among the topics Tandem's guidelines do not allow, and it pulls the room away from language practice and can leave learners feeling uncomfortable. Please review this account, remind the user of the rules, and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "politics-080",
+      "variant": "politics",
+      "text": "Tandem's guidelines sort topics into Red, Amber and Green by relevance to language learning, and politics is not allowed. In a Tandem party{when}, {name} nonetheless talked about politics. This can divide learners and distracts from language practice. Please review the account and warn the user."
+    },
+    {
+      "id": "politics-081",
+      "variant": "politics",
+      "text": "Political discussion in a language party{when} is exactly what the guidelines ask participants to avoid, and {name} started one. Tandem does not allow politics, and parties should focus on language learning. Other learners could feel unsettled. Please issue a reminder and review the account."
+    },
+    {
+      "id": "politics-082",
+      "variant": "politics",
+      "text": "Please step in regarding {name}, who made political topics the focus of a Tandem party{when}. This is not allowed under Tandem's guidelines and replaces the language practice learners came for. Political talk can divide a room. A review of the account and a warning would be appreciated."
+    },
+    {
+      "id": "politics-083",
+      "variant": "politics",
+      "text": "Quick report: {name} discussed political views with the room in a Tandem party{when}. Tandem's guidelines exclude politics from Language Parties, and the discussion distracts from language learning. Please take appropriate action on this account."
+    },
+    {
+      "id": "politics-084",
+      "variant": "politics",
+      "text": "In a live audio room{when}, I heard {name} talk about politics, which Tandem's web guidelines do not allow. Political discussion can divide learners and shifts the party away from its language purpose. Please review the account and remind the user."
+    },
+    {
+      "id": "politics-085",
+      "variant": "politics",
+      "text": "{name}, a participant in a Tandem language party{when}, made the conversation political. This conflicts with the guidelines, which say that politics is not allowed and that parties should focus on language learning. Other learners may feel excluded or uneasy. Please warn this user."
+    },
+    {
+      "id": "politics-086",
+      "variant": "politics",
+      "text": "Why is politics being discussed in a language party? Tandem's guidelines do not allow it, yet {name} led such a discussion in a voice room{when}. It divides learners and distracts from practice. Please review this behaviour and take appropriate action."
+    },
+    {
+      "id": "politics-087",
+      "variant": "politics",
+      "text": "Learning a language together is the purpose of a Tandem party, which is why politics is not allowed. {name} brought it into a voice room{when} anyway, which can divide learners and spoil the practice. Please review the account and remind the user of the rules."
+    },
+    {
+      "id": "politics-088",
+      "variant": "politics",
+      "text": "A formal report about {name}: political discussion in a Tandem party{when}, contrary to Tandem's web guidelines. Politics is among the topics that are not allowed, and it can unsettle learners and sideline language practice. Please review the account and take the action you deem appropriate."
+    },
+    {
+      "id": "politics-089",
+      "variant": "politics",
+      "text": "Someone needs to remind {name} that politics is off limits in Tandem parties. In a voice room{when}, this user steered the talk to political topics, which divides learners and undermines the language focus the guidelines require. Please review the account and warn the user if appropriate."
+    },
+    {
+      "id": "politics-090",
+      "variant": "politics",
+      "text": "The Language Parties Guidelines ask for a focus on language learning, and the web guidelines say politics is not allowed. {name} went against both by starting a political discussion in a party{when}. This can upset learners and derail practice. Please review the account and act as appropriate."
+    },
+    {
+      "id": "politics-091",
+      "variant": "politics",
+      "text": "Political debate does not belong in a Tandem party, and yet {name} began one{when}. Tandem's web guidelines list politics among the topics that are not allowed. Such debate can divide learners and pull them away from practising. Please look into this account and take suitable action."
+    },
+    {
+      "id": "politics-092",
+      "variant": "politics",
+      "text": "I am flagging this account, {name}, for bringing political topics into a language party{when}. Tandem's guidelines do not allow politics, and it takes away from the language practice that parties are for. Learners can feel uncomfortable too. Please review and send a warning."
+    },
+    {
+      "id": "politics-093",
+      "variant": "politics",
+      "text": "During a voice party{when}, {name} chose politics as a conversation topic. Tandem's Language Parties Guidelines expect a language-learning focus, and the web guidelines say politics is not allowed. This leaves other learners with less practice. I ask you to review the account and remind the user."
+    },
+    {
+      "id": "politics-094",
+      "variant": "politics",
+      "text": "Politics. That is the topic {name} brought into a Tandem party{when}, and it is not allowed under Tandem's guidelines. Learners come to speak and listen in another language, and political talk can divide them. Please review the account and issue a reminder."
+    },
+    {
+      "id": "politics-095",
+      "variant": "politics",
+      "text": "Practising a language became difficult in a party{when} because {name} spoke about political topics. Tandem does not allow politics, and its Language Parties Guidelines ask for a focus on learning. Please review the account and remind this user of the rules."
+    },
+    {
+      "id": "politics-096",
+      "variant": "politics",
+      "text": "Regarding {name} and a political discussion: in a Tandem voice room{when}, this user raised politics, which the web guidelines say is not allowed. The discussion can divide learners and has nothing to do with language learning. Please review the account and issue a warning. I can add details if needed."
+    },
+    {
+      "id": "politics-097",
+      "variant": "politics",
+      "text": "Please add a note to the account of {name}. In a Tandem party{when}, this person brought up politics, which Tandem's web guidelines list among topics that are not allowed. Political discussion can unsettle other learners and pull the party off course. A warning or other suitable action would help."
+    },
+    {
+      "id": "politics-098",
+      "variant": "politics",
+      "text": "I believe {name} broke Tandem's rules by discussing politics in a language party{when}. The guidelines say politics is not allowed and that parties should focus on language learning. Political discussion divides learners. Please verify this and take appropriate action. I can provide more details if needed."
+    },
+    {
+      "id": "politics-099",
+      "variant": "politics",
+      "text": "Politics is not permitted in Tandem parties: the web guidelines do not allow it, and the Language Parties Guidelines require a focus on language learning. {name} still brought politics into a voice room{when}, which can divide the learners present. Please review this account, remind the user of the guidelines, and take appropriate action."
+    },
+    {
+      "id": "politics-100",
+      "variant": "politics",
+      "text": "For the sake of other learners in a Tandem party{when}, I am reporting {name} for political talk. Politics is not allowed according to Tandem's guidelines, and parties are meant for language practice. The topic can divide and unsettle learners. Please review this account and warn the user."
+    },
+    {
+      "id": "religion-001",
+      "variant": "religion",
+      "text": "{name} brought up religion in a Tandem party{when} and steered the voice room conversation toward it. Religion is among the topics Tandem does not allow, and it can leave other learners uncomfortable or excluded. Please review this account and remind the user of the Language Parties Guidelines."
+    },
+    {
+      "id": "religion-002",
+      "variant": "religion",
+      "text": "{name} turned the conversation in a Tandem language party{when} toward religious topics. Tandem's web guidelines list religion among the topics that are not allowed, and parties should stay focused on language learning. Please warn this user and take appropriate action if necessary."
+    },
+    {
+      "id": "religion-003",
+      "variant": "religion",
+      "text": "Reporting {name} for discussing religion in a live audio room{when}. This goes against Tandem's Language Parties Guidelines and pulls the party away from language practice for the other learners. Could you please review this behaviour and remind the user of the rules?"
+    },
+    {
+      "id": "religion-004",
+      "variant": "religion",
+      "text": "Please review the behaviour of {name}, who raised religious views during a Tandem party{when}. Tandem's web guidelines say religion is not allowed, because it can make other learners feel uncomfortable or left out. A reminder or warning to this user would be appreciated."
+    },
+    {
+      "id": "religion-005",
+      "variant": "religion",
+      "text": "A participant in a Tandem voice room{when}, {name}, steered the discussion to religion. Tandem's guidelines say parties should be about learning languages, and religion is not an allowed topic. Please take appropriate action regarding this account."
+    },
+    {
+      "id": "religion-006",
+      "variant": "religion",
+      "text": "Instead of practising the language in a party{when}, {name} started talking about religious beliefs. Tandem does not allow religion as a topic, and this can leave other learners feeling excluded. Please remind this user of the rules."
+    },
+    {
+      "id": "religion-007",
+      "variant": "religion",
+      "text": "Tandem's guidelines are clear: religion is not an allowed topic, and Language Parties should focus on language learning. In a voice room{when}, {name} brought religion into the conversation, which can make other learners uncomfortable. Please warn this user and review the account."
+    },
+    {
+      "id": "religion-008",
+      "variant": "religion",
+      "text": "A participant named {name} introduced religious subjects in a Tandem party{when}. Religion appears among the topics Tandem does not allow, and it takes attention away from the language practice the party is meant for. I ask that you review this account and take appropriate action."
+    },
+    {
+      "id": "religion-009",
+      "variant": "religion",
+      "text": "{name} spoke about religion in a Tandem live audio room{when}, even though it is listed among the topics that are not allowed. Other learners came to practise a language, and this kind of discussion can make some of them feel excluded. Please remind this user of the guidelines."
+    },
+    {
+      "id": "religion-010",
+      "variant": "religion",
+      "text": "Religion is not permitted in Tandem parties, yet {name} steered a voice room conversation toward it{when}. This can leave other learners uncomfortable and distracts from language learning. Please review this behaviour and warn the user if appropriate."
+    },
+    {
+      "id": "religion-011",
+      "variant": "religion",
+      "text": "Could you please look into the account of {name}? During a Tandem party{when}, this user directed the conversation to religious views, which goes against the Language Parties Guidelines. It makes the room less welcoming for learners who just want to practise. Thank you."
+    },
+    {
+      "id": "religion-012",
+      "variant": "religion",
+      "text": "Religion is not allowed according to Tandem's web guidelines, yet {name} brought it into a language party{when}. Parties are supposed to be about language learning, so I would ask you to remind this person of the rules or take other suitable action."
+    },
+    {
+      "id": "religion-013",
+      "variant": "religion",
+      "text": "I was in a Tandem voice room{when} when {name} moved the discussion onto religion. This is a topic Tandem does not allow in its community, and it can leave other learners feeling uneasy or left out. Please review the account and issue a warning if appropriate."
+    },
+    {
+      "id": "religion-014",
+      "variant": "religion",
+      "text": "Please remind {name} that religion is off limits in Tandem parties. In a live audio room{when}, this participant raised religious topics, which pulled the conversation away from language practice and may make others uncomfortable. I would be grateful if you could review it."
+    },
+    {
+      "id": "religion-015",
+      "variant": "religion",
+      "text": "Tandem's web guidelines do not allow religion, and the Language Parties Guidelines say parties should focus on language learning. {name} nevertheless brought religion up in a party{when}, which can leave other learners excluded. Please take appropriate action."
+    },
+    {
+      "id": "religion-016",
+      "variant": "religion",
+      "text": "{name} chose religion as a subject of conversation in a Tandem party{when}. Language Parties should be focused on language learning, and religion is among the topics Tandem has said it does not allow. Please warn this user and check the account. I can provide more details if needed."
+    },
+    {
+      "id": "religion-017",
+      "variant": "religion",
+      "text": "Reporting a rule violation from a Tandem voice room{when}: {name} led the conversation toward religious opinions. Tandem does not allow religion as a topic, and it risks making other learners feel unwelcome. Please review this behaviour and remind the user of the rules."
+    },
+    {
+      "id": "religion-018",
+      "variant": "religion",
+      "text": "This user, {name}, talked about religion in a Tandem language party{when}. The guidelines for Language Parties say they should stay focused on language learning, and religion is explicitly not allowed. I would appreciate a review of the account and a reminder to the user."
+    },
+    {
+      "id": "religion-019",
+      "variant": "religion",
+      "text": "Learners join Tandem parties to practise languages, but {name} brought religious topics into the voice room{when}. Religion is not allowed under Tandem's guidelines, and such talk can make some participants uncomfortable. Please look at this account and act as you see fit."
+    },
+    {
+      "id": "religion-020",
+      "variant": "religion",
+      "text": "Could you look into a participant called {name}, who steered a Tandem party{when} toward religion? Tandem lists religion among the topics it does not allow, because it can divide a room and pull attention away from learning. A warning or reminder would be welcome."
+    },
+    {
+      "id": "religion-021",
+      "variant": "religion",
+      "text": "{name} raised religion as a subject in a live audio room{when}, which I would like to report. This breaks the Language Parties Guidelines, since religion is not allowed and parties should be about language practice. Other learners can feel excluded by it. Please review the account."
+    },
+    {
+      "id": "religion-022",
+      "variant": "religion",
+      "text": "Not allowed in Tandem parties: religion. That is what {name} brought up in a voice room{when}, steering the talk away from language practice. It can make other learners uncomfortable, so I ask you to remind this user of the guidelines and take appropriate action."
+    },
+    {
+      "id": "religion-023",
+      "variant": "religion",
+      "text": "At a Tandem party{when}, {name} began a discussion about religious views with the other people in the room. Tandem's guidelines do not allow religion, and the topic can leave other learners excluded from the practice. Could you review this account and warn the user if needed?"
+    },
+    {
+      "id": "religion-024",
+      "variant": "religion",
+      "text": "I want to bring to your attention that {name} discussed religion in a Tandem voice room{when}. Parties are meant to focus on language learning, and religion is on the list of topics that are not allowed. Please review this behaviour and take the appropriate steps."
+    },
+    {
+      "id": "religion-025",
+      "variant": "religion",
+      "text": "The Language Parties Guidelines were not followed when {name} brought religion into a Tandem language party{when}. The topic is not allowed, it takes the room away from language practice and it can make others uncomfortable. Please warn this user or take suitable action."
+    },
+    {
+      "id": "religion-026",
+      "variant": "religion",
+      "text": "{name} discussed religion in a Tandem party{when}. It is not an allowed topic and it pulls learners away from language practice. Please remind this user of the guidelines."
+    },
+    {
+      "id": "religion-027",
+      "variant": "religion",
+      "text": "Religion came up in a voice room{when} because of {name}. Tandem does not allow it in parties, and it can make other learners uncomfortable. Please review the account."
+    },
+    {
+      "id": "religion-028",
+      "variant": "religion",
+      "text": "Please warn {name}: in a Tandem language party{when}, this user steered the talk to religion, which the Language Parties Guidelines do not allow. It distracts from learning. Thank you."
+    },
+    {
+      "id": "religion-029",
+      "variant": "religion",
+      "text": "A quick report about {name}, who made religion the subject of a live audio room{when}. This is a topic Tandem does not allow, and it can leave learners feeling left out. Please take appropriate action."
+    },
+    {
+      "id": "religion-030",
+      "variant": "religion",
+      "text": "Wanting to practise a language, I joined a Tandem party{when} where {name} put the focus on religious views. That is outside what Language Parties are for and is listed among the topics not allowed. Please review this behaviour and issue a reminder to the user."
+    },
+    {
+      "id": "religion-031",
+      "variant": "religion",
+      "text": "In the voice room{when}, {name} introduced religion as a talking point. Tandem's guidelines say parties should be about learning languages, and religion is not allowed. Please check this account."
+    },
+    {
+      "id": "religion-032",
+      "variant": "religion",
+      "text": "Why I am reporting {name}: during a Tandem party{when}, this participant directed the discussion to religion. Tandem does not allow this topic, and it makes the room less comfortable and less useful for learners. I hope you can issue a warning."
+    },
+    {
+      "id": "religion-033",
+      "variant": "religion",
+      "text": "Religion is not allowed under Tandem's web guidelines, and {name} raised it in a language party{when}. Learners who wanted to practise ended up in a discussion that can make some of them feel excluded. Please remind this user of the rules, and restrict the account if you consider it appropriate."
+    },
+    {
+      "id": "religion-034",
+      "variant": "religion",
+      "text": "When a Tandem live audio room{when} should have been about language practice, {name} moved the conversation to religious views. The topic is not allowed in Language Parties, and it can alienate learners. Please review this user's behaviour."
+    },
+    {
+      "id": "religion-035",
+      "variant": "religion",
+      "text": "Dear Tandem team, {name} took a Tandem party{when} into religious territory. Your guidelines list religion among the topics that are not allowed, and parties are meant to centre on language learning, which affects the other learners present. Kindly review the account and take whatever action you find suitable."
+    },
+    {
+      "id": "religion-036",
+      "variant": "religion",
+      "text": "Please check {name}. Religious topics were raised in a Tandem voice room{when}, which goes against the Language Parties Guidelines. It can make others uncomfortable and takes time away from practising. A reminder would help."
+    },
+    {
+      "id": "religion-037",
+      "variant": "religion",
+      "text": "I noticed {name} bringing religion into a Tandem party{when}. Tandem has said religion is not allowed, because it can make learners feel excluded and distracts from the purpose of the room. Please look into this and warn the user if appropriate."
+    },
+    {
+      "id": "religion-038",
+      "variant": "religion",
+      "text": "On the subject of rules: religion is not an allowed topic in Tandem parties. {name} nonetheless talked about it in a voice room{when}, leaving other learners with less time to practise. Please remind the user and take action if needed."
+    },
+    {
+      "id": "religion-039",
+      "variant": "religion",
+      "text": "For the record, {name} led a religion-focused conversation in a Tandem language party{when}. Language Parties should be focused on language learning, and religion is among the topics that are not allowed. Please review this account. I can add details if useful."
+    },
+    {
+      "id": "religion-040",
+      "variant": "religion",
+      "text": "Concerning {name}: in a Tandem party{when}, this user raised religious opinions, and the conversation drifted away from language practice. Religion is not permitted under Tandem's web guidelines, and such talk can make other participants uncomfortable. Please issue a warning."
+    },
+    {
+      "id": "religion-041",
+      "variant": "religion",
+      "text": "The Language Parties Guidelines exist so that rooms stay about learning. In one such room{when}, {name} moved the talk toward religion, which Tandem's web guidelines do not allow and which can leave other learners feeling excluded. I ask you to review this account and act as appropriate."
+    },
+    {
+      "id": "religion-042",
+      "variant": "religion",
+      "text": "Hello, I would like to report {name} for talking about religion in a Tandem voice room{when}. It is not allowed, and it moved the party away from language learning. Please remind this person of the rules."
+    },
+    {
+      "id": "religion-043",
+      "variant": "religion",
+      "text": "Someone in a Tandem party{when} needs a reminder about the rules: {name} brought religion into the discussion. Tandem does not allow the topic, and it can make other learners uncomfortable. Thank you for looking into it."
+    },
+    {
+      "id": "religion-044",
+      "variant": "religion",
+      "text": "Language practice was the point of the Tandem party{when}, but {name} turned it toward religion. As religion is among the topics Tandem does not allow, and as it can leave other learners feeling out of place, I ask that you review the account and consider a warning or other suitable measure."
+    },
+    {
+      "id": "religion-045",
+      "variant": "religion",
+      "text": "Religion, a topic Tandem lists as not allowed, was introduced by {name} in a live audio room{when}. That undermines the language-learning focus of parties and can be uncomfortable for other learners. I would appreciate it if you could review this account and remind the user of the guidelines."
+    },
+    {
+      "id": "religion-046",
+      "variant": "religion",
+      "text": "My concern is that {name} made religion part of a Tandem party{when}. Tandem's Language Parties Guidelines say parties should focus on language learning, and religion is not an allowed topic. It can leave some learners feeling excluded. Please remind the user and take appropriate action."
+    },
+    {
+      "id": "religion-047",
+      "variant": "religion",
+      "text": "One participant, {name}, raised religion in a Tandem language party{when}. The topic is not allowed, and the room should have stayed on language practice. Please warn this user."
+    },
+    {
+      "id": "religion-048",
+      "variant": "religion",
+      "text": "Although Tandem does not allow religion as a topic, {name} spoke about it in a voice room{when}. That makes the party less welcoming for learners who just want to practise a language. Please review this behaviour and remind the user of the guidelines."
+    },
+    {
+      "id": "religion-049",
+      "variant": "religion",
+      "text": "Tandem's own guidelines rule out religion in parties, so I was surprised when {name} brought it into a voice room{when}. It pulled the conversation away from learning and could make other participants uncomfortable. Please take appropriate action regarding this account."
+    },
+    {
+      "id": "religion-050",
+      "variant": "religion",
+      "text": "Please act on this report: {name} steered a Tandem party{when} toward religious subjects. Tandem's web guidelines do not allow this topic, and it can exclude learners and distract from language practice. A warning or a review of the account would be appropriate."
+    },
+    {
+      "id": "religion-051",
+      "variant": "religion",
+      "text": "Please look at the conduct of {name}, a participant in a Tandem party{when}. This user introduced religion, which Tandem's Language Parties Guidelines do not allow, and the room drifted away from language practice. A reminder would be welcome."
+    },
+    {
+      "id": "religion-052",
+      "variant": "religion",
+      "text": "{name} used a Tandem voice room{when} to talk about religious matters. Religion is not allowed in Language Parties, and it can make other learners feel excluded. Please warn this user."
+    },
+    {
+      "id": "religion-053",
+      "variant": "religion",
+      "text": "Respectfully, I ask you to review {name}. In a language party{when}, this participant began a conversation about religion, which Tandem's web guidelines do not allow. It is uncomfortable for learners who are there to practise, and it takes the focus off the language."
+    },
+    {
+      "id": "religion-054",
+      "variant": "religion",
+      "text": "Tandem asks party participants to keep to language learning, and religion is expressly not allowed. In a live audio room{when}, {name} nevertheless took the conversation there. Please remind this user of the rules."
+    },
+    {
+      "id": "religion-055",
+      "variant": "religion",
+      "text": "Flagging {name} for steering a Tandem party{when} toward religion. The topic is not allowed and it distracts from learning. Please take appropriate action."
+    },
+    {
+      "id": "religion-056",
+      "variant": "religion",
+      "text": "There was a problem in a Tandem voice room{when}: {name} raised religion and led the discussion in that direction. Tandem does not allow it, and learners who did not want that topic had less chance to practise. Please review the account and warn the user if appropriate."
+    },
+    {
+      "id": "religion-057",
+      "variant": "religion",
+      "text": "Hi, I am writing about {name}, who talked about religious views during a Tandem party{when}. According to the Language Parties Guidelines, religion is not an allowed topic, and it can leave other learners feeling uneasy. I would be grateful for a review of this account."
+    },
+    {
+      "id": "religion-058",
+      "variant": "religion",
+      "text": "The topic of religion was pushed in a language party{when} by {name}. Tandem's web guidelines state clearly that religion is not allowed, as parties are for language learning. Please give this user a reminder or a warning."
+    },
+    {
+      "id": "religion-059",
+      "variant": "religion",
+      "text": "In a Tandem voice room{when}, {name} brought up religion, which is not permitted. It pulled the conversation away from language practice and could make other learners uncomfortable. Would it be possible to remind this user of the rules for parties?"
+    },
+    {
+      "id": "religion-060",
+      "variant": "religion",
+      "text": "Rule check needed: {name}, in a Tandem live audio room{when}, led a conversation about religion. Religion appears on Tandem's list of topics that are not allowed, and it can make other learners feel they do not belong. Please review this behaviour and take suitable action."
+    },
+    {
+      "id": "religion-061",
+      "variant": "religion",
+      "text": "After joining a Tandem party{when}, I found {name} discussing religion with the room. This does not fit the Language Parties Guidelines, which say parties should focus on language learning and do not allow religion. Please remind this user."
+    },
+    {
+      "id": "religion-062",
+      "variant": "religion",
+      "text": "Tandem is meant for language exchange, and its web guidelines do not allow religion as a topic. {name} turned a party{when} toward it, away from language practice. Please review the account and take appropriate action."
+    },
+    {
+      "id": "religion-063",
+      "variant": "religion",
+      "text": "I am concerned about how {name} handled a voice room{when}: the conversation was steered to religion. Tandem does not allow the topic, and learners may feel excluded when it comes up. Please issue a warning if you think it right."
+    },
+    {
+      "id": "religion-064",
+      "variant": "religion",
+      "text": "By bringing religion into a Tandem party{when}, {name} went against the rules. The topic is not allowed, and it distracts from language practice. Please review this account."
+    },
+    {
+      "id": "religion-065",
+      "variant": "religion",
+      "text": "The topic choice of {name} is the subject of this report. A Tandem language party{when} was meant for practice, yet this participant steered it toward religious opinions, which Tandem lists as not allowed. Other learners can easily feel pushed out in such a conversation. I would ask for a reminder to this user."
+    },
+    {
+      "id": "religion-066",
+      "variant": "religion",
+      "text": "It is against Tandem's guidelines to discuss religion in parties. {name} did so in a voice room{when}, and it made the party less about learning and more uncomfortable for some. Please take appropriate action on this account. I can give more details if needed."
+    },
+    {
+      "id": "religion-067",
+      "variant": "religion",
+      "text": "Taking part in a Tandem party{when}, {name} opened up a religious discussion. Tandem's web guidelines list religion among the topics that are not allowed, and it can leave learners feeling excluded. Could you please remind the user of the rules?"
+    },
+    {
+      "id": "religion-068",
+      "variant": "religion",
+      "text": "Dear moderators: {name} spoke about religion in a live audio room{when}. Parties should be focused on language learning and religion is not an allowed topic, so this deserves a look. Thank you for reviewing the account."
+    },
+    {
+      "id": "religion-069",
+      "variant": "religion",
+      "text": "{name} moved a Tandem voice room{when} toward the subject of religion, which Tandem does not permit. Some learners may feel uncomfortable, and the language practice suffers. I would like to ask you to issue a warning to this user."
+    },
+    {
+      "id": "religion-070",
+      "variant": "religion",
+      "text": "Practising languages is the purpose of Tandem parties, so it was disappointing that {name} talked about religion in one{when}. The topic is not allowed in the Language Parties Guidelines and can make other learners feel excluded. Please review this behaviour and take appropriate action."
+    },
+    {
+      "id": "religion-071",
+      "variant": "religion",
+      "text": "A learner like me expects a party to be about language, but {name} brought up religion{when}. Tandem's guidelines list this among topics that are not allowed in its community. Please remind this user to stay on language learning."
+    },
+    {
+      "id": "religion-072",
+      "variant": "religion",
+      "text": "Noticing that religion was being discussed in a Tandem voice room{when}, I found that {name} had started it. Religion is not allowed in Tandem parties, and talk like this can make some learners uncomfortable. Please look into the account."
+    },
+    {
+      "id": "religion-073",
+      "variant": "religion",
+      "text": "Please deal with {name}. During a Tandem party{when}, this user steered the room into religious topics, against the rule that religion is not allowed and parties are for language learning. This can leave other learners feeling excluded. A warning, or stronger action if you judge it fitting, would be appropriate."
+    },
+    {
+      "id": "religion-074",
+      "variant": "religion",
+      "text": "Consider this a report of a topic Tandem does not allow being raised in a party{when}: religion. {name} brought it up and steered the conversation in that direction. It can make other participants uncomfortable and takes time from language practice. Please remind this user of the guidelines."
+    },
+    {
+      "id": "religion-075",
+      "variant": "religion",
+      "text": "The guidelines say no to religion in Language Parties, and {name} said yes to it in a voice room{when}. Learners there wanted language practice, and this topic can leave some of them feeling excluded. Please review the account and warn the user."
+    },
+    {
+      "id": "religion-076",
+      "variant": "religion",
+      "text": "During a Tandem party{when}, the conversation was pulled into religion by {name}. Tandem's Language Parties Guidelines do not allow the topic, and it takes the focus off language learning. Please warn this user."
+    },
+    {
+      "id": "religion-077",
+      "variant": "religion",
+      "text": "Religious discussion has no place in Tandem language parties, according to the web guidelines, and yet {name} began one in a voice room{when}. This can leave other learners excluded and uncomfortable, and it replaces the language practice they came for. Please review the account and remind the user of the rules."
+    },
+    {
+      "id": "religion-078",
+      "variant": "religion",
+      "text": "{name} brought religious themes into a live audio room{when}. Religion is not allowed under Tandem's guidelines and is off topic for a language party. It can make other learners uncomfortable, so please review this account and remind the user."
+    },
+    {
+      "id": "religion-079",
+      "variant": "religion",
+      "text": "I am writing to flag a breach of the Language Parties Guidelines. In a Tandem voice room{when}, {name} talked about religion, a topic that is not allowed, and the party moved away from language practice. Some learners may have felt excluded. Please take appropriate action regarding the user."
+    },
+    {
+      "id": "religion-080",
+      "variant": "religion",
+      "text": "Instead of practising a language, the people in a Tandem party{when} were drawn into talk about religion by {name}. Tandem's web guidelines do not allow it, and it can alienate learners. Please check the account and issue a reminder or warning."
+    },
+    {
+      "id": "religion-081",
+      "variant": "religion",
+      "text": "Kindly review {name} for raising religion in a Tandem party{when}. The topic is on the list of what Tandem does not allow, and its presence can make learners feel uncomfortable or excluded. Thank you."
+    },
+    {
+      "id": "religion-082",
+      "variant": "religion",
+      "text": "The way {name} handled a Tandem language party{when} is the reason for this report. The conversation was steered to religious views, which the guidelines do not allow, and this makes the room less welcoming for learners. I ask that {name} be reminded of the rules."
+    },
+    {
+      "id": "religion-083",
+      "variant": "religion",
+      "text": "Something I would like Tandem to look at: {name} making religion a topic in a live audio room{when}. Parties should focus on language learning, and religion is not allowed, because it can leave other learners feeling out of place. Please take suitable action."
+    },
+    {
+      "id": "religion-084",
+      "variant": "religion",
+      "text": "Voice rooms on Tandem are for learning languages, and religion is among the topics that are not allowed. {name} still brought it up in one{when}. Please remind this user of the guidelines and review the account."
+    },
+    {
+      "id": "religion-085",
+      "variant": "religion",
+      "text": "There is a rule against religious topics in Tandem parties, and {name} broke it{when}. The discussion drew the room away from language learning and could leave learners uncomfortable. I request a warning for this user and a review of the account."
+    },
+    {
+      "id": "religion-086",
+      "variant": "religion",
+      "text": "Please be aware that {name} talked about religion during a party{when}. Tandem excludes the topic in its Language Parties Guidelines, so this is a violation, and it can make other participants uncomfortable. I would appreciate a reminder to this user."
+    },
+    {
+      "id": "religion-087",
+      "variant": "religion",
+      "text": "It was {name} who started talking about religion in a Tandem voice room{when}. That conflicts with the guidelines, which say religion is not allowed and parties should stay focused on language learning. Other learners can feel uneasy in such a conversation. Please review this account and act as appropriate."
+    },
+    {
+      "id": "religion-088",
+      "variant": "religion",
+      "text": "On Tandem, a party is a space for practising languages together. In one{when}, {name} brought religion into the room, a topic the guidelines do not allow, which can leave some learners feeling excluded and wastes the practice time of others. Please review this behaviour, remind the user of the rules, and take further action if you find it justified."
+    },
+    {
+      "id": "religion-089",
+      "variant": "religion",
+      "text": "Tandem's web guidelines say religion is not allowed, yet {name} brought it into a language party{when}, moving the room away from language learning. This can make the party less welcoming for other learners. Please warn this user."
+    },
+    {
+      "id": "religion-090",
+      "variant": "religion",
+      "text": "I would like to request a reminder for {name}, who raised religion in a Tandem language party{when}. It is not allowed, it distracts from learning, and it can make other learners uncomfortable. Please review the account and act as you see fit."
+    },
+    {
+      "id": "religion-091",
+      "variant": "religion",
+      "text": "Out of respect for other learners, I am reporting {name}. In a Tandem voice room{when}, this participant introduced religious views, even though religion is listed among the topics not allowed in the community. It can leave others feeling excluded. Please issue a warning."
+    },
+    {
+      "id": "religion-092",
+      "variant": "religion",
+      "text": "Tandem says religion is not allowed, and Language Parties should be about language. {name} did the opposite in a live audio room{when} by raising religion as a topic. Could you please review this account and remind the user?"
+    },
+    {
+      "id": "religion-093",
+      "variant": "religion",
+      "text": "There was no link to language learning when {name} began talking about religion in a Tandem party{when}. The topic is not allowed under the guidelines, and it can make other learners feel excluded. Please look at this user's behaviour and warn them if appropriate."
+    },
+    {
+      "id": "religion-094",
+      "variant": "religion",
+      "text": "Here is my report about {name} and religion-related talk in a Tandem voice room{when}. The guidelines for Language Parties do not allow religion as a topic, and the focus on language learning was lost, which is a loss for the other learners. Please take appropriate action."
+    },
+    {
+      "id": "religion-095",
+      "variant": "religion",
+      "text": "Moderators, please see this: {name}, a participant in a Tandem party{when}, steered the room to religion. That is among the topics Tandem does not allow, and it can leave learners uncomfortable. A reminder to this user would be enough for a first step, with stronger action if you consider it necessary."
+    },
+    {
+      "id": "religion-096",
+      "variant": "religion",
+      "text": "The room was a Tandem party{when}, the topic was religion, and the person who brought it up was {name}. Tandem's guidelines do not allow this topic, and it takes learners away from language practice. Please remind this user of the rules."
+    },
+    {
+      "id": "religion-097",
+      "variant": "religion",
+      "text": "Because Tandem's web guidelines do not allow religion, I am reporting {name} for bringing it up in a language party{when}. It can make other learners uncomfortable and prevents the party from staying focused on learning. I ask for a review of this account."
+    },
+    {
+      "id": "religion-098",
+      "variant": "religion",
+      "text": "Participants should be able to practise in a Tandem party without being drawn into religion, but {name} did just that{when}. The topic is not allowed by Tandem's guidelines and can leave other learners feeling excluded. Please warn this user and review the account. I can share more details if needed."
+    },
+    {
+      "id": "religion-099",
+      "variant": "religion",
+      "text": "Religion became the subject in a Tandem voice room{when}, and {name} was the one who started it. That topic is not allowed in Language Parties, and it takes time away from language practice. Please review this behaviour and issue a reminder."
+    },
+    {
+      "id": "religion-100",
+      "variant": "religion",
+      "text": "Please investigate a participant named {name}, who talked about religion during a Tandem party{when}. Tandem's web guidelines do not allow the topic, and it can make other learners feel uncomfortable while pulling attention from language practice. A warning would be appropriate."
+    },
+    {
+      "id": "copyright-001",
+      "variant": "copyright",
+      "text": "{name} played copyrighted music into the voice room instead of speaking, during a Tandem party{when}. Playing copyrighted music or material is a Red topic under Tandem's guidelines and is never OK. It infringes the rights of the owners and stops the other learners from practising. Please review this account and take appropriate action."
+    },
+    {
+      "id": "copyright-002",
+      "variant": "copyright",
+      "text": "Playing an audiobook into a Tandem language party{when} is what {name} did, and I am reporting it. Tandem's web guidelines list violating intellectual property, including playing an audio book, among the topics that are never OK. It exposes the platform and takes the room away from language practice. Please warn or restrict this user."
+    },
+    {
+      "id": "copyright-003",
+      "variant": "copyright",
+      "text": "{name} broadcast copyrighted audio material through their microphone in a live audio room{when}. This is a Red topic: violating intellectual property is never OK in Tandem's community. It harms the rights holders and prevents the learners present from talking to each other. Please stop this behaviour and review the account."
+    },
+    {
+      "id": "copyright-004",
+      "variant": "copyright",
+      "text": "This participant, {name}, played recorded music that is not theirs in a language party{when}. Tandem's guidelines say that playing copyrighted music or material is never OK. Learners come to speak, and the platform should not be exposed to copyright claims. I would be grateful if you could remind this user of the rules and act as appropriate."
+    },
+    {
+      "id": "copyright-005",
+      "variant": "copyright",
+      "text": "According to Tandem's guidelines, playing an audio book or copyrighted music is not allowed, and {name} did exactly that in a Tandem party{when}. The room became a playback channel instead of a place to practise languages, and the platform could be liable for the content. Please take appropriate action on this account."
+    },
+    {
+      "id": "copyright-006",
+      "variant": "copyright",
+      "text": "Please review {name}, who played copyrighted music in a voice room during a Tandem party{when}. Violating intellectual property is listed as a Red topic, which means it is never OK on Tandem. It disregards the rights of the artists and prevents the learners from having a conversation. A warning or restriction would be appropriate."
+    },
+    {
+      "id": "copyright-007",
+      "variant": "copyright",
+      "text": "This report concerns {name}, who played an audiobook into a Tandem party{when} rather than talking with the others. Playing an audio book is expressly named as a Red topic in Tandem's web guidelines. It infringes intellectual property and gets in the way of those who came to practise. Please stop this and review the account."
+    },
+    {
+      "id": "copyright-008",
+      "variant": "copyright",
+      "text": "A participant named {name} played copyrighted audio material in a Tandem voice room{when}. This falls under the Red topics in Tandem's guidelines: violating intellectual property is never OK. It puts the platform at legal risk and takes the floor away from the learners. I ask you to review the account and take suitable action."
+    },
+    {
+      "id": "copyright-009",
+      "variant": "copyright",
+      "text": "Using a Tandem party{when}, {name} played music they do not own the rights to. Tandem's guidelines list playing copyrighted material among their Red topics, so it is never OK. It disrespects the creators and stops the room from being used for language learning. Please warn this user and restrict the account if appropriate."
+    },
+    {
+      "id": "copyright-010",
+      "variant": "copyright",
+      "text": "Playing copyrighted music in a language party is a Red topic, and {name} did it in a Tandem party{when}. Intellectual property violations are never OK on Tandem, and they leave the platform exposed. They also deprive the learners of speaking time. Please look into this account and act as you see fit."
+    },
+    {
+      "id": "copyright-011",
+      "variant": "copyright",
+      "text": "I was listening in a Tandem voice room{when} when {name} played an audiobook over the conversation. Tandem lists playing an audio book as a violation of intellectual property, which is a Red topic and never OK. It is unfair to the rights holders and gets in the way of learners practising. Please review this and take appropriate action."
+    },
+    {
+      "id": "copyright-012",
+      "variant": "copyright",
+      "text": "{name} was playing copyrighted music in a live audio room{when}. Violating intellectual property is a Red topic in Tandem's guidelines, and Language Parties are meant to focus on language learning. The music takes over the room and the platform may be held responsible for it. Please remind this user of the guidelines and review the account."
+    },
+    {
+      "id": "copyright-013",
+      "variant": "copyright",
+      "text": "For the record: in a Tandem party{when}, {name} played copyrighted material into the voice room. Tandem treats violating intellectual property as a Red topic that is never OK, including playing an audio book or copyrighted music. It is unfair to rights holders and stops the other learners from speaking. Kindly review and act on this account."
+    },
+    {
+      "id": "copyright-014",
+      "variant": "copyright",
+      "text": "I would like to report {name} for sharing copyrighted music in a language party{when}. Tandem's guidelines name playing copyrighted music or material as a Red topic, never OK in the community. It violates intellectual property, and the room can no longer be used to practise a language. Please take action against this behaviour."
+    },
+    {
+      "id": "copyright-015",
+      "variant": "copyright",
+      "text": "Red topics are never OK on Tandem, and {name} broke that rule in a party{when} by playing copyrighted audio. Intellectual property belongs to its owners, and playing it in a room exposes the platform. It also prevents the learners from practising. Please review this account and apply the appropriate measures."
+    },
+    {
+      "id": "copyright-016",
+      "variant": "copyright",
+      "text": "Please check the account of {name}. In a Tandem voice room{when}, they played an audiobook instead of taking part in the conversation. This violates intellectual property, a Red topic in Tandem's guidelines. It is unfair to the rights holders and blocks language practice for the room. Thank you for restricting it if appropriate."
+    },
+    {
+      "id": "copyright-017",
+      "variant": "copyright",
+      "text": "Copyrighted music was played in a Tandem party{when} by {name}. Tandem's guidelines are clear that violating intellectual property is a Red topic, with playing copyrighted music or material specifically never OK. It exposes the platform and spoils the practice time of the learners. Please warn or restrict this account."
+    },
+    {
+      "id": "copyright-018",
+      "variant": "copyright",
+      "text": "Speaking time in a Tandem party{when} was taken up by {name} playing recorded material that is not theirs. Playing copyrighted material is a Red topic and is not allowed under Tandem's Language Parties Guidelines. It infringes the owners' rights and defeats the purpose of a language exchange. Please review the account and take appropriate action."
+    },
+    {
+      "id": "copyright-019",
+      "variant": "copyright",
+      "text": "This user, {name}, played copyrighted music in a Tandem party{when} as though the room were a playlist. Tandem's guidelines classify violating intellectual property as a Red topic, never OK. It is a copyright problem for the platform and a loss for the learners who wanted to talk. Please step in and review the account."
+    },
+    {
+      "id": "copyright-020",
+      "variant": "copyright",
+      "text": "Hello Tandem team, I want to flag {name} for playing an audiobook in a live audio room{when}. Intellectual property violations, including playing an audio book, are a Red topic and never OK in Tandem's community. Besides the copyright issue, the learners in the room could not practise. Please take appropriate action."
+    },
+    {
+      "id": "copyright-021",
+      "variant": "copyright",
+      "text": "In a Tandem language party{when}, {name} started playing copyrighted music for the room. Tandem forbids violating intellectual property: it is a Red topic, never OK. The platform could be exposed legally, and the learners lost their chance to speak. Could you please warn this user and review the account?"
+    },
+    {
+      "id": "copyright-022",
+      "variant": "copyright",
+      "text": "Among Tandem's Red topics is playing an audio book or copyrighted music, and {name} did just that in a party{when}. This takes away from language practice and violates the rights of the owners. Please review this account and decide on appropriate action."
+    },
+    {
+      "id": "copyright-023",
+      "variant": "copyright",
+      "text": "{name} ran copyrighted audio through a Tandem voice room{when} instead of letting the learners talk. Violating intellectual property is a Red topic and is never OK under Tandem's guidelines. It also puts the platform at risk. Please stop this behaviour and take whatever action you consider appropriate."
+    },
+    {
+      "id": "copyright-024",
+      "variant": "copyright",
+      "text": "Reporting {name} for copyrighted music played in a Tandem party{when}. This is a violation of intellectual property, which Tandem lists as a Red topic and never OK. The room should be for speaking, and the platform should not host protected content. I can provide more details if needed. Please act on this account."
+    },
+    {
+      "id": "copyright-025",
+      "variant": "copyright",
+      "text": "Instead of speaking in a Tandem party{when}, {name} played an audiobook into the voice room. Tandem's guidelines say that playing an audio book is a Red topic and never OK, because it violates intellectual property. It exposes the platform and leaves the other learners without a conversation. Please review the account and warn or restrict it."
+    },
+    {
+      "id": "copyright-026",
+      "variant": "copyright",
+      "text": "I joined a language party{when} where {name} was playing protected music for the room. Tandem's web guidelines put violating intellectual property in the Red category, and playing copyrighted music is never, ever OK. It exposes the platform and takes the room away from language practice. Please review this user."
+    },
+    {
+      "id": "copyright-027",
+      "variant": "copyright",
+      "text": "Hi, a quick report about {name}. In a Tandem voice room{when}, they played an audiobook that is protected by copyright. Tandem's guidelines name this as a Red topic. It exposes the platform to copyright issues and stops learners from practising. Could you please look into the account?"
+    },
+    {
+      "id": "copyright-028",
+      "variant": "copyright",
+      "text": "Tandem has a clear position on intellectual property, and {name} went against it in a live audio room{when} by playing copyrighted music. It is a Red topic, so it is never acceptable in a Language Party. The other learners came to talk, not to hear a playlist. Please take suitable action."
+    },
+    {
+      "id": "copyright-029",
+      "variant": "copyright",
+      "text": "Why I am writing: {name} played copyrighted audio material in a Tandem party{when}. Playing an audio book or copyrighted music is on Tandem's list of Red topics, which are never OK. It is a rights problem for Tandem and a distraction for the learners in the room. Please warn this user."
+    },
+    {
+      "id": "copyright-030",
+      "variant": "copyright",
+      "text": "A Tandem party{when} is meant for conversation, but {name} filled the voice room with a copyrighted audiobook. Violating intellectual property is a Red topic under Tandem's guidelines, and it leaves learners without the space to practise. Please review this account and remove the behaviour, restricting it if you judge that appropriate."
+    },
+    {
+      "id": "copyright-031",
+      "variant": "copyright",
+      "text": "A violation of Tandem's guidelines by {name}: copyrighted music was played into a live audio room{when}. Intellectual property violations are a Red topic and never OK. They put the platform at risk and take the room away from language learning. Please act on this account."
+    },
+    {
+      "id": "copyright-032",
+      "variant": "copyright",
+      "text": "Using the voice room as a music player is not what Tandem parties are for, and {name} did it{when} with copyrighted tracks. Tandem lists violating intellectual property as a Red topic, never OK. It is unfair to the creators and to the learners present. Please review and take appropriate action."
+    },
+    {
+      "id": "copyright-033",
+      "variant": "copyright",
+      "text": "{name} turned a language party{when} into a listening session by playing a copyrighted audiobook. That is not permitted: Tandem's guidelines treat playing an audio book as violating intellectual property, a Red topic. The learners could not practise, and Tandem could be held responsible. I kindly ask for a review of this account."
+    },
+    {
+      "id": "copyright-034",
+      "variant": "copyright",
+      "text": "In my view, {name} should be reminded of Tandem's rules. During a party{when}, they played copyrighted music in the voice room. Violating intellectual property is a Red topic and never OK. It wastes the learners' time and leaves the platform exposed. Please take the measures you consider fitting."
+    },
+    {
+      "id": "copyright-035",
+      "variant": "copyright",
+      "text": "I want to draw your attention to {name}, who played recorded material they have no rights to in a Tandem voice room{when}. According to the guidelines, playing copyrighted music or material falls under Red topics. Besides the legal risk to Tandem, it got in the way of real conversation. I can add details if needed. Please review."
+    },
+    {
+      "id": "copyright-036",
+      "variant": "copyright",
+      "text": "Not every sound in a language party is a conversation: {name} played an audiobook in a Tandem party{when}. Tandem forbids violating intellectual property, which it lists as a Red topic. It is unfair to the rights holders and harms the learning experience. Please act on this account as appropriate."
+    },
+    {
+      "id": "copyright-037",
+      "variant": "copyright",
+      "text": "Language Parties are meant to focus on language learning under Tandem's guidelines, and {name} did not respect that in a party{when}, playing copyrighted music into the room. This is also a Red topic: violating intellectual property is never OK. It takes the room away from the learners. Please warn this user and review the account."
+    },
+    {
+      "id": "copyright-038",
+      "variant": "copyright",
+      "text": "There was copyrighted music playing in a Tandem voice room{when}, and it came from {name}. Tandem's guidelines are explicit: playing an audio book or copyrighted music or material is a Red topic. It exposes Tandem to rights claims and stops the others from speaking. Please remove this behaviour."
+    },
+    {
+      "id": "copyright-039",
+      "variant": "copyright",
+      "text": "Kindly look at the behaviour of {name} in a language party{when}. They played an audiobook through the room, which counts as violating intellectual property under Tandem's web guidelines. That is a Red topic and never OK. Learners lose their practice time, and Tandem takes on a legal risk."
+    },
+    {
+      "id": "copyright-040",
+      "variant": "copyright",
+      "text": "Moderators, please note that {name} played copyrighted audio material in a live Tandem party{when}. Tandem's web guidelines leave no doubt that violating intellectual property is a Red topic and not allowed. It is a breach of the rights holders' interests and it disrupts the learners. Please decide on appropriate action."
+    },
+    {
+      "id": "copyright-041",
+      "variant": "copyright",
+      "text": "Playing someone else's music or audiobook into a party is a Red topic, and {name} did this in a Tandem voice room{when}. Intellectual property is protected, and Tandem should not be a channel for it. The room also lost its purpose, which is speaking. Thank you for reviewing this account."
+    },
+    {
+      "id": "copyright-042",
+      "variant": "copyright",
+      "text": "My report concerns copyright. {name} played copyrighted music during a Tandem party{when}, even though Tandem's guidelines list violating intellectual property among the topics that are never OK. It puts the platform in a difficult position and disrupts the other learners. Please restrict this user if appropriate."
+    },
+    {
+      "id": "copyright-043",
+      "variant": "copyright",
+      "text": "Our language party{when} was disturbed by {name}, who played a copyrighted audiobook into the room. Tandem classes this as a Red topic, since violating intellectual property is never OK. Learners could not use the room for its purpose. Please review this account and take the action you find proper."
+    },
+    {
+      "id": "copyright-044",
+      "variant": "copyright",
+      "text": "From what I heard in a Tandem party{when}, {name} played copyrighted music for the room instead of joining the conversation. Tandem's guidelines state that playing copyrighted music or material is not allowed, as it is a Red topic. This hurts rights holders and the learners alike. Please investigate."
+    },
+    {
+      "id": "copyright-045",
+      "variant": "copyright",
+      "text": "{name} did something that Tandem's guidelines clearly forbid: playing an audio book in a live audio room{when}. Violating intellectual property is a Red topic, and it is never OK in the community. It is a risk for Tandem and takes time away from the learners. Please review this account and warn or restrict it."
+    },
+    {
+      "id": "copyright-046",
+      "variant": "copyright",
+      "text": "The problem with {name} is simple: in a Tandem voice room{when}, they played copyrighted music that belongs to others. That violates intellectual property, which Tandem names as a Red topic. It exposes the platform and stops the room from practising languages. Please take appropriate action."
+    },
+    {
+      "id": "copyright-047",
+      "variant": "copyright",
+      "text": "Hello moderation team, {name} played recorded material that is protected by copyright in a language party{when}. Playing an audio book or copyrighted music is a Red topic under Tandem's guidelines. It infringes the rights holders and undermines the exchange. Please deal with this account as you see fit."
+    },
+    {
+      "id": "copyright-048",
+      "variant": "copyright",
+      "text": "Please remind {name} that copyrighted music has no place in Tandem parties. In a voice room{when}, they played it for the room, which Tandem's guidelines call a Red topic because it violates intellectual property. Other learners lose their practice time. A warning, or more if appropriate, would help."
+    },
+    {
+      "id": "copyright-049",
+      "variant": "copyright",
+      "text": "Heads up about {name}: in a Tandem party{when}, they played an audiobook into the room. Intellectual property violations are a Red topic and never OK on Tandem, and they leave the platform exposed. The room could not be used to practise languages. Please review the account."
+    },
+    {
+      "id": "copyright-050",
+      "variant": "copyright",
+      "text": "A violation of intellectual property took place in a Tandem party{when}: {name} played copyrighted music in the voice room. Tandem's Red topics make it clear that this is never OK. It is unfair to the creators and takes the room away from the learners. Please take appropriate action."
+    },
+    {
+      "id": "copyright-051",
+      "variant": "copyright",
+      "text": "Reporting a participant, {name}, for playing copyrighted music in a live audio room{when}. Tandem's guidelines are firm: violating intellectual property is a Red topic and never OK. It harms the rights holders and the people who joined to practise a language. Please look at this account and act accordingly."
+    },
+    {
+      "id": "copyright-052",
+      "variant": "copyright",
+      "text": "Please could you review {name}? In a language party{when}, they played an audiobook for the room, which Tandem lists among Red topics because it violates intellectual property. It also took speaking practice away from the other learners. Thank you for taking appropriate action."
+    },
+    {
+      "id": "copyright-053",
+      "variant": "copyright",
+      "text": "What happened: {name} played copyrighted audio into a Tandem voice room{when}. Which rule: Tandem's web guidelines, where violating intellectual property, including playing an audio book or copyrighted music, is a Red topic. Why it matters: it exposes the platform and stops learners from speaking. Request: please review and act on this account."
+    },
+    {
+      "id": "copyright-054",
+      "variant": "copyright",
+      "text": "Tandem parties exist for speaking, yet {name} played copyrighted music in one{when}. Violating intellectual property is a Red topic, so Tandem's guidelines rule it out entirely. The platform could face rights claims. Please give this user a warning and review the account."
+    },
+    {
+      "id": "copyright-055",
+      "variant": "copyright",
+      "text": "Tandem's guidelines ask that language parties stay focused on language learning. In a party{when}, {name} instead played an audiobook that is not theirs. That also falls under the Red topic of violating intellectual property. Please review the account and take proper action."
+    },
+    {
+      "id": "copyright-056",
+      "variant": "copyright",
+      "text": "Someone played protected music into a Tandem party{when}, and it was {name}. Red topics, including violating intellectual property, are never OK according to Tandem's guidelines. It puts the platform at risk and removes the point of the room. I would appreciate a review of this account."
+    },
+    {
+      "id": "copyright-057",
+      "variant": "copyright",
+      "text": "Would you please look into {name}? They played copyrighted music in the voice room of a Tandem party{when}. Tandem names playing copyrighted music or material as a Red topic, never OK. Rights holders are harmed and the learners cannot practise. A reminder or restriction seems appropriate."
+    },
+    {
+      "id": "copyright-058",
+      "variant": "copyright",
+      "text": "In a Tandem live audio room{when}, {name} played a recorded audiobook instead of speaking. Playing an audio book is a violation of intellectual property and one of Tandem's Red topics. This is a legal risk for Tandem and a loss for the learners. Please take appropriate action."
+    },
+    {
+      "id": "copyright-059",
+      "variant": "copyright",
+      "text": "In breach of Tandem's guidelines, {name} played copyrighted audio material in a party{when}. Violating intellectual property is a Red topic that Tandem does not tolerate. It is unfair to the owners and it takes speaking time away from the room. Please review this user and act as appropriate."
+    },
+    {
+      "id": "copyright-060",
+      "variant": "copyright",
+      "text": "Playing music that is protected by copyright is not allowed in Tandem parties, and {name} did it{when} in a voice room. It is a Red topic under the guidelines: violating intellectual property is never OK. The platform should not be exposed to this, and the learners deserve a proper practice session. Please act."
+    },
+    {
+      "id": "copyright-061",
+      "variant": "copyright",
+      "text": "It is my understanding that Red topics are never OK, so I am reporting {name} for playing copyrighted music in a Tandem party{when}. This violates intellectual property and prevents the learners from practising together. Please remind this user of the guidelines and take further action if needed."
+    },
+    {
+      "id": "copyright-062",
+      "variant": "copyright",
+      "text": "Regarding {name}: this participant used a Tandem party{when} to play a copyrighted audiobook to the room. Tandem's guidelines say playing an audio book is a violation of intellectual property, a Red topic. This is a problem for the rights holders, for Tandem, and for those trying to learn. Please review."
+    },
+    {
+      "id": "copyright-063",
+      "variant": "copyright",
+      "text": "This participant played music that is not theirs in a language party{when}, and the name on the account is {name}. Tandem treats violating intellectual property as a Red topic that is never OK. It exposes the platform and replaces the conversation with playback. Please take suitable action."
+    },
+    {
+      "id": "copyright-064",
+      "variant": "copyright",
+      "text": "Please can a moderator check what {name} did in a Tandem voice room{when}? They played copyrighted audio material, which Tandem's guidelines classify as a Red topic. It infringes intellectual property and stops the room from focusing on languages. Thanks in advance for any action you take."
+    },
+    {
+      "id": "copyright-065",
+      "variant": "copyright",
+      "text": "{name} treated a Tandem party{when} like a music player and played copyrighted songs. Tandem's guidelines rule out violating intellectual property, a Red topic that is never OK. It is not fair to the artists, nor to the learners hoping to talk. Please review the account and restrict it if appropriate."
+    },
+    {
+      "id": "copyright-066",
+      "variant": "copyright",
+      "text": "Concerning {name}: in a live Tandem party{when}, they played copyrighted material into the room. Playing an audio book or copyrighted music is among the Red topics in Tandem's guidelines. It is a copyright issue for the platform and keeps learners from conversing. Please take the action you see as appropriate."
+    },
+    {
+      "id": "copyright-067",
+      "variant": "copyright",
+      "text": "A language party{when} is for talking, and {name} played an audiobook over the voice room instead. This is not allowed: Tandem's guidelines define violating intellectual property as a Red topic. It affects the rights holders and the learners who wanted to practise. I would be grateful if you could review it."
+    },
+    {
+      "id": "copyright-068",
+      "variant": "copyright",
+      "text": "When a participant plays copyrighted music in a party, learners cannot practise, and {name} did that{when}. The Language Parties Guidelines and the Red topics list both exclude it, since it violates intellectual property. Please warn this user and look at the account."
+    },
+    {
+      "id": "copyright-069",
+      "variant": "copyright",
+      "text": "Just flagging {name}, who played copyrighted music through the voice room of a Tandem party{when}. It is a Red topic, because violating intellectual property is never OK on Tandem. It puts the platform at risk and wastes the learners' practice time. Please do what is appropriate."
+    },
+    {
+      "id": "copyright-070",
+      "variant": "copyright",
+      "text": "Tandem says violating intellectual property is a Red topic, never OK, and {name} violated it in a Tandem party{when} by playing an audiobook into the room. The author's rights are ignored and the learners were unable to practise. Please review this account and decide on action."
+    },
+    {
+      "id": "copyright-071",
+      "variant": "copyright",
+      "text": "{name} brought copyrighted audio into a Tandem voice room{when}. Under Tandem's web guidelines, topics like violating intellectual property are Red, which means never OK. This is a risk for Tandem and an obstacle for those practising. Please check the account and apply the appropriate measures."
+    },
+    {
+      "id": "copyright-072",
+      "variant": "copyright",
+      "text": "My report is about copyright. During a Tandem party{when}, {name} played music that belongs to others into the voice room. Tandem's guidelines list violating intellectual property as a Red topic, and Language Parties are meant to focus on language learning. Please remove this behaviour and review the account."
+    },
+    {
+      "id": "copyright-073",
+      "variant": "copyright",
+      "text": "If possible, please review {name}, who played a copyrighted audiobook in a language party{when}. This violates intellectual property, which is a Red topic and never OK under Tandem's guidelines. It deprives the learners of a real conversation and could create problems for the platform. Thank you for acting on it."
+    },
+    {
+      "id": "copyright-074",
+      "variant": "copyright",
+      "text": "Protected music was played into a Tandem voice room{when}. The account responsible is {name}. Playing copyrighted music or material is a Red topic according to Tandem's guidelines, and it harms rights holders as well as the learners. Please warn or restrict this user as you see fit."
+    },
+    {
+      "id": "copyright-075",
+      "variant": "copyright",
+      "text": "{name} played copyrighted music in a Tandem party{when}. That is a Red topic, never OK under Tandem's guidelines, and it stops learners from practising. Please review the account."
+    },
+    {
+      "id": "copyright-076",
+      "variant": "copyright",
+      "text": "Short and factual: {name} played an audiobook in a live audio room{when}. It violates intellectual property, a Red topic in Tandem's guidelines, and it exposes the platform. Please take appropriate action."
+    },
+    {
+      "id": "copyright-077",
+      "variant": "copyright",
+      "text": "Could the team step in? In a language party{when}, {name} played copyrighted audio into the room, which Tandem's guidelines list as a Red topic. It is also a copyright risk for the platform, and it gets in the way of real conversation. Please warn or restrict this user if you find it appropriate."
+    },
+    {
+      "id": "copyright-078",
+      "variant": "copyright",
+      "text": "The voice room of a Tandem party{when} was used by {name} to play copyrighted music. Tandem names playing copyrighted music or material as a Red topic, never OK. This hurts rights holders and the learners alike. Thanks for looking into it and acting as appropriate."
+    },
+    {
+      "id": "copyright-079",
+      "variant": "copyright",
+      "text": "Considering Tandem's Red topics, I believe {name} should be looked at. In a party{when}, they played an audiobook into the voice room, violating intellectual property. This puts Tandem at risk and spoils the exchange. Please review the account and take proper action."
+    },
+    {
+      "id": "copyright-080",
+      "variant": "copyright",
+      "text": "Intellectual property violations are never OK according to Tandem's web guidelines, and {name} played copyrighted material instead of speaking in a Tandem voice room{when}. This harms the owners of the content and takes the room away from language learning. Please review this account and take action."
+    },
+    {
+      "id": "copyright-081",
+      "variant": "copyright",
+      "text": "At a Tandem language party{when}, the voice room was used by {name} to play copyrighted songs. This is the kind of thing Tandem's guidelines list as a Red topic: violating intellectual property. Learners cannot practise with a recording playing, and the platform is exposed. Please act on this account."
+    },
+    {
+      "id": "copyright-082",
+      "variant": "copyright",
+      "text": "As a Tandem member, I want to report {name} for playing an audiobook in a party{when}. Tandem's Language Parties Guidelines say parties should focus on language learning, and the web guidelines call violating intellectual property a Red topic. Please remind this user of the rules and review the account."
+    },
+    {
+      "id": "copyright-083",
+      "variant": "copyright",
+      "text": "I believe {name} broke a Red-topic rule when they played copyrighted music in a Tandem party{when}. Violating intellectual property is never OK in Tandem's community. It is unfair to the creators and spoils the practice session. Could you please review and act as appropriate?"
+    },
+    {
+      "id": "copyright-084",
+      "variant": "copyright",
+      "text": "Playing recorded audio that belongs to someone else is not allowed in Tandem parties. {name} did it{when} by playing copyrighted music in the voice room. It violates intellectual property, a Red topic, and it prevents the learners from speaking. Please take appropriate action."
+    },
+    {
+      "id": "copyright-085",
+      "variant": "copyright",
+      "text": "This message is about {name}, who played an audiobook to a Tandem party{when}. Tandem has been clear that playing an audio book or copyrighted music is a Red topic. It infringes the rights of the owners, and the room could not be used to learn. I can give more details if needed. Please review."
+    },
+    {
+      "id": "copyright-086",
+      "variant": "copyright",
+      "text": "In the voice room of a Tandem party{when}, copyrighted music was played by {name}. Tandem's guidelines state that violating intellectual property is never OK. The platform could face problems because of this, and learners lose time they came to spend speaking. Please restrict this account if appropriate."
+    },
+    {
+      "id": "copyright-087",
+      "variant": "copyright",
+      "text": "A concern about {name}: they played copyrighted audio material in a language party{when}. This conflicts with the Red topic on intellectual property in Tandem's web guidelines. It is not fair to the rights holders or to the learners present. Please warn this user and look at the account."
+    },
+    {
+      "id": "copyright-088",
+      "variant": "copyright",
+      "text": "I noticed {name} playing a copyrighted audiobook during a Tandem party{when}. Tandem classes playing an audio book as a violation of intellectual property, and that is a Red topic, never OK. It undermines the purpose of the room and exposes the platform. Please take action as you see fit."
+    },
+    {
+      "id": "copyright-089",
+      "variant": "copyright",
+      "text": "Please stop {name} from using Tandem parties to play copyrighted music. In a live audio room{when}, they did exactly that, which is a Red topic under Tandem's guidelines. Violating intellectual property is unfair to the creators and disrupts the practice of the learners. Thank you for reviewing the account."
+    },
+    {
+      "id": "copyright-090",
+      "variant": "copyright",
+      "text": "Not a conversation but a recording: {name} played copyrighted audio into a Tandem voice room{when}. Under Tandem's web guidelines, violating intellectual property is a Red topic and never OK. It is a legal issue for the platform and a waste of the learners' time. Please review this user."
+    },
+    {
+      "id": "copyright-091",
+      "variant": "copyright",
+      "text": "I request a review of the account of {name}. In a Tandem party{when}, they played protected music through the voice room, a violation of intellectual property. Tandem lists that as a Red topic, which is never OK. It disrupts the learners and puts the platform at risk. A warning or restriction would be welcome."
+    },
+    {
+      "id": "copyright-092",
+      "variant": "copyright",
+      "text": "Tandem forbids playing an audio book or copyrighted music, and {name} did it in a party{when}. This is a Red topic: violating intellectual property is never OK. The platform is exposed and the other learners could not practise. Please remove this behaviour and take appropriate action."
+    },
+    {
+      "id": "copyright-093",
+      "variant": "copyright",
+      "text": "Dear moderators, in a Tandem voice room{when} I came across {name} playing copyrighted music for the room. This violates intellectual property, a Red topic in Tandem's web guidelines. Rights holders are not respected and learners lose their chance to talk. Please review the account and act as appropriate."
+    },
+    {
+      "id": "copyright-094",
+      "variant": "copyright",
+      "text": "Sound from a copyrighted audiobook filled a Tandem party{when}, played by {name} rather than spoken by a learner. Intellectual property violations are listed as Red topics and are never OK. This is a risk for Tandem and a loss for the room. Please check this account and act on it."
+    },
+    {
+      "id": "copyright-095",
+      "variant": "copyright",
+      "text": "Consider this a report for {name}, who played protected music in a language party{when}. It goes against the rule that violating intellectual property is a Red topic and never OK on Tandem. Language practice stops when the room becomes a playlist, and the platform may be held accountable. Please take appropriate action."
+    },
+    {
+      "id": "copyright-096",
+      "variant": "copyright",
+      "text": "Tandem's guidelines treat copyrighted material as a Red topic, which is why I am reporting {name}. In a party{when}, they played an audiobook into the voice room. It infringes intellectual property and stops the others from using the party to learn. Please review this account and warn or restrict it."
+    },
+    {
+      "id": "copyright-097",
+      "variant": "copyright",
+      "text": "{name} should not be allowed to play copyrighted music in Tandem parties. In a voice room{when}, they did so for the learners present, which is a Red topic: violating intellectual property is never OK. Please review the account and take appropriate action."
+    },
+    {
+      "id": "copyright-098",
+      "variant": "copyright",
+      "text": "For a language party to work, people need to talk, but {name} played copyrighted audio in one{when}. Tandem's guidelines name this as a Red topic because it violates intellectual property. It exposes the platform and takes away practice time. Please act on this account as appropriate."
+    },
+    {
+      "id": "copyright-099",
+      "variant": "copyright",
+      "text": "Please note an infringement by {name} during a Tandem party{when}: copyrighted music was played into the voice room. Tandem's Red topics rule this out, as violating intellectual property is never OK. It is unfair to the rights holders and it disrupts the learners. Please warn this user or take stronger action if appropriate."
+    },
+    {
+      "id": "copyright-100",
+      "variant": "copyright",
+      "text": "Please note that {name} played an audiobook that is protected by copyright in a Tandem party{when}. Playing an audio book is a Red topic and never OK under Tandem's guidelines. It breaches the rights of the owners and replaces the conversation the learners came for. Please review the account and take appropriate action."
+    }
+  ]
+}
