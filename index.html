@@ -1,103 +1,120 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="tandem">
+<html lang="fr" data-theme="tandem" data-ctx="party">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0f1115">
   <title>Signalement Tandem</title>
   <script>
-    // Applique le thème mémorisé avant le premier rendu (évite un flash).
+    // Applique le thème et le contexte mémorisés avant le premier rendu (évite un flash).
     try {
       var t = localStorage.getItem('tandem-report.theme');
-      if (t === 'tandem' || t === 'terminal') document.documentElement.setAttribute('data-theme', t);
+      if (t === 'terminal') t = 'spectre'; // ancien thème, remplacé
+      if (t === 'tandem' || t === 'spectre') document.documentElement.setAttribute('data-theme', t);
+      var c = localStorage.getItem('tandem-report.context');
+      if (c === 'party' || c === 'profile' || c === 'chat') document.documentElement.setAttribute('data-ctx', c);
     } catch (e) {}
   </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1 class="sr-only">Signalement Tandem</h1>
+
   <header class="topbar">
-    <h1 class="title">
-      <span class="t-tandem">Signalement Tandem</span>
-      <span class="t-term glitch" data-text="tandem_report">tandem_report</span>
-    </h1>
-    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Changer de thème">
-      <span class="t-tandem">&gt;_ Terminal</span>
-      <span class="t-term">[ tandem ]</span>
-    </button>
+    <div class="topbar-inner">
+      <div class="name-pill">
+        <span class="name-prefix" aria-hidden="true">Je signale</span>
+        <input id="name" type="text" maxlength="60" autocomplete="off" autocapitalize="words" spellcheck="false"
+               enterkeyhint="done" placeholder="nom de la personne" aria-label="Nom de la personne">
+        <button id="name-clear" class="name-clear" type="button" aria-label="Effacer le nom" hidden>×</button>
+      </div>
+      <button id="gravity-open-top" class="btn-text desktop-only" type="button">Rappel de gravité</button>
+      <button id="theme-toggle" class="icon-btn theme-toggle" type="button"><span class="swatch" aria-hidden="true"></span></button>
+    </div>
   </header>
 
-  <div id="app" class="layout">
-    <section class="card who">
-      <label class="field-label" for="name">Nom de la personne</label>
-      <input id="name" class="input" type="text" maxlength="60" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="ex. Alex" enterkeyhint="done">
+  <main id="app" class="app" data-view="pick">
+    <section id="pick" class="view view-pick" aria-label="Catégories">
+      <nav id="contexts" class="contexts" aria-label="Partie de Tandem concernée"></nav>
+      <div class="list-head">
+        <span>Du plus grave au moins grave</span>
+        <button id="gravity-open" class="btn-text" type="button" aria-label="Ouvrir le rappel de gravité">ⓘ Rappel</button>
+      </div>
+      <div id="sections" class="sections"></div>
+      <details id="unknown" class="unknown" hidden>
+        <summary></summary>
+        <div class="unknown-body"></div>
+      </details>
+      <footer class="foot">
+        <p>Cette page ne parle jamais à Tandem : tu colles le texte toi-même.</p>
+        <p id="ignored-note"></p>
+      </footer>
     </section>
 
-    <nav id="contexts" class="contexts" aria-label="Partie de Tandem concernée"></nav>
-
-    <aside id="gravity" class="card gravity" aria-labelledby="gravity-title">
-      <button id="gravity-toggle" class="gravity-toggle" type="button" aria-expanded="false" aria-controls="gravity-body">
-        <span id="gravity-title" class="gravity-title">
-          <span class="t-tandem">Rappel de gravité</span>
-          <span class="t-term">&gt; severity --list</span>
-        </span>
-        <span class="chevron" aria-hidden="true"></span>
-      </button>
-      <div id="gravity-body" class="gravity-body"></div>
-    </aside>
-
-    <section id="leaves" class="leaves" aria-label="Types de signalement"></section>
-
-    <section id="composer" class="card composer" hidden aria-live="polite">
-      <p class="path-label">
-        <span class="t-tandem">Dans l'app</span>
-        <span class="t-term">&gt; path</span>
-      </p>
-      <p id="path" class="path"></p>
-      <p id="leaf-info" class="leaf-info"></p>
-      <p id="unverified" class="unverified" hidden>Écran suivant pas encore vérifié dans l'app : Tandem devrait demander un message.</p>
-
-      <div id="mode-direct" class="notice" hidden>Pas de message : Tandem envoie le signalement directement.</div>
-      <div id="mode-free" class="notice" hidden>Pas encore de messages types : écris le tien.</div>
-
-      <div id="template-fields">
-        <div id="variant-row" class="field" hidden>
-          <span class="field-label" id="variant-label">Ce qui s'est passé</span>
-          <div id="variants" class="segmented" role="radiogroup" aria-labelledby="variant-label"></div>
-        </div>
-
-        <div class="field date-row">
-          <label class="check">
-            <input id="add-date" type="checkbox">
-            <span>Ajouter la date</span>
-          </label>
-          <input id="date" class="input date-input" type="date" aria-label="Date de l'incident">
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="details">Détails <span class="optional">(optionnel, ajoutés à la fin)</span></label>
-          <textarea id="details" class="input details" rows="2" placeholder="Ce qui s'est réellement passé, en anglais de préférence"></textarea>
-        </div>
-
-        <button id="generate" class="btn btn-primary" type="button"></button>
-        <p id="name-hint" class="hint">Saisis le nom de la personne pour générer.</p>
+    <section id="msg" class="view view-msg" aria-labelledby="msg-title">
+      <div id="msg-empty" class="msg-empty">
+        <p class="msg-empty-lead">Choisis une catégorie à gauche pour préparer le message.</p>
+        <div class="gravity-inline"></div>
       </div>
 
-      <div id="output-block" class="output-block">
-        <textarea id="output" class="input output" rows="7" spellcheck="true" aria-label="Message à copier"></textarea>
-        <div class="output-meta">
-          <span id="counter" class="counter">0 / 500</span>
-          <span id="limit-msg" class="limit-msg" role="status"></span>
+      <div id="msg-body" class="msg-body" hidden>
+        <div class="crumb-row">
+          <button id="back" class="btn-back" type="button" aria-label="Retour aux catégories">‹ <span id="back-label">Fête</span></button>
+          <button id="tier-chip" class="tier-chip" type="button"></button>
         </div>
-        <p id="edited-hint" class="hint" hidden>Modifié à la main : les champs ne mettent plus le message à jour.</p>
-        <button id="copy" class="btn btn-copy" type="button" disabled></button>
+        <p id="path" class="path"></p>
+        <h2 id="msg-title" class="msg-title" tabindex="-1"></h2>
+        <p id="note" class="note"></p>
+        <p id="unverified" class="unverified" hidden>Écran suivant pas encore vérifié dans l'app : Tandem devrait demander un message.</p>
+
+        <div id="direct" class="notice" hidden>Pas de message : Tandem envoie le signalement directement.</div>
+        <button id="direct-back" class="btn btn-secondary mobile-only" type="button" hidden>‹ Retour à la liste</button>
+
+        <div id="variants" class="segmented" role="radiogroup" aria-label="Ce qui s'est passé" hidden></div>
+
+        <div id="ticket" class="ticket">
+          <div class="ticket-head">
+            <span class="data-label">Message · EN</span>
+            <span id="status" class="status" data-state="wait"><i class="led" aria-hidden="true"></i><span class="status-text">En attente d'un nom</span></span>
+          </div>
+          <button id="ghost" class="ghost" type="button" hidden>Ajoute le nom pour voir le message</button>
+          <textarea id="output" class="output" spellcheck="true" aria-label="Message à copier"></textarea>
+          <div class="meter" aria-hidden="true"><span class="meter-fill"></span></div>
+          <div class="ticket-foot">
+            <span id="counter" class="counter">0 / 500</span>
+            <span id="edited" class="edited" hidden>Modifié à la main · <button id="restore" class="link" type="button" aria-label="Rétablir le message type">rétablir</button></span>
+            <span id="limit-msg" class="limit-msg" role="status"></span>
+          </div>
+        </div>
+
+        <div id="options" class="options">
+          <button id="date-chip" class="chip" type="button" aria-pressed="false">＋ Date</button>
+          <input id="date" class="chip chip-date" type="date" aria-label="Date de l'incident" hidden>
+          <button id="details-chip" class="chip" type="button" aria-expanded="false" aria-controls="details">＋ Détails</button>
+          <textarea id="details" class="details" rows="2" placeholder="Ce qui s'est réellement passé, en anglais de préférence"
+                    aria-label="Détails, ajoutés à la fin du message" hidden></textarea>
+        </div>
+
+        <div id="actionbar" class="actionbar">
+          <button id="reroll" class="btn btn-secondary btn-reroll" type="button" aria-label="Autre message"><span class="reroll-glyph" aria-hidden="true">↻</span> Autre</button>
+          <button id="copy" class="btn btn-primary btn-copy" type="button"><svg class="ico-copy" viewBox="0 0 20 20" aria-hidden="true"><rect x="6" y="6" width="10" height="10" rx="1"/><path d="M4 13V4h9"/><path class="chk" d="M5 10.5l3.2 3.2L15 7"/></svg><span class="copy-label">Copier</span></button>
+        </div>
       </div>
     </section>
-  </div>
+  </main>
 
-  <footer class="footer">
-    <p>Cette page ne communique jamais avec Tandem : elle produit du texte que tu colles toi-même dans l'app.</p>
-    <p id="ignored-note"></p>
-  </footer>
+  <dialog id="gravity" class="sheet" aria-labelledby="gravity-title">
+    <div class="sheet-inner">
+      <div class="sheet-head">
+        <h2 id="gravity-title">Rappel de gravité</h2>
+        <button id="gravity-close" class="icon-btn" type="button" aria-label="Fermer">×</button>
+      </div>
+      <div id="gravity-body" class="sheet-body"></div>
+    </div>
+  </dialog>
+
+  <div id="live" class="sr-only" aria-live="polite"></div>
 
   <script src="data/bundle.js"></script>
   <script src="app.js"></script>

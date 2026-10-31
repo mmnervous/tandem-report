@@ -2,17 +2,18 @@
   'use strict';
 
   var DATA = window.TANDEM_DATA;
-  var app = document.getElementById('app');
+  var root = document.documentElement;
   if (!DATA || !DATA.tree) {
-    app.innerHTML = '<section class="card notice">Données introuvables : lance <code>python3 scripts/build.py</code> pour générer <code>data/bundle.js</code>.</section>';
+    document.getElementById('app').innerHTML = '<section class="notice">Données introuvables : lance <code>python3 scripts/build.py</code> pour générer <code>data/bundle.js</code>.</section>';
     return;
   }
 
   var TREE = DATA.tree;
   var MESSAGES = DATA.messages || {};
   var MAX = (TREE.meta && TREE.meta.message_max_chars) || 500;
+  var NEAR = MAX - 50;
   var HISTORY_SIZE = 10;
-  var TYPE_MS = 550; // effet machine à écrire : 0,6 s maximum en tout
+  var COPIED_MS = 1800;
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
     'August', 'September', 'October', 'November', 'December'];
   var CONTEXTS = [
@@ -21,45 +22,74 @@
     { id: 'chat', tab: 'Chat' }
   ];
   var TIER_ORDER = [1, 2, 3, 'variable'];
+  var THEMES = [
+    { id: 'tandem', name: 'Sobre' },
+    { id: 'spectre', name: 'Spectre' }
+  ];
   var KEYS = {
     context: 'tandem-report.context',
     addDate: 'tandem-report.addDate',
-    theme: 'tandem-report.theme'
+    theme: 'tandem-report.theme',
+    tally: 'tandem-report.tally'   // { d: date du jour, n: copies } : jamais le nom ni le message
   };
+  var COUNT_MS = 260;
 
   var store = {
     get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) { /* stockage indisponible */ } }
   };
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  var narrow = window.matchMedia('(max-width: 899px)');
+  var desktopMq = window.matchMedia('(min-width: 900px)');
+  function isDesktop() { return desktopMq.matches; }
 
   function $(id) { return document.getElementById(id); }
   var el = {
-    name: $('name'), contexts: $('contexts'), leaves: $('leaves'), composer: $('composer'),
-    path: $('path'), leafInfo: $('leaf-info'), unverified: $('unverified'),
-    modeDirect: $('mode-direct'), modeFree: $('mode-free'), templateFields: $('template-fields'),
-    variantRow: $('variant-row'), variants: $('variants'), addDate: $('add-date'), date: $('date'),
-    details: $('details'), generate: $('generate'), nameHint: $('name-hint'),
-    outputBlock: $('output-block'), output: $('output'), counter: $('counter'), limitMsg: $('limit-msg'),
-    editedHint: $('edited-hint'), copy: $('copy'), themeToggle: $('theme-toggle'),
-    gravityToggle: $('gravity-toggle'), gravity: $('gravity'), gravityBody: $('gravity-body'),
-    ignoredNote: $('ignored-note')
+    app: $('app'), name: $('name'), nameClear: $('name-clear'), themeToggle: $('theme-toggle'),
+    contexts: $('contexts'), sections: $('sections'), unknown: $('unknown'), ignoredNote: $('ignored-note'),
+    gravityOpen: $('gravity-open'), gravityOpenTop: $('gravity-open-top'),
+    msg: $('msg'), msgEmpty: $('msg-empty'), msgBody: $('msg-body'),
+    back: $('back'), backLabel: $('back-label'), tierChip: $('tier-chip'),
+    path: $('path'), title: $('msg-title'), note: $('note'), unverified: $('unverified'),
+    direct: $('direct'), directBack: $('direct-back'), variants: $('variants'),
+    ticket: $('ticket'), ghost: $('ghost'), status: $('status'), output: $('output'), counter: $('counter'),
+    edited: $('edited'), restore: $('restore'), limitMsg: $('limit-msg'),
+    options: $('options'), dateChip: $('date-chip'), date: $('date'),
+    detailsChip: $('details-chip'), details: $('details'),
+    actionbar: $('actionbar'), reroll: $('reroll'), copy: $('copy'), topbar: document.querySelector('.topbar'),
+    gravity: $('gravity'), gravityTitle: $('gravity-title'), gravityBody: $('gravity-body'),
+    gravityClose: $('gravity-close'), live: $('live'),
+    themeColor: document.querySelector('meta[name="theme-color"]')
   };
+  el.gravityInline = el.msgEmpty.querySelector('.gravity-inline');
+  el.copyLabel = el.copy.querySelector('.copy-label');
+  el.statusText = el.status.querySelector('.status-text');
 
   var state = {
     context: null,
-    groups: [],      // groupes de feuilles du contexte actif
-    entry: null,     // feuille sélectionnée { key, leaf, path, group }
-    mode: null,      // 'templates' | 'free' | 'direct'
-    variant: {},     // variante choisie, par feuille
-    history: {},     // ids des derniers messages montrés, par feuille
-    template: null,  // message type affiché
-    edited: false,   // message retouché à la main
-    fullText: '',
-    typing: null,
+    entries: [],          // feuilles connues (message/direct) du contexte actif
+    unknown: [],          // feuilles « pas encore explorées » du contexte actif
+    entry: null,          // feuille ouverte { key, leaf, path, group }
+    mode: null,           // 'templates' | 'free' | 'direct'
+    variant: {},          // variante choisie, par feuille
+    history: {},          // ids des derniers messages montrés, par feuille
+    drafts: {},           // texte libre en cours, par feuille (mode free)
+    template: null,       // message type affiché
+    edited: false,        // message retouché à la main
+    copiedText: null,     // texte du dernier « Copié », tant que le retour est affiché
+    copyOk: true,
     copyTimer: null,
-    copiedText: null // texte du dernier « Copié », tant que le retour est affiché
+    copiedName: null,     // nom au moment de la dernière copie réussie
+    redrawArmed: false,   // après une copie, un nouveau nom tire un nouveau message
+    copiedLeaves: {},     // feuilles déjà copiées pour ce nom (pastilles « copié ✓ »)
+    freshSticker: null,   // pastille qui vient d'apparaître : seule elle s'anime
+    pushedHash: false,
+    listScrollY: 0,
+    wasOver: false,
+    detailsOpen: false,
+    gravityTrigger: null,
+    copiedAt: '',         // « 14:32 · 3ᵉ aujourd'hui », affiché par le voyant
+    shownLen: 0,          // valeur affichée par le compteur (pour l'animation)
+    countAnim: null
   };
 
   // --- Utilitaires -------------------------------------------------------
@@ -70,32 +100,44 @@
     });
   }
 
-  // Libellé à deux versions : le CSS affiche celle du thème actif.
-  function dual(tandem, term) {
-    return '<span class="t-tandem">' + esc(tandem) + '</span><span class="t-term">' + esc(term) + '</span>';
-  }
-
   function currentName() { return el.name.value.trim(); }
 
   function withName(label, fallback) {
-    var name = currentName();
-    return String(label).split('{name}').join(name || fallback || '{name}');
+    return String(label).split('{name}').join(currentName() || fallback || '…');
   }
 
   function tierText(tier) { return tier === 'variable' ? 'Variable' : 'Tier ' + tier; }
-  function sevText(tier) { return tier === 'variable' ? 'SEV-?' : 'SEV-' + tier; }
-  function tierClass(tier) { return 'tier-' + (tier === undefined ? 'none' : tier); }
+  function tierShort(tier) { return tier === 'variable' ? 'Var.' : 'T' + tier; }
+  function tierClass(tier) { return 'tier-' + tier; }
+  function tierDesc(tier) { return (TREE.meta && TREE.meta.tiers && TREE.meta.tiers[tier]) || ''; }
+  function ctxTab(id) { return CONTEXTS.filter(function (c) { return c.id === id; })[0].tab; }
+
+  function announce(text) {
+    el.live.textContent = '';
+    setTimeout(function () { el.live.textContent = text; }, 30);
+  }
+
+  // Relance une animation CSS à base de classe (sans effet si mouvement réduit).
+  function restart(node, cls) {
+    if (reduceMotion.matches) return;
+    node.classList.remove(cls);
+    void node.offsetWidth;
+    node.classList.add(cls);
+  }
+
+  function isSpectre() { return root.getAttribute('data-theme') === 'spectre'; }
+  function fx() { return isSpectre() && !reduceMotion.matches; }
 
   function todayISO() {
     var d = new Date();
-    var m = String(d.getMonth() + 1).padStart(2, '0');
-    var day = String(d.getDate()).padStart(2, '0');
-    return d.getFullYear() + '-' + m + '-' + day;
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
   }
+
+  function dateOn() { return el.dateChip.getAttribute('aria-pressed') === 'true'; }
 
   // " on 31 October 2026" (format anglais d MMMM yyyy), ou "" sans date.
   function whenString() {
-    if (!el.addDate.checked) return '';
+    if (!dateOn()) return '';
     var parts = (el.date.value || todayISO()).split('-');
     var y = parts[0], m = parseInt(parts[1], 10), d = parseInt(parts[2], 10);
     if (!y || !m || !d) return '';
@@ -112,103 +154,155 @@
     return text;
   }
 
-  // --- Arbre : feuilles d'un contexte, regroupées par sous-menu -------------
-
-  function sortKey(leaf, i) {
-    if (leaf.type === 'unknown') return [2, i];
-    if (typeof leaf.rank === 'number') return [0, leaf.rank];
-    return [1, i];
+  function setHash(key, push) {
+    try {
+      if (push) location.hash = key;
+      else location.replace('#' + key);
+    } catch (e) { /* URL non modifiable : sans conséquence */ }
   }
 
-  function makeGroup(title, nodes, basePath, ctx) {
-    var leaves = [];
-    (function flatten(list, path) {
-      list.forEach(function (node) {
-        if (node.type === 'menu') flatten(node.children || [], path.concat(node.label));
-        else if (node.type === 'ref') {
-          var shared = TREE.shared[node.ref];
-          if (shared) flatten(shared.children || [], path.concat(node.label));
-        } else if (node.type !== 'ignored') {
-          leaves.push({ key: ctx + ':' + node.id, leaf: node, path: path.concat(node.label), group: title });
-        }
-      });
-    })(nodes, basePath);
-    leaves = leaves
-      .map(function (e, i) { return { e: e, k: sortKey(e.leaf, i) }; })
-      .sort(function (a, b) { return a.k[0] - b.k[0] || a.k[1] - b.k[1]; })
-      .map(function (x) { return x.e; });
-    return { title: title, entries: leaves };
-  }
+  // --- Arbre : feuilles d'un contexte ----------------------------------------
 
-  function buildGroups(ctxId) {
-    var node = TREE.root.children.filter(function (c) { return c.id === ctxId; })[0];
-    if (!node) return [];
-    var base = ['Signaler', node.label];
-    var groups = [];
-    var loose = [];
-    (node.children || []).forEach(function (child) {
-      if (child.type === 'menu') {
-        groups.push(makeGroup(child.label, child.children || [], base.concat(child.label), ctxId));
-      } else if (child.type === 'ref') {
-        var shared = TREE.shared[child.ref];
-        if (shared) groups.push(makeGroup(child.label, shared.children || [], base.concat(child.label), ctxId));
-      } else if (child.type !== 'ignored') {
-        loose.push(child);
+  function collect(nodes, path, group, ctx, out) {
+    nodes.forEach(function (node) {
+      if (node.type === 'menu') {
+        collect(node.children || [], path.concat(node.label), node.label, ctx, out);
+      } else if (node.type === 'ref') {
+        var shared = TREE.shared[node.ref];
+        if (shared) collect(shared.children || [], path.concat(node.label), node.label, ctx, out);
+      } else if (node.type !== 'ignored') {
+        out.push({ key: ctx + ':' + node.id, leaf: node, path: path.concat(node.label), group: group });
       }
     });
-    if (loose.length) groups.push(makeGroup(groups.length ? 'Autres options' : null, loose, base, ctxId));
-    return groups;
+    return out;
   }
 
-  function allEntries() {
-    return state.groups.reduce(function (acc, g) { return acc.concat(g.entries); }, []);
+  function entriesFor(ctx) {
+    var node = TREE.root.children.filter(function (c) { return c.id === ctx; })[0];
+    if (!node) return [];
+    return collect(node.children || [], ['Signaler', node.label], null, ctx, []);
   }
 
-  // --- Rendu : contextes, feuilles, rappel de gravité -------------------
+  function findEntry(key) {
+    var ctx = String(key).split(':')[0];
+    if (!CONTEXTS.some(function (c) { return c.id === ctx; })) return null;
+    return entriesFor(ctx).filter(function (e) { return e.key === key && e.leaf.type !== 'unknown'; })[0] || null;
+  }
+
+  function modeOf(leaf) {
+    if (leaf.type === 'direct') return 'direct';
+    var file = MESSAGES[leaf.id];
+    return file && file.messages && file.messages.length ? 'templates' : 'free';
+  }
+
+  // Sections par tier, triées par rang (les feuilles sans rang à la fin, dans l'ordre de l'arbre).
+  function sectionsOf(entries) {
+    return TIER_ORDER.map(function (tier) {
+      var list = entries
+        .map(function (e, i) { return { e: e, i: i }; })
+        .filter(function (x) { return x.e.leaf.tier === tier; })
+        .sort(function (a, b) {
+          var ra = typeof a.e.leaf.rank === 'number' ? a.e.leaf.rank : Infinity;
+          var rb = typeof b.e.leaf.rank === 'number' ? b.e.leaf.rank : Infinity;
+          return (ra === rb ? 0 : ra < rb ? -1 : 1) || a.i - b.i;
+        })
+        .map(function (x) { return x.e; });
+      return { tier: tier, entries: list };
+    }).filter(function (s) { return s.entries.length; });
+  }
+
+  // --- Liste « Choisir » -------------------------------------------------------
 
   function renderContexts() {
     el.contexts.innerHTML = CONTEXTS.map(function (c) {
-      return '<button type="button" class="ctx" data-ctx="' + c.id + '" aria-pressed="false">' + esc(c.tab) + '</button>';
+      return '<button type="button" class="ctx" data-ctx="' + c.id + '" aria-pressed="' + (c.id === state.context) + '">' + esc(c.tab) + '</button>';
     }).join('');
   }
 
-  function leafMeta(leaf) {
-    if (leaf.type === 'unknown') return 'pas encore exploré';
-    if (leaf.type === 'direct') return 'sans message';
-    var file = MESSAGES[leaf.id];
-    var n = file && file.messages ? file.messages.length : 0;
-    return n ? n + ' message' + (n > 1 ? 's' : '') + ' type' + (n > 1 ? 's' : '') : 'à rédiger';
+  // Pastille d'état selon la règle de la minorité : on marque ce qui est rare.
+  function statusFor(leaf, counts) {
+    if (leaf.type === 'direct') return { cls: 'none', text: 'sans message' };
+    var mode = modeOf(leaf);
+    if (counts.templates <= counts.free) return mode === 'templates' ? { cls: 'ready', text: 'prêt' } : null;
+    return mode === 'free' ? { cls: 'none', text: 'à écrire' } : null;
   }
 
-  function renderLeaves() {
-    el.leaves.innerHTML = state.groups.map(function (g) {
-      var buttons = g.entries.map(function (e) {
-        var leaf = e.leaf;
-        var unknown = leaf.type === 'unknown';
-        var badge = unknown ? '' :
-          '<span class="tier-badge">' + dual(tierText(leaf.tier), sevText(leaf.tier)) + '</span>';
-        var rank = typeof leaf.rank === 'number' ? '<span class="rank" title="Rang de gravité">#' + leaf.rank + '</span>' : '<span class="rank rank-none">–</span>';
-        return '<button type="button" class="leaf ' + tierClass(leaf.tier) + (unknown ? ' is-unknown' : '') + '"' +
-          ' data-key="' + esc(e.key) + '"' + (unknown ? ' disabled' : '') + ' aria-pressed="false">' +
-          rank +
-          '<span class="leaf-text"><span class="leaf-label">' + esc(withName(leaf.label, '…')) + '</span>' +
-          '<span class="leaf-meta">' + esc(leafMeta(leaf)) + '</span></span>' +
-          badge + '</button>';
-      }).join('');
-      var title = g.title ? '<h2 class="group-title">' + esc(g.title) + '</h2>' : '';
-      return '<div class="group">' + title + '<div class="leaf-list">' + buttons + '</div></div>';
+  function rowHTML(e, counts) {
+    var leaf = e.leaf;
+    var hasRank = typeof leaf.rank === 'number';
+    var status = statusFor(leaf, counts);
+    var copied = !!state.copiedLeaves[leaf.id];
+    var chips = (status ? '<span class="chip-s chip-' + status.cls + '">' + status.text + '</span>' : '') +
+      (copied ? '<span class="chip-s chip-copied' + (leaf.id === state.freshSticker ? ' is-fresh' : '') + '">copié ✓</span>' : '');
+    var label = withName(leaf.label);
+    var aria = (hasRank ? 'Rang ' + leaf.rank + ', ' : '') + tierText(leaf.tier) + ', ' + tierDesc(leaf.tier) + ' : ' + label +
+      (e.group ? ' (' + e.group + ')' : '') + (status ? ', ' + (status.text === 'prêt' ? 'messages prêts' : status.text) : '') +
+      (copied ? ', copié' : '');
+    return '<button type="button" class="row ' + tierClass(leaf.tier) + '" data-key="' + esc(e.key) + '" aria-pressed="false" aria-label="' + esc(aria) + '">' +
+      '<span class="rank" aria-hidden="true"><span class="rank-n">' + (hasRank ? leaf.rank : '–') + '</span></span>' +
+      '<span class="row-text"><span class="row-label">' + esc(label) + '</span>' +
+      (e.group ? '<span class="row-tag">' + esc(e.group) + '</span>' : '') + '</span>' +
+      (chips ? '<span class="row-chips">' + chips + '</span>' : '') +
+      '</button>';
+  }
+
+  function renderList() {
+    var counts = { templates: 0, free: 0 };
+    state.entries.forEach(function (e) {
+      if (e.leaf.type === 'message') counts[modeOf(e.leaf)] += 1;
+    });
+    el.sections.innerHTML = sectionsOf(state.entries).map(function (s) {
+      return '<section class="tier-sec ' + tierClass(s.tier) + '">' +
+        '<h2 class="tier-head"><span class="tier-tag">' + tierText(s.tier) + '</span><span class="tier-desc"> · ' + esc(tierDesc(s.tier)) + '</span></h2>' +
+        '<div class="rows">' + s.entries.map(function (e) { return rowHTML(e, counts); }).join('') + '</div></section>';
     }).join('');
-    markSelectedLeaf();
+    state.freshSticker = null;
+    markSelectedRow();
   }
 
-  function markSelectedLeaf() {
+  function renderUnknown() {
+    var n = state.unknown.length;
+    el.unknown.hidden = !n;
+    if (!n) return;
+    el.unknown.querySelector('summary').textContent = 'Pas encore explorés (' + n + ')';
+    el.unknown.querySelector('.unknown-body').innerHTML = state.unknown.map(function (e) {
+      return '<p><strong>' + esc(withName(e.leaf.label)) + '</strong>' + (e.group ? ' <span class="row-tag">' + esc(e.group) + '</span>' : '') +
+        (e.leaf.note ? ' · ' + esc(e.leaf.note) : '') + '</p>';
+    }).join('');
+  }
+
+  function markSelectedRow() {
     var key = state.entry && state.entry.key;
-    Array.prototype.forEach.call(el.leaves.querySelectorAll('.leaf'), function (b) {
+    Array.prototype.forEach.call(el.sections.querySelectorAll('.row'), function (b) {
       b.setAttribute('aria-pressed', String(b.getAttribute('data-key') === key));
     });
   }
 
+  function setContext(ctx, opts) {
+    opts = opts || {};
+    if (!CONTEXTS.some(function (c) { return c.id === ctx; })) ctx = CONTEXTS[0].id;
+    var changed = ctx !== state.context;
+    state.context = ctx;
+    store.set(KEYS.context, ctx);
+    root.setAttribute('data-ctx', ctx);
+    var all = entriesFor(ctx);
+    state.entries = all.filter(function (e) { return e.leaf.type !== 'unknown'; });
+    state.unknown = all.filter(function (e) { return e.leaf.type === 'unknown'; });
+    renderContexts();
+    renderList();
+    renderUnknown();
+    renderEmptyPane();
+    updateThemeColor();
+    if (changed && !opts.keepEntry && state.entry) {
+      deselect();
+      setHash('', false);
+    }
+  }
+
+  // --- Rappel de gravité -------------------------------------------------------
+
   function labelForNodeId(id) {
+    if (id === 'party') return 'Fête';
     var found = null;
     (function walk(node) {
       if (found) return;
@@ -216,32 +310,23 @@
       (node.children || []).forEach(walk);
     })(TREE.root);
     if (!found && TREE.shared[id]) found = TREE.shared[id].label;
-    if (id === 'party') found = 'Fête';
-    return withName(found || id, '…');
+    return withName(found || id);
   }
 
-  function renderGravity() {
+  function gravityHTML(ctx, currentKey) {
     var meta = TREE.meta || {};
-    var tiers = meta.tiers || {};
-    var seen = {};
-    var entries = allEntries().filter(function (e) {
-      if (e.leaf.type === 'unknown' || e.leaf.tier === undefined || seen[e.leaf.id]) return false;
-      seen[e.leaf.id] = true;
-      return true;
-    });
-
-    var html = TIER_ORDER.map(function (tier) {
-      var items = entries.filter(function (e) { return e.leaf.tier === tier; });
-      if (!items.length) return '';
-      items.sort(function (a, b) { return (a.leaf.rank || 99) - (b.leaf.rank || 99); });
-      return '<section class="tier-section ' + tierClass(tier) + '">' +
-        '<h3 class="tier-title">' + dual(tierText(tier), sevText(tier)) +
-        ' <span class="tier-desc">' + esc(tiers[tier] || '') + '</span></h3>' +
-        '<ul class="tier-list">' + items.map(function (e) {
-          var rank = typeof e.leaf.rank === 'number' ? '#' + e.leaf.rank : '–';
-          var where = e.group ? ' <span class="where">' + esc(e.group) + '</span>' : '';
-          return '<li><span class="rank">' + rank + '</span><div><strong>' + esc(withName(e.leaf.label, '…')) + '</strong>' + where +
-            '<p>' + esc(e.leaf.note || '') + '</p></div></li>';
+    var entries = entriesFor(ctx).filter(function (e) { return e.leaf.type !== 'unknown' && e.leaf.tier !== undefined; });
+    var html = sectionsOf(entries).map(function (s) {
+      return '<section class="g-tier ' + tierClass(s.tier) + '">' +
+        '<h3 class="tier-head"><span class="tier-tag">' + tierText(s.tier) + '</span><span class="tier-desc"> · ' + esc(tierDesc(s.tier)) + '</span></h3>' +
+        '<ul class="g-list">' + s.entries.map(function (e) {
+          var current = e.key === currentKey;
+          return '<li><button type="button" class="g-row ' + tierClass(e.leaf.tier) + (current ? ' is-current' : '') + '" data-key="' + esc(e.key) + '"' +
+            (current ? ' aria-current="true"' : '') + '>' +
+            '<span class="g-rank">' + (typeof e.leaf.rank === 'number' ? '#' + e.leaf.rank : '–') + '</span>' +
+            '<span class="g-text"><strong>' + esc(withName(e.leaf.label)) + '</strong>' +
+            (e.group ? ' <span class="row-tag">' + esc(e.group) + '</span>' : '') +
+            (e.leaf.note ? '<span class="g-note">' + esc(e.leaf.note) + '</span>' : '') + '</span></button></li>';
         }).join('') + '</ul></section>';
     }).join('');
 
@@ -252,80 +337,173 @@
         (order ? '<p class="evidence-order">De la plus forte à la plus faible : ' + esc(order) + '</p>' : '') +
         '<p>' + esc(ev.note) + '</p></section>';
     }
-    if (meta.notes && meta.notes.length) {
-      html += '<details class="notes"><summary>Remarques sur l\'arbre</summary><ul>' +
-        meta.notes.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join('') + '</ul></details>';
+    var notes = (meta.notes || []).slice();
+    if (el.ignoredNote.textContent) notes.push(el.ignoredNote.textContent);
+    notes.push('Cette page ne communique jamais avec Tandem : elle produit du texte que tu colles toi-même dans l\'app.');
+    html += '<details class="notes"><summary>Remarques sur l\'arbre</summary><ul>' +
+      notes.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join('') + '</ul></details>';
+    return html;
+  }
+
+  function renderEmptyPane() {
+    el.gravityInline.innerHTML = gravityHTML(state.context, null);
+  }
+
+  function openGravity(trigger, focusKey) {
+    state.gravityTrigger = trigger || null;
+    el.gravityTitle.textContent = 'Rappel de gravité · ' + ctxTab(state.context);
+    el.gravityBody.innerHTML = gravityHTML(state.context, focusKey);
+    if (typeof el.gravity.showModal === 'function') {
+      if (!el.gravity.open) el.gravity.showModal();
+    } else {
+      el.gravity.setAttribute('open', '');
+      el.gravity.classList.add('is-open');
     }
-    el.gravityBody.innerHTML = html;
+    var current = focusKey && el.gravityBody.querySelector('.is-current');
+    if (current) current.scrollIntoView({ block: 'center', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
   }
 
-  function setContext(ctxId) {
-    if (!CONTEXTS.some(function (c) { return c.id === ctxId; })) ctxId = CONTEXTS[0].id;
-    state.context = ctxId;
-    state.groups = buildGroups(ctxId);
-    store.set(KEYS.context, ctxId);
-    Array.prototype.forEach.call(el.contexts.querySelectorAll('.ctx'), function (b) {
-      b.setAttribute('aria-pressed', String(b.getAttribute('data-ctx') === ctxId));
-    });
-    renderLeaves();
-    renderGravity();
-    selectEntry(null);
+  function closeGravity() {
+    if (typeof el.gravity.close === 'function' && el.gravity.open) el.gravity.close();
+    else {
+      el.gravity.removeAttribute('open');
+      el.gravity.classList.remove('is-open');
+      onGravityClosed();
+    }
   }
 
-  // --- Composer --------------------------------------------------------
+  function onGravityClosed() {
+    var t = state.gravityTrigger;
+    state.gravityTrigger = null;
+    if (t && document.contains(t) && t.offsetParent !== null) t.focus({ preventScroll: true });
+  }
 
-  function selectEntry(key) {
-    stopTyping();
-    var entry = key ? allEntries().filter(function (e) { return e.key === key; })[0] : null;
-    state.entry = entry || null;
+  // --- Vue « Message » ---------------------------------------------------------
+
+  function saveDraft() {
+    if (state.entry && state.mode === 'free') state.drafts[state.entry.leaf.id] = el.output.value;
+  }
+
+  function openEntry(key, opts) {
+    opts = opts || {};
+    var entry = findEntry(key);
+    if (!entry) return false;
+    var ctx = key.split(':')[0];
+    if (ctx !== state.context) setContext(ctx, { keepEntry: true });
+
+    saveDraft();
+    state.entry = entry;
+    state.mode = modeOf(entry.leaf);
     state.template = null;
     state.edited = false;
-    state.fullText = '';
-    el.output.value = '';
-    markSelectedLeaf();
+    state.wasOver = false;
+    resetCopyLabel();
+    if (state.mode === 'templates' && currentName()) state.template = pickTemplate();
+    el.output.value = state.mode === 'free' ? (state.drafts[entry.leaf.id] || '') : '';
 
-    if (!entry) { el.composer.hidden = true; return; }
-    var leaf = entry.leaf;
-    var file = MESSAGES[leaf.id];
-    state.mode = leaf.type === 'direct' ? 'direct' : (file && file.messages && file.messages.length ? 'templates' : 'free');
+    renderMsg();
+    render(true);
+    markSelectedRow();
+    el.msgEmpty.hidden = true;
+    el.msgBody.hidden = false;
 
-    el.composer.hidden = false;
-    el.composer.className = 'card composer ' + tierClass(leaf.tier);
-    renderPath();
-    el.leafInfo.innerHTML = '<span class="tier-badge">' + dual(tierText(leaf.tier), sevText(leaf.tier)) + '</span> ' +
-      (typeof leaf.rank === 'number' ? '<span class="rank">#' + leaf.rank + '</span> ' : '') + esc(leaf.note || '');
-    el.unverified.hidden = leaf.verified !== false || state.mode === 'direct';
-    el.modeDirect.hidden = state.mode !== 'direct';
-    el.modeFree.hidden = state.mode !== 'free';
-    el.templateFields.hidden = state.mode !== 'templates';
-    el.outputBlock.hidden = state.mode === 'direct';
-    el.output.readOnly = false;
-    el.output.placeholder = state.mode === 'free' ? 'Écris ton message ici (en anglais de préférence)…' : 'Le message généré apparaîtra ici.';
+    if (isDesktop()) {
+      setHash(key, false);
+    } else {
+      if (el.app.getAttribute('data-view') !== 'msg') state.listScrollY = window.scrollY;
+      el.app.setAttribute('data-view', 'msg');
+      window.scrollTo(0, 0);
+      if (opts.push !== false && location.hash !== '#' + key) {
+        state.pushedHash = true;
+        setHash(key, true);
+      }
+    }
 
-    renderVariants(file);
-    updateControls();
+    if (opts.focus !== false) {
+      if (state.mode === 'templates' && !currentName()) el.name.focus();
+      else if (state.mode === 'free') el.output.focus({ preventScroll: true });
+      else el.title.focus({ preventScroll: true });
+    }
+    if (state.mode !== 'direct') restart(el.ticket, 'is-new');
+    return true;
+  }
 
-    if (state.mode === 'templates' && currentName()) generate();
-    if (narrow.matches) el.composer.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
+  function showList() {
+    el.app.setAttribute('data-view', 'pick');
+    state.pushedHash = false;
+    window.scrollTo(0, state.listScrollY);
+    var row = state.entry && el.sections.querySelector('.row[aria-pressed="true"]');
+    if (row) row.focus({ preventScroll: true });
+  }
+
+  function deselect() {
+    saveDraft();
+    state.entry = null;
+    state.template = null;
+    resetCopyLabel();
+    markSelectedRow();
+    el.msgBody.hidden = true;
+    el.msgEmpty.hidden = false;
+    el.app.setAttribute('data-view', 'pick');
+    state.pushedHash = false;
+  }
+
+  function goBack() {
+    if (state.pushedHash) {
+      state.pushedHash = false;
+      history.back(); // hashchange → showList
+    } else {
+      setHash('', false);
+      showList();
+    }
   }
 
   function renderPath() {
     if (!state.entry) return;
-    el.path.innerHTML = state.entry.path.map(function (p) {
-      return '<span class="crumb">' + esc(withName(p, '{name}')) + '</span>';
-    }).join('<span class="sep" aria-hidden="true"> › </span>');
+    var crumbs = state.entry.path.slice(0, -1);
+    el.path.innerHTML = '<span class="sr-only">Chemin dans l\'app : </span>' + crumbs.map(function (p) {
+      return '<span class="crumb">' + esc(withName(p)) + '</span>';
+    }).join('<span class="sep" aria-hidden="true"> › </span>') + '<span class="sep" aria-hidden="true"> ›</span>';
+    el.title.textContent = withName(state.entry.leaf.label);
   }
 
-  function renderVariants(file) {
-    var variants = file && file.variants ? Object.keys(file.variants) : [];
-    el.variantRow.hidden = variants.length < 2;
-    if (variants.length < 2) { el.variants.innerHTML = ''; return; }
+  function renderMsg() {
+    var entry = state.entry;
+    var leaf = entry.leaf;
+    var mode = state.mode;
+    var hasRank = typeof leaf.rank === 'number';
+
+    el.backLabel.textContent = ctxTab(state.context);
+    el.tierChip.className = 'tier-chip ' + tierClass(leaf.tier);
+    el.tierChip.textContent = tierShort(leaf.tier) + (hasRank ? ' · #' + leaf.rank : '');
+    el.tierChip.setAttribute('aria-label', tierText(leaf.tier) + (hasRank ? ', rang ' + leaf.rank : '') + ' : voir le rappel de gravité');
+    el.msgBody.className = 'msg-body ' + tierClass(leaf.tier);
+    renderPath();
+    el.note.textContent = [tierDesc(leaf.tier), leaf.note].filter(Boolean).join(' · ');
+    el.unverified.hidden = !(leaf.verified === false && mode !== 'direct');
+
+    el.direct.hidden = mode !== 'direct';
+    el.directBack.hidden = mode !== 'direct';
+    el.ticket.hidden = mode === 'direct';
+    el.options.hidden = mode !== 'templates';
+    el.actionbar.hidden = mode === 'direct';
+    el.reroll.hidden = mode !== 'templates';
+    el.actionbar.classList.toggle('is-single', mode === 'free');
+    el.output.placeholder = mode === 'free' ? 'Pas encore de messages types : écris le tien (en anglais de préférence)…' : '';
+    renderVariants();
+    syncDetails();
+  }
+
+  function renderVariants() {
+    var file = MESSAGES[state.entry.leaf.id];
+    var keys = state.mode === 'templates' && file && file.variants ? Object.keys(file.variants) : [];
+    el.variants.hidden = keys.length < 2;
+    if (keys.length < 2) { el.variants.innerHTML = ''; return; }
     var leafId = state.entry.leaf.id;
-    if (variants.indexOf(state.variant[leafId]) < 0) state.variant[leafId] = variants[0];
-    el.variants.innerHTML = variants.map(function (v) {
+    if (keys.indexOf(state.variant[leafId]) < 0) state.variant[leafId] = keys[0];
+    el.variants.innerHTML = keys.map(function (v) {
       var on = state.variant[leafId] === v;
-      return '<button type="button" class="seg" role="radio" data-variant="' + esc(v) + '" aria-checked="' + on + '">' +
-        esc(file.variants[v]) + '</button>';
+      return '<button type="button" class="seg" role="radio" data-variant="' + esc(v) + '" aria-checked="' + on + '">' + esc(file.variants[v]) + '</button>';
     }).join('');
   }
 
@@ -333,7 +511,8 @@
     var leafId = state.entry.leaf.id;
     var file = MESSAGES[leafId];
     var variant = state.variant[leafId];
-    var pool = file.messages.filter(function (m) { return !variant || !file.variants || m.variant === variant; });
+    if (!variant && file.variants) variant = state.variant[leafId] = Object.keys(file.variants)[0];
+    var pool = file.messages.filter(function (m) { return !variant || m.variant === variant; });
     if (!pool.length) pool = file.messages;
     var history = state.history[leafId] || [];
     var candidates = pool.filter(function (m) { return history.indexOf(m.id) < 0; });
@@ -343,159 +522,284 @@
       candidates = pool.length > 1 ? pool.filter(function (m) { return m.id !== last; }) : pool;
     }
     var pick = candidates[Math.floor(Math.random() * candidates.length)];
-    history = history.filter(function (id) { return id !== pick.id; }).concat(pick.id).slice(-HISTORY_SIZE);
-    state.history[leafId] = history;
+    state.history[leafId] = history.filter(function (id) { return id !== pick.id; }).concat(pick.id).slice(-HISTORY_SIZE);
     return pick;
   }
 
-  function generate() {
-    if (state.mode !== 'templates' || !currentName()) return;
-    state.template = pickTemplate();
-    state.edited = false;
-    showText(compose(state.template.text), useTypewriter());
-    updateControls();
-  }
-
-  // Les champs mettent le message à jour tant qu'il n'a pas été retouché à la main.
-  function refreshOutput() {
-    if (state.mode === 'templates' && state.template && !state.edited) {
-      showText(compose(state.template.text), false);
+  // Met à jour le message à partir du gabarit, tant qu'il n'a pas été retouché à la main.
+  function render(animate) {
+    if (!state.entry) return;
+    if (state.mode === 'templates') {
+      var ghost = !currentName() && !state.edited;
+      el.ghost.hidden = !ghost;
+      el.output.hidden = ghost;
+      if (state.template && !state.edited) el.output.value = ghost ? '' : compose(state.template.text);
+    } else {
+      el.ghost.hidden = true;
+      el.output.hidden = false;
     }
-    updateControls();
+    el.edited.hidden = !(state.mode === 'templates' && state.edited);
+    autogrow();
+    updateCounter(animate);
   }
 
-  // --- Effet machine à écrire (thème Terminal uniquement) ----------------
-
-  function useTypewriter() {
-    return document.documentElement.getAttribute('data-theme') === 'terminal' && !reduceMotion.matches;
+  function autogrow() {
+    if (el.output.hidden) return;
+    el.output.style.height = 'auto';
+    el.output.style.height = Math.max(el.output.scrollHeight + 2, 150) + 'px';
   }
 
-  function showText(text, animate) {
-    stopTyping();
-    state.fullText = text;
-    if (!animate || !text) { el.output.value = text; updateCounter(); return; }
+  function stopCount() {
+    if (state.countAnim === null) return;
+    cancelAnimationFrame(state.countAnim);
+    state.countAnim = null;
+    el.counter.textContent = state.shownLen + ' / ' + MAX;
+  }
+
+  // Le compteur « monte » jusqu'à la nouvelle valeur (thème Spectre, 260 ms, interrompu par un tap).
+  function showCount(len, animate) {
+    stopCount();
+    var from = state.shownLen;
+    state.shownLen = len;
+    if (!animate || !fx() || from === len) { el.counter.textContent = len + ' / ' + MAX; return; }
     var start = null;
-    el.output.readOnly = true;
-    el.output.classList.add('is-typing');
-    el.output.value = '';
     var step = function (now) {
       if (start === null) start = now;
-      var t = Math.min(1, (now - start) / TYPE_MS);
-      el.output.value = text.slice(0, Math.ceil(text.length * t));
-      if (t < 1) state.typing = requestAnimationFrame(step);
-      else stopTyping();
+      var t = Math.min(1, (now - start) / COUNT_MS);
+      var v = Math.round(from + (len - from) * (1 - Math.pow(1 - t, 3)));
+      el.counter.textContent = v + ' / ' + MAX;
+      if (t < 1) state.countAnim = requestAnimationFrame(step);
+      else state.countAnim = null;
     };
-    state.typing = requestAnimationFrame(step);
-    updateCounter();
+    state.countAnim = requestAnimationFrame(step);
   }
 
-  function stopTyping() {
-    if (state.typing === null) return;
-    cancelAnimationFrame(state.typing);
-    state.typing = null;
-    el.output.value = state.fullText;
-    el.output.readOnly = false;
-    el.output.classList.remove('is-typing');
-    updateCounter();
-  }
-
-  // --- Compteur, boutons, copie -----------------------------------------
-
-  function currentText() { return state.typing !== null ? state.fullText : el.output.value; }
-
-  function updateCounter() {
-    var len = currentText().length;
+  function updateCounter(animate) {
+    var len = el.output.hidden ? 0 : el.output.value.length;
     var over = len > MAX;
-    el.counter.textContent = len + ' / ' + MAX;
+    var near = !over && len >= NEAR;
+    showCount(len, animate);
     el.counter.classList.toggle('is-over', over);
+    el.counter.classList.toggle('is-near', near);
+    el.ticket.style.setProperty('--fill', String(Math.min(len / MAX, 1)));
+    el.ticket.setAttribute('data-level', over ? 'over' : len >= NEAR ? 'near' : 'ok');
+    if (over && !state.wasOver) restart(el.counter, 'nudge');
+    state.wasOver = over;
+    var extra = len - MAX;
     el.limitMsg.textContent = over
-      ? 'Trop long de ' + (len - MAX) + ' caractère' + (len - MAX > 1 ? 's' : '') + ' : ' +
+      ? 'Trop long de ' + extra + ' caractère' + (extra > 1 ? 's' : '') + ' : ' +
         (state.mode === 'free' || state.edited ? 'raccourcis ton message.' : 'raccourcis les détails.')
-      : '';
-    el.copy.disabled = !len || over;
-    // Le retour « Copié » ne vaut que pour le texte réellement copié.
-    if (state.copiedText !== null && currentText() !== state.copiedText) resetCopyLabel();
+      : near ? 'Presque plein' : '';
+    el.limitMsg.classList.toggle('is-near', near);
+    if (state.copiedText !== null && el.output.value !== state.copiedText) resetCopyLabel();
+    updateCopy();
+  }
+
+  function copyState() {
+    if (state.copiedText !== null) return state.copyOk ? 'copied' : 'failed';
+    var len = el.output.hidden ? 0 : el.output.value.length;
+    if (state.mode === 'templates' && !currentName() && !state.edited) return 'need-name';
+    if (!len) return 'empty';
+    if (len > MAX) return 'over';
+    return 'ready';
+  }
+
+  function updateCopy() {
+    var s = copyState();
+    var label = {
+      'need-name': 'Ajoute le nom',
+      empty: 'Copier',
+      over: 'Trop long (−' + (el.output.value.length - MAX) + ')',
+      ready: 'Copier',
+      copied: 'Copié',
+      failed: 'Copie impossible : sélectionne le texte'
+    }[s];
+    if (el.copyLabel.textContent !== label) el.copyLabel.textContent = label;
+    el.copy.setAttribute('data-state', s);
+    el.copy.setAttribute('aria-disabled', String(s === 'need-name' || s === 'empty' || s === 'over'));
+    updateStatus(s);
+  }
+
+  // Voyant du message (affiché dans le thème Spectre).
+  function updateStatus(s) {
+    var map = {
+      'need-name': ['wait', 'En attente d\'un nom'],
+      empty: ['wait', 'En attente du message'],
+      over: ['over', 'Trop long'],
+      ready: ['ready', 'Prêt à copier'],
+      copied: ['copied', 'Copié · ' + state.copiedAt],
+      failed: ['over', 'Copie bloquée']
+    }[s];
+    el.status.setAttribute('data-state', map[0]);
+    if (el.statusText.textContent !== map[1]) el.statusText.textContent = map[1];
   }
 
   function resetCopyLabel() {
     clearTimeout(state.copyTimer);
     state.copiedText = null;
     el.copy.classList.remove('is-copied', 'is-failed');
-    el.copy.innerHTML = dual('Copier', '> copy');
+    el.ticket.classList.remove('is-filed');
   }
 
-  function targetArg() {
-    var name = currentName();
-    if (!name) return '<name>';
-    return /\s/.test(name) ? '"' + name + '"' : name;
-  }
-
-  function updateControls() {
-    var hasName = !!currentName();
-    el.generate.disabled = !hasName;
-    el.nameHint.hidden = hasName;
-    el.generate.innerHTML = state.template
-      ? dual('Autre message', '> report.regenerate --target ' + targetArg())
-      : dual('Générer le message', '> report.generate --target ' + targetArg());
-    el.editedHint.hidden = !(state.mode === 'templates' && state.edited);
-    if (state.copiedText === null) el.copy.innerHTML = dual('Copier', '> copy');
-    updateCounter();
+  // Nombre de copies du jour : seulement une date et un nombre.
+  function bumpTally() {
+    var today = todayISO();
+    var tally = null;
+    try { tally = JSON.parse(store.get(KEYS.tally) || 'null'); } catch (e) { tally = null; }
+    var n = tally && tally.d === today && typeof tally.n === 'number' ? tally.n + 1 : 1;
+    store.set(KEYS.tally, JSON.stringify({ d: today, n: n }));
+    return n;
   }
 
   function copyFallback(text) {
     var ta = el.output;
-    var wasReadOnly = ta.readOnly;
-    ta.readOnly = false;
     ta.focus();
     ta.select();
     var ok = false;
     try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
     ta.setSelectionRange(text.length, text.length);
-    ta.readOnly = wasReadOnly;
     return ok;
   }
 
   function copy() {
-    stopTyping();
+    if (!state.entry || state.mode === 'direct') return;
+    var s = copyState();
+    if (s === 'need-name') { el.name.focus(); return; }
+    if (s === 'empty') { el.output.focus(); return; }
+    if (s === 'over') {
+      (state.detailsOpen && el.details.value.trim() && !state.edited ? el.details : el.output).focus();
+      return;
+    }
     var text = el.output.value;
-    if (!text || text.length > MAX) return;
+    var leafId = state.entry.leaf.id;
+    el.ticket.classList.remove('is-new');
     var done = function (ok) {
       clearTimeout(state.copyTimer);
       state.copiedText = text;
-      el.copy.classList.toggle('is-copied', ok);
-      el.copy.classList.toggle('is-failed', !ok);
-      el.copy.innerHTML = ok
-        ? dual('Copié ✓', '> copied to clipboard_')
-        : dual('Copie impossible : sélectionne le texte', '> copy failed: select manually');
-      state.copyTimer = setTimeout(resetCopyLabel, 1800);
+      state.copyOk = ok;
+      if (ok) {
+        var n = bumpTally();
+        var now = new Date();
+        state.copiedAt = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0') +
+          ' · ' + n + (n === 1 ? 'ʳᵉ' : 'ᵉ') + ' du jour';
+        state.copiedName = currentName();
+        state.redrawArmed = state.mode === 'templates';
+        if (!state.copiedLeaves[leafId]) state.freshSticker = leafId;
+        state.copiedLeaves[leafId] = true;
+        announce('Message copié');
+        if (fx()) {
+          try { if (navigator.vibrate) navigator.vibrate(12); } catch (e) { /* pas de vibration */ }
+          restart(el.ticket, 'is-filed');
+          restart(el.status, 'is-ping');
+        }
+        renderList();
+      } else {
+        el.output.focus();
+        el.output.select();
+      }
+      updateCopy();
+      restart(el.copy, ok ? 'is-copied' : 'is-failed');
+      state.copyTimer = setTimeout(function () { resetCopyLabel(); updateCopy(); }, COPIED_MS);
     };
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(copyFallback(text)); });
-    } else {
-      done(copyFallback(text));
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(copyFallback(text)); });
+        return;
+      }
+    } catch (e) { /* on passe au repli */ }
+    done(copyFallback(text));
+  }
+
+  // --- Champs ---------------------------------------------------------------
+
+  function onName() {
+    var name = currentName();
+    el.nameClear.hidden = !el.name.value;
+    if (state.copiedName !== null && name !== state.copiedName) state.copiedLeaves = {};
+    renderList();
+    renderUnknown();
+    renderPath();
+    if (el.gravity.open) el.gravityBody.innerHTML = gravityHTML(state.context, null);
+    if (!state.entry || state.mode !== 'templates') return;
+    if (!state.template && name) {
+      state.template = pickTemplate();
+      restart(el.ticket, 'is-new');
+    } else if (state.redrawArmed && name && name !== state.copiedName && !state.edited) {
+      // Nouvelle personne après une copie : jamais deux fois le même texte par accident.
+      state.template = pickTemplate();
+      state.redrawArmed = false;
+      announce('Nouveau message tiré');
+      restart(el.ticket, 'is-new');
     }
+    render(true);
   }
 
-  // --- Thème -------------------------------------------------------------
-
-  function applyTheme(theme) {
-    stopTyping();
-    document.documentElement.setAttribute('data-theme', theme);
-    el.themeToggle.setAttribute('aria-pressed', String(theme === 'terminal'));
-    store.set(KEYS.theme, theme);
+  function setDate(on) {
+    el.dateChip.setAttribute('aria-pressed', String(on));
+    el.dateChip.textContent = on ? '✓ Date' : '＋ Date';
+    el.date.hidden = !on;
+    store.set(KEYS.addDate, on ? '1' : '0');
   }
 
-  // --- Événements --------------------------------------------------------
+  function syncDetails() {
+    var n = el.details.value.trim().length;
+    if (n) state.detailsOpen = true;
+    el.details.hidden = !state.detailsOpen;
+    el.detailsChip.setAttribute('aria-expanded', String(state.detailsOpen));
+    el.detailsChip.textContent = n ? 'Détails · ' + n : '＋ Détails';
+    el.detailsChip.classList.toggle('is-on', state.detailsOpen);
+  }
+
+  // --- Thème -------------------------------------------------------------------
+
+  function updateThemeColor() {
+    var bg = getComputedStyle(root).getPropertyValue('--bg').trim();
+    if (el.themeColor && bg) el.themeColor.setAttribute('content', bg);
+  }
+
+  function applyTheme(id, fromToggle) {
+    var current = THEMES.filter(function (t) { return t.id === id; })[0] || THEMES[0];
+    var other = THEMES.filter(function (t) { return t.id !== current.id; })[0];
+    root.setAttribute('data-theme', current.id);
+    store.set(KEYS.theme, current.id);
+    el.themeToggle.setAttribute('aria-label', 'Thème actuel : ' + current.name + '. Passer au thème ' + other.name + '.');
+    el.themeToggle.title = 'Passer au thème ' + other.name;
+    el.themeToggle.setAttribute('data-next', other.id);
+    updateThemeColor();
+    if (fromToggle && fx()) restart(el.topbar, 'is-sweep');
+  }
+
+  // --- Événements ----------------------------------------------------------------
 
   el.contexts.addEventListener('click', function (e) {
     var b = e.target.closest('.ctx');
-    if (b && b.getAttribute('data-ctx') !== state.context) setContext(b.getAttribute('data-ctx'));
+    if (b) setContext(b.getAttribute('data-ctx'));
   });
 
-  el.leaves.addEventListener('click', function (e) {
-    var b = e.target.closest('.leaf');
-    if (b && !b.disabled) selectEntry(b.getAttribute('data-key'));
+  el.sections.addEventListener('click', function (e) {
+    var b = e.target.closest('.row');
+    if (b) openEntry(b.getAttribute('data-key'));
   });
+
+  function onGravityRow(e) {
+    var b = e.target.closest('.g-row');
+    if (!b) return;
+    if (el.gravity.open) closeGravity();
+    openEntry(b.getAttribute('data-key'));
+  }
+  el.gravityBody.addEventListener('click', onGravityRow);
+  el.gravityInline.addEventListener('click', onGravityRow);
+
+  el.gravityOpen.addEventListener('click', function () { openGravity(el.gravityOpen); });
+  el.gravityOpenTop.addEventListener('click', function () { openGravity(el.gravityOpenTop); });
+  el.tierChip.addEventListener('click', function () { openGravity(el.tierChip, state.entry && state.entry.key); });
+  el.gravityClose.addEventListener('click', closeGravity);
+  el.gravity.addEventListener('close', onGravityClosed);
+  el.gravity.addEventListener('click', function (e) { if (e.target === el.gravity) closeGravity(); });
+
+  el.back.addEventListener('click', goBack);
+  el.directBack.addEventListener('click', goBack);
+  el.ghost.addEventListener('click', function () { el.name.focus(); });
 
   el.variants.addEventListener('click', function (e) {
     var b = e.target.closest('.seg');
@@ -503,60 +807,134 @@
     var leafId = state.entry.leaf.id;
     if (state.variant[leafId] === b.getAttribute('data-variant')) return;
     state.variant[leafId] = b.getAttribute('data-variant');
-    renderVariants(MESSAGES[leafId]);
-    if (state.template) generate();
+    renderVariants();
+    if (currentName()) {
+      state.template = pickTemplate();
+      state.edited = false;
+      restart(el.ticket, 'is-new');
+    }
+    render(true);
   });
 
-  el.name.addEventListener('input', function () {
-    renderPath();
-    Array.prototype.forEach.call(el.leaves.querySelectorAll('.leaf'), function (b) {
-      var entry = allEntries().filter(function (x) { return x.key === b.getAttribute('data-key'); })[0];
-      if (entry) b.querySelector('.leaf-label').textContent = withName(entry.leaf.label, '…');
-    });
-    refreshOutput();
+  el.reroll.addEventListener('click', function () {
+    if (!state.entry || state.mode !== 'templates') return;
+    state.template = pickTemplate();
+    state.edited = false;
+    render(true);
+    restart(el.ticket, 'is-new');
+    restart(el.reroll, 'is-spinning');
   });
 
-  el.addDate.addEventListener('change', function () {
-    el.date.disabled = !el.addDate.checked;
-    store.set(KEYS.addDate, el.addDate.checked ? '1' : '0');
-    refreshOutput();
+  el.restore.addEventListener('click', function () {
+    state.edited = false;
+    render();
+    el.output.focus();
   });
-  el.date.addEventListener('input', refreshOutput);
-  el.details.addEventListener('input', refreshOutput);
 
   el.output.addEventListener('input', function () {
     if (state.mode === 'templates' && state.template) state.edited = true;
-    state.fullText = el.output.value;
-    updateControls();
+    el.edited.hidden = !(state.mode === 'templates' && state.edited);
+    autogrow();
+    updateCounter();
   });
 
-  el.generate.addEventListener('click', generate);
   el.copy.addEventListener('click', copy);
 
-  // Un tap ou une touche interrompt l'effet machine à écrire.
-  document.addEventListener('pointerdown', stopTyping, true);
-  document.addEventListener('keydown', stopTyping, true);
+  el.name.addEventListener('input', onName);
+  el.name.addEventListener('focus', function () {
+    if (state.redrawArmed && el.name.value) el.name.setSelectionRange(0, el.name.value.length);
+  });
+  el.name.addEventListener('keydown', function (e) { if (e.key === 'Enter') el.name.blur(); });
+  el.nameClear.addEventListener('click', function () {
+    el.name.value = '';
+    onName();
+    el.name.focus();
+  });
+
+  el.dateChip.addEventListener('click', function () {
+    setDate(!dateOn());
+    render();
+  });
+  el.date.addEventListener('input', render);
+
+  el.detailsChip.addEventListener('click', function () {
+    if (state.detailsOpen && el.details.value.trim()) { el.details.focus(); return; }
+    state.detailsOpen = !state.detailsOpen;
+    syncDetails();
+    if (state.detailsOpen) el.details.focus();
+  });
+  el.details.addEventListener('input', function () {
+    syncDetails();
+    render();
+  });
 
   el.themeToggle.addEventListener('click', function () {
-    applyTheme(document.documentElement.getAttribute('data-theme') === 'terminal' ? 'tandem' : 'terminal');
+    applyTheme(el.themeToggle.getAttribute('data-next'), true);
   });
 
-  el.gravityToggle.addEventListener('click', function () {
-    var open = el.gravityToggle.getAttribute('aria-expanded') !== 'true';
-    el.gravityToggle.setAttribute('aria-expanded', String(open));
-    el.gravity.classList.toggle('is-open', open);
+  window.addEventListener('hashchange', function () {
+    var key = decodeURIComponent(location.hash.slice(1));
+    if (!key) {
+      if (isDesktop()) { if (state.entry) deselect(); } else showList();
+      return;
+    }
+    if (state.entry && state.entry.key === key) {
+      if (!isDesktop()) el.app.setAttribute('data-view', 'msg');
+      return;
+    }
+    if (!openEntry(key, { push: false, focus: false })) setHash('', false);
   });
 
-  // --- Démarrage ---------------------------------------------------------
+  // Un tap ou une touche interrompt l'animation d'arrivée du message.
+  function interrupt(e) {
+    el.ticket.classList.remove('is-new');
+    stopCount();
+    if (!e || !el.copy.contains(e.target)) el.copy.classList.remove('is-copied');
+  }
+  document.addEventListener('pointerdown', interrupt, true);
+  el.output.addEventListener('focus', interrupt);
+
+  // Raccourcis clavier (surtout sur ordinateur).
+  document.addEventListener('keydown', function (e) {
+    interrupt(e);
+    var t = e.target;
+    var inField = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA');
+    if (e.key === '/' && !inField && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      e.preventDefault();
+      el.name.focus();
+    } else if (e.key === 'Enter' && (e.ctrlKey || e.metaKey) && state.entry) {
+      e.preventDefault();
+      copy();
+    } else if (e.key === 'Escape' && isDesktop() && state.entry && !el.gravity.open && (el.msg.contains(t) || t === document.body)) {
+      deselect();
+      setHash('', false);
+    } else if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && t.classList && t.classList.contains('row')) {
+      e.preventDefault();
+      var rows = Array.prototype.slice.call(el.sections.querySelectorAll('.row'));
+      var next = rows[rows.indexOf(t) + (e.key === 'ArrowDown' ? 1 : -1)];
+      if (next) next.focus();
+    }
+  });
+
+  // :active sur iOS.
+  document.addEventListener('touchstart', function () {}, { passive: true });
+
+  // --- Démarrage -------------------------------------------------------------------
 
   var ignored = TREE.root.children.filter(function (c) { return c.type === 'ignored'; }).map(function (c) { return c.label; });
   if (ignored.length) el.ignoredNote.textContent = ignored.join(' et ') + ' : hors périmètre pour l\'instant.';
 
   el.date.value = todayISO();
   el.date.max = todayISO();
-  el.addDate.checked = store.get(KEYS.addDate) === '1';
-  el.date.disabled = !el.addDate.checked;
-  applyTheme(document.documentElement.getAttribute('data-theme') === 'terminal' ? 'terminal' : 'tandem');
-  renderContexts();
-  setContext(store.get(KEYS.context));
+  setDate(store.get(KEYS.addDate) === '1');
+  applyTheme(root.getAttribute('data-theme'));
+
+  var startKey = decodeURIComponent(location.hash.slice(1));
+  if (startKey && findEntry(startKey)) {
+    setContext(startKey.split(':')[0]);
+    openEntry(startKey, { push: false, focus: false });
+  } else {
+    setContext(store.get(KEYS.context));
+    if (location.hash) setHash('', false);
+  }
 })();
